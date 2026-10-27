@@ -1,10 +1,10 @@
 {
  "schema_version": "1.0",
- "generated_at": "2026-10-26T17:17:56-04:00",
+ "generated_at": "2026-10-27T10:38:01-04:00",
  "as_of_date": "2026-10-26",
  "disclaimer": "Paper trading only. Not investment advice. Backtests and paper results don't promise future returns.",
  "paper_only": true,
- "rules_version": "v0.5.1",
+ "rules_version": "v0.5.3",
  "account": {
   "start_date": "2026-10-26",
   "start_value": 1000.0,
@@ -143,7 +143,7 @@
    "invested_value": 61.97,
    "idle_spy_value": 90.23,
    "cash": 0.0,
-   "open_positions": 4,
+   "open_positions": 5,
    "realized_pnl": 0.0,
    "base_weight": 0.15,
    "experimental": true,
@@ -182,7 +182,9 @@
    "report_date": null,
    "signal_type": "momentum 12-2 top-15",
    "signal_link": null,
-   "reason": "start-up; 12-2 momentum rank 1/499 (+1093.3%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 1/499 (+1093.3%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 2.65,
+   "corr60": 0.34
   },
   {
    "ticker": "MRNA",
@@ -205,7 +207,9 @@
    "report_date": null,
    "signal_type": "momentum 12-2 top-15",
    "signal_link": null,
-   "reason": "start-up; 12-2 momentum rank 2/499 (+625.6%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 2/499 (+625.6%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 5.32,
+   "corr60": 0.15
   },
   {
    "ticker": "LITE",
@@ -228,7 +232,9 @@
    "report_date": null,
    "signal_type": "momentum 12-2 top-15",
    "signal_link": null,
-   "reason": "start-up; 12-2 momentum rank 3/499 (+487.8%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 3/499 (+487.8%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 3.11,
+   "corr60": 0.36
   },
   {
    "ticker": "MU",
@@ -251,7 +257,9 @@
    "report_date": null,
    "signal_type": "momentum 12-2 top-15",
    "signal_link": null,
-   "reason": "start-up; 12-2 momentum rank 4/499 (+445.0%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 4/499 (+445.0%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 2.06,
+   "corr60": 0.4
   },
   {
    "ticker": "STX",
@@ -274,7 +282,9 @@
    "report_date": null,
    "signal_type": "momentum 12-2 top-15",
    "signal_link": null,
-   "reason": "start-up; 12-2 momentum rank 5/499 (+323.7%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 5/499 (+323.7%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 1.13,
+   "corr60": 0.18
   },
   {
    "ticker": "WDC",
@@ -297,7 +307,9 @@
    "report_date": null,
    "signal_type": "momentum 12-2 top-15",
    "signal_link": null,
-   "reason": "start-up; 12-2 momentum rank 6/499 (+274.5%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 6/499 (+274.5%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 1.52,
+   "corr60": 0.23
   },
   {
    "ticker": "DELL",
@@ -320,7 +332,9 @@
    "report_date": null,
    "signal_type": "momentum 12-2 top-15",
    "signal_link": null,
-   "reason": "start-up; 12-2 momentum rank 7/499 (+260.3%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 7/499 (+260.3%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 4.44,
+   "corr60": 0.61
   },
   {
    "ticker": "INTC",
@@ -343,7 +357,9 @@
    "report_date": null,
    "signal_type": "momentum 12-2 top-15",
    "signal_link": null,
-   "reason": "start-up; 12-2 momentum rank 8/499 (+245.0%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 8/499 (+245.0%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 3.24,
+   "corr60": 0.53
   },
   {
    "ticker": "MRVL",
@@ -366,7 +382,9 @@
    "report_date": null,
    "signal_type": "momentum 12-2 top-15",
    "signal_link": null,
-   "reason": "start-up; 12-2 momentum rank 9/499 (+220.0%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 9/499 (+220.0%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 3.51,
+   "corr60": 0.51
   },
   {
    "ticker": "BE",
@@ -389,7 +407,9 @@
    "report_date": null,
    "signal_type": "momentum 12-2 top-15",
    "signal_link": null,
-   "reason": "start-up; 12-2 momentum rank 10/499 (+182.6%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 10/499 (+182.6%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 4.05,
+   "corr60": 0.5
   },
   {
    "ticker": "ILMN",
@@ -412,7 +432,9 @@
    "report_date": null,
    "signal_type": "momentum 12-2 top-15",
    "signal_link": null,
-   "reason": "start-up; 12-2 momentum rank 11/499 (+181.7%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 11/499 (+181.7%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 1.21,
+   "corr60": 0.24
   },
   {
    "ticker": "HPE",
@@ -435,7 +457,9 @@
    "report_date": null,
    "signal_type": "momentum 12-2 top-15",
    "signal_link": null,
-   "reason": "start-up; 12-2 momentum rank 12/499 (+180.1%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 12/499 (+180.1%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 3.32,
+   "corr60": 0.51
   },
   {
    "ticker": "TER",
@@ -458,7 +482,9 @@
    "report_date": null,
    "signal_type": "momentum 12-2 top-15",
    "signal_link": null,
-   "reason": "start-up; 12-2 momentum rank 13/499 (+179.8%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 13/499 (+179.8%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 2.98,
+   "corr60": 0.45
   },
   {
    "ticker": "TWLO",
@@ -481,7 +507,9 @@
    "report_date": null,
    "signal_type": "momentum 12-2 top-15",
    "signal_link": null,
-   "reason": "start-up; 12-2 momentum rank 14/499 (+173.9%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 14/499 (+173.9%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 2.29,
+   "corr60": 0.31
   },
   {
    "ticker": "AMD",
@@ -504,7 +532,9 @@
    "report_date": null,
    "signal_type": "momentum 12-2 top-15",
    "signal_link": null,
-   "reason": "start-up; 12-2 momentum rank 15/499 (+173.3%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 15/499 (+173.3%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 2.82,
+   "corr60": 0.52
   },
   {
    "ticker": "TSLA",
@@ -527,7 +557,9 @@
    "report_date": null,
    "signal_type": "signal (v0.3-v0.4.1 rules)",
    "signal_link": "https://www.cnbc.com/2026/10/26/monday-biggest-wall-street-analyst-calls-like-tesla.html",
-   "reason": "Barclays upgrade to Overweight, PT 370->450; close 372.22 > 50d 363.77"
+   "reason": "Barclays upgrade to Overweight, PT 370->450; close 372.22 > 50d 363.77",
+   "beta60": 2.28,
+   "corr60": 0.6
   },
   {
    "ticker": "LMT",
@@ -550,7 +582,9 @@
    "report_date": null,
    "signal_type": "signal (v0.3-v0.4.1 rules)",
    "signal_link": "https://www.cnbc.com/2026/10/26/monday-biggest-wall-street-analyst-calls-like-tesla.html",
-   "reason": "Morgan Stanley upgrade to Overweight (F-35 framework); close 604.18 > 50d 540.14"
+   "reason": "Morgan Stanley upgrade to Overweight (F-35 framework); close 604.18 > 50d 540.14",
+   "beta60": -0.56,
+   "corr60": -0.2
   },
   {
    "ticker": "CACI",
@@ -573,7 +607,9 @@
    "report_date": null,
    "signal_type": "signal (v0.3-v0.4.1 rules)",
    "signal_link": "https://www.cnbc.com/2026/10/26/monday-biggest-wall-street-analyst-calls-like-tesla.html",
-   "reason": "Jefferies upgrade to Buy; close 633.98 > 50d 623.52"
+   "reason": "Jefferies upgrade to Buy; close 633.98 > 50d 623.52",
+   "beta60": 0.49,
+   "corr60": 0.1
   },
   {
    "ticker": "BAH",
@@ -596,7 +632,9 @@
    "report_date": null,
    "signal_type": "signal (v0.3-v0.4.1 rules)",
    "signal_link": "https://www.cnbc.com/2026/10/26/monday-biggest-wall-street-analyst-calls-like-tesla.html",
-   "reason": "TD Cowen upgrade to Buy, PT 77->95; close 78.32 > 50d 74.34"
+   "reason": "TD Cowen upgrade to Buy, PT 77->95; close 78.32 > 50d 74.34",
+   "beta60": 0.42,
+   "corr60": 0.12
   },
   {
    "ticker": "SPY",
@@ -619,7 +657,9 @@
    "report_date": null,
    "signal_type": "core G1",
    "signal_link": null,
-   "reason": "start-up; G1 IN (SPY) at 2026-09 month-end: S&P 7651.54 vs 10-mo avg 7230.78, Baa-10y 1.481 vs 12-mo avg 1.658"
+   "reason": "start-up; G1 IN (SPY) at 2026-09 month-end: S&P 7651.54 vs 10-mo avg 7230.78, Baa-10y 1.481 vs 12-mo avg 1.658",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "ticker": "SPY",
@@ -642,7 +682,9 @@
    "report_date": null,
    "signal_type": "idle cash in SPY",
    "signal_link": null,
-   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)"
+   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "ticker": "SPY",
@@ -665,7 +707,9 @@
    "report_date": null,
    "signal_type": "idle cash in SPY",
    "signal_link": null,
-   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)"
+   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "ticker": "SPY",
@@ -675,11 +719,11 @@
    "is_idle_cash_in_spy": true,
    "entry_date": "2026-10-26",
    "entry_time_et": "2026-10-26 09:30 ET (official open)",
-   "shares": 0.117895,
+   "shares": 0.09803,
    "entry_price": 763.3938,
    "last_price": 765.37,
-   "cost_basis": 90.0,
-   "market_value": 90.23,
+   "cost_basis": 74.84,
+   "market_value": 75.03,
    "unrealized_pnl": 0.1,
    "pnl_pct": 0.109,
    "stop_price": null,
@@ -688,7 +732,9 @@
    "report_date": null,
    "signal_type": "idle cash in SPY",
    "signal_link": null,
-   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)"
+   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "ticker": "ADI",
@@ -711,7 +757,9 @@
    "report_date": "2026-11-24",
    "signal_type": "earnings run-up N=20",
    "signal_link": null,
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 1.66,
+   "corr60": 0.55
   },
   {
    "ticker": "ADSK",
@@ -734,7 +782,9 @@
    "report_date": "2026-11-24",
    "signal_type": "earnings run-up N=20",
    "signal_link": null,
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 0.91,
+   "corr60": 0.22
   },
   {
    "ticker": "BBY",
@@ -757,7 +807,9 @@
    "report_date": "2026-11-24",
    "signal_type": "earnings run-up N=20",
    "signal_link": null,
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 0.14,
+   "corr60": 0.04
   },
   {
    "ticker": "DELL",
@@ -780,7 +832,9 @@
    "report_date": "2026-11-24",
    "signal_type": "earnings run-up N=20",
    "signal_link": null,
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 4.44,
+   "corr60": 0.61
   },
   {
    "ticker": "HPQ",
@@ -803,7 +857,9 @@
    "report_date": "2026-11-24",
    "signal_type": "earnings run-up N=20",
    "signal_link": null,
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 0.87,
+   "corr60": 0.18
   },
   {
    "ticker": "NTAP",
@@ -826,7 +882,9 @@
    "report_date": "2026-11-24",
    "signal_type": "earnings run-up N=20",
    "signal_link": null,
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 2.0,
+   "corr60": 0.48
   },
   {
    "ticker": "SJM",
@@ -849,7 +907,9 @@
    "report_date": "2026-11-24",
    "signal_type": "earnings run-up N=20",
    "signal_link": null,
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": -0.3,
+   "corr60": -0.12
   },
   {
    "ticker": "WDAY",
@@ -872,7 +932,34 @@
    "report_date": "2026-11-24",
    "signal_type": "earnings run-up N=20",
    "signal_link": null,
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 1.67,
+   "corr60": 0.31
+  },
+  {
+   "ticker": "CDNS",
+   "sleeve": "signals",
+   "lot_id": "sig-CDNS-2026-10-27",
+   "status": "open",
+   "is_idle_cash_in_spy": false,
+   "entry_date": "2026-10-27",
+   "entry_time_et": "2026-10-27 09:30 ET (official open)",
+   "shares": 0.046333,
+   "entry_price": 328.4922,
+   "last_price": 328.0,
+   "cost_basis": 15.22,
+   "market_value": 15.2,
+   "unrealized_pnl": null,
+   "pnl_pct": null,
+   "stop_price": 301.9109,
+   "target_price": 393.7968,
+   "exit_by_date": "2026-11-24",
+   "report_date": null,
+   "signal_type": "signal (v0.3-v0.4.1 rules)",
+   "signal_link": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/10/62614100/cadence-design-analysts-boost-their-forecasts-following-upbeat-q3-earnings",
+   "reason": "Q3 beat + raised FY26 guide (rev $1.633B vs $1.61B est, adj EPS $2.11 vs $2.04; FY rev guide $6.39-6.42B from $6.26-6.34B) [company release/Benzinga]; independent analyst PT raises after print: Needham 400->430 Buy (Investing.com https://www.investing.com/news/analyst-ratings/needham-raises-cadence-design-stock-price-target-on-ai-tools-growth-93CH-4974877), JPMorgan 405->420 OW and Citi 400->420 Buy (TheFly/TipRanks https://www.tipranks.com/news/the-fly/cadence-design-price-target-raised-to-420-from-405-at-jpmorgan-thefly-news), Baird 420->440 OP; 3 independent confirmations (earnings + multiple analyst firms + +2.5% premarket); close 322.17 > 50d 318.78",
+   "beta60": 1.55,
+   "corr60": 0.42
   }
  ],
  "closed_trades": [],
@@ -889,7 +976,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 1/499 (+1093.3%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 1/499 (+1093.3%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 2.65,
+   "corr60": 0.34
   },
   {
    "date": "2026-10-26",
@@ -903,7 +992,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 2/499 (+625.6%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 2/499 (+625.6%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 5.32,
+   "corr60": 0.15
   },
   {
    "date": "2026-10-26",
@@ -917,7 +1008,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 3/499 (+487.8%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 3/499 (+487.8%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 3.11,
+   "corr60": 0.36
   },
   {
    "date": "2026-10-26",
@@ -931,7 +1024,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 4/499 (+445.0%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 4/499 (+445.0%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 2.06,
+   "corr60": 0.4
   },
   {
    "date": "2026-10-26",
@@ -945,7 +1040,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 5/499 (+323.7%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 5/499 (+323.7%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 1.13,
+   "corr60": 0.18
   },
   {
    "date": "2026-10-26",
@@ -959,7 +1056,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 6/499 (+274.5%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 6/499 (+274.5%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 1.52,
+   "corr60": 0.23
   },
   {
    "date": "2026-10-26",
@@ -973,7 +1072,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 7/499 (+260.3%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 7/499 (+260.3%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 4.44,
+   "corr60": 0.61
   },
   {
    "date": "2026-10-26",
@@ -987,7 +1088,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 8/499 (+245.0%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 8/499 (+245.0%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 3.24,
+   "corr60": 0.53
   },
   {
    "date": "2026-10-26",
@@ -1001,7 +1104,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 9/499 (+220.0%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 9/499 (+220.0%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 3.51,
+   "corr60": 0.51
   },
   {
    "date": "2026-10-26",
@@ -1015,7 +1120,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 10/499 (+182.6%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 10/499 (+182.6%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 4.05,
+   "corr60": 0.5
   },
   {
    "date": "2026-10-26",
@@ -1029,7 +1136,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 11/499 (+181.7%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 11/499 (+181.7%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 1.21,
+   "corr60": 0.24
   },
   {
    "date": "2026-10-26",
@@ -1043,7 +1152,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 12/499 (+180.1%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 12/499 (+180.1%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 3.32,
+   "corr60": 0.51
   },
   {
    "date": "2026-10-26",
@@ -1057,7 +1168,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 13/499 (+179.8%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 13/499 (+179.8%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 2.98,
+   "corr60": 0.45
   },
   {
    "date": "2026-10-26",
@@ -1071,7 +1184,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 14/499 (+173.9%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 14/499 (+173.9%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 2.29,
+   "corr60": 0.31
   },
   {
    "date": "2026-10-26",
@@ -1085,7 +1200,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 15/499 (+173.3%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 15/499 (+173.3%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 2.82,
+   "corr60": 0.52
   },
   {
    "date": "2026-10-26",
@@ -1099,7 +1216,9 @@
    "notional": 14.99,
    "fee": 0.015,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "Barclays upgrade to Overweight, PT 370->450; close 372.22 > 50d 363.77"
+   "reason": "Barclays upgrade to Overweight, PT 370->450; close 372.22 > 50d 363.77",
+   "beta60": 2.28,
+   "corr60": 0.6
   },
   {
    "date": "2026-10-26",
@@ -1113,7 +1232,9 @@
    "notional": 14.99,
    "fee": 0.015,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "Morgan Stanley upgrade to Overweight (F-35 framework); close 604.18 > 50d 540.14"
+   "reason": "Morgan Stanley upgrade to Overweight (F-35 framework); close 604.18 > 50d 540.14",
+   "beta60": -0.56,
+   "corr60": -0.2
   },
   {
    "date": "2026-10-26",
@@ -1127,7 +1248,9 @@
    "notional": 14.99,
    "fee": 0.015,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "Jefferies upgrade to Buy; close 633.98 > 50d 623.52"
+   "reason": "Jefferies upgrade to Buy; close 633.98 > 50d 623.52",
+   "beta60": 0.49,
+   "corr60": 0.1
   },
   {
    "date": "2026-10-26",
@@ -1141,7 +1264,9 @@
    "notional": 14.99,
    "fee": 0.015,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "TD Cowen upgrade to Buy, PT 77->95; close 78.32 > 50d 74.34"
+   "reason": "TD Cowen upgrade to Buy, PT 77->95; close 78.32 > 50d 74.34",
+   "beta60": 0.42,
+   "corr60": 0.12
   },
   {
    "date": "2026-10-26",
@@ -1155,7 +1280,9 @@
    "notional": 399.6,
    "fee": 0.3996,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; G1 IN (SPY) at 2026-09 month-end: S&P 7651.54 vs 10-mo avg 7230.78, Baa-10y 1.481 vs 12-mo avg 1.658"
+   "reason": "start-up; G1 IN (SPY) at 2026-09 month-end: S&P 7651.54 vs 10-mo avg 7230.78, Baa-10y 1.481 vs 12-mo avg 1.658",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1169,7 +1296,9 @@
    "notional": 149.85,
    "fee": 0.1499,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)"
+   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1183,7 +1312,9 @@
    "notional": 149.85,
    "fee": 0.1499,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)"
+   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1197,7 +1328,9 @@
    "notional": 89.91,
    "fee": 0.0899,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)"
+   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1211,7 +1344,9 @@
    "notional": 7.53,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "fund ADI from idle SPY"
+   "reason": "fund ADI from idle SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1225,7 +1360,9 @@
    "notional": 7.51,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 1.66,
+   "corr60": 0.55
   },
   {
    "date": "2026-10-26",
@@ -1239,7 +1376,9 @@
    "notional": 7.53,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "fund ADSK from idle SPY"
+   "reason": "fund ADSK from idle SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1253,7 +1392,9 @@
    "notional": 7.51,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 0.91,
+   "corr60": 0.22
   },
   {
    "date": "2026-10-26",
@@ -1267,7 +1408,9 @@
    "notional": 7.52,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "fund BBY from idle SPY"
+   "reason": "fund BBY from idle SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1281,7 +1424,9 @@
    "notional": 7.51,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 0.14,
+   "corr60": 0.04
   },
   {
    "date": "2026-10-26",
@@ -1295,7 +1440,9 @@
    "notional": 7.52,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "fund DELL from idle SPY"
+   "reason": "fund DELL from idle SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1309,7 +1456,9 @@
    "notional": 7.51,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 4.44,
+   "corr60": 0.61
   },
   {
    "date": "2026-10-26",
@@ -1323,7 +1472,9 @@
    "notional": 7.52,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "fund HPQ from idle SPY"
+   "reason": "fund HPQ from idle SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1337,7 +1488,9 @@
    "notional": 7.51,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 0.87,
+   "corr60": 0.18
   },
   {
    "date": "2026-10-26",
@@ -1351,7 +1504,9 @@
    "notional": 7.52,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "fund NTAP from idle SPY"
+   "reason": "fund NTAP from idle SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1365,7 +1520,9 @@
    "notional": 7.51,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 2.0,
+   "corr60": 0.48
   },
   {
    "date": "2026-10-26",
@@ -1379,7 +1536,9 @@
    "notional": 7.52,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "fund SJM from idle SPY"
+   "reason": "fund SJM from idle SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1393,7 +1552,9 @@
    "notional": 7.51,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": -0.3,
+   "corr60": -0.12
   },
   {
    "date": "2026-10-26",
@@ -1407,7 +1568,9 @@
    "notional": 7.52,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "fund WDAY from idle SPY"
+   "reason": "fund WDAY from idle SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1421,11 +1584,45 @@
    "notional": 7.5,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 1.67,
+   "corr60": 0.31
   }
  ],
  "recent_fills": [
   {
+   "date": "2026-10-27",
+   "time_et": "2026-10-27 09:30 ET (official open)",
+   "sleeve": "signals",
+   "ticker": "CDNS",
+   "side": "buy",
+   "shares": 0.046333,
+   "quote_price": 328.0,
+   "fill_price": 328.164,
+   "notional": 15.2,
+   "fee": 0.0152,
+   "price_source": "Yahoo Finance chart endpoint, 1d bar open",
+   "reason": "Q3 beat + raised FY26 guide (rev $1.633B vs $1.61B est, adj EPS $2.11 vs $2.04; FY rev guide $6.39-6.42B from $6.26-6.34B) [company release/Benzinga]; independent analyst PT raises after print: Needham 400->430 Buy (Investing.com https://www.investing.com/news/analyst-ratings/needham-raises-cadence-design-stock-price-target-on-ai-tools-growth-93CH-4974877), JPMorgan 405->420 OW and Citi 400->420 Buy (TheFly/TipRanks https://www.tipranks.com/news/the-fly/cadence-design-price-target-raised-to-420-from-405-at-jpmorgan-thefly-news), Baird 420->440 OP; 3 independent confirmations (earnings + multiple analyst firms + +2.5% premarket); close 322.17 > 50d 318.78",
+   "beta60": 1.55,
+   "corr60": 0.42
+  },
+  {
+   "date": "2026-10-27",
+   "time_et": "2026-10-27 09:30 ET (official open)",
+   "sleeve": "signals",
+   "ticker": "SPY",
+   "side": "sell",
+   "shares": 0.019865,
+   "quote_price": 767.34,
+   "fill_price": 766.9564,
+   "notional": 15.24,
+   "fee": 0.0152,
+   "price_source": "Yahoo Finance chart endpoint, 1d bar open",
+   "reason": "fund CDNS from idle SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
+  },
+  {
    "date": "2026-10-26",
    "time_et": "2026-10-26 16:00 ET (daily close)",
    "sleeve": "earnings",
@@ -1437,7 +1634,9 @@
    "notional": 7.5,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 1.67,
+   "corr60": 0.31
   },
   {
    "date": "2026-10-26",
@@ -1451,7 +1650,9 @@
    "notional": 7.52,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "fund WDAY from idle SPY"
+   "reason": "fund WDAY from idle SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1465,7 +1666,9 @@
    "notional": 7.51,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": -0.3,
+   "corr60": -0.12
   },
   {
    "date": "2026-10-26",
@@ -1479,7 +1682,9 @@
    "notional": 7.52,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "fund SJM from idle SPY"
+   "reason": "fund SJM from idle SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1493,7 +1698,9 @@
    "notional": 7.51,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 2.0,
+   "corr60": 0.48
   },
   {
    "date": "2026-10-26",
@@ -1507,7 +1714,9 @@
    "notional": 7.52,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "fund NTAP from idle SPY"
+   "reason": "fund NTAP from idle SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1521,7 +1730,9 @@
    "notional": 7.51,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 0.87,
+   "corr60": 0.18
   },
   {
    "date": "2026-10-26",
@@ -1535,7 +1746,9 @@
    "notional": 7.52,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "fund HPQ from idle SPY"
+   "reason": "fund HPQ from idle SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1549,7 +1762,9 @@
    "notional": 7.51,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 4.44,
+   "corr60": 0.61
   },
   {
    "date": "2026-10-26",
@@ -1563,7 +1778,9 @@
    "notional": 7.52,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "fund DELL from idle SPY"
+   "reason": "fund DELL from idle SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1577,7 +1794,9 @@
    "notional": 7.51,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 0.14,
+   "corr60": 0.04
   },
   {
    "date": "2026-10-26",
@@ -1591,7 +1810,9 @@
    "notional": 7.52,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "fund BBY from idle SPY"
+   "reason": "fund BBY from idle SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1605,7 +1826,9 @@
    "notional": 7.51,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 0.91,
+   "corr60": 0.22
   },
   {
    "date": "2026-10-26",
@@ -1619,7 +1842,9 @@
    "notional": 7.53,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "fund ADSK from idle SPY"
+   "reason": "fund ADSK from idle SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1633,7 +1858,9 @@
    "notional": 7.51,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
+   "reason": "J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve",
+   "beta60": 1.66,
+   "corr60": 0.55
   },
   {
    "date": "2026-10-26",
@@ -1647,7 +1874,9 @@
    "notional": 7.53,
    "fee": 0.0075,
    "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET",
-   "reason": "fund ADI from idle SPY"
+   "reason": "fund ADI from idle SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1661,7 +1890,9 @@
    "notional": 89.91,
    "fee": 0.0899,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)"
+   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1675,7 +1906,9 @@
    "notional": 149.85,
    "fee": 0.1499,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)"
+   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1689,7 +1922,9 @@
    "notional": 149.85,
    "fee": 0.1499,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)"
+   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1703,7 +1938,9 @@
    "notional": 399.6,
    "fee": 0.3996,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; G1 IN (SPY) at 2026-09 month-end: S&P 7651.54 vs 10-mo avg 7230.78, Baa-10y 1.481 vs 12-mo avg 1.658"
+   "reason": "start-up; G1 IN (SPY) at 2026-09 month-end: S&P 7651.54 vs 10-mo avg 7230.78, Baa-10y 1.481 vs 12-mo avg 1.658",
+   "beta60": 1.0,
+   "corr60": 1.0
   },
   {
    "date": "2026-10-26",
@@ -1717,7 +1954,9 @@
    "notional": 14.99,
    "fee": 0.015,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "TD Cowen upgrade to Buy, PT 77->95; close 78.32 > 50d 74.34"
+   "reason": "TD Cowen upgrade to Buy, PT 77->95; close 78.32 > 50d 74.34",
+   "beta60": 0.42,
+   "corr60": 0.12
   },
   {
    "date": "2026-10-26",
@@ -1731,7 +1970,9 @@
    "notional": 14.99,
    "fee": 0.015,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "Jefferies upgrade to Buy; close 633.98 > 50d 623.52"
+   "reason": "Jefferies upgrade to Buy; close 633.98 > 50d 623.52",
+   "beta60": 0.49,
+   "corr60": 0.1
   },
   {
    "date": "2026-10-26",
@@ -1745,7 +1986,9 @@
    "notional": 14.99,
    "fee": 0.015,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "Morgan Stanley upgrade to Overweight (F-35 framework); close 604.18 > 50d 540.14"
+   "reason": "Morgan Stanley upgrade to Overweight (F-35 framework); close 604.18 > 50d 540.14",
+   "beta60": -0.56,
+   "corr60": -0.2
   },
   {
    "date": "2026-10-26",
@@ -1759,7 +2002,9 @@
    "notional": 14.99,
    "fee": 0.015,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "Barclays upgrade to Overweight, PT 370->450; close 372.22 > 50d 363.77"
+   "reason": "Barclays upgrade to Overweight, PT 370->450; close 372.22 > 50d 363.77",
+   "beta60": 2.28,
+   "corr60": 0.6
   },
   {
    "date": "2026-10-26",
@@ -1773,7 +2018,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 15/499 (+173.3%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 15/499 (+173.3%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 2.82,
+   "corr60": 0.52
   },
   {
    "date": "2026-10-26",
@@ -1787,7 +2034,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 14/499 (+173.9%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 14/499 (+173.9%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 2.29,
+   "corr60": 0.31
   },
   {
    "date": "2026-10-26",
@@ -1801,7 +2050,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 13/499 (+179.8%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 13/499 (+179.8%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 2.98,
+   "corr60": 0.45
   },
   {
    "date": "2026-10-26",
@@ -1815,7 +2066,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 12/499 (+180.1%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 12/499 (+180.1%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 3.32,
+   "corr60": 0.51
   },
   {
    "date": "2026-10-26",
@@ -1829,7 +2082,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 11/499 (+181.7%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 11/499 (+181.7%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 1.21,
+   "corr60": 0.24
   },
   {
    "date": "2026-10-26",
@@ -1843,7 +2098,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 10/499 (+182.6%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 10/499 (+182.6%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 4.05,
+   "corr60": 0.5
   },
   {
    "date": "2026-10-26",
@@ -1857,7 +2114,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 9/499 (+220.0%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 9/499 (+220.0%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 3.51,
+   "corr60": 0.51
   },
   {
    "date": "2026-10-26",
@@ -1871,7 +2130,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 8/499 (+245.0%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 8/499 (+245.0%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 3.24,
+   "corr60": 0.53
   },
   {
    "date": "2026-10-26",
@@ -1885,7 +2146,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 7/499 (+260.3%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 7/499 (+260.3%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 4.44,
+   "corr60": 0.61
   },
   {
    "date": "2026-10-26",
@@ -1899,7 +2162,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 6/499 (+274.5%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 6/499 (+274.5%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 1.52,
+   "corr60": 0.23
   },
   {
    "date": "2026-10-26",
@@ -1913,7 +2178,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 5/499 (+323.7%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 5/499 (+323.7%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 1.13,
+   "corr60": 0.18
   },
   {
    "date": "2026-10-26",
@@ -1927,7 +2194,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 4/499 (+445.0%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 4/499 (+445.0%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 2.06,
+   "corr60": 0.4
   },
   {
    "date": "2026-10-26",
@@ -1941,7 +2210,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 3/499 (+487.8%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 3/499 (+487.8%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 3.11,
+   "corr60": 0.36
   },
   {
    "date": "2026-10-26",
@@ -1955,7 +2226,9 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 2/499 (+625.6%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 2/499 (+625.6%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 5.32,
+   "corr60": 0.15
   },
   {
    "date": "2026-10-26",
@@ -1969,11 +2242,24 @@
    "notional": 9.99,
    "fee": 0.01,
    "price_source": "Yahoo Finance chart endpoint, 1d bar open",
-   "reason": "start-up; 12-2 momentum rank 1/499 (+1093.3%, t-252..t-21); held to the Nov-30 quarterly rebalance"
+   "reason": "start-up; 12-2 momentum rank 1/499 (+1093.3%, t-252..t-21); held to the Nov-30 quarterly rebalance",
+   "beta60": 2.65,
+   "corr60": 0.34
   }
  ],
- "last_fill_date": "2026-10-26",
- "pending_orders": [],
+ "last_fill_date": "2026-10-27",
+ "pending_orders": [
+  {
+   "trade_date": "2026-10-27",
+   "fill_at": "close",
+   "sleeve": "earnings",
+   "ticker": "DE",
+   "side": "buy",
+   "dollars": null,
+   "shares": null,
+   "reason": "J4 run-up: reports 2026-11-25 (pre-market); last pre-report close 2026-11-24 is 20 trading days after today; buy today's close, sell 2026-11-24 close; 5% of sleeve"
+  }
+ ],
  "skips": [
   {
    "date": "2026-10-23",
@@ -1985,6 +2271,462 @@
   }
  ],
  "signals": [
+  {
+   "date": "2026-10-27",
+   "ticker": "NFLX",
+   "signal_type": "retail_chatter",
+   "source": "apewisdom.io",
+   "sources": [
+    {
+     "url": "https://apewisdom.io/"
+    }
+   ],
+   "description": "Mentions 7.0x vs avg (context only)",
+   "sentiment": "neutral",
+   "prior_close": 63.9,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.47,
+   "corr60": 0.14,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "STC",
+   "signal_type": "insider_buy",
+   "source": "openinsider.com",
+   "sources": [
+    {
+     "url": "http://openinsider.com/latest-cluster-buys"
+    }
+   ],
+   "description": "Cluster: 3 insiders $567K (context only)",
+   "sentiment": "positive",
+   "prior_close": 42.96,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.05,
+   "corr60": 0.26,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "THRM",
+   "signal_type": "insider_buy",
+   "source": "openinsider.com",
+   "sources": [
+    {
+     "url": "http://openinsider.com/latest-insider-purchases-25k"
+    }
+   ],
+   "description": "CEO/CFO buy ~$1.3M (context only)",
+   "sentiment": "positive",
+   "prior_close": 28.59,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.66,
+   "corr60": 0.39,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "PYPL",
+   "signal_type": "earnings",
+   "source": "web",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/27/stocks-making-the-biggest-moves-premarket-pypl-glw-ups-ko.html"
+    }
+   ],
+   "description": "Revenue miss, EPS beat; mixed (also shadow Test B entry)",
+   "sentiment": "negative",
+   "prior_close": 54.99,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.05,
+   "corr60": 0.29,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "XYL",
+   "signal_type": "earnings",
+   "source": "web",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/27/stocks-making-the-biggest-moves-premarket-pypl-glw-ups-ko.html"
+    }
+   ],
+   "description": "-7.9% premarket on results",
+   "sentiment": "negative",
+   "prior_close": 108.24,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.64,
+   "corr60": 0.28,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "WHR",
+   "signal_type": "earnings",
+   "source": "web",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/27/stocks-making-the-biggest-moves-premarket-pypl-glw-ups-ko.html"
+    }
+   ],
+   "description": "Q3 miss + guidance cut; -7% premarket",
+   "sentiment": "negative",
+   "prior_close": 26.45,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.75,
+   "corr60": 0.33,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "HUBS",
+   "signal_type": "analyst_downgrade",
+   "source": "web",
+   "sources": [
+    {
+     "url": "https://247wallst.com/investing/2026/10/27/here-are-tuesdays-top-wall-street-analyst-research-calls-broadcom-conoco-phillips-hubspot-mercadolibre-moderna-occidental-petroleum-pnc-financial-trimble-and-more/"
+    }
+   ],
+   "description": "UBS downgrade",
+   "sentiment": "negative",
+   "prior_close": 263.99,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.02,
+   "corr60": 0.14,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "MRNA",
+   "signal_type": "analyst_downgrade",
+   "source": "web",
+   "sources": [
+    {
+     "url": "https://247wallst.com/investing/2026/10/27/here-are-tuesdays-top-wall-street-analyst-research-calls-broadcom-conoco-phillips-hubspot-mercadolibre-moderna-occidental-petroleum-pnc-financial-trimble-and-more/"
+    }
+   ],
+   "description": "William Blair downgrade to Market Perform; held in momentum sleeve (context only, no override)",
+   "sentiment": "negative",
+   "prior_close": 198.85,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 5.32,
+   "corr60": 0.15,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "KNF",
+   "signal_type": "analyst_upgrade",
+   "source": "web",
+   "sources": [
+    {
+     "url": "https://www.briefing.com/Inv/content/Calendar/Updown/upgrade.htm"
+    }
+   ],
+   "description": "Wolfe upgrade; 1 source; below 50d; no buy",
+   "sentiment": "positive",
+   "prior_close": 52.91,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.52,
+   "corr60": 0.11,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "BMI",
+   "signal_type": "analyst_upgrade",
+   "source": "web",
+   "sources": [
+    {
+     "url": "https://www.briefing.com/Inv/content/Calendar/Updown/upgrade.htm"
+    }
+   ],
+   "description": "Argus upgrade; 1 source; above 50d; no buy",
+   "sentiment": "positive",
+   "prior_close": 155.95,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.34,
+   "corr60": 0.09,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "FERG",
+   "signal_type": "analyst_upgrade",
+   "source": "web",
+   "sources": [
+    {
+     "url": "https://www.tipranks.com/news/the-fly/citi-upgrades-ferguson-to-buy-on-valuation-after-selloff-thefly-news"
+    }
+   ],
+   "description": "Citi upgrade to Buy PT $288 (valuation); 1 source; above 50d; no buy",
+   "sentiment": "positive",
+   "prior_close": 229.52,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.17,
+   "corr60": 0.41,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "MELI",
+   "signal_type": "analyst_upgrade",
+   "source": "web",
+   "sources": [
+    {
+     "url": "https://247wallst.com/investing/2026/10/27/here-are-tuesdays-top-wall-street-analyst-research-calls-broadcom-conoco-phillips-hubspot-mercadolibre-moderna-occidental-petroleum-pnc-financial-trimble-and-more/"
+    }
+   ],
+   "description": "Citi upgrade; 1 source; below 50d; no buy",
+   "sentiment": "positive",
+   "prior_close": 1668.72,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.8,
+   "corr60": 0.21,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "MTSI",
+   "signal_type": "analyst_upgrade",
+   "source": "web",
+   "sources": [
+    {
+     "url": "https://www.briefing.com/Inv/content/Calendar/Updown/upgrade.htm"
+    }
+   ],
+   "description": "Raymond James upgrade; 1 source; below 50d; no buy",
+   "sentiment": "positive",
+   "prior_close": 243.58,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 3.22,
+   "corr60": 0.42,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "SOFI",
+   "signal_type": "earnings",
+   "source": "web",
+   "sources": [
+    {
+     "url": "https://investors.sofi.com/news/news-details/2026/SoFi-Reports-Third-Quarter-2026-with-Record-Net-Revenue-of-1-4-Billion-Net-Income-of-241-Million-and-Raises-Full-Year-Guidance/default.aspx"
+    }
+   ],
+   "description": "Q3 beat, raised 2026 guide, new 2027 targets; +7-11% premarket; NO BUY: close 14.46 < 50d 16.66",
+   "sentiment": "positive",
+   "prior_close": 14.46,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 2.94,
+   "corr60": 0.63,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "SPGI",
+   "signal_type": "earnings",
+   "source": "web",
+   "sources": [
+    {
+     "url": "https://www.investing.com/news/earnings/sp-global-earnings-beat-by-016-revenue-topped-estimates-4975106"
+    }
+   ],
+   "description": "Q3 beat, raised FY EPS guide, Capital IQ strategic review; +1.5-4% premarket; 1 source; no buy",
+   "sentiment": "positive",
+   "prior_close": 450.65,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.34,
+   "corr60": 0.15,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "KO",
+   "signal_type": "pairs",
+   "source": "pairs_watchlist",
+   "sources": [],
+   "description": "KO/KDP z -2.16 at 10-26 close; laggard KO; hypothetical shadow buy at open logged in paper/pairs_shadow.csv",
+   "sentiment": "positive",
+   "prior_close": 92.7,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": -0.39,
+   "corr60": -0.24,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "KO",
+   "signal_type": "earnings",
+   "source": "web",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/27/stocks-making-the-biggest-moves-premarket-pypl-glw-ups-ko.html"
+    }
+   ],
+   "description": "Q3 beat, raised outlook; +0.3% premarket; 1 source; no buy (also KO/KDP pairs laggard, shadow only)",
+   "sentiment": "positive",
+   "prior_close": 92.7,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": -0.39,
+   "corr60": -0.24,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "GLW",
+   "signal_type": "earnings",
+   "source": "web",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/27/stocks-making-the-biggest-moves-premarket-pypl-glw-ups-ko.html"
+    }
+   ],
+   "description": "Q3 beat; +3% premarket; 1 source; below 50d (127.74 < 150.45); no buy",
+   "sentiment": "positive",
+   "prior_close": 127.74,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 3.35,
+   "corr60": 0.51,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "RCL",
+   "signal_type": "earnings",
+   "source": "web",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/27/stocks-making-the-biggest-moves-premarket-pypl-glw-ups-ko.html"
+    }
+   ],
+   "description": "Q3 beat, raised FY EPS guide; +4.4% premarket; Barclays PT cut 358->342 (mixed); 1 positive source; no buy",
+   "sentiment": "positive",
+   "prior_close": 280.6,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.15,
+   "corr60": 0.34,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "UPS",
+   "signal_type": "earnings",
+   "source": "web",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/27/stocks-making-the-biggest-moves-premarket-pypl-glw-ups-ko.html"
+    }
+   ],
+   "description": "Q3 beat, raised 2026 guide; +1.6% premarket; 1 source (no analyst raise today; recent PT cuts); no buy",
+   "sentiment": "positive",
+   "prior_close": 100.32,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.37,
+   "corr60": 0.16,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "AVGO",
+   "signal_type": "analyst_upgrade",
+   "source": "web",
+   "sources": [
+    {
+     "url": "https://www.investing.com/news/stock-market-news/broadcom-da-davidson-upgrades-avgo-says-anthropic-s1-shows-ai-cycle-isnt-over-4975085"
+    }
+   ],
+   "description": "DA Davidson upgrade to Buy PT 350->400 + Anthropic S-1/WSJ financing disclosure; 2 sources; NO BUY: close 329.17 < 50d 355.48",
+   "sentiment": "positive",
+   "prior_close": 329.17,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 2.08,
+   "corr60": 0.58,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "CLS",
+   "signal_type": "earnings",
+   "source": "web",
+   "sources": [
+    {
+     "url": "https://corporate.celestica.com/news-releases/news-release-details/celestica-announces-third-quarter-2026-financial-results-and"
+    }
+   ],
+   "description": "Q3 beat, raised 2026/2027 outlook; Bernstein Buy $520 reiterated; +12-17% premarket, ApeWisdom 7.2x; 3 independent sources; NO BUY: close 246.65 < 50d 327.15",
+   "sentiment": "positive",
+   "prior_close": 246.65,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 3.77,
+   "corr60": 0.52,
+   "beta_asof": "2026-10-23"
+  },
+  {
+   "date": "2026-10-27",
+   "ticker": "CDNS",
+   "signal_type": "earnings",
+   "source": "web",
+   "sources": [
+    {
+     "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/10/62614100/cadence-design-analysts-boost-their-forecasts-following-upbeat-q3-earnings"
+    }
+   ],
+   "description": "Q3 beat + FY26 guide raised; PT raises Needham/JPM/Citi/Baird; +2.5% premarket; 3 independent sources; close>50d; signals-sleeve buy queued (open)",
+   "sentiment": "positive",
+   "prior_close": 322.17,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.55,
+   "corr60": 0.42,
+   "beta_asof": "2026-10-23"
+  },
   {
    "date": "2026-10-26",
    "ticker": "XP",
@@ -1998,9 +2740,12 @@
    "description": "Brazil ADR crash premarket (~-47% reported); verify",
    "sentiment": "negative",
    "prior_close": 30.41,
-   "ret_1d": null,
+   "ret_1d": -0.484,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": 1.98,
+   "corr60": 0.27,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2015,9 +2760,12 @@
    "description": "Reddit mentions 1->41 amid Brazil ADR selloff (chatter only)",
    "sentiment": "neutral",
    "prior_close": 15.16,
-   "ret_1d": null,
+   "ret_1d": -0.17,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": 1.97,
+   "corr60": 0.38,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2032,9 +2780,12 @@
    "description": "SI 38.2%, +100% (avoid flag)",
    "sentiment": "negative",
    "prior_close": 12.77,
-   "ret_1d": null,
+   "ret_1d": -0.004,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": 1.82,
+   "corr60": 0.25,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2049,9 +2800,12 @@
    "description": "SI 88.6% of float, rising (avoid flag)",
    "sentiment": "negative",
    "prior_close": 0.19,
-   "ret_1d": null,
+   "ret_1d": -0.079,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": 3.28,
+   "corr60": 0.17,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2066,9 +2820,12 @@
    "description": "SI 91.7% of float, rising (avoid flag)",
    "sentiment": "negative",
    "prior_close": 3.39,
-   "ret_1d": null,
+   "ret_1d": -0.159,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": -3.55,
+   "corr60": -0.14,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2083,9 +2840,12 @@
    "description": "Cluster: 4 insiders $136K (context only)",
    "sentiment": "positive",
    "prior_close": 142.01,
-   "ret_1d": null,
+   "ret_1d": 0.006,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": -0.07,
+   "corr60": -0.06,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2100,9 +2860,12 @@
    "description": "Cluster: 5 insiders $3.04M (context only)",
    "sentiment": "positive",
    "prior_close": 25.93,
-   "ret_1d": null,
+   "ret_1d": -0.023,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": 0.64,
+   "corr60": 0.1,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2117,9 +2880,12 @@
    "description": "Stifel downgrade to Hold",
    "sentiment": "negative",
    "prior_close": 47.83,
-   "ret_1d": null,
+   "ret_1d": -0.009,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": 1.48,
+   "corr60": 0.35,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2134,9 +2900,12 @@
    "description": "Morgan Stanley downgrade to EW PT 80",
    "sentiment": "negative",
    "prior_close": 76.46,
-   "ret_1d": null,
+   "ret_1d": -0.025,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": 1.98,
+   "corr60": 0.56,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2151,9 +2920,12 @@
    "description": "Wells Fargo downgrade to EW PT 735, -10% premarket",
    "sentiment": "negative",
    "prior_close": 815.31,
-   "ret_1d": null,
+   "ret_1d": -0.132,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": 0.64,
+   "corr60": 0.08,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2168,9 +2940,12 @@
    "description": "Neocloud peer, -4% premarket",
    "sentiment": "negative",
    "prior_close": 24.91,
-   "ret_1d": null,
+   "ret_1d": 0.021,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": 3.91,
+   "corr60": 0.5,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2185,9 +2960,12 @@
    "description": "Neocloud peer, -3.5% premarket; retail mentions 4->64",
    "sentiment": "negative",
    "prior_close": 158.74,
-   "ret_1d": null,
+   "ret_1d": -0.035,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": 4.35,
+   "corr60": 0.42,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2202,9 +2980,12 @@
    "description": "Musk neocloud post, -5% premarket; retail mentions 3->47",
    "sentiment": "negative",
    "prior_close": 54.24,
-   "ret_1d": null,
+   "ret_1d": 0.018,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": 4.69,
+   "corr60": 0.51,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2219,9 +3000,12 @@
    "description": "-8/9% premarket on Ph3 melanoma readout; momentum sleeve buying at open",
    "sentiment": "negative",
    "prior_close": 200.1,
-   "ret_1d": null,
+   "ret_1d": -0.006,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": 5.32,
+   "corr60": 0.15,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2236,9 +3020,12 @@
    "description": "FT: Bon Secours take-private at $20/sh; capped upside, not bought",
    "sentiment": "positive",
    "prior_close": 15.75,
-   "ret_1d": null,
+   "ret_1d": 0.476,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": 0.4,
+   "corr60": 0.07,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2253,9 +3040,12 @@
    "description": "Acquirer in RRC deal, -4% premarket",
    "sentiment": "negative",
    "prior_close": 55.63,
-   "ret_1d": null,
+   "ret_1d": -0.014,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": -0.01,
+   "corr60": -0.01,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2270,9 +3060,12 @@
    "description": "EQT all-stock acquisition (>$50B combined); M&A target, not bought",
    "sentiment": "positive",
    "prior_close": 45.52,
-   "ret_1d": null,
+   "ret_1d": 0.177,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": -0.41,
+   "corr60": -0.13,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2287,9 +3080,12 @@
    "description": "Q3 beat + raised FY26 EPS guide; not bought: below 50d",
    "sentiment": "positive",
    "prior_close": 44.66,
-   "ret_1d": null,
+   "ret_1d": -0.035,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": -0.58,
+   "corr60": -0.21,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2304,9 +3100,12 @@
    "description": "Barclays upgrade to OW PT 25; not bought: below 50d",
    "sentiment": "positive",
    "prior_close": 17.42,
-   "ret_1d": null,
+   "ret_1d": -0.01,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": 1.49,
+   "corr60": 0.28,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2321,9 +3120,12 @@
    "description": "UBS upgrade to Buy PT 315; not bought: below 50d",
    "sentiment": "positive",
    "prior_close": 229.3,
-   "ret_1d": null,
+   "ret_1d": 0.021,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": 0.2,
+   "corr60": 0.09,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2338,9 +3140,12 @@
    "description": "TD Cowen upgrade to Buy, PT 77->95; signals-sleeve buy queued",
    "sentiment": "positive",
    "prior_close": 78.32,
-   "ret_1d": null,
+   "ret_1d": 0.064,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": 0.42,
+   "corr60": 0.12,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2355,9 +3160,12 @@
    "description": "Jefferies upgrade to Buy; signals-sleeve buy queued",
    "sentiment": "positive",
    "prior_close": 633.98,
-   "ret_1d": null,
+   "ret_1d": 0.049,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": 0.49,
+   "corr60": 0.1,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2372,9 +3180,12 @@
    "description": "Morgan Stanley upgrade to Overweight (F-35 framework); signals-sleeve buy queued",
    "sentiment": "positive",
    "prior_close": 604.18,
-   "ret_1d": null,
+   "ret_1d": 0.051,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": -0.56,
+   "corr60": -0.2,
+   "beta_asof": "2026-10-23"
   },
   {
    "date": "2026-10-26",
@@ -2389,16 +3200,19 @@
    "description": "Barclays upgrade to Overweight, PT 370->450; signals-sleeve buy queued",
    "sentiment": "positive",
    "prior_close": 372.22,
-   "ret_1d": null,
+   "ret_1d": 0.052,
    "ret_5d": null,
-   "ret_20d": null
+   "ret_20d": null,
+   "beta60": 2.28,
+   "corr60": 0.6,
+   "beta_asof": "2026-10-23"
   }
  ],
  "shadow_tests": [
   {
    "setup": "A_gap_and_go",
    "trades": 0,
-   "open_or_pending": 0,
+   "open_or_pending": 1,
    "win_rate_pct": null,
    "net_per_trade_pct": null,
    "total_net_pct_sum": null,
@@ -2411,8 +3225,22 @@
   },
   {
    "setup": "B_rsi2_swing",
-   "trades": 0,
+   "trades": 2,
    "open_or_pending": 4,
+   "win_rate_pct": 100.0,
+   "net_per_trade_pct": 1.249,
+   "total_net_pct_sum": 2.5,
+   "spy_same_windows_pct_sum": 1.33,
+   "t_stat": 2.68,
+   "weeks": 1,
+   "weeks_positive": 1,
+   "pass_bar": "net > +0.25%/trade and beats SPY on the same capital and days",
+   "status": "meeting the bar so far (final verdict after 8 weeks)"
+  },
+  {
+   "setup": "Z_zscore_dip",
+   "trades": 0,
+   "open_or_pending": 0,
    "win_rate_pct": null,
    "net_per_trade_pct": null,
    "total_net_pct_sum": null,
@@ -2420,7 +3248,7 @@
    "t_stat": null,
    "weeks": 0,
    "weeks_positive": 0,
-   "pass_bar": "net > +0.25%/trade and beats SPY on the same capital and days",
+   "pass_bar": "judged after 8 weeks: 30+ trades, net/trade > 0 after costs with t >= 2, beats SPY on the same windows",
    "status": "no trades yet"
   },
   {
@@ -2440,7 +3268,7 @@
   {
    "setup": "X_orb15_inplay",
    "trades": 2,
-   "open_or_pending": 0,
+   "open_or_pending": 4,
    "win_rate_pct": 50.0,
    "net_per_trade_pct": -0.188,
    "total_net_pct_sum": -0.38,
@@ -2454,7 +3282,7 @@
   {
    "setup": "X_orb30_inplay",
    "trades": 0,
-   "open_or_pending": 0,
+   "open_or_pending": 3,
    "win_rate_pct": null,
    "net_per_trade_pct": null,
    "total_net_pct_sum": null,
@@ -2468,7 +3296,7 @@
   {
    "setup": "X_vwap_reclaim",
    "trades": 52,
-   "open_or_pending": 0,
+   "open_or_pending": 42,
    "win_rate_pct": 23.1,
    "net_per_trade_pct": -0.293,
    "total_net_pct_sum": -15.21,
@@ -2482,7 +3310,7 @@
   {
    "setup": "X_first_pullback",
    "trades": 10,
-   "open_or_pending": 0,
+   "open_or_pending": 12,
    "win_rate_pct": 20.0,
    "net_per_trade_pct": 0.134,
    "total_net_pct_sum": 1.34,
@@ -2492,9 +3320,95 @@
    "weeks_positive": 1,
    "pass_bar": "evidence only (no pre-registered bar)",
    "status": "evidence only"
+  },
+  {
+   "setup": "VT_voltarget_core",
+   "trades": 0,
+   "open_or_pending": 0,
+   "win_rate_pct": null,
+   "net_per_trade_pct": null,
+   "total_net_pct_sum": null,
+   "spy_same_windows_pct_sum": null,
+   "t_stat": null,
+   "weeks": 0,
+   "weeks_positive": 0,
+   "pass_bar": "set 2026-10-27, before data; judged at 8 weeks (2026-12-22) and preferably longer: daily-return volatility AND max drawdown below the real core sleeve's over the same dates, with annualized return no more than 1.5 pts/yr below the real core's. 8 weeks is far too short to judge a risk overlay: mainly an execution check (Friday rebalances on time, costs booked, no gaps)",
+   "status": "starts at the 2026-10-27 close",
+   "start_date": null,
+   "value_usd": null,
+   "comparator": null,
+   "comparator_return_pct": null,
+   "vs_comparator_pct": null,
+   "ann_return_pct": null,
+   "comparator_ann_return_pct": null,
+   "vol_ann_pct": null,
+   "comparator_vol_ann_pct": null,
+   "max_dd_pct": null,
+   "comparator_max_dd_pct": null,
+   "model_vix_abs_err_median_pct": null,
+   "model_realiv_abs_err_median_pct": null,
+   "spread_median_pct": null,
+   "fill_spread_median_pct": null
+  },
+  {
+   "setup": "C_spy_calls_8020",
+   "trades": 0,
+   "open_or_pending": 0,
+   "win_rate_pct": null,
+   "net_per_trade_pct": null,
+   "total_net_pct_sum": null,
+   "spy_same_windows_pct_sum": null,
+   "t_stat": null,
+   "weeks": 0,
+   "weeks_positive": 0,
+   "pass_bar": "set 2026-10-27, before data. KEY CHECK (model validity), judged after 8 weeks of daily marks: median |Black-Scholes(VIX) - real mid| <= 10% of mid, AND the real bid-ask spread at our buy/sell fills <= 2% of mid round trip (edge_04 assumed 2%; 4% was its stress case). If either fails, edge_04's 12.8%/yr, -14% max drawdown is treated as unreliable and the idea is re-run with the measured costs or dropped. Returns vs SPY and the real core are logged, not judged (only ~2 rolls in 8 weeks)",
+   "status": "starts at the 2026-10-27 close",
+   "start_date": null,
+   "value_usd": null,
+   "comparator": null,
+   "comparator_return_pct": null,
+   "vs_comparator_pct": null,
+   "ann_return_pct": null,
+   "comparator_ann_return_pct": null,
+   "vol_ann_pct": null,
+   "comparator_vol_ann_pct": null,
+   "max_dd_pct": null,
+   "comparator_max_dd_pct": null,
+   "model_vix_abs_err_median_pct": null,
+   "model_realiv_abs_err_median_pct": null,
+   "spread_median_pct": null,
+   "fill_spread_median_pct": null
   }
  ],
  "alerts": [
+  {
+   "date": "2026-10-27",
+   "text": "PAPER TRADE 2026-10-27 | sleeve signals | BUY 0.046333 CDNS @ $328.1640 (quote $328.0000 at 2026-10-27 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $15.20, fee $0.02 (0.10%) | beta 1.6 | Q3 beat + raised FY26 guide (rev $1.633B vs $1.61B est, adj EPS $2.11 vs $2.04; FY rev guide $6.39-6.42B from $6.26-6.34B) [company release/Benzinga]; independent analyst PT raises after print: Needham 400->430 Buy (Investing.com https://www.investing.com/news/analyst-ratings/needham-raises-cadence-design-stock-price-target-on-ai-tools-growth-93CH-4974877), JPMorgan 405->420 OW and Citi 400->420 Buy (TheFly/TipRanks https://www.tipranks.com/news/the-fly/cadence-design-price-target-raised-to-420-from-405-at-jpmorgan-thefly-news), Baird 420->440 OP; 3 independent confirmations (earnings + multiple analyst firms + +2.5% premarket); close 322.17 > 50d 318.78"
+  },
+  {
+   "date": "2026-10-27",
+   "text": "PAPER TRADE 2026-10-27 | sleeve signals | SELL 0.019865 SPY @ $766.9564 (quote $767.3400 at 2026-10-27 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $15.24, fee $0.02 (0.10%) | beta 1.0 | fund CDNS from idle SPY"
+  },
+  {
+   "date": "2026-10-27",
+   "text": "--- am run 2026-10-27 10:37 ET"
+  },
+  {
+   "date": "2026-10-27",
+   "text": "PAPER ORDER 2026-10-27 (fills at today's open) | sleeve signals | BUY CDNS $15.22 | reason: Q3 beat + raised FY26 guide (rev $1.633B vs $1.61B est, adj EPS $2.11 vs $2.04; FY rev guide $6.39-6.42B from $6.26-6.34B) [company release/Benzinga]; independent analyst PT raises after print: Needham 400->430 Buy (Investing.com https://www.investing.com/news/analyst-ratings/needham-raises-cadence-design-stock-price-target-on-ai-tools-growth-93CH-4974877), JPMorgan 405->420 OW and Citi 400->420 Buy (TheFly/TipRanks https://www.tipranks.com/news/the-fly/cadence-design-price-target-raised-to-420-from-405-at-jpmorgan-thefly-news), Baird 420->440 OP; 3 independent confirmations (earnings + multiple analyst firms + +2.5% premarket); close 322.17 > 50d 318.78"
+  },
+  {
+   "date": "2026-10-27",
+   "text": "--- buy run 2026-10-27 08:21 ET"
+  },
+  {
+   "date": "2026-10-27",
+   "text": "PAPER ORDER 2026-10-27 (fills at today's close) | sleeve earnings | BUY DE 5% of sleeve equity | reason: J4 run-up: reports 2026-11-25 (pre-market); last pre-report close 2026-11-24 is 20 trading days after today; buy today's close, sell 2026-11-24 close; 5% of sleeve"
+  },
+  {
+   "date": "2026-10-27",
+   "text": "--- premarket run 2026-10-27 08:19 ET"
+  },
   {
    "date": "2026-10-26",
    "text": "EQUITY 2026-10-26 close: total $1,007.08 vs SPY-equivalent $1,002.59 | core $401.04 (+0.26% vs SPY +0.26%), momentum $153.25 (+2.17% vs SPY +0.26%), dividend $150.39 (+0.26% vs SPY +0.26%), earnings $150.21 (+0.14% vs SPY +0.26%), signals $152.20 (+1.47% vs SPY +0.26%)"
