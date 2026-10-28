@@ -26,5 +26,6 @@ One JSON file, regenerated from the paper ledgers after each scheduled check (pr
 | `skips[]` | array | Rule-based skips, newest first: `date`, `logged_et`, `sleeve`, `ticker`, `rule`, `detail` |
 | `signals[]` | array | Last 50 logged signals, newest first: `date`, `ticker`, `signal_type`, `source`, `sources[{url}]`, `description`, `sentiment`, `prior_close`, `ret_1d`, `ret_5d`, `ret_20d` |
 | `shadow_tests[]` | array | Shadow (not-traded) setups: `setup`, `trades`, `open_or_pending`, `win_rate_pct`, `net_per_trade_pct`, `total_net_pct_sum`, `spy_same_windows_pct_sum`, `t_stat`, `weeks`, `weeks_positive`, `pass_bar`, `status` |
+| `f50_shadow[]` | array | Test F50 shadow trades (no money; v0.5.5): `tier` (F50 scored, F50x evidence only), `ticker`, `signal_date`, `status`, `entry_date`, `exit_date`, `exit_reason`, `sources`, `entry_open`, `last_close`, `exit_price`, `stop`, `target`, `notional_usd`, `net_pct`, `spy_pct`, `excess_pct`, `pnl_usd`, `pct_below_50d`. F50 rows in `shadow_tests[]` also carry `start_date`, `pnl_usd`, `spy_pnl_usd`, `avg_excess_vs_spy_pct` |
 | `alerts[]` | array | Last 150 alert lines from the last 5 alert logs, newest first: `date`, `text` |
 | `latest_reflection` | object | `date`, `markdown` (the daily end-of-day reflection) |
