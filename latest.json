@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0",
- "generated_at": "2026-10-28T16:44:21-04:00",
+ "generated_at": "2026-10-29T10:36:56-04:00",
  "as_of_date": "2026-10-28",
  "disclaimer": "Paper trading only. Not investment advice. Backtests and paper results don't promise future returns.",
  "paper_only": true,
@@ -225,7 +225,7 @@
    "invested_value": 78.25,
    "idle_spy_value": 75.71,
    "cash": 0.0,
-   "open_positions": 5,
+   "open_positions": 6,
    "realized_pnl": 0.0,
    "base_weight": 0.15,
    "experimental": true,
@@ -801,11 +801,11 @@
    "is_idle_cash_in_spy": true,
    "entry_date": "2026-10-26",
    "entry_time_et": "2026-10-26 09:30 ET (official open)",
-   "shares": 0.09803,
+   "shares": 0.077968,
    "entry_price": 763.3938,
    "last_price": 772.31,
-   "cost_basis": 74.84,
-   "market_value": 75.71,
+   "cost_basis": 59.52,
+   "market_value": 60.22,
    "unrealized_pnl": 0.76,
    "pnl_pct": 1.016,
    "stop_price": null,
@@ -1067,11 +1067,68 @@
    "reason": "J4 run-up: reports 2026-11-25 (pre-market); last pre-report close 2026-11-24 is 20 trading days after today; buy today's close, sell 2026-11-24 close; 5% of sleeve",
    "beta60": 0.04,
    "corr60": 0.01
+  },
+  {
+   "ticker": "MSFT",
+   "sleeve": "signals",
+   "lot_id": "sig-MSFT-2026-10-29",
+   "status": "open",
+   "is_idle_cash_in_spy": false,
+   "entry_date": "2026-10-29",
+   "entry_time_et": "2026-10-29 09:30 ET (official open)",
+   "shares": 0.028465,
+   "entry_price": 541.0156,
+   "last_price": 540.205,
+   "cost_basis": 15.4,
+   "market_value": 15.38,
+   "unrealized_pnl": null,
+   "pnl_pct": null,
+   "stop_price": 497.2371,
+   "target_price": 648.5701,
+   "exit_by_date": "2026-11-27",
+   "report_date": null,
+   "signal_type": "signal (v0.3-v0.4.1 rules)",
+   "signal_link": "https://www.streetinsider.com/Analyst+Comments/Microsoft+%28MSFT%29+PT+Raised+to+%24650+at+Piper+Sandler/27251091.html",
+   "reason": "FQ1 beat: adj EPS 4.89 vs 4.73, rev 92.28B vs 90.69B, Azure +48% cc, guide 49-50% (CNBC https://www.cnbc.com/2026/10/29/stocks-making-the-biggest-moves-premarket-.html). Independent post-print analyst PT raises: Piper Sandler 610->650 OW (StreetInsider link), Wells Fargo 725->750 OW (https://www.investing.com/news/analyst-ratings/wells-fargo-raises-microsoft-stock-price-target-to-750-on-ai-growth-93CH-4982350), Citi 636->680 Buy (https://www.tipranks.com/news/the-fly/microsoft-price-target-raised-to-680-from-636-at-citi-thefly-news), BMO 600->610 (https://www.investing.com/news/analyst-ratings/bmo-capital-raises-microsoft-stock-price-target-on-azure-growth-93CH-4982277). Premarket +2-3%. Prior close 531.82 > 50d 510.32. No clearly negative news. 3+ independent confirmations (earnings + multiple analyst firms).",
+   "beta60": 1.35,
+   "corr60": 0.58
   }
  ],
  "closed_trades": [],
  "todays_fills": [],
  "recent_fills": [
+  {
+   "date": "2026-10-29",
+   "time_et": "2026-10-29 09:30 ET (official open)",
+   "sleeve": "signals",
+   "ticker": "MSFT",
+   "side": "buy",
+   "shares": 0.028465,
+   "quote_price": 540.205,
+   "fill_price": 540.4751,
+   "notional": 15.38,
+   "fee": 0.0154,
+   "price_source": "Yahoo Finance chart endpoint, 1d bar open",
+   "reason": "FQ1 beat: adj EPS 4.89 vs 4.73, rev 92.28B vs 90.69B, Azure +48% cc, guide 49-50% (CNBC https://www.cnbc.com/2026/10/29/stocks-making-the-biggest-moves-premarket-.html). Independent post-print analyst PT raises: Piper Sandler 610->650 OW (StreetInsider link), Wells Fargo 725->750 OW (https://www.investing.com/news/analyst-ratings/wells-fargo-raises-microsoft-stock-price-target-to-750-on-ai-growth-93CH-4982350), Citi 636->680 Buy (https://www.tipranks.com/news/the-fly/microsoft-price-target-raised-to-680-from-636-at-citi-thefly-news), BMO 600->610 (https://www.investing.com/news/analyst-ratings/bmo-capital-raises-microsoft-stock-price-target-on-azure-growth-93CH-4982277). Premarket +2-3%. Prior close 531.82 > 50d 510.32. No clearly negative news. 3+ independent confirmations (earnings + multiple analyst firms).",
+   "beta60": 1.35,
+   "corr60": 0.58
+  },
+  {
+   "date": "2026-10-29",
+   "time_et": "2026-10-29 09:30 ET (official open)",
+   "sleeve": "signals",
+   "ticker": "SPY",
+   "side": "sell",
+   "shares": 0.020062,
+   "quote_price": 768.79,
+   "fill_price": 768.4056,
+   "notional": 15.42,
+   "fee": 0.0154,
+   "price_source": "Yahoo Finance chart endpoint, 1d bar open",
+   "reason": "fund MSFT from idle SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
+  },
   {
    "date": "2026-10-27",
    "time_et": "2026-10-27 16:00 ET (daily close)",
@@ -1761,7 +1818,7 @@
    "corr60": 0.34
   }
  ],
- "last_fill_date": "2026-10-27",
+ "last_fill_date": "2026-10-29",
  "pending_orders": [],
  "skips": [
   {
@@ -1775,6 +1832,358 @@
  ],
  "signals": [
   {
+   "date": "2026-10-29",
+   "ticker": "TTMI",
+   "signal_type": "insider_buy",
+   "source": "openinsider",
+   "sources": [
+    {
+     "url": "http://openinsider.com/latest-ceo-cfo-purchases-25k"
+    }
+   ],
+   "description": "CEO/CFO open-market buys ~$2.69M, Form 4; below 50d; 1 source; no buy",
+   "sentiment": "positive",
+   "prior_close": 90.79,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 5.11,
+   "corr60": 0.5,
+   "beta_asof": "2026-10-28"
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "ACN",
+   "signal_type": "insider_buy",
+   "source": "openinsider",
+   "sources": [
+    {
+     "url": "http://openinsider.com/latest-ceo-cfo-purchases-25k"
+    }
+   ],
+   "description": "CEO/CFO open-market buys ~$6.4M (Price/Sweet), Form 4 filed 10-28; above 50d; 1 source; no buy",
+   "sentiment": "positive",
+   "prior_close": 243.4,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.11,
+   "corr60": 0.02,
+   "beta_asof": "2026-10-28"
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "CROX",
+   "signal_type": "earnings",
+   "source": "CNBC",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/29/stocks-making-the-biggest-moves-premarket-.html"
+    }
+   ],
+   "description": "Q3 EPS 3.69 vs 3.31, rev 1.04B vs 1.00B, strong Q4 guide; +18% premarket; 1 source (company); no buy",
+   "sentiment": "positive",
+   "prior_close": 119.69,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.29,
+   "corr60": 0.33,
+   "beta_asof": "2026-10-28"
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "KO",
+   "signal_type": "pair",
+   "source": "pairs_watchlist",
+   "sources": [],
+   "description": "KO/KDP z -2.20 stretched (shadow only)",
+   "sentiment": "positive",
+   "prior_close": 91.73,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": -0.38,
+   "corr60": -0.21,
+   "beta_asof": "2026-10-28"
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "SHW",
+   "signal_type": "pair",
+   "source": "pairs_watchlist",
+   "sources": [],
+   "description": "SHW/PPG z -5.27 stretched further (shadow only)",
+   "sentiment": "positive",
+   "prior_close": 320.8,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.52,
+   "corr60": 0.2,
+   "beta_asof": "2026-10-28"
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "CMG",
+   "signal_type": "earnings",
+   "source": "CNBC",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/29/stocks-making-the-biggest-moves-premarket-.html"
+    }
+   ],
+   "description": "Comps +2.1% vs 1.5% est; +8% premarket; 1 source; below 50d (F50x shadow)",
+   "sentiment": "positive",
+   "prior_close": 28.73,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": -0.32,
+   "corr60": -0.08,
+   "beta_asof": "2026-10-28"
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "CVNA",
+   "signal_type": "earnings",
+   "source": "StockTitan",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/29/stocks-making-the-biggest-moves-premarket-.html"
+    }
+   ],
+   "description": "Q3 revenue and adj EBITDA beat; SEC closed investigation with no action; +8% premarket; 1 source (company); below 50d (F50x shadow)",
+   "sentiment": "positive",
+   "prior_close": 59.05,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 2.16,
+   "corr60": 0.39,
+   "beta_asof": "2026-10-28"
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "CAT",
+   "signal_type": "earnings",
+   "source": "CNBC",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/29/stocks-making-the-biggest-moves-premarket-.html"
+    }
+   ],
+   "description": "Beat EPS 7.20 vs 7.08 but construction sales light; -9% premarket",
+   "sentiment": "negative",
+   "prior_close": 713.38,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.66,
+   "corr60": 0.5,
+   "beta_asof": "2026-10-28"
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "FTNT",
+   "signal_type": "earnings",
+   "source": "CNBC",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/29/stocks-making-the-biggest-moves-premarket-.html"
+    }
+   ],
+   "description": "Non-GAAP gross margin 79.6% vs 80.1% (top/bottom line beat); -25.5% premarket",
+   "sentiment": "negative",
+   "prior_close": 174.08,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.27,
+   "corr60": 0.25,
+   "beta_asof": "2026-10-28"
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "NOW",
+   "signal_type": "earnings",
+   "source": "CNBC",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/29/stocks-making-the-biggest-moves-premarket-.html"
+    }
+   ],
+   "description": "Q3 adj EPS 1.00 vs 1.02 miss; Q4 sub rev guide 4.245-4.255B vs 4.25B; -20% premarket; retail mentions 17.8x",
+   "sentiment": "negative",
+   "prior_close": 150.13,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.19,
+   "corr60": 0.22,
+   "beta_asof": "2026-10-28"
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "META",
+   "signal_type": "sympathy",
+   "source": "CNBC (GOOGL miss)",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/29/stocks-making-the-biggest-moves-premarket-.html"
+    }
+   ],
+   "description": "Ad-peer sympathy to GOOGL -11% on search miss (tracking only)",
+   "sentiment": "negative",
+   "prior_close": 612.49,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.96,
+   "corr60": 0.41,
+   "beta_asof": "2026-10-28"
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "GOOGL",
+   "signal_type": "earnings",
+   "source": "CNBC",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/29/stocks-making-the-biggest-moves-premarket-.html"
+    }
+   ],
+   "description": "Q3 miss: search rev 63.35B vs 64.96B, FCF -9.07B; -11% premarket; dragging software",
+   "sentiment": "negative",
+   "prior_close": 324.89,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.3,
+   "corr60": 0.51,
+   "beta_asof": "2026-10-28"
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "MRVL",
+   "signal_type": "news",
+   "source": "CNBC/Bloomberg report",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/29/stocks-making-the-biggest-moves-premarket-.html"
+    }
+   ],
+   "description": "Acquirer in reported LITE talks; -11% premarket; momentum holding",
+   "sentiment": "negative",
+   "prior_close": 251.65,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 3.19,
+   "corr60": 0.45,
+   "beta_asof": "2026-10-28"
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "LITE",
+   "signal_type": "news",
+   "source": "CNBC/Bloomberg report",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/29/stocks-making-the-biggest-moves-premarket-.html"
+    }
+   ],
+   "description": "Bloomberg: Marvell in talks to acquire Lumentum, deal possibly next week; +5% premarket; 1 source (one report); momentum holding; below 50d",
+   "sentiment": "positive",
+   "prior_close": 913.95,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 2.87,
+   "corr60": 0.3,
+   "beta_asof": "2026-10-28"
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "SHEL",
+   "signal_type": "earnings",
+   "source": "Investing.com",
+   "sources": [
+    {
+     "url": "https://www.investing.com/news/earnings/shell-adr-earnings-beat-by-047-revenue-topped-estimates-4981727"
+    }
+   ],
+   "description": "Q3 beat (EPS 3.83 vs 3.36) + $5B buyback; +4% premarket; 1 source (company); no buy",
+   "sentiment": "positive",
+   "prior_close": 105.19,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": -0.92,
+   "corr60": -0.41,
+   "beta_asof": "2026-10-28"
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "NCLH",
+   "signal_type": "earnings",
+   "source": "Investing.com",
+   "sources": [
+    {
+     "url": "https://www.investing.com/news/earnings/norwegian-cruise-line-stock-jumps-on-earnings-beat-4982613"
+    }
+   ],
+   "description": "Q3 beat (EPS 1.12 vs 0.93-0.94), FY26 EPS guide 1.70 vs 1.55; +5-13% premarket; 1 source (company); no buy",
+   "sentiment": "positive",
+   "prior_close": 16.06,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.93,
+   "corr60": 0.49,
+   "beta_asof": "2026-10-28"
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "LLY",
+   "signal_type": "earnings",
+   "source": "CNBC",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/10/29/stocks-making-the-biggest-moves-premarket-.html"
+    }
+   ],
+   "description": "Q3 big beat (EPS 7.48 vs 6.26, rev 24.4B vs 22.61B); +4% premarket; only post-print analyst action is Barclays maintain $1400; 1 source; no buy",
+   "sentiment": "positive",
+   "prior_close": 1288.3,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": -0.02,
+   "corr60": -0.01,
+   "beta_asof": "2026-10-28"
+  },
+  {
+   "date": "2026-10-29",
+   "ticker": "MSFT",
+   "signal_type": "earnings",
+   "source": "CNBC + Piper/Wells/Citi/BMO PT raises",
+   "sources": [
+    {
+     "url": "https://www.streetinsider.com/Analyst+Comments/Microsoft+%28MSFT%29+PT+Raised+to+%24650+at+Piper+Sandler/27251091.html"
+    }
+   ],
+   "description": "FQ1 beat (EPS 4.89 vs 4.73, Azure +48%, guide 49-50%); 4+ post-print PT raises; 3+ independent sources; signals BUY queued",
+   "sentiment": "positive",
+   "prior_close": 531.01,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.35,
+   "corr60": 0.58,
+   "beta_asof": "2026-10-28"
+  },
+  {
    "date": "2026-10-28",
    "ticker": "THRM",
    "signal_type": "insider_buy",
@@ -1787,7 +2196,7 @@
    "description": "CEO/CFO buy $1.3M (context only)",
    "sentiment": "positive",
    "prior_close": 31.82,
-   "ret_1d": null,
+   "ret_1d": 0.042,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.66,
@@ -1807,7 +2216,7 @@
    "description": "Cluster: 3 insiders $5.08M incl CEO/CFO (context only)",
    "sentiment": "positive",
    "prior_close": 15.76,
-   "ret_1d": null,
+   "ret_1d": 0.027,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.49,
@@ -1827,7 +2236,7 @@
    "description": "Cluster: 5 insiders $922K incl CEO/CFO (context only)",
    "sentiment": "positive",
    "prior_close": 43.48,
-   "ret_1d": null,
+   "ret_1d": 0.019,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.05,
@@ -1847,7 +2256,7 @@
    "description": "Slides premarket after results",
    "sentiment": "negative",
    "prior_close": 253.5,
-   "ret_1d": null,
+   "ret_1d": -0.007,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.56,
@@ -1867,7 +2276,7 @@
    "description": "Profit miss, crypto rev -55%; -7%; mentions 9.3x",
    "sentiment": "negative",
    "prior_close": 94.56,
-   "ret_1d": null,
+   "ret_1d": -0.033,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 4.1,
@@ -1887,7 +2296,7 @@
    "description": "Q3 miss, weak Q4 guide; -18% premarket",
    "sentiment": "negative",
    "prior_close": 29.76,
-   "ret_1d": null,
+   "ret_1d": -0.16,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 2.37,
@@ -1907,7 +2316,7 @@
    "description": "SHW/PPG z -3.83 stretched after PPG beat (shadow only)",
    "sentiment": "positive",
    "prior_close": 326.01,
-   "ret_1d": null,
+   "ret_1d": -0.016,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.86,
@@ -1927,7 +2336,7 @@
    "description": "SK hynix record Q3 + special dividend; MU +3.5% premarket",
    "sentiment": "positive",
    "prior_close": 928.76,
-   "ret_1d": null,
+   "ret_1d": 0.059,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 2.06,
@@ -1947,7 +2356,7 @@
    "description": "Q3 beat, FY26 guide raised; below 50d",
    "sentiment": "positive",
    "prior_close": 16.4,
-   "ret_1d": null,
+   "ret_1d": 0.045,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 2.94,
@@ -1967,7 +2376,7 @@
    "description": "Q3 beat, +15% premarket; below 50d",
    "sentiment": "positive",
    "prior_close": 51.48,
-   "ret_1d": null,
+   "ret_1d": 0.086,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 2.83,
@@ -1987,7 +2396,7 @@
    "description": "Trench ~$9B acquisition, FY rev raised to $47B; below 50d",
    "sentiment": "positive",
    "prior_close": 895.08,
-   "ret_1d": null,
+   "ret_1d": -0.019,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.92,
@@ -2007,7 +2416,7 @@
    "description": "Beat & raise, Baird PT 1350; but -7% after hours; momentum holding; below 50d",
    "sentiment": "mixed",
    "prior_close": 667.85,
-   "ret_1d": null,
+   "ret_1d": 0.045,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.13,
@@ -2027,7 +2436,7 @@
    "description": "Record Q3 EPS 2.25 vs 2.13, guide midpoint raised; +6% premarket; MS Hold $120; single source, no buy",
    "sentiment": "positive",
    "prior_close": 113.44,
-   "ret_1d": null,
+   "ret_1d": 0.044,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.87,
@@ -2047,7 +2456,7 @@
    "description": "Q3 beat (EPS 2.21 vs 1.82), orders >2x, FY26 guide raised; +15% premarket; below 50d, no buy",
    "sentiment": "positive",
    "prior_close": 208.56,
-   "ret_1d": null,
+   "ret_1d": 0.165,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 2.97,
@@ -2409,373 +2818,13 @@
    "beta60": 3.35,
    "corr60": 0.51,
    "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-27",
-   "ticker": "RCL",
-   "signal_type": "earnings",
-   "source": "web",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/10/27/stocks-making-the-biggest-moves-premarket-pypl-glw-ups-ko.html"
-    }
-   ],
-   "description": "Q3 beat, raised FY EPS guide; +4.4% premarket; Barclays PT cut 358->342 (mixed); 1 positive source; no buy",
-   "sentiment": "positive",
-   "prior_close": 280.6,
-   "ret_1d": 0.055,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.15,
-   "corr60": 0.34,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-27",
-   "ticker": "UPS",
-   "signal_type": "earnings",
-   "source": "web",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/10/27/stocks-making-the-biggest-moves-premarket-pypl-glw-ups-ko.html"
-    }
-   ],
-   "description": "Q3 beat, raised 2026 guide; +1.6% premarket; 1 source (no analyst raise today; recent PT cuts); no buy",
-   "sentiment": "positive",
-   "prior_close": 100.32,
-   "ret_1d": 0.058,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.37,
-   "corr60": 0.16,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-27",
-   "ticker": "AVGO",
-   "signal_type": "analyst_upgrade",
-   "source": "web",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/stock-market-news/broadcom-da-davidson-upgrades-avgo-says-anthropic-s1-shows-ai-cycle-isnt-over-4975085"
-    }
-   ],
-   "description": "DA Davidson upgrade to Buy PT 350->400 + Anthropic S-1/WSJ financing disclosure; 2 sources; NO BUY: close 329.17 < 50d 355.48",
-   "sentiment": "positive",
-   "prior_close": 329.17,
-   "ret_1d": 0.04,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 2.08,
-   "corr60": 0.58,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-27",
-   "ticker": "CLS",
-   "signal_type": "earnings",
-   "source": "web",
-   "sources": [
-    {
-     "url": "https://corporate.celestica.com/news-releases/news-release-details/celestica-announces-third-quarter-2026-financial-results-and"
-    }
-   ],
-   "description": "Q3 beat, raised 2026/2027 outlook; Bernstein Buy $520 reiterated; +12-17% premarket, ApeWisdom 7.2x; 3 independent sources; NO BUY: close 246.65 < 50d 327.15",
-   "sentiment": "positive",
-   "prior_close": 246.65,
-   "ret_1d": 0.121,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 3.77,
-   "corr60": 0.52,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-27",
-   "ticker": "CDNS",
-   "signal_type": "earnings",
-   "source": "web",
-   "sources": [
-    {
-     "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/10/62614100/cadence-design-analysts-boost-their-forecasts-following-upbeat-q3-earnings"
-    }
-   ],
-   "description": "Q3 beat + FY26 guide raised; PT raises Needham/JPM/Citi/Baird; +2.5% premarket; 3 independent sources; close>50d; signals-sleeve buy queued (open)",
-   "sentiment": "positive",
-   "prior_close": 322.17,
-   "ret_1d": 0.065,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.55,
-   "corr60": 0.42,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-26",
-   "ticker": "XP",
-   "signal_type": "news",
-   "source": "x.com",
-   "sources": [
-    {
-     "url": "https://x.com/search?q=XP%20STNE%20Brazil"
-    }
-   ],
-   "description": "Brazil ADR crash premarket (~-47% reported); verify",
-   "sentiment": "negative",
-   "prior_close": 30.41,
-   "ret_1d": -0.484,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.98,
-   "corr60": 0.27,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-26",
-   "ticker": "NU",
-   "signal_type": "retail_chatter",
-   "source": "apewisdom.io",
-   "sources": [
-    {
-     "url": "https://apewisdom.io/"
-    }
-   ],
-   "description": "Reddit mentions 1->41 amid Brazil ADR selloff (chatter only)",
-   "sentiment": "neutral",
-   "prior_close": 15.16,
-   "ret_1d": -0.17,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.97,
-   "corr60": 0.38,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-26",
-   "ticker": "FRNM",
-   "signal_type": "short_avoid",
-   "source": "www.finra.org",
-   "sources": [
-    {
-     "url": "https://www.finra.org/finra-data/browse-catalog/equity-short-interest"
-    }
-   ],
-   "description": "SI 38.2%, +100% (avoid flag)",
-   "sentiment": "negative",
-   "prior_close": 12.77,
-   "ret_1d": -0.004,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.82,
-   "corr60": 0.25,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-26",
-   "ticker": "SLXN",
-   "signal_type": "short_avoid",
-   "source": "www.finra.org",
-   "sources": [
-    {
-     "url": "https://www.finra.org/finra-data/browse-catalog/equity-short-interest"
-    }
-   ],
-   "description": "SI 88.6% of float, rising (avoid flag)",
-   "sentiment": "negative",
-   "prior_close": 0.19,
-   "ret_1d": -0.079,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 3.28,
-   "corr60": 0.17,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-26",
-   "ticker": "BKYI",
-   "signal_type": "short_avoid",
-   "source": "www.finra.org",
-   "sources": [
-    {
-     "url": "https://www.finra.org/finra-data/browse-catalog/equity-short-interest"
-    }
-   ],
-   "description": "SI 91.7% of float, rising (avoid flag)",
-   "sentiment": "negative",
-   "prior_close": 3.39,
-   "ret_1d": -0.159,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": -3.55,
-   "corr60": -0.14,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-26",
-   "ticker": "CHCO",
-   "signal_type": "insider_buy",
-   "source": "openinsider.com",
-   "sources": [
-    {
-     "url": "http://openinsider.com/latest-cluster-buys"
-    }
-   ],
-   "description": "Cluster: 4 insiders $136K (context only)",
-   "sentiment": "positive",
-   "prior_close": 142.01,
-   "ret_1d": 0.006,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": -0.07,
-   "corr60": -0.06,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-26",
-   "ticker": "RAPP",
-   "signal_type": "insider_buy",
-   "source": "openinsider.com",
-   "sources": [
-    {
-     "url": "http://openinsider.com/latest-cluster-buys"
-    }
-   ],
-   "description": "Cluster: 5 insiders $3.04M (context only)",
-   "sentiment": "positive",
-   "prior_close": 25.93,
-   "ret_1d": -0.023,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.64,
-   "corr60": 0.1,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-26",
-   "ticker": "FND",
-   "signal_type": "analyst_downgrade",
-   "source": "web",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/10/26/monday-biggest-wall-street-analyst-calls-like-tesla.html"
-    }
-   ],
-   "description": "Stifel downgrade to Hold",
-   "sentiment": "negative",
-   "prior_close": 47.83,
-   "ret_1d": -0.009,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.48,
-   "corr60": 0.35,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-26",
-   "ticker": "XYZ",
-   "signal_type": "analyst_downgrade",
-   "source": "web",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/10/26/monday-biggest-wall-street-analyst-calls-like-tesla.html"
-    }
-   ],
-   "description": "Morgan Stanley downgrade to EW PT 80",
-   "sentiment": "negative",
-   "prior_close": 76.46,
-   "ret_1d": -0.025,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.98,
-   "corr60": 0.56,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-26",
-   "ticker": "FICO",
-   "signal_type": "analyst_downgrade",
-   "source": "web",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/10/26/monday-biggest-wall-street-analyst-calls-like-tesla.html"
-    }
-   ],
-   "description": "Wells Fargo downgrade to EW PT 735, -10% premarket",
-   "sentiment": "negative",
-   "prior_close": 815.31,
-   "ret_1d": -0.132,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.64,
-   "corr60": 0.08,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-26",
-   "ticker": "IREN",
-   "signal_type": "sympathy",
-   "source": "web",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/10/26/stocks-making-the-biggest-moves-premarket-vz-tsla-mrna-more.html"
-    }
-   ],
-   "description": "Neocloud peer, -4% premarket",
-   "sentiment": "negative",
-   "prior_close": 24.91,
-   "ret_1d": 0.021,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 3.91,
-   "corr60": 0.5,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-26",
-   "ticker": "NBIS",
-   "signal_type": "sympathy",
-   "source": "web",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/10/26/stocks-making-the-biggest-moves-premarket-vz-tsla-mrna-more.html"
-    }
-   ],
-   "description": "Neocloud peer, -3.5% premarket; retail mentions 4->64",
-   "sentiment": "negative",
-   "prior_close": 158.74,
-   "ret_1d": -0.035,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 4.35,
-   "corr60": 0.42,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-26",
-   "ticker": "CRWV",
-   "signal_type": "news",
-   "source": "web",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/10/26/stocks-making-the-biggest-moves-premarket-vz-tsla-mrna-more.html"
-    }
-   ],
-   "description": "Musk neocloud post, -5% premarket; retail mentions 3->47",
-   "sentiment": "negative",
-   "prior_close": 54.24,
-   "ret_1d": 0.018,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 4.69,
-   "corr60": 0.51,
-   "beta_asof": "2026-10-23"
   }
  ],
  "shadow_tests": [
   {
    "setup": "A_gap_and_go",
    "trades": 1,
-   "open_or_pending": 0,
+   "open_or_pending": 1,
    "win_rate_pct": 0.0,
    "net_per_trade_pct": -0.228,
    "total_net_pct_sum": -0.23,
@@ -2788,13 +2837,13 @@
   },
   {
    "setup": "B_rsi2_swing",
-   "trades": 3,
+   "trades": 4,
    "open_or_pending": 4,
    "win_rate_pct": 100.0,
-   "net_per_trade_pct": 1.814,
-   "total_net_pct_sum": 5.44,
-   "spy_same_windows_pct_sum": 2.53,
-   "t_stat": 2.9,
+   "net_per_trade_pct": 1.664,
+   "total_net_pct_sum": 6.66,
+   "spy_same_windows_pct_sum": 2.72,
+   "t_stat": 3.56,
    "weeks": 1,
    "weeks_positive": 1,
    "pass_bar": "net > +0.25%/trade and beats SPY on the same capital and days",
@@ -2831,7 +2880,7 @@
   {
    "setup": "X_orb15_inplay",
    "trades": 9,
-   "open_or_pending": 0,
+   "open_or_pending": 5,
    "win_rate_pct": 55.6,
    "net_per_trade_pct": 0.071,
    "total_net_pct_sum": 0.64,
@@ -2845,7 +2894,7 @@
   {
    "setup": "X_orb30_inplay",
    "trades": 9,
-   "open_or_pending": 0,
+   "open_or_pending": 4,
    "win_rate_pct": 44.4,
    "net_per_trade_pct": 0.029,
    "total_net_pct_sum": 0.26,
@@ -2859,7 +2908,7 @@
   {
    "setup": "X_vwap_reclaim",
    "trades": 214,
-   "open_or_pending": 0,
+   "open_or_pending": 31,
    "win_rate_pct": 32.2,
    "net_per_trade_pct": -0.142,
    "total_net_pct_sum": -30.43,
@@ -2873,7 +2922,7 @@
   {
    "setup": "X_first_pullback",
    "trades": 42,
-   "open_or_pending": 0,
+   "open_or_pending": 14,
    "win_rate_pct": 40.5,
    "net_per_trade_pct": 0.235,
    "total_net_pct_sum": 9.88,
@@ -2954,16 +3003,16 @@
    "weeks": 0,
    "weeks_positive": 0,
    "pass_bar": "set 2026-10-28 before data: after ~30 closed trades, avg net excess vs SPY > 0, still > 0 without the best trade, and >= the real Signals sleeve's avg excess (relaxing the filter must beat what it avoided). Reviewed at the Nov 6 evaluation; a pass only lets the owner consider relaxing the 50-day rule",
-   "status": "under 30 closed trades (0); not judged yet. Open 3: avg excess +7.36% vs SPY, P&L $+3.58 (marked)",
+   "status": "under 30 closed trades (0); not judged yet. Open 3: avg excess +5.79% vs SPY, P&L $+2.73 (marked)",
    "start_date": "2026-10-26",
-   "pnl_usd": 3.58,
-   "spy_pnl_usd": 0.22,
-   "avg_excess_vs_spy_pct": 7.355
+   "pnl_usd": 2.73,
+   "spy_pnl_usd": 0.07,
+   "avg_excess_vs_spy_pct": 5.794
   },
   {
    "setup": "F50x_single_source_below50d",
    "trades": 0,
-   "open_or_pending": 11,
+   "open_or_pending": 15,
    "win_rate_pct": null,
    "net_per_trade_pct": null,
    "total_net_pct_sum": null,
@@ -2972,11 +3021,11 @@
    "weeks": 0,
    "weeks_positive": 0,
    "pass_bar": "evidence only (also fails the 2-confirmation rule; never judged)",
-   "status": "evidence only. Open 11: avg excess -0.29% vs SPY, P&L $+0.67 (marked)",
+   "status": "evidence only. Open 15: avg excess +1.50% vs SPY, P&L $+4.20 (marked)",
    "start_date": "2026-10-26",
-   "pnl_usd": 0.67,
-   "spy_pnl_usd": 1.16,
-   "avg_excess_vs_spy_pct": -0.29
+   "pnl_usd": 4.2,
+   "spy_pnl_usd": 0.69,
+   "avg_excess_vs_spy_pct": 1.503
   },
   {
    "setup": "IL_orb5",
@@ -4103,18 +4152,18 @@
    "status": "open",
    "entry_date": "2026-10-26",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-28 close",
+   "exit_reason": "open: marked at 2026-10-29 close (intraday, provisional)",
    "sources": "Barclays upgrade to Overweight PT 25",
    "entry_open": 17.68,
-   "last_close": 17.19,
+   "last_close": 17.88,
    "exit_price": null,
    "stop": 16.274,
    "target": 21.227,
    "notional_usd": 15.0,
-   "net_pct": -3.371,
-   "spy_pct": 1.32,
-   "excess_pct": -4.691,
-   "pnl_usd": -0.51,
+   "net_pct": 0.531,
+   "spy_pct": 1.019,
+   "excess_pct": -0.488,
+   "pnl_usd": 0.08,
    "pct_below_50d": -26.05
   },
   {
@@ -4124,18 +4173,18 @@
    "status": "open",
    "entry_date": "2026-10-26",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-28 close",
+   "exit_reason": "open: marked at 2026-10-29 close (intraday, provisional)",
    "sources": "UBS upgrade to Buy PT 315 (+6.5% premarket is the reaction to the same upgrade)",
    "entry_open": 235.15,
-   "last_close": 227.98,
+   "last_close": 231.1,
    "exit_price": null,
    "stop": 216.446,
    "target": 282.321,
    "notional_usd": 15.0,
-   "net_pct": -3.449,
-   "spy_pct": 1.32,
-   "excess_pct": -4.769,
-   "pnl_usd": -0.52,
+   "net_pct": -2.122,
+   "spy_pct": 1.019,
+   "excess_pct": -3.142,
+   "pnl_usd": -0.32,
    "pct_below_50d": -1.05
   },
   {
@@ -4145,18 +4194,18 @@
    "status": "open",
    "entry_date": "2026-10-26",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-28 close",
+   "exit_reason": "open: marked at 2026-10-29 close (intraday, provisional)",
    "sources": "Q3 beat + raised FY26 EPS guide (company report only)",
    "entry_open": 43.49,
-   "last_close": 43.18,
+   "last_close": 44.088,
    "exit_price": null,
    "stop": 40.031,
    "target": 52.214,
    "notional_usd": 15.0,
-   "net_pct": -1.053,
-   "spy_pct": 1.32,
-   "excess_pct": -2.373,
-   "pnl_usd": -0.16,
+   "net_pct": 1.035,
+   "spy_pct": 1.019,
+   "excess_pct": 0.016,
+   "pnl_usd": 0.16,
    "pct_below_50d": -6.07
   },
   {
@@ -4166,18 +4215,18 @@
    "status": "open",
    "entry_date": "2026-10-27",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-28 close",
+   "exit_reason": "open: marked at 2026-10-29 close (intraday, provisional)",
    "sources": "DA Davidson upgrade to Buy PT 350->400; Anthropic S-1 / WSJ financing disclosure (different outlet and kind)",
    "entry_open": 339.87,
-   "last_close": 351.81,
+   "last_close": 343.26,
    "exit_price": null,
    "stop": 312.837,
    "target": 408.048,
    "notional_usd": 15.22,
-   "net_pct": 3.173,
-   "spy_pct": 0.648,
-   "excess_pct": 2.525,
-   "pnl_usd": 0.48,
+   "net_pct": 0.657,
+   "spy_pct": 0.349,
+   "excess_pct": 0.308,
+   "pnl_usd": 0.1,
    "pct_below_50d": -7.4
   },
   {
@@ -4187,18 +4236,18 @@
    "status": "open",
    "entry_date": "2026-10-27",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-28 close",
+   "exit_reason": "open: marked at 2026-10-29 close (intraday, provisional)",
    "sources": "Q3 beat + raised 2026/2027 outlook; Bernstein Buy $520 reiterated; ApeWisdom retail mentions 7.2x",
    "entry_open": 264.31,
-   "last_close": 299.8,
+   "last_close": 286.43,
    "exit_price": null,
    "stop": 243.287,
    "target": 317.331,
    "notional_usd": 15.22,
-   "net_pct": 13.027,
-   "spy_pct": 0.648,
-   "excess_pct": 12.38,
-   "pnl_usd": 1.98,
+   "net_pct": 7.969,
+   "spy_pct": 0.349,
+   "excess_pct": 7.62,
+   "pnl_usd": 1.21,
    "pct_below_50d": -24.61
   },
   {
@@ -4208,18 +4257,18 @@
    "status": "open",
    "entry_date": "2026-10-27",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-28 close",
+   "exit_reason": "open: marked at 2026-10-29 close (intraday, provisional)",
    "sources": "Q3 beat (company report)",
    "entry_open": 128.11,
-   "last_close": 131.2,
+   "last_close": 132.015,
    "exit_price": null,
    "stop": 117.92,
    "target": 153.809,
    "notional_usd": 15.22,
-   "net_pct": 2.072,
-   "spy_pct": 0.648,
-   "excess_pct": 1.424,
-   "pnl_usd": 0.32,
+   "net_pct": 2.708,
+   "spy_pct": 0.349,
+   "excess_pct": 2.359,
+   "pnl_usd": 0.41,
    "pct_below_50d": -15.09
   },
   {
@@ -4229,18 +4278,18 @@
    "status": "open",
    "entry_date": "2026-10-27",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-28 close",
+   "exit_reason": "open: marked at 2026-10-29 close (intraday, provisional)",
    "sources": "Wolfe upgrade",
    "entry_open": 54.21,
-   "last_close": 54.25,
+   "last_close": 56.88,
    "exit_price": null,
    "stop": 49.898,
    "target": 65.085,
    "notional_usd": 15.22,
-   "net_pct": -0.526,
-   "spy_pct": 0.648,
-   "excess_pct": -1.174,
-   "pnl_usd": -0.08,
+   "net_pct": 4.325,
+   "spy_pct": 0.349,
+   "excess_pct": 3.976,
+   "pnl_usd": 0.66,
    "pct_below_50d": -6.33
   },
   {
@@ -4250,18 +4299,18 @@
    "status": "open",
    "entry_date": "2026-10-27",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-28 close",
+   "exit_reason": "open: marked at 2026-10-29 close (intraday, provisional)",
    "sources": "Citi upgrade",
    "entry_open": 1703.28,
-   "last_close": 1673.09,
+   "last_close": 1654.93,
    "exit_price": null,
    "stop": 1567.801,
    "target": 2044.958,
    "notional_usd": 15.22,
-   "net_pct": -2.112,
-   "spy_pct": 0.648,
-   "excess_pct": -2.76,
-   "pnl_usd": -0.32,
+   "net_pct": -3.179,
+   "spy_pct": 0.349,
+   "excess_pct": -3.528,
+   "pnl_usd": -0.48,
    "pct_below_50d": -10.08
   },
   {
@@ -4271,18 +4320,18 @@
    "status": "open",
    "entry_date": "2026-10-27",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-28 close",
+   "exit_reason": "open: marked at 2026-10-29 close (intraday, provisional)",
    "sources": "Raymond James upgrade",
    "entry_open": 251.27,
-   "last_close": 260.92,
+   "last_close": 255.567,
    "exit_price": null,
    "stop": 231.284,
    "target": 301.675,
    "notional_usd": 15.22,
-   "net_pct": 3.44,
-   "spy_pct": 0.648,
-   "excess_pct": 2.793,
-   "pnl_usd": 0.52,
+   "net_pct": 1.31,
+   "spy_pct": 0.349,
+   "excess_pct": 0.961,
+   "pnl_usd": 0.2,
    "pct_below_50d": -12.68
   },
   {
@@ -4292,18 +4341,18 @@
    "status": "open",
    "entry_date": "2026-10-27",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-28 close",
+   "exit_reason": "open: marked at 2026-10-29 close (intraday, provisional)",
    "sources": "Q3 beat, raised 2026 guide, 2027 targets (company report; +7-11% premarket is the reaction)",
    "entry_open": 15.98,
-   "last_close": 17.14,
+   "last_close": 17.44,
    "exit_price": null,
    "stop": 14.709,
    "target": 19.186,
    "notional_usd": 15.22,
-   "net_pct": 6.859,
-   "spy_pct": 0.648,
-   "excess_pct": 6.211,
-   "pnl_usd": 1.04,
+   "net_pct": 8.736,
+   "spy_pct": 0.349,
+   "excess_pct": 8.387,
+   "pnl_usd": 1.33,
    "pct_below_50d": -13.23
   },
   {
@@ -4313,18 +4362,18 @@
    "status": "open",
    "entry_date": "2026-10-28",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-28 close",
+   "exit_reason": "open: marked at 2026-10-29 close (intraday, provisional)",
    "sources": "Trench ~$9B acquisition + FY revenue forecast raised to $47B (company news only)",
    "entry_open": 876.378,
-   "last_close": 878.03,
+   "last_close": 906.91,
    "exit_price": null,
-   "stop": 806.67,
+   "stop": 806.671,
    "target": 1052.179,
    "notional_usd": 15.37,
-   "net_pct": -0.151,
-   "spy_pct": 0.114,
-   "excess_pct": -0.266,
-   "pnl_usd": -0.02,
+   "net_pct": 3.144,
+   "spy_pct": -0.183,
+   "excess_pct": 3.327,
+   "pnl_usd": 0.48,
    "pct_below_50d": -4.95
   },
   {
@@ -4334,18 +4383,18 @@
    "status": "open",
    "entry_date": "2026-10-28",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-28 close",
+   "exit_reason": "open: marked at 2026-10-29 close (intraday, provisional)",
    "sources": "FQ1 beat + Dec-qtr guide above consensus (company); Baird PT 1080->1350 Outperform (analyst; Evercore Outperform $1000 maintained)",
-   "entry_open": 648.58,
-   "last_close": 697.97,
+   "entry_open": 646.84,
+   "last_close": 709.0,
    "exit_price": null,
-   "stop": 596.992,
-   "target": 778.685,
+   "stop": 595.39,
+   "target": 776.596,
    "notional_usd": 15.37,
-   "net_pct": 7.275,
-   "spy_pct": 0.114,
-   "excess_pct": 7.161,
-   "pnl_usd": 1.12,
+   "net_pct": 9.27,
+   "spy_pct": -0.183,
+   "excess_pct": 9.453,
+   "pnl_usd": 1.42,
    "pct_below_50d": -17.55
   },
   {
@@ -4355,18 +4404,18 @@
    "status": "open",
    "entry_date": "2026-10-28",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-28 close",
+   "exit_reason": "open: marked at 2026-10-29 close (intraday, provisional)",
    "sources": "Q3 beat (company report; Benzinga mover write-up)",
-   "entry_open": 53.935,
-   "last_close": 55.88,
+   "entry_open": 53.94,
+   "last_close": 56.842,
    "exit_price": null,
-   "stop": 49.645,
-   "target": 64.754,
+   "stop": 49.65,
+   "target": 64.76,
    "notional_usd": 15.37,
-   "net_pct": 3.006,
-   "spy_pct": 0.114,
-   "excess_pct": 2.892,
-   "pnl_usd": 0.46,
+   "net_pct": 4.781,
+   "spy_pct": -0.183,
+   "excess_pct": 4.964,
+   "pnl_usd": 0.73,
    "pct_below_50d": -24.29
   },
   {
@@ -4376,22 +4425,134 @@
    "status": "open",
    "entry_date": "2026-10-28",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-28 close",
+   "exit_reason": "open: marked at 2026-10-29 close (intraday, provisional)",
    "sources": "Q3 beat, orders >2x, FY26 guide raised (company report; Investing.com/Reuters are write-ups of the same report; no post-print analyst raise found)",
    "entry_open": 243.0,
-   "last_close": 242.94,
+   "last_close": 252.65,
    "exit_price": null,
    "stop": 223.672,
    "target": 291.746,
    "notional_usd": 15.37,
-   "net_pct": -0.365,
-   "spy_pct": 0.114,
-   "excess_pct": -0.479,
-   "pnl_usd": -0.06,
+   "net_pct": 3.631,
+   "spy_pct": -0.183,
+   "excess_pct": 3.814,
+   "pnl_usd": 0.56,
    "pct_below_50d": -14.57
+  },
+  {
+   "tier": "F50x",
+   "ticker": "CMG",
+   "signal_date": "2026-10-29",
+   "status": "open",
+   "entry_date": "2026-10-29",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-10-29 close (intraday, provisional)",
+   "sources": "Q3 same-store sales +2.1% vs 1.5% est (company results via CNBC)",
+   "entry_open": 30.46,
+   "last_close": 30.72,
+   "exit_price": null,
+   "stop": 28.037,
+   "target": 36.57,
+   "notional_usd": 15.4,
+   "net_pct": 0.454,
+   "spy_pct": 0.16,
+   "excess_pct": 0.294,
+   "pnl_usd": 0.07,
+   "pct_below_50d": -13.48
+  },
+  {
+   "tier": "F50x",
+   "ticker": "CVNA",
+   "signal_date": "2026-10-29",
+   "status": "open",
+   "entry_date": "2026-10-29",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-10-29 close (intraday, provisional)",
+   "sources": "company Q3 results: revenue and adj EBITDA beat; SEC probe closed (CNBC)",
+   "entry_open": 65.28,
+   "last_close": 68.555,
+   "exit_price": null,
+   "stop": 60.088,
+   "target": 78.375,
+   "notional_usd": 15.4,
+   "net_pct": 4.617,
+   "spy_pct": 0.16,
+   "excess_pct": 4.457,
+   "pnl_usd": 0.71,
+   "pct_below_50d": -10.39
+  },
+  {
+   "tier": "F50x",
+   "ticker": "LITE",
+   "signal_date": "2026-10-29",
+   "status": "open",
+   "entry_date": "2026-10-29",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-10-29 close (intraday, provisional)",
+   "sources": "Bloomberg: Marvell in talks to acquire Lumentum, deal possibly next week; +5% premarket; 1 source (one report); momentum holding; below 50d",
+   "entry_open": 950.0,
+   "last_close": 934.525,
+   "exit_price": null,
+   "stop": 874.437,
+   "target": 1140.57,
+   "notional_usd": 15.4,
+   "net_pct": -1.969,
+   "spy_pct": 0.16,
+   "excess_pct": -2.129,
+   "pnl_usd": -0.3,
+   "pct_below_50d": -0.86
+  },
+  {
+   "tier": "F50x",
+   "ticker": "TTMI",
+   "signal_date": "2026-10-29",
+   "status": "open",
+   "entry_date": "2026-10-29",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-10-29 close (intraday, provisional)",
+   "sources": "CEO/CFO open-market buys ~$2.69M, Form 4; below 50d; 1 source; no buy",
+   "entry_open": 89.51,
+   "last_close": 89.36,
+   "exit_price": null,
+   "stop": 82.39,
+   "target": 107.466,
+   "notional_usd": 15.4,
+   "net_pct": -0.568,
+   "spy_pct": 0.16,
+   "excess_pct": -0.728,
+   "pnl_usd": -0.09,
+   "pct_below_50d": -20.7
   }
  ],
  "alerts": [
+  {
+   "date": "2026-10-29",
+   "text": "PAPER TRADE 2026-10-29 | sleeve signals | BUY 0.028465 MSFT @ $540.4751 (quote $540.2050 at 2026-10-29 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $15.38, fee $0.02 (0.10%) | beta 1.4 | FQ1 beat: adj EPS 4.89 vs 4.73, rev 92.28B vs 90.69B, Azure +48% cc, guide 49-50% (CNBC https://www.cnbc.com/2026/10/29/stocks-making-the-biggest-moves-premarket-.html). Independent post-print analyst PT raises: Piper Sandler 610->650 OW (StreetInsider link), Wells Fargo 725->750 OW (https://www.investing.com/news/analyst-ratings/wells-fargo-raises-microsoft-stock-price-target-to-750-on-ai-growth-93CH-4982350), Citi 636->680 Buy (https://www.tipranks.com/news/the-fly/microsoft-price-target-raised-to-680-from-636-at-citi-thefly-news), BMO 600->610 (https://www.investing.com/news/analyst-ratings/bmo-capital-raises-microsoft-stock-price-target-on-azure-growth-93CH-4982277). Premarket +2-3%. Prior close 531.82 > 50d 510.32. No clearly negative news. 3+ independent confirmations (earnings + multiple analyst firms)."
+  },
+  {
+   "date": "2026-10-29",
+   "text": "PAPER TRADE 2026-10-29 | sleeve signals | SELL 0.020062 SPY @ $768.4056 (quote $768.7900 at 2026-10-29 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $15.42, fee $0.02 (0.10%) | beta 1.0 | fund MSFT from idle SPY"
+  },
+  {
+   "date": "2026-10-29",
+   "text": "--- am run 2026-10-29 10:36 ET"
+  },
+  {
+   "date": "2026-10-29",
+   "text": "PAPER ORDER 2026-10-29 (fills at today's open) | sleeve signals | BUY MSFT $15.40 | reason: FQ1 beat: adj EPS 4.89 vs 4.73, rev 92.28B vs 90.69B, Azure +48% cc, guide 49-50% (CNBC https://www.cnbc.com/2026/10/29/stocks-making-the-biggest-moves-premarket-.html). Independent post-print analyst PT raises: Piper Sandler 610->650 OW (StreetInsider link), Wells Fargo 725->750 OW (https://www.investing.com/news/analyst-ratings/wells-fargo-raises-microsoft-stock-price-target-to-750-on-ai-growth-93CH-4982350), Citi 636->680 Buy (https://www.tipranks.com/news/the-fly/microsoft-price-target-raised-to-680-from-636-at-citi-thefly-news), BMO 600->610 (https://www.investing.com/news/analyst-ratings/bmo-capital-raises-microsoft-stock-price-target-on-azure-growth-93CH-4982277). Premarket +2-3%. Prior close 531.82 > 50d 510.32. No clearly negative news. 3+ independent confirmations (earnings + multiple analyst firms)."
+  },
+  {
+   "date": "2026-10-29",
+   "text": "--- buy run 2026-10-29 08:26 ET"
+  },
+  {
+   "date": "2026-10-29",
+   "text": "PAPER ORDERS 2026-10-29: none"
+  },
+  {
+   "date": "2026-10-29",
+   "text": "--- premarket run 2026-10-29 08:25 ET"
+  },
   {
    "date": "2026-10-28",
    "text": "EQUITY 2026-10-28 close: total $1,025.43 vs SPY-equivalent $1,011.68 | core $404.67 (+1.17% vs SPY +1.17%), momentum $164.19 (+9.46% vs SPY +1.17%), dividend $151.75 (+1.17% vs SPY +1.17%), earnings $150.86 (+0.58% vs SPY +1.17%), signals $153.96 (+2.64% vs SPY +1.17%)"
