@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0",
- "generated_at": "2026-10-30T16:49:40-04:00",
+ "generated_at": "2026-11-02T10:30:42-05:00",
  "as_of_date": "2026-10-30",
  "disclaimer": "Paper trading only. Not investment advice. Backtests and paper results don't promise future returns.",
  "paper_only": true,
@@ -2080,8 +2080,37 @@
   }
  ],
  "last_fill_date": "2026-10-30",
- "pending_orders": [],
+ "pending_orders": [
+  {
+   "trade_date": "2026-11-02",
+   "fill_at": "close",
+   "sleeve": "earnings",
+   "ticker": "CRM",
+   "side": "buy",
+   "dollars": null,
+   "shares": null,
+   "reason": "J4 run-up: reports 2026-12-02 (not-supplied); last pre-report close 2026-12-01 is 20 trading days after today; buy today's close, sell 2026-12-01 close; 5% of sleeve"
+  },
+  {
+   "trade_date": "2026-11-02",
+   "fill_at": "close",
+   "sleeve": "earnings",
+   "ticker": "DLTR",
+   "side": "buy",
+   "dollars": null,
+   "shares": null,
+   "reason": "J4 run-up: reports 2026-12-02 (not-supplied); last pre-report close 2026-12-01 is 20 trading days after today; buy today's close, sell 2026-12-01 close; 5% of sleeve"
+  }
+ ],
  "skips": [
+  {
+   "date": "2026-11-02",
+   "logged_et": "2026-11-02 08:25 ET",
+   "sleeve": "earnings",
+   "ticker": "NTAP",
+   "rule": "already held",
+   "detail": "report 2026-12-01"
+  },
   {
    "date": "2026-10-30",
    "logged_et": "2026-10-30 16:44 ET",
@@ -2109,6 +2138,246 @@
  ],
  "signals": [
   {
+   "date": "2026-11-02",
+   "ticker": "NVDA",
+   "signal_type": "analyst_pt_cut",
+   "source": "Melius via CNBC",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/11/02/biggest-stocks-by-analyst-calls-on-wall-street.html"
+    }
+   ],
+   "description": "Melius keeps Buy but cuts PT 420->315; also cut AMD, AVGO, MRVL, DELL, QCOM, CRWV targets (AMD/MRVL/DELL are momentum holdings)",
+   "sentiment": "negative",
+   "prior_close": 204.64,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 2.18,
+   "corr60": 0.62,
+   "beta_asof": "2026-10-30"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "RDDT",
+   "signal_type": "analyst_downgrade",
+   "source": "Loop Capital via 24/7 Wall St",
+   "sources": [
+    {
+     "url": "https://247wallst.com/investing/2026/11/02/buy-sell-or-hold-todays-top-upgrades-and-downgrades-amazon-com-coinbase-global-crowdstrike-formfactor-gamestop-l3harris-technologies-oracle-reddit-rivian-automotive-and-more/"
+    }
+   ],
+   "description": "Loop downgrade Buy->Hold, PT 250->100 after weak Q4 guide. Tracking only",
+   "sentiment": "negative",
+   "prior_close": 91.73,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 3.75,
+   "corr60": 0.45,
+   "beta_asof": "2026-10-30"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "COIN",
+   "signal_type": "analyst_downgrade",
+   "source": "Morgan Stanley via CNBC",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/11/02/biggest-stocks-by-analyst-calls-on-wall-street.html"
+    }
+   ],
+   "description": "MS downgrade EW->Underweight, PT 258->120 (cut 27/28 rev est 28%/18%). Tracking only",
+   "sentiment": "negative",
+   "prior_close": 143.54,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 4.02,
+   "corr60": 0.53,
+   "beta_asof": "2026-10-30"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "MRVL",
+   "signal_type": "merger",
+   "source": "CNBC",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/11/02/stocks-making-the-biggest-moves-premarket-crwd-rivn-mu.html"
+    }
+   ],
+   "description": "Acquirer in all-stock LITE deal; +3% premarket. Held in momentum + earnings sleeves. Melius also cut MRVL target (same day)",
+   "sentiment": "positive",
+   "prior_close": 196.4,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 3.71,
+   "corr60": 0.5,
+   "beta_asof": "2026-10-30"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "LITE",
+   "signal_type": "merger",
+   "source": "CNBC",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/11/02/stocks-making-the-biggest-moves-premarket-crwd-rivn-mu.html"
+    }
+   ],
+   "description": "Marvell to acquire Lumentum in all-stock deal valuing LITE at $115B (close 1H 2028); LITE +2% then halted. Momentum holding. 1 source at scan time",
+   "sentiment": "positive",
+   "prior_close": 840.7,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 3.12,
+   "corr60": 0.35,
+   "beta_asof": "2026-10-30"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "ORCL",
+   "signal_type": "analyst_upgrade",
+   "source": "Stephens via 24/7 Wall St",
+   "sources": [
+    {
+     "url": "https://247wallst.com/investing/2026/11/02/buy-sell-or-hold-todays-top-upgrades-and-downgrades-amazon-com-coinbase-global-crowdstrike-formfactor-gamestop-l3harris-technologies-oracle-reddit-rivian-automotive-and-more/"
+    }
+   ],
+   "description": "Stephens upgrade EW->OW. 1 source; below 50d",
+   "sentiment": "positive",
+   "prior_close": 130.67,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 3.51,
+   "corr60": 0.63,
+   "beta_asof": "2026-10-30"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "AMZN",
+   "signal_type": "analyst_upgrade",
+   "source": "Phillip Securities via CNBC + 24/7 Wall St",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/11/02/biggest-stocks-by-analyst-calls-on-wall-street.html"
+    }
+   ],
+   "description": "Phillip upgrade Accumulate->Buy, PT 320->330. 1 source; below 50d (240.35 vs 254.28)",
+   "sentiment": "positive",
+   "prior_close": 240.35,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.66,
+   "corr60": 0.59,
+   "beta_asof": "2026-10-30"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "RIVN",
+   "signal_type": "analyst_upgrade",
+   "source": "UBS via CNBC + MarketScreener",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/11/02/biggest-stocks-by-analyst-calls-on-wall-street.html"
+    }
+   ],
+   "description": "UBS upgrade Neutral->Buy, PT 17 unchanged; +3.8% premarket. 1 source; below 50d (12.16 vs 14.53)",
+   "sentiment": "positive",
+   "prior_close": 12.16,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.75,
+   "corr60": 0.43,
+   "beta_asof": "2026-10-29"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "MHK",
+   "signal_type": "analyst_upgrade",
+   "source": "Evercore ISI via Benzinga/TipRanks + BofA via Investing.com",
+   "sources": [
+    {
+     "url": "https://www.investing.com/news/analyst-ratings/bofa-raises-mohawk-industries-stock-price-target-on-capital-outlook-93CH-4990620"
+    }
+   ],
+   "description": "Evercore ISI upgrade In-Line->Outperform PT 129->171; BofA PT 130->147 (Neutral); Q3 adj EPS 2.72 vs 2.58 (10-29). 2 sources, but Q4 EPS guide 1.35-1.45 vs 1.64 consensus and revenue miss = negative news; stock already +9.1% on 10-30. No buy",
+   "sentiment": "positive",
+   "prior_close": 139.41,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": -0.31,
+   "corr60": -0.07,
+   "beta_asof": "2026-10-30"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "EL",
+   "signal_type": "earnings",
+   "source": "Company release via Investing.com + X (@LiveSquawk)",
+   "sources": [
+    {
+     "url": "https://www.investing.com/news/earnings/estee-lauder-stock-jumps-on-earnings-beat-and-raised-outlook-4990815"
+    }
+   ],
+   "description": "FQ1 beat: adj EPS 0.72 vs 0.51, rev 3.72B vs 3.64-3.65B; FY27 adj EPS guide raised to 3.20-3.45 from 3.10-3.35; +3.5-5.2% premarket. 1 independent source at scan time (no confirmed post-print analyst action yet; Jefferies PT raise was 10-19). Above 50d. Logged, no buy",
+   "sentiment": "positive",
+   "prior_close": 109.23,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.9,
+   "corr60": 0.19,
+   "beta_asof": "2026-10-30"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "PANW",
+   "signal_type": "sympathy",
+   "source": "CNBC",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/11/02/stocks-making-the-biggest-moves-premarket-crwd-rivn-mu.html"
+    }
+   ],
+   "description": "Cyber peer of CRWD (+2% premarket in sympathy with the DB upgrade). Below 50d",
+   "sentiment": "positive",
+   "prior_close": 365.87,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.19,
+   "corr60": 0.19,
+   "beta_asof": "2026-10-30"
+  },
+  {
+   "date": "2026-11-02",
+   "ticker": "CRWD",
+   "signal_type": "analyst_upgrade",
+   "source": "Deutsche Bank via CNBC + Investing.com",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/11/02/biggest-stocks-by-analyst-calls-on-wall-street.html"
+    }
+   ],
+   "description": "Deutsche Bank upgrade Hold->Buy, PT 240->300; +3.4% premarket. 1 fresh independent source (premarket move is a reaction to the same call; Mizuho/BofA PT raises were 10-22/10-26). Above 50d. Already held in earnings sleeve. Logged, no signals buy",
+   "sentiment": "positive",
+   "prior_close": 250.43,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 2.3,
+   "corr60": 0.31,
+   "beta_asof": "2026-10-30"
+  },
+  {
    "date": "2026-10-30",
    "ticker": "INTC",
    "signal_type": "retail_chatter",
@@ -2121,7 +2390,7 @@
    "description": "Reddit mentions 216 vs 17 (12.7x) on earnings dump; no tested edge",
    "sentiment": "negative",
    "prior_close": 92.07,
-   "ret_1d": null,
+   "ret_1d": -0.286,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 3.34,
@@ -2137,7 +2406,7 @@
    "description": "SHW/PPG z -3.90 stretched, SHW laggard (pairs are shadow-tracked only)",
    "sentiment": "positive",
    "prior_close": 330.1,
-   "ret_1d": null,
+   "ret_1d": 0.008,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.52,
@@ -2157,7 +2426,7 @@
    "description": "Chip peer of INTC (-23% premarket on weak guide); tracking whether sympathy follows; AMD reports 11-03; momentum holding",
    "sentiment": "negative",
    "prior_close": 566.42,
-   "ret_1d": null,
+   "ret_1d": -0.109,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 3.08,
@@ -2177,7 +2446,7 @@
    "description": "Crypto stocks -4%+ after Binance reported ~6.3B hack; sympathy (HOOD too); below 50d",
    "sentiment": "negative",
    "prior_close": 160.59,
-   "ret_1d": null,
+   "ret_1d": -0.106,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 3.72,
@@ -2197,7 +2466,7 @@
    "description": "Q3 net income 9.9B (up ~200%), revenue beat; +1.4% premarket; above 50d; PT raises were pre-print; 1 source; no buy",
    "sentiment": "positive",
    "prior_close": 231.46,
-   "ret_1d": null,
+   "ret_1d": 0.018,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": -1.0,
@@ -2217,7 +2486,7 @@
    "description": "Q3 profit doubled to 15.4B; +1.4% premarket; above 50d; analyst PT raises were pre-print; 1 source; no buy",
    "sentiment": "positive",
    "prior_close": 183.29,
-   "ret_1d": null,
+   "ret_1d": 0.022,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": -1.29,
@@ -2237,7 +2506,7 @@
    "description": "Q3 loss -0.48 vs -0.62 est, rev 2.16B vs 1.99B, 2026 delivery guide raised to 67-70K; +8% premarket; below 50d; 1 source; no buy",
    "sentiment": "positive",
    "prior_close": 11.45,
-   "ret_1d": null,
+   "ret_1d": 0.062,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.75,
@@ -2257,7 +2526,7 @@
    "description": "Q3 sales +14.3% cc, about 9% above estimates, 2026 guide raised; +3.9% premarket; above 50d; Jefferies kept PT 100 EUR (no raise); 1 source; no buy",
    "sentiment": "positive",
    "prior_close": 43.13,
-   "ret_1d": null,
+   "ret_1d": 0.028,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": -0.06,
@@ -2277,7 +2546,7 @@
    "description": "Q3 core EPS 2.79 vs 2.60, rev 16.21B vs 16.05B, 2026 guide kept; +4.5% premarket; above 50d; Jefferies/UBS only reiterated (no post-print raise); 1 source; no buy",
    "sentiment": "positive",
    "prior_close": 174.4,
-   "ret_1d": null,
+   "ret_1d": 0.07,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.19,
@@ -2297,7 +2566,7 @@
    "description": "Weak Q4 revenue guide, DAUs 130.3M, mandatory accounts; about -21% premarket; retail chatter 6.1x; 2 sources",
    "sentiment": "negative",
    "prior_close": 129.6,
-   "ret_1d": null,
+   "ret_1d": -0.292,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.86,
@@ -2317,7 +2586,7 @@
    "description": "Q3 missed, weak Q4 guide, FCF -42.4B; AWS +39% y/y; about -6% premarket; below 50d; Test Z shadow entry at open; 3 sources",
    "sentiment": "negative",
    "prior_close": 243.79,
-   "ret_1d": null,
+   "ret_1d": -0.014,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.8,
@@ -2337,7 +2606,7 @@
    "description": "Weak Q4 guide (EPS 0.25 vs 0.43 est, rev 15-16B vs 17.1B), gross margin guide 38.0% vs 42.4%; about -23% to -25% premarket; momentum-sleeve holding (held to 11-30 rebalance, no stop rule); 3 sources",
    "sentiment": "negative",
    "prior_close": 92.07,
-   "ret_1d": null,
+   "ret_1d": -0.286,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 3.34,
@@ -2855,253 +3124,13 @@
    "beta60": 2.06,
    "corr60": 0.4,
    "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-28",
-   "ticker": "SOFI",
-   "signal_type": "earnings",
-   "source": "X news",
-   "sources": [
-    {
-     "url": "https://x.com/i/trending/2115037786894184877"
-    }
-   ],
-   "description": "Q3 beat, FY26 guide raised; below 50d",
-   "sentiment": "positive",
-   "prior_close": 16.4,
-   "ret_1d": 0.045,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 2.94,
-   "corr60": 0.63,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-28",
-   "ticker": "UCTT",
-   "signal_type": "earnings",
-   "source": "Benzinga",
-   "sources": [
-    {
-     "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62644872/why-ultra-clean-shares-are-trading-higher-by-around-15-here-are-20-stocks-moving-premarket"
-    }
-   ],
-   "description": "Q3 beat, +15% premarket; below 50d",
-   "sentiment": "positive",
-   "prior_close": 51.48,
-   "ret_1d": 0.086,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 2.83,
-   "corr60": 0.38,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-28",
-   "ticker": "GEV",
-   "signal_type": "news",
-   "source": "CNBC",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/10/28/stocks-making-the-biggest-moves-premarket-ulbi-slhy-hood-enph.html"
-    }
-   ],
-   "description": "Trench ~$9B acquisition, FY rev raised to $47B; below 50d",
-   "sentiment": "positive",
-   "prior_close": 895.08,
-   "ret_1d": -0.019,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.92,
-   "corr60": 0.44,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-28",
-   "ticker": "STX",
-   "signal_type": "earnings",
-   "source": "Investing.com (Baird)",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/analyst-ratings/baird-raises-seagate-stock-price-target-on-storage-growth-outlook-93CH-4977848"
-    }
-   ],
-   "description": "Beat & raise, Baird PT 1350; but -7% after hours; momentum holding; below 50d",
-   "sentiment": "mixed",
-   "prior_close": 667.85,
-   "ret_1d": 0.045,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.13,
-   "corr60": 0.18,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-28",
-   "ticker": "PPG",
-   "signal_type": "earnings",
-   "source": "PPG release",
-   "sources": [
-    {
-     "url": "https://news.ppg.com/Press-Releases/news-details/2026/PPG-reports-record-third-quarter-2026-EPS-and-raises-midpoint-of-full-year-EPS-guidance/default.aspx"
-    }
-   ],
-   "description": "Record Q3 EPS 2.25 vs 2.13, guide midpoint raised; +6% premarket; MS Hold $120; single source, no buy",
-   "sentiment": "positive",
-   "prior_close": 113.44,
-   "ret_1d": 0.044,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.87,
-   "corr60": 0.39,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-28",
-   "ticker": "VRT",
-   "signal_type": "earnings",
-   "source": "Investing.com/Reuters",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/stock-market-news/why-is-vertiv-stock-surging-today-93CH-4978246"
-    }
-   ],
-   "description": "Q3 beat (EPS 2.21 vs 1.82), orders >2x, FY26 guide raised; +15% premarket; below 50d, no buy",
-   "sentiment": "positive",
-   "prior_close": 208.56,
-   "ret_1d": 0.165,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 2.97,
-   "corr60": 0.54,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-27",
-   "ticker": "NFLX",
-   "signal_type": "retail_chatter",
-   "source": "apewisdom.io",
-   "sources": [
-    {
-     "url": "https://apewisdom.io/"
-    }
-   ],
-   "description": "Mentions 7.0x vs avg (context only)",
-   "sentiment": "neutral",
-   "prior_close": 63.9,
-   "ret_1d": -0.022,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.47,
-   "corr60": 0.14,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-27",
-   "ticker": "STC",
-   "signal_type": "insider_buy",
-   "source": "openinsider.com",
-   "sources": [
-    {
-     "url": "http://openinsider.com/latest-cluster-buys"
-    }
-   ],
-   "description": "Cluster: 3 insiders $567K (context only)",
-   "sentiment": "positive",
-   "prior_close": 42.96,
-   "ret_1d": 0.012,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.05,
-   "corr60": 0.26,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-27",
-   "ticker": "THRM",
-   "signal_type": "insider_buy",
-   "source": "openinsider.com",
-   "sources": [
-    {
-     "url": "http://openinsider.com/latest-insider-purchases-25k"
-    }
-   ],
-   "description": "CEO/CFO buy ~$1.3M (context only)",
-   "sentiment": "positive",
-   "prior_close": 28.59,
-   "ret_1d": 0.113,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.66,
-   "corr60": 0.39,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-27",
-   "ticker": "PYPL",
-   "signal_type": "earnings",
-   "source": "web",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/10/27/stocks-making-the-biggest-moves-premarket-pypl-glw-ups-ko.html"
-    }
-   ],
-   "description": "Revenue miss, EPS beat; mixed (also shadow Test B entry)",
-   "sentiment": "negative",
-   "prior_close": 54.99,
-   "ret_1d": 0.02,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.05,
-   "corr60": 0.29,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-27",
-   "ticker": "XYL",
-   "signal_type": "earnings",
-   "source": "web",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/10/27/stocks-making-the-biggest-moves-premarket-pypl-glw-ups-ko.html"
-    }
-   ],
-   "description": "-7.9% premarket on results",
-   "sentiment": "negative",
-   "prior_close": 108.24,
-   "ret_1d": -0.142,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.64,
-   "corr60": 0.28,
-   "beta_asof": "2026-10-23"
-  },
-  {
-   "date": "2026-10-27",
-   "ticker": "WHR",
-   "signal_type": "earnings",
-   "source": "web",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/10/27/stocks-making-the-biggest-moves-premarket-pypl-glw-ups-ko.html"
-    }
-   ],
-   "description": "Q3 miss + guidance cut; -7% premarket",
-   "sentiment": "negative",
-   "prior_close": 26.45,
-   "ret_1d": 0.037,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.75,
-   "corr60": 0.33,
-   "beta_asof": "2026-10-23"
   }
  ],
  "shadow_tests": [
   {
    "setup": "A_gap_and_go",
    "trades": 2,
-   "open_or_pending": 0,
+   "open_or_pending": 2,
    "win_rate_pct": 0.0,
    "net_per_trade_pct": -0.282,
    "total_net_pct_sum": -0.56,
@@ -3114,14 +3143,14 @@
   },
   {
    "setup": "B_rsi2_swing",
-   "trades": 6,
-   "open_or_pending": 3,
-   "win_rate_pct": 66.7,
-   "net_per_trade_pct": -1.914,
-   "total_net_pct_sum": -11.48,
-   "spy_same_windows_pct_sum": 1.38,
-   "t_stat": -0.83,
-   "weeks": 1,
+   "trades": 7,
+   "open_or_pending": 4,
+   "win_rate_pct": 57.1,
+   "net_per_trade_pct": -2.208,
+   "total_net_pct_sum": -15.45,
+   "spy_same_windows_pct_sum": 1.01,
+   "t_stat": -1.13,
+   "weeks": 2,
    "weeks_positive": 0,
    "pass_bar": "net > +0.25%/trade and beats SPY on the same capital and days",
    "status": "not meeting the bar so far"
@@ -3129,7 +3158,7 @@
   {
    "setup": "Z_zscore_dip",
    "trades": 0,
-   "open_or_pending": 2,
+   "open_or_pending": 5,
    "win_rate_pct": null,
    "net_per_trade_pct": null,
    "total_net_pct_sum": null,
@@ -3157,7 +3186,7 @@
   {
    "setup": "X_orb15_inplay",
    "trades": 19,
-   "open_or_pending": 0,
+   "open_or_pending": 9,
    "win_rate_pct": 42.1,
    "net_per_trade_pct": -0.143,
    "total_net_pct_sum": -2.72,
@@ -3171,7 +3200,7 @@
   {
    "setup": "X_orb30_inplay",
    "trades": 17,
-   "open_or_pending": 0,
+   "open_or_pending": 9,
    "win_rate_pct": 35.3,
    "net_per_trade_pct": -0.295,
    "total_net_pct_sum": -5.01,
@@ -3185,7 +3214,7 @@
   {
    "setup": "X_vwap_reclaim",
    "trades": 323,
-   "open_or_pending": 0,
+   "open_or_pending": 23,
    "win_rate_pct": 28.5,
    "net_per_trade_pct": -0.267,
    "total_net_pct_sum": -86.09,
@@ -3199,7 +3228,7 @@
   {
    "setup": "X_first_pullback",
    "trades": 81,
-   "open_or_pending": 0,
+   "open_or_pending": 12,
    "win_rate_pct": 34.6,
    "net_per_trade_pct": 0.018,
    "total_net_pct_sum": 1.43,
@@ -3280,29 +3309,29 @@
    "weeks": 0,
    "weeks_positive": 0,
    "pass_bar": "set 2026-10-28 before data: after ~30 closed trades, avg net excess vs SPY > 0, still > 0 without the best trade, and >= the real Signals sleeve's avg excess (relaxing the filter must beat what it avoided). Reviewed at the Nov 6 evaluation; a pass only lets the owner consider relaxing the 50-day rule",
-   "status": "under 30 closed trades (0); not judged yet. Open 3: avg excess +0.01% vs SPY, P&L $-0.77 (marked)",
+   "status": "under 30 closed trades (0); not judged yet. Open 3: avg excess -1.57% vs SPY, P&L $-1.05 (marked)",
    "start_date": "2026-10-26",
-   "pnl_usd": -0.77,
-   "spy_pnl_usd": -0.77,
-   "avg_excess_vs_spy_pct": 0.013
+   "pnl_usd": -1.05,
+   "spy_pnl_usd": -0.33,
+   "avg_excess_vs_spy_pct": -1.566
   },
   {
    "setup": "F50x_single_source_below50d",
    "trades": 4,
-   "open_or_pending": 12,
+   "open_or_pending": 15,
    "win_rate_pct": 0.0,
-   "net_per_trade_pct": -9.427,
-   "total_net_pct_sum": -37.71,
+   "net_per_trade_pct": -9.349,
+   "total_net_pct_sum": -37.39,
    "spy_same_windows_pct_sum": -4.74,
    "t_stat": null,
    "weeks": 0,
    "weeks_positive": 0,
    "pass_bar": "evidence only (also fails the 2-confirmation rule; never judged)",
-   "status": "evidence only. Open 12: avg excess +1.91% vs SPY, P&L $+0.91 (marked)",
+   "status": "evidence only. Open 15: avg excess +3.99% vs SPY, P&L $+8.57 (marked)",
    "start_date": "2026-10-26",
-   "pnl_usd": -4.88,
-   "spy_pnl_usd": -3.29,
-   "avg_excess_vs_spy_pct": -0.63
+   "pnl_usd": 2.83,
+   "spy_pnl_usd": -1.31,
+   "avg_excess_vs_spy_pct": 1.434
   },
   {
    "setup": "IL_orb5",
@@ -4429,18 +4458,18 @@
    "status": "open",
    "entry_date": "2026-10-26",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-30 close",
+   "exit_reason": "open: marked at 2026-11-02 close (intraday, provisional)",
    "sources": "Barclays upgrade to Overweight PT 25",
    "entry_open": 17.68,
-   "last_close": 18.56,
+   "last_close": 19.305,
    "exit_price": null,
    "stop": 16.274,
    "target": 21.227,
    "notional_usd": 15.0,
-   "net_pct": 4.377,
-   "spy_pct": -0.857,
-   "excess_pct": 5.234,
-   "pnl_usd": 0.66,
+   "net_pct": 8.591,
+   "spy_pct": 0.112,
+   "excess_pct": 8.48,
+   "pnl_usd": 1.29,
    "pct_below_50d": -26.05
   },
   {
@@ -4450,18 +4479,18 @@
    "status": "open",
    "entry_date": "2026-10-26",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-30 close",
+   "exit_reason": "open: marked at 2026-11-02 close (intraday, provisional)",
    "sources": "UBS upgrade to Buy PT 315 (+6.5% premarket is the reaction to the same upgrade)",
    "entry_open": 235.15,
-   "last_close": 228.28,
+   "last_close": 229.075,
    "exit_price": null,
    "stop": 216.446,
    "target": 282.321,
    "notional_usd": 15.0,
-   "net_pct": -3.322,
-   "spy_pct": -0.857,
-   "excess_pct": -2.465,
-   "pnl_usd": -0.5,
+   "net_pct": -2.983,
+   "spy_pct": 0.112,
+   "excess_pct": -3.095,
+   "pnl_usd": -0.45,
    "pct_below_50d": -1.05
   },
   {
@@ -4471,17 +4500,17 @@
    "status": "open",
    "entry_date": "2026-10-26",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-30 close",
+   "exit_reason": "open: marked at 2026-11-02 close (intraday, provisional)",
    "sources": "Q3 beat + raised FY26 EPS guide (company report only)",
    "entry_open": 43.49,
-   "last_close": 44.73,
+   "last_close": 44.735,
    "exit_price": null,
    "stop": 40.031,
    "target": 52.214,
    "notional_usd": 15.0,
-   "net_pct": 2.511,
-   "spy_pct": -0.857,
-   "excess_pct": 3.368,
+   "net_pct": 2.523,
+   "spy_pct": 0.112,
+   "excess_pct": 2.411,
    "pnl_usd": 0.38,
    "pct_below_50d": -6.07
   },
@@ -4492,18 +4521,18 @@
    "status": "open",
    "entry_date": "2026-10-27",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-30 close",
+   "exit_reason": "open: marked at 2026-11-02 close (intraday, provisional)",
    "sources": "DA Davidson upgrade to Buy PT 350->400; Anthropic S-1 / WSJ financing disclosure (different outlet and kind)",
    "entry_open": 339.87,
-   "last_close": 326.08,
+   "last_close": 332.55,
    "exit_price": null,
    "stop": 312.837,
    "target": 408.048,
    "notional_usd": 15.22,
-   "net_pct": -4.397,
-   "spy_pct": -1.514,
-   "excess_pct": -2.883,
-   "pnl_usd": -0.67,
+   "net_pct": -2.494,
+   "spy_pct": -0.553,
+   "excess_pct": -1.941,
+   "pnl_usd": -0.38,
    "pct_below_50d": -7.4
   },
   {
@@ -4513,17 +4542,17 @@
    "status": "open",
    "entry_date": "2026-10-27",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-30 close",
+   "exit_reason": "open: marked at 2026-11-02 close (intraday, provisional)",
    "sources": "Q3 beat + raised 2026/2027 outlook; Bernstein Buy $520 reiterated; ApeWisdom retail mentions 7.2x",
    "entry_open": 264.31,
-   "last_close": 265.53,
+   "last_close": 265.48,
    "exit_price": null,
    "stop": 243.287,
    "target": 317.331,
    "notional_usd": 15.22,
-   "net_pct": 0.062,
-   "spy_pct": -1.514,
-   "excess_pct": 1.576,
+   "net_pct": 0.043,
+   "spy_pct": -0.553,
+   "excess_pct": 0.595,
    "pnl_usd": 0.01,
    "pct_below_50d": -24.61
   },
@@ -4534,18 +4563,18 @@
    "status": "open",
    "entry_date": "2026-10-27",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-30 close",
+   "exit_reason": "open: marked at 2026-11-02 close (intraday, provisional)",
    "sources": "Q3 beat (company report)",
    "entry_open": 128.11,
-   "last_close": 123.31,
+   "last_close": 127.92,
    "exit_price": null,
    "stop": 117.92,
    "target": 153.809,
    "notional_usd": 15.22,
-   "net_pct": -4.087,
-   "spy_pct": -1.514,
-   "excess_pct": -2.572,
-   "pnl_usd": -0.62,
+   "net_pct": -0.488,
+   "spy_pct": -0.553,
+   "excess_pct": 0.064,
+   "pnl_usd": -0.07,
    "pct_below_50d": -15.09
   },
   {
@@ -4555,18 +4584,18 @@
    "status": "open",
    "entry_date": "2026-10-27",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-30 close",
+   "exit_reason": "open: marked at 2026-11-02 close (intraday, provisional)",
    "sources": "Wolfe upgrade",
    "entry_open": 54.21,
-   "last_close": 57.5,
+   "last_close": 60.86,
    "exit_price": null,
    "stop": 49.898,
    "target": 65.085,
    "notional_usd": 15.22,
-   "net_pct": 5.469,
-   "spy_pct": -1.514,
-   "excess_pct": 6.983,
-   "pnl_usd": 0.83,
+   "net_pct": 11.667,
+   "spy_pct": -0.553,
+   "excess_pct": 12.22,
+   "pnl_usd": 1.78,
    "pct_below_50d": -6.33
   },
   {
@@ -4576,18 +4605,18 @@
    "status": "open",
    "entry_date": "2026-10-27",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-30 close",
+   "exit_reason": "open: marked at 2026-11-02 close (intraday, provisional)",
    "sources": "Citi upgrade",
    "entry_open": 1703.28,
-   "last_close": 1624.53,
+   "last_close": 1688.685,
    "exit_price": null,
    "stop": 1567.801,
    "target": 2044.958,
    "notional_usd": 15.22,
-   "net_pct": -4.963,
-   "spy_pct": -1.514,
-   "excess_pct": -3.449,
-   "pnl_usd": -0.76,
+   "net_pct": -1.197,
+   "spy_pct": -0.553,
+   "excess_pct": -0.644,
+   "pnl_usd": -0.18,
    "pct_below_50d": -10.08
   },
   {
@@ -4600,7 +4629,7 @@
    "exit_reason": "stop -8%",
    "sources": "Raymond James upgrade",
    "entry_open": 251.27,
-   "last_close": 234.39,
+   "last_close": 236.49,
    "exit_price": 231.284,
    "stop": 231.284,
    "target": 301.675,
@@ -4618,18 +4647,18 @@
    "status": "open",
    "entry_date": "2026-10-27",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-30 close",
+   "exit_reason": "open: marked at 2026-11-02 close (intraday, provisional)",
    "sources": "Q3 beat, raised 2026 guide, 2027 targets (company report; +7-11% premarket is the reaction)",
    "entry_open": 15.98,
-   "last_close": 16.76,
+   "last_close": 17.495,
    "exit_price": null,
    "stop": 14.709,
    "target": 19.186,
    "notional_usd": 15.22,
-   "net_pct": 4.481,
-   "spy_pct": -1.514,
-   "excess_pct": 5.995,
-   "pnl_usd": 0.68,
+   "net_pct": 9.081,
+   "spy_pct": -0.553,
+   "excess_pct": 9.633,
+   "pnl_usd": 1.38,
    "pct_below_50d": -13.23
   },
   {
@@ -4639,18 +4668,18 @@
    "status": "open",
    "entry_date": "2026-10-28",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-30 close",
+   "exit_reason": "open: marked at 2026-11-02 close (intraday, provisional)",
    "sources": "Trench ~$9B acquisition + FY revenue forecast raised to $47B (company news only)",
    "entry_open": 876.378,
-   "last_close": 857.87,
+   "last_close": 893.565,
    "exit_price": null,
    "stop": 806.671,
    "target": 1052.179,
    "notional_usd": 15.37,
-   "net_pct": -2.452,
-   "spy_pct": -2.036,
-   "excess_pct": -0.415,
-   "pnl_usd": -0.38,
+   "net_pct": 1.621,
+   "spy_pct": -1.08,
+   "excess_pct": 2.701,
+   "pnl_usd": 0.25,
    "pct_below_50d": -4.95
   },
   {
@@ -4660,18 +4689,18 @@
    "status": "open",
    "entry_date": "2026-10-28",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-30 close",
+   "exit_reason": "open: marked at 2026-11-02 close (intraday, provisional)",
    "sources": "FQ1 beat + Dec-qtr guide above consensus (company); Baird PT 1080->1350 Outperform (analyst; Evercore Outperform $1000 maintained)",
    "entry_open": 646.84,
-   "last_close": 644.58,
+   "last_close": 620.365,
    "exit_price": null,
    "stop": 595.39,
    "target": 776.596,
    "notional_usd": 15.37,
-   "net_pct": -0.689,
-   "spy_pct": -2.036,
-   "excess_pct": 1.347,
-   "pnl_usd": -0.11,
+   "net_pct": -4.433,
+   "spy_pct": -1.08,
+   "excess_pct": -3.353,
+   "pnl_usd": -0.68,
    "pct_below_50d": -17.55
   },
   {
@@ -4684,7 +4713,7 @@
    "exit_reason": "stop gap (open)",
    "sources": "Q3 beat (company report; Benzinga mover write-up)",
    "entry_open": 53.94,
-   "last_close": 49.71,
+   "last_close": 50.93,
    "exit_price": 49.5,
    "stop": 49.65,
    "target": 64.76,
@@ -4702,18 +4731,18 @@
    "status": "open",
    "entry_date": "2026-10-28",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-30 close",
+   "exit_reason": "open: marked at 2026-11-02 close (intraday, provisional)",
    "sources": "Q3 beat, orders >2x, FY26 guide raised (company report; Investing.com/Reuters are write-ups of the same report; no post-print analyst raise found)",
    "entry_open": 243.0,
-   "last_close": 232.5,
+   "last_close": 235.455,
    "exit_price": null,
    "stop": 223.672,
    "target": 291.746,
    "notional_usd": 15.37,
-   "net_pct": -4.661,
-   "spy_pct": -2.036,
-   "excess_pct": -2.625,
-   "pnl_usd": -0.72,
+   "net_pct": -3.445,
+   "spy_pct": -1.08,
+   "excess_pct": -2.365,
+   "pnl_usd": -0.53,
    "pct_below_50d": -14.57
   },
   {
@@ -4723,18 +4752,18 @@
    "status": "open",
    "entry_date": "2026-10-29",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-30 close",
+   "exit_reason": "open: marked at 2026-11-02 close (intraday, provisional)",
    "sources": "Q3 same-store sales +2.1% vs 1.5% est (company results via CNBC)",
    "entry_open": 30.46,
-   "last_close": 31.89,
+   "last_close": 33.135,
    "exit_price": null,
    "stop": 28.037,
    "target": 36.57,
    "notional_usd": 15.4,
-   "net_pct": 4.295,
-   "spy_pct": -1.7,
-   "excess_pct": 5.995,
-   "pnl_usd": 0.66,
+   "net_pct": 8.382,
+   "spy_pct": -0.74,
+   "excess_pct": 9.122,
+   "pnl_usd": 1.29,
    "pct_below_50d": -13.48
   },
   {
@@ -4744,18 +4773,18 @@
    "status": "open",
    "entry_date": "2026-10-29",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-30 close",
+   "exit_reason": "open: marked at 2026-11-02 close (intraday, provisional)",
    "sources": "company Q3 results: revenue and adj EBITDA beat; SEC probe closed (CNBC)",
    "entry_open": 65.28,
-   "last_close": 68.29,
+   "last_close": 73.001,
    "exit_price": null,
    "stop": 60.088,
    "target": 78.375,
    "notional_usd": 15.4,
-   "net_pct": 4.211,
-   "spy_pct": -1.7,
-   "excess_pct": 5.911,
-   "pnl_usd": 0.65,
+   "net_pct": 11.427,
+   "spy_pct": -0.74,
+   "excess_pct": 12.167,
+   "pnl_usd": 1.76,
    "pct_below_50d": -10.39
   },
   {
@@ -4768,14 +4797,14 @@
    "exit_reason": "stop gap (open)",
    "sources": "Bloomberg: Marvell in talks to acquire Lumentum, deal possibly next week; +5% premarket; 1 source (one report); momentum holding; below 50d",
    "entry_open": 947.88,
-   "last_close": 840.7,
-   "exit_price": 861.335,
+   "last_close": 756.01,
+   "exit_price": 861.28,
    "stop": 872.486,
    "target": 1138.025,
    "notional_usd": 15.4,
-   "net_pct": -9.47,
+   "net_pct": -9.476,
    "spy_pct": -0.964,
-   "excess_pct": -8.507,
+   "excess_pct": -8.512,
    "pnl_usd": -1.46,
    "pct_below_50d": -0.86
   },
@@ -4789,15 +4818,15 @@
    "exit_reason": "stop gap (open)",
    "sources": "CEO/CFO open-market buys ~$2.69M, Form 4; below 50d; 1 source; no buy",
    "entry_open": 90.68,
-   "last_close": 82.94,
-   "exit_price": 81.02,
+   "last_close": 84.96,
+   "exit_price": 81.31,
    "stop": 83.467,
    "target": 108.87,
    "notional_usd": 15.4,
-   "net_pct": -11.053,
+   "net_pct": -10.733,
    "spy_pct": -0.964,
-   "excess_pct": -10.089,
-   "pnl_usd": -1.7,
+   "excess_pct": -9.769,
+   "pnl_usd": -1.65,
    "pct_below_50d": -20.7
   },
   {
@@ -4807,22 +4836,97 @@
    "status": "open",
    "entry_date": "2026-10-30",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-10-30 close",
+   "exit_reason": "open: marked at 2026-11-02 close (intraday, provisional)",
    "sources": "Q3 loss -0.48 vs -0.62 est, rev 2.16B vs 1.99B, 2026 delivery guide raised to 67-70K; +8% premarket; below 50d; 1 source; no buy",
-   "entry_open": 12.09,
-   "last_close": 12.16,
+   "entry_open": 12.095,
+   "last_close": 13.44,
    "exit_price": null,
-   "stop": 11.128,
-   "target": 14.515,
+   "stop": 11.133,
+   "target": 14.521,
    "notional_usd": 15.4,
-   "net_pct": 0.179,
-   "spy_pct": -0.743,
-   "excess_pct": 0.922,
-   "pnl_usd": 0.03,
+   "net_pct": 10.72,
+   "spy_pct": 0.226,
+   "excess_pct": 10.494,
+   "pnl_usd": 1.65,
    "pct_below_50d": -21.6
+  },
+  {
+   "tier": "F50x",
+   "ticker": "AMZN",
+   "signal_date": "2026-11-02",
+   "status": "open",
+   "entry_date": "2026-11-02",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-11-02 close (intraday, provisional)",
+   "sources": "Phillip upgrade Accumulate->Buy, PT 320->330. 1 source; below 50d (240.35 vs 254.28)",
+   "entry_open": 243.085,
+   "last_close": 252.717,
+   "exit_price": null,
+   "stop": 223.75,
+   "target": 291.848,
+   "notional_usd": 15.25,
+   "net_pct": 3.623,
+   "spy_pct": 0.481,
+   "excess_pct": 3.142,
+   "pnl_usd": 0.55,
+   "pct_below_50d": -5.48
+  },
+  {
+   "tier": "F50x",
+   "ticker": "ORCL",
+   "signal_date": "2026-11-02",
+   "status": "open",
+   "entry_date": "2026-11-02",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-11-02 close (intraday, provisional)",
+   "sources": "Stephens upgrade EW->OW. 1 source; below 50d",
+   "entry_open": 125.88,
+   "last_close": 124.19,
+   "exit_price": null,
+   "stop": 115.868,
+   "target": 151.131,
+   "notional_usd": 15.25,
+   "net_pct": -1.683,
+   "spy_pct": 0.481,
+   "excess_pct": -2.163,
+   "pnl_usd": -0.26,
+   "pct_below_50d": -7.85
+  },
+  {
+   "tier": "F50x",
+   "ticker": "PANW",
+   "signal_date": "2026-11-02",
+   "status": "open",
+   "entry_date": "2026-11-02",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-11-02 close (intraday, provisional)",
+   "sources": "Cyber peer of CRWD (+2% premarket in sympathy with the DB upgrade). Below 50d",
+   "entry_open": 368.07,
+   "last_close": 362.725,
+   "exit_price": null,
+   "stop": 338.794,
+   "target": 441.905,
+   "notional_usd": 15.25,
+   "net_pct": -1.792,
+   "spy_pct": 0.481,
+   "excess_pct": -2.273,
+   "pnl_usd": -0.27,
+   "pct_below_50d": -1.69
   }
  ],
  "alerts": [
+  {
+   "date": "2026-11-02",
+   "text": "PAPER ORDER 2026-11-02 (fills at today's close) | sleeve earnings | BUY DLTR 5% of sleeve equity | reason: J4 run-up: reports 2026-12-02 (not-supplied); last pre-report close 2026-12-01 is 20 trading days after today; buy today's close, sell 2026-12-01 close; 5% of sleeve"
+  },
+  {
+   "date": "2026-11-02",
+   "text": "PAPER ORDER 2026-11-02 (fills at today's close) | sleeve earnings | BUY CRM 5% of sleeve equity | reason: J4 run-up: reports 2026-12-02 (not-supplied); last pre-report close 2026-12-01 is 20 trading days after today; buy today's close, sell 2026-12-01 close; 5% of sleeve"
+  },
+  {
+   "date": "2026-11-02",
+   "text": "--- premarket run 2026-11-02 08:25 ET"
+  },
   {
    "date": "2026-10-30",
    "text": "CORE month-end 2026-10: G1 IN (SPY); J1 window 2026-11-03..2027-05-06 (core stays invested unless G1 fires)"
@@ -4962,442 +5066,10 @@
   {
    "date": "2026-10-27",
    "text": "--- premarket run 2026-10-27 08:19 ET"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "EQUITY 2026-10-26 close: total $1,007.08 vs SPY-equivalent $1,002.59 | core $401.04 (+0.26% vs SPY +0.26%), momentum $153.25 (+2.17% vs SPY +0.26%), dividend $150.39 (+0.26% vs SPY +0.26%), earnings $150.21 (+0.14% vs SPY +0.26%), signals $152.20 (+1.47% vs SPY +0.26%)"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve earnings | BUY 0.035973 WDAY @ $208.6042 (quote $208.5000 at 2026-10-26 16:00 ET (daily close), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET; +/-0.05% slippage) | notional $7.50, fee $0.01 (0.10%) | J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve earnings | SELL 0.009829 SPY @ $764.9873 (quote $765.3700 at 2026-10-26 16:00 ET (daily close), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET; +/-0.05% slippage) | notional $7.52, fee $0.01 (0.10%) | fund WDAY from idle SPY"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve earnings | BUY 0.058313 SJM @ $128.7043 (quote $128.6400 at 2026-10-26 16:00 ET (daily close), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET; +/-0.05% slippage) | notional $7.51, fee $0.01 (0.10%) | J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve earnings | SELL 0.009830 SPY @ $764.9873 (quote $765.3700 at 2026-10-26 16:00 ET (daily close), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET; +/-0.05% slippage) | notional $7.52, fee $0.01 (0.10%) | fund SJM from idle SPY"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve earnings | BUY 0.033783 NTAP @ $222.1910 (quote $222.0800 at 2026-10-26 16:00 ET (daily close), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET; +/-0.05% slippage) | notional $7.51, fee $0.01 (0.10%) | J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve earnings | SELL 0.009832 SPY @ $764.9873 (quote $765.3700 at 2026-10-26 16:00 ET (daily close), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET; +/-0.05% slippage) | notional $7.52, fee $0.01 (0.10%) | fund NTAP from idle SPY"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve earnings | BUY 0.220113 HPQ @ $34.1070 (quote $34.0900 at 2026-10-26 16:00 ET (daily close), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET; +/-0.05% slippage) | notional $7.51, fee $0.01 (0.10%) | J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve earnings | SELL 0.009833 SPY @ $764.9873 (quote $765.3700 at 2026-10-26 16:00 ET (daily close), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET; +/-0.05% slippage) | notional $7.52, fee $0.01 (0.10%) | fund HPQ from idle SPY"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve earnings | BUY 0.016067 DELL @ $467.3235 (quote $467.0900 at 2026-10-26 16:00 ET (daily close), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET; +/-0.05% slippage) | notional $7.51, fee $0.01 (0.10%) | J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve earnings | SELL 0.009835 SPY @ $764.9873 (quote $765.3700 at 2026-10-26 16:00 ET (daily close), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET; +/-0.05% slippage) | notional $7.52, fee $0.01 (0.10%) | fund DELL from idle SPY"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve earnings | BUY 0.076630 BBY @ $97.9990 (quote $97.9500 at 2026-10-26 16:00 ET (daily close), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET; +/-0.05% slippage) | notional $7.51, fee $0.01 (0.10%) | J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve earnings | SELL 0.009836 SPY @ $764.9873 (quote $765.3700 at 2026-10-26 16:00 ET (daily close), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET; +/-0.05% slippage) | notional $7.52, fee $0.01 (0.10%) | fund BBY from idle SPY"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve earnings | BUY 0.030094 ADSK @ $249.5747 (quote $249.4500 at 2026-10-26 16:00 ET (daily close), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET; +/-0.05% slippage) | notional $7.51, fee $0.01 (0.10%) | J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve earnings | SELL 0.009838 SPY @ $764.9873 (quote $765.3700 at 2026-10-26 16:00 ET (daily close), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET; +/-0.05% slippage) | notional $7.53, fee $0.01 (0.10%) | fund ADSK from idle SPY"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve earnings | BUY 0.018405 ADI @ $408.1340 (quote $407.9300 at 2026-10-26 16:00 ET (daily close), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET; +/-0.05% slippage) | notional $7.51, fee $0.01 (0.10%) | J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve earnings | SELL 0.009839 SPY @ $764.9873 (quote $765.3700 at 2026-10-26 16:00 ET (daily close), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-26 16:33 ET; +/-0.05% slippage) | notional $7.53, fee $0.01 (0.10%) | fund ADI from idle SPY"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "--- close run 2026-10-26 16:33 ET"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve signals | BUY 0.117895 SPY @ $762.6311 (quote $762.2500 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $89.91, fee $0.09 (0.10%) | start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve earnings | BUY 0.196491 SPY @ $762.6311 (quote $762.2500 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $149.85, fee $0.15 (0.10%) | start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve dividend | BUY 0.196491 SPY @ $762.6311 (quote $762.2500 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $149.85, fee $0.15 (0.10%) | start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve core | BUY 0.523976 SPY @ $762.6311 (quote $762.2500 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $399.60, fee $0.40 (0.10%) | start-up; G1 IN (SPY) at 2026-09 month-end: S&P 7651.54 vs 10-mo avg 7230.78, Baa-10y 1.481 vs 12-mo avg 1.658"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve signals | BUY 0.190287 BAH @ $78.7494 (quote $78.7100 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $14.99, fee $0.01 (0.10%) | TD Cowen upgrade to Buy, PT 77->95; close 78.32 > 50d 74.34"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve signals | BUY 0.023042 CACI @ $650.3250 (quote $650.0000 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $14.99, fee $0.01 (0.10%) | Jefferies upgrade to Buy; close 633.98 > 50d 623.52"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve signals | BUY 0.024418 LMT @ $613.6767 (quote $613.3700 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $14.99, fee $0.01 (0.10%) | Morgan Stanley upgrade to Overweight (F-35 framework); close 604.18 > 50d 540.14"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve signals | BUY 0.039007 TSLA @ $384.1645 (quote $383.9725 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $14.99, fee $0.01 (0.10%) | Barclays upgrade to Overweight, PT 370->450; close 372.22 > 50d 363.77"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve momentum | BUY 0.019101 AMD @ $523.0114 (quote $522.7500 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $9.99, fee $0.01 (0.10%) | start-up; 12-2 momentum rank 15/499 (+173.3%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve momentum | BUY 0.037980 TWLO @ $263.0314 (quote $262.9000 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $9.99, fee $0.01 (0.10%) | start-up; 12-2 momentum rank 14/499 (+173.9%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve momentum | BUY 0.031961 TER @ $312.5662 (quote $312.4100 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $9.99, fee $0.01 (0.10%) | start-up; 12-2 momentum rank 13/499 (+179.8%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve momentum | BUY 0.174502 HPE @ $57.2486 (quote $57.2200 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $9.99, fee $0.01 (0.10%) | start-up; 12-2 momentum rank 12/499 (+180.1%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve momentum | BUY 0.037024 ILMN @ $269.8248 (quote $269.6900 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $9.99, fee $0.01 (0.10%) | start-up; 12-2 momentum rank 11/499 (+181.7%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve momentum | BUY 0.051736 BE @ $193.0965 (quote $193.0000 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $9.99, fee $0.01 (0.10%) | start-up; 12-2 momentum rank 10/499 (+182.6%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve momentum | BUY 0.043599 MRVL @ $229.1345 (quote $229.0200 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $9.99, fee $0.01 (0.10%) | start-up; 12-2 momentum rank 9/499 (+220.0%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve momentum | BUY 0.113569 INTC @ $87.9640 (quote $87.9200 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $9.99, fee $0.01 (0.10%) | start-up; 12-2 momentum rank 8/499 (+245.0%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve momentum | BUY 0.021418 DELL @ $466.4331 (quote $466.2000 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $9.99, fee $0.01 (0.10%) | start-up; 12-2 momentum rank 7/499 (+260.3%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve momentum | BUY 0.028835 WDC @ $346.4531 (quote $346.2800 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $9.99, fee $0.01 (0.10%) | start-up; 12-2 momentum rank 6/499 (+274.5%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve momentum | BUY 0.015800 STX @ $632.2660 (quote $631.9500 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $9.99, fee $0.01 (0.10%) | start-up; 12-2 momentum rank 5/499 (+323.7%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve momentum | BUY 0.011221 MU @ $890.3199 (quote $889.8750 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $9.99, fee $0.01 (0.10%) | start-up; 12-2 momentum rank 4/499 (+445.0%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve momentum | BUY 0.013049 LITE @ $765.5626 (quote $765.1800 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $9.99, fee $0.01 (0.10%) | start-up; 12-2 momentum rank 3/499 (+487.8%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve momentum | BUY 0.053423 MRNA @ $186.9975 (quote $186.9040 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $9.99, fee $0.01 (0.10%) | start-up; 12-2 momentum rank 2/499 (+625.6%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER TRADE 2026-10-26 | sleeve momentum | BUY 0.007981 SNDK @ $1,251.6475 (quote $1,251.0220 at 2026-10-26 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $9.99, fee $0.01 (0.10%) | start-up; 12-2 momentum rank 1/499 (+1093.3%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "--- am run 2026-10-26 10:34 ET"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve signals | BUY BAH $15.00 | reason: TD Cowen upgrade to Buy, PT 77->95; close 78.32 > 50d 74.34"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "--- buy run 2026-10-26 08:30 ET"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve signals | BUY CACI $15.00 | reason: Jefferies upgrade to Buy; close 633.98 > 50d 623.52"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "--- buy run 2026-10-26 08:30 ET"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve signals | BUY LMT $15.00 | reason: Morgan Stanley upgrade to Overweight (F-35 framework); close 604.18 > 50d 540.14"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "--- buy run 2026-10-26 08:30 ET"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve signals | BUY TSLA $15.00 | reason: Barclays upgrade to Overweight, PT 370->450; close 372.22 > 50d 363.77"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "--- buy run 2026-10-26 08:30 ET"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's close) | sleeve earnings | BUY WDAY 5% of sleeve equity | reason: J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's close) | sleeve earnings | BUY SJM 5% of sleeve equity | reason: J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's close) | sleeve earnings | BUY NTAP 5% of sleeve equity | reason: J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's close) | sleeve earnings | BUY HPQ 5% of sleeve equity | reason: J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's close) | sleeve earnings | BUY DELL 5% of sleeve equity | reason: J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's close) | sleeve earnings | BUY BBY 5% of sleeve equity | reason: J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's close) | sleeve earnings | BUY ADSK 5% of sleeve equity | reason: J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's close) | sleeve earnings | BUY ADI 5% of sleeve equity | reason: J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve signals | BUY SPY all remaining sleeve cash | reason: start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve earnings | BUY SPY all remaining sleeve cash | reason: start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve dividend | BUY SPY all remaining sleeve cash | reason: start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY AMD $10.00 (~0.0194 sh at last close $516.79 on 2026-10-23) | reason: start-up; 12-2 momentum rank 15/499 (+173.3%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY TWLO $10.00 (~0.0382 sh at last close $261.79 on 2026-10-23) | reason: start-up; 12-2 momentum rank 14/499 (+173.9%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY TER $10.00 (~0.0324 sh at last close $308.85 on 2026-10-23) | reason: start-up; 12-2 momentum rank 13/499 (+179.8%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY HPE $10.00 (~0.1764 sh at last close $56.69 on 2026-10-23) | reason: start-up; 12-2 momentum rank 12/499 (+180.1%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY ILMN $10.00 (~0.0371 sh at last close $269.42 on 2026-10-23) | reason: start-up; 12-2 momentum rank 11/499 (+181.7%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY BE $10.00 (~0.0517 sh at last close $193.30 on 2026-10-23) | reason: start-up; 12-2 momentum rank 10/499 (+182.6%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY MRVL $10.00 (~0.0438 sh at last close $228.51 on 2026-10-23) | reason: start-up; 12-2 momentum rank 9/499 (+220.0%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY INTC $10.00 (~0.1150 sh at last close $86.96 on 2026-10-23) | reason: start-up; 12-2 momentum rank 8/499 (+245.0%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY DELL $10.00 (~0.0219 sh at last close $456.44 on 2026-10-23) | reason: start-up; 12-2 momentum rank 7/499 (+260.3%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY WDC $10.00 (~0.0291 sh at last close $343.67 on 2026-10-23) | reason: start-up; 12-2 momentum rank 6/499 (+274.5%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY STX $10.00 (~0.0159 sh at last close $630.49 on 2026-10-23) | reason: start-up; 12-2 momentum rank 5/499 (+323.7%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY MU $10.00 (~0.0114 sh at last close $877.55 on 2026-10-23) | reason: start-up; 12-2 momentum rank 4/499 (+445.0%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY LITE $10.00 (~0.0132 sh at last close $756.17 on 2026-10-23) | reason: start-up; 12-2 momentum rank 3/499 (+487.8%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY MRNA $10.00 (~0.0500 sh at last close $200.10 on 2026-10-23) | reason: start-up; 12-2 momentum rank 2/499 (+625.6%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY SNDK $10.00 (~0.0081 sh at last close $1,238.03 on 2026-10-23) | reason: start-up; 12-2 momentum rank 1/499 (+1093.3%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve core | BUY SPY $400.00 (~0.5263 sh at last close $759.97 on 2026-10-23) | reason: start-up; G1 IN (SPY) at 2026-09 month-end: S&P 7651.54 vs 10-mo avg 7230.78, Baa-10y 1.481 vs 12-mo avg 1.658"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "DIVIDEND: no S&P 500 name passes yield >7% + J3 filters + payout sanity at 2026-10-23 (1 names >7% before filters, 499 screened); sleeve stays idle in SPY"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "--- premarket run 2026-10-26 08:27 ET"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's close) | sleeve earnings | BUY WDAY 5% of sleeve equity | reason: J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's close) | sleeve earnings | BUY SJM 5% of sleeve equity | reason: J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's close) | sleeve earnings | BUY NTAP 5% of sleeve equity | reason: J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's close) | sleeve earnings | BUY HPQ 5% of sleeve equity | reason: J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's close) | sleeve earnings | BUY DELL 5% of sleeve equity | reason: J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's close) | sleeve earnings | BUY BBY 5% of sleeve equity | reason: J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's close) | sleeve earnings | BUY ADSK 5% of sleeve equity | reason: J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's close) | sleeve earnings | BUY ADI 5% of sleeve equity | reason: J4 run-up: reports 2026-11-24 (not-supplied); last pre-report close 2026-11-23 is 20 trading days after today; buy today's close, sell 2026-11-23 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve signals | BUY SPY all remaining sleeve cash | reason: start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve earnings | BUY SPY all remaining sleeve cash | reason: start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve dividend | BUY SPY all remaining sleeve cash | reason: start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY AMD $10.00 (~0.0194 sh at last close $516.79 on 2026-10-23) | reason: start-up; 12-2 momentum rank 15/499 (+173.3%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY TWLO $10.00 (~0.0382 sh at last close $261.79 on 2026-10-23) | reason: start-up; 12-2 momentum rank 14/499 (+173.9%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY TER $10.00 (~0.0324 sh at last close $308.85 on 2026-10-23) | reason: start-up; 12-2 momentum rank 13/499 (+179.8%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY HPE $10.00 (~0.1764 sh at last close $56.69 on 2026-10-23) | reason: start-up; 12-2 momentum rank 12/499 (+180.1%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY ILMN $10.00 (~0.0371 sh at last close $269.42 on 2026-10-23) | reason: start-up; 12-2 momentum rank 11/499 (+181.7%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY BE $10.00 (~0.0517 sh at last close $193.30 on 2026-10-23) | reason: start-up; 12-2 momentum rank 10/499 (+182.6%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY MRVL $10.00 (~0.0438 sh at last close $228.51 on 2026-10-23) | reason: start-up; 12-2 momentum rank 9/499 (+220.0%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY INTC $10.00 (~0.1150 sh at last close $86.96 on 2026-10-23) | reason: start-up; 12-2 momentum rank 8/499 (+245.0%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY DELL $10.00 (~0.0219 sh at last close $456.44 on 2026-10-23) | reason: start-up; 12-2 momentum rank 7/499 (+260.3%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY WDC $10.00 (~0.0291 sh at last close $343.67 on 2026-10-23) | reason: start-up; 12-2 momentum rank 6/499 (+274.5%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY STX $10.00 (~0.0159 sh at last close $630.49 on 2026-10-23) | reason: start-up; 12-2 momentum rank 5/499 (+323.7%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY MU $10.00 (~0.0114 sh at last close $877.55 on 2026-10-23) | reason: start-up; 12-2 momentum rank 4/499 (+445.0%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY LITE $10.00 (~0.0132 sh at last close $756.17 on 2026-10-23) | reason: start-up; 12-2 momentum rank 3/499 (+487.8%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY MRNA $10.00 (~0.0500 sh at last close $200.10 on 2026-10-23) | reason: start-up; 12-2 momentum rank 2/499 (+625.6%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve momentum | BUY SNDK $10.00 (~0.0081 sh at last close $1,238.03 on 2026-10-23) | reason: start-up; 12-2 momentum rank 1/499 (+1093.3%, t-252..t-21); held to the Nov-30 quarterly rebalance"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "PAPER ORDER 2026-10-26 (fills at today's open) | sleeve core | BUY SPY $400.00 (~0.5263 sh at last close $759.97 on 2026-10-23) | reason: start-up; G1 IN (SPY) at 2026-09 month-end: S&P 7651.54 vs 10-mo avg 7230.78, Baa-10y 1.481 vs 12-mo avg 1.658"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "DIVIDEND: no S&P 500 name passes yield >7% + J3 filters + payout sanity at 2026-10-23 (1 names >7% before filters, 499 screened); sleeve stays idle in SPY"
-  },
-  {
-   "date": "2026-10-26",
-   "text": "--- premarket run 2026-10-24 18:57 ET"
   }
  ],
  "latest_reflection": {
   "date": "2026-10-30",
-  "markdown": "# Reflection \u2014 2026-10-30\n\n## Headline: account vs SPY\nToday is the first day the account has trailed buy-and-hold SPY since inception, and I need to say that plainly before anything else. Today: account -3.11% ($1,018.11 \u2192 $986.47, -$31.64) vs the SPY-equivalent -1.77% ($1,007.81 \u2192 $989.95) \u2014 1.34 points worse than SPY today. Since start (10-26 open): account -1.35% ($986.47) vs SPY-equivalent -1.01% ($989.95) \u2014 the account is now 0.34 points behind buy-and-hold SPY, having been about 1.0 point ahead as of yesterday. That's the number that matters today, not any sleeve-level bright spot below.\n\n## Mistakes and misses\nI missed that the rules only check \"already held\" within a single sleeve, not across sleeves. The earnings sleeve bought MRVL today (mechanical J4 entry, pre-set at 08:25 premarket) even though momentum already held MRVL at -14.50% since entry, and MRVL fell another -10.05% today. Technically no written rule was broken \u2014 the \"already held\" skip is scoped to one sleeve \u2014 but the account now has two independent exposures to the same falling name, and nobody checked total ticker exposure across the book before adding. DELL has the same two-sleeve overlap. That's a real gap, not a hypothetical one.\n\nI also missed escalating a risk I had already flagged on four straight days. Momentum's semis/hardware concentration (betas mostly 2-3.4) was named in every reflection from 10-26 through 10-29. Today it cost -10.50% in a single day \u2014 about half the entire account's drawdown \u2014 on a day SMH fell -6.98%. I kept logging it as an observation instead of writing an actual rule-change proposal. That's on me, not the market.\n\n## Overeager\nNone found today. The only new trades (CRWD, MRVL) were mechanical J4 earnings-sleeve entries pre-set by the premarket run under the J4 rule after its expected-edge cost gate \u2014 not a discretionary call. J4 is still an experiment, not a proven edge, and adding a beta-3.4 name the day it fell 10% is exactly the cross-sleeve blind spot above.\n\n## Too cautious\nNone found. Every skip today (dividend ARE on the J3 dividend-cut filter, GIS on negative-EPS payout sanity, and the signals single-source names AZN/SNY/RIVN/XOM/CVX) cites a written rule applied as written. No extra, self-imposed filter beyond the rules.\n\n## Rule-following\nNo literal rule slips today. J4 entries, the dividend screen, G1's \"stay in SPY\" call, and the signals confirmation rule all applied correctly. INTC's momentum holding fell -28.58% with no stop under momentum's rules, and I correctly did nothing \u2014 that's the rule working as written, not a miss. The one real gap is structural, not a slip: the rules have no check on correlated exposure *across* sleeves, so momentum and earnings loaded into the same falling name without either sleeve's own logic objecting.\n\n## Each sleeve vs SPY\n- **Core:** -1.77% today, -1.00% since start, 0 vs SPY \u2014 it is SPY by design.\n- **Momentum:** -10.50% today (-$16.76), -4.77% since start, -3.76 pts vs SPY. Was +6.41% yesterday \u2014 a full reversal on the same concentrated semis book.\n- **Dividend:** -1.77% today (idle in SPY), -1.00% since start, 0 vs SPY.\n- **Earnings:** -2.40% today, -2.25% since start, -1.25 vs SPY.\n- **Signals:** -0.94% today, +1.68% since start, +2.69 vs SPY \u2014 the only sleeve ahead of SPY, but see below on why.\n\n## Execution issues\nClean. Close scripts and shadow_check both ran without error on the first try, no new shadow_errors.log entries. No gaps, no invented prices, no stuck orders.\n\n## Shadow tests vs pass bars\n- Test A: 2 trades, -0.282%/trade (bar: 30+, >+0.20%/trade) \u2014 n=2, not judged.\n- Test B: 6 closed, 66.7% win rate but -1.914%/trade net, sum -11.48% vs SPY same windows +1.38% (bar: >+0.25%/trade and beat SPY) \u2014 failing the bar on a small sample; SNAP stopped out -9.893% today, gapped through the -8% stop.\n- Test Z: 0 closed, 2 open \u2014 backtest already graded REJECT.\n- squeeze_bb30: 0 trades.\n- Evidence-only: X_vwap_reclaim 323 trades, -0.267%/trade, t -5.73 (getting worse on a real sample); X_first_pullback 81 trades, +0.018%/trade, t 0.16 (flat).\n- Intraday lab (bar: 200 forward trades, avg net>0, t\u22652): **IL_vwap_reclaim is past the sample-size bar at 207 trades and FAILS it outright, -0.588%/trade.** Everything else is still under 200 and negative: IL_orb5 140 (-0.584%), IL_orb15 120 (-0.661%), IL_orb30 99 (-0.699%), IL_gap_down_reclaim 51 (-0.668%), IL_ignition 28 (-0.601%).\n- Test VT and Test C remain execution/data checks only, not judged (Test C spread today 4.5% of mid vs the 2% bar).\n- F50: 0 closed, 3 open \u2014 too small to read.\n\n## What went well, and whether skill or luck\nNothing today was skill. Signals' smaller loss (-0.94% vs SPY's -1.77%) came from the defense cluster (LMT, CACI, BAH) carrying low beta to the tech selloff that hit everything else \u2014 that's sector luck, the same cluster I called an overconcentration mistake on 10-26. Correctly passing on single-source names (AZN, SNY, RIVN, XOM, CVX) was mechanical rule-following, not judgment. There is no win to credit myself with today.\n\n## Lessons (suggestions only, need the owner's okay)\n1. **SUGGESTION ONLY:** add a cross-sleeve ticker-exposure check (log it even if it doesn't block) so a name like MRVL or DELL being added to a second sleeve while already down double-digits in another isn't invisible until a reflection catches it after the fact.\n2. No change to the signals gap-timing lesson yet \u2014 MSFT is now -3.68% from its 10-29 fill, still just one example, not strong enough to act on.\n\n## Patterns and a re-check\nRecurring lesson #4 (momentum/signals gains track sector moves, not stock picking) just hit its fifth instance \u2014 today in the loss direction, -10.50% on a semis crash with no sleeve decision made. I'm also re-checking the 10-26 \"overconcentration (defense cluster)\" mistake: today that same concentrated cluster helped signals. I was wrong to treat concentration as a one-directional mistake \u2014 it isn't a mistake because it lost money that one time, it's a mistake because it's unmanaged risk that cuts both ways, and I shouldn't now flip to calling it smart because it helped today.\n\n_Drafted by Claude Code (Sonnet) from my facts file; every number checked against the ledgers by me. Report check result below._\n"
+  "markdown": "# Reflection \u2014 2026-10-30\n\n## Headline: account vs SPY\nToday is the first day the account has trailed buy-and-hold SPY since inception, and I need to say that plainly before anything else. Today: account -3.11% ($1,018.11 \u2192 $986.47, -$31.64) vs the SPY-equivalent -1.77% ($1,007.81 \u2192 $989.95) \u2014 1.34 points worse than SPY today. Since start (10-26 open): account -1.35% ($986.47) vs SPY-equivalent -1.01% ($989.95) \u2014 the account is now 0.34 points behind buy-and-hold SPY, having been about 1.0 point ahead as of yesterday. That's the number that matters today, not any sleeve-level bright spot below.\n\n## Mistakes and misses\nI missed that the rules only check \"already held\" within a single sleeve, not across sleeves. The earnings sleeve bought MRVL today (mechanical J4 entry, pre-set at 08:25 premarket) even though momentum already held MRVL at -14.50% since entry, and MRVL fell another -10.05% today. Technically no written rule was broken \u2014 the \"already held\" skip is scoped to one sleeve \u2014 but the account now has two independent exposures to the same falling name, and nobody checked total ticker exposure across the book before adding. DELL has the same two-sleeve overlap. That's a real gap, not a hypothetical one.\n\nI also missed escalating a risk I had already flagged on four straight days. Momentum's semis/hardware concentration (betas mostly 2-3.4) was named in every reflection from 10-26 through 10-29. Today it cost -10.50% in a single day \u2014 about half the entire account's drawdown \u2014 on a day SMH fell -6.98%. I kept logging it as an observation instead of writing an actual rule-change proposal. That's on me, not the market.\n\n## Overeager\nNone found today. The only new trades (CRWD, MRVL) were mechanical J4 earnings-sleeve entries pre-set by the premarket run under the J4 rule after its expected-edge cost gate \u2014 not a discretionary call. J4 is still an experiment, not a proven edge, and adding a beta-3.4 name the day it fell 10% is exactly the cross-sleeve blind spot above.\n\n## Too cautious\nNone found. Every skip today (dividend ARE on the J3 dividend-cut filter, GIS on negative-EPS payout sanity, and the signals single-source names AZN/SNY/RIVN/XOM/CVX) cites a written rule applied as written. No extra, self-imposed filter beyond the rules.\n\n## Rule-following\nNo literal rule slips today. J4 entries, the dividend screen, G1's \"stay in SPY\" call, and the signals confirmation rule all applied correctly. INTC's momentum holding fell -28.58% with no stop under momentum's rules, and I correctly did nothing \u2014 that's the rule working as written, not a miss. The one real gap is structural, not a slip: the rules have no check on correlated exposure *across* sleeves, so momentum and earnings loaded into the same falling name without either sleeve's own logic objecting.\n\n## Each sleeve vs SPY\n- **Core:** -1.77% today, -1.00% since start, 0 vs SPY \u2014 it is SPY by design.\n- **Momentum:** -10.50% today (-$16.76), -4.77% since start, -3.76 pts vs SPY. Was +6.41% yesterday \u2014 a full reversal on the same concentrated semis book.\n- **Dividend:** -1.77% today (idle in SPY), -1.00% since start, 0 vs SPY.\n- **Earnings:** -2.40% today, -2.25% since start, -1.25 vs SPY.\n- **Signals:** -0.94% today, +1.68% since start, +2.69 vs SPY \u2014 the only sleeve ahead of SPY, but see below on why.\n\n## Execution issues\nClean. Close scripts and shadow_check both ran without error on the first try, no new shadow_errors.log entries. No gaps, no invented prices, no stuck orders.\n\n## Shadow tests vs pass bars\n- Test A: 2 trades, -0.282%/trade (bar: 30+, >+0.20%/trade) \u2014 n=2, not judged.\n- Test B: 6 closed, 66.7% win rate but -1.914%/trade net, sum -11.48% vs SPY same windows +1.38% (bar: >+0.25%/trade and beat SPY) \u2014 failing the bar on a small sample; SNAP stopped out -9.893% today, gapped through the -8% stop.\n- Test Z: 0 closed, 2 open \u2014 backtest already graded REJECT.\n- squeeze_bb30: 0 trades.\n- Evidence-only: X_vwap_reclaim 323 trades, -0.267%/trade, t -5.73 (getting worse on a real sample); X_first_pullback 81 trades, +0.018%/trade, t 0.16 (flat).\n- Intraday lab (bar: 200 forward trades, avg net>0, t\u22652): **IL_vwap_reclaim is past the sample-size bar at 207 trades and FAILS it outright, -0.588%/trade.** Everything else is still under 200 and negative: IL_orb5 140 (-0.584%), IL_orb15 120 (-0.661%), IL_orb30 99 (-0.699%), IL_gap_down_reclaim 51 (-0.668%), IL_ignition 28 (-0.601%).\n- Test VT and Test C remain execution/data checks only, not judged (Test C spread today 4.5% of mid vs the 2% bar).\n- F50: 0 closed, 3 open \u2014 too small to read.\n\n## What went well, and whether skill or luck\nNothing today was skill. Signals' smaller loss (-0.94% vs SPY's -1.77%) came from the defense cluster (LMT, CACI, BAH) carrying low beta to the tech selloff that hit everything else \u2014 that's sector luck, the same cluster I called an overconcentration mistake on 10-26. Correctly passing on single-source names (AZN, SNY, RIVN, XOM, CVX) was mechanical rule-following, not judgment. There is no win to credit myself with today.\n\n## Lessons (suggestions only, need the owner's okay)\n1. **SUGGESTION ONLY:** add a cross-sleeve ticker-exposure check (log it even if it doesn't block) so a name like MRVL or DELL being added to a second sleeve while already down double-digits in another isn't invisible until a reflection catches it after the fact.\n2. No change to the signals gap-timing lesson yet \u2014 MSFT is now -3.68% from its 10-29 fill, still just one example, not strong enough to act on.\n\n## Patterns and a re-check\nRecurring lesson #4 (momentum/signals gains track sector moves, not stock picking) just hit its fifth instance \u2014 today in the loss direction, -10.50% on a semis crash with no sleeve decision made. I'm also re-checking the 10-26 \"overconcentration (defense cluster)\" mistake: today that same concentrated cluster helped signals. I was wrong to treat concentration as a one-directional mistake \u2014 it isn't a mistake because it lost money that one time, it's a mistake because it's unmanaged risk that cuts both ways, and I shouldn't now flip to calling it smart because it helped today.\n\n_Drafted by Claude Code (Sonnet) from my facts file; every number checked against the ledgers by me. Report check result below._\n\nReport check (scripts/check_report.py): 235 checks, 0 problems.\n"
  }
 }
