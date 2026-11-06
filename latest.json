@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0",
- "generated_at": "2026-11-06T10:32:45-05:00",
+ "generated_at": "2026-11-06T14:33:40-05:00",
  "as_of_date": "2026-11-05",
  "disclaimer": "Paper trading only. Not investment advice. Backtests and paper results don't promise future returns.",
  "paper_only": true,
@@ -471,7 +471,7 @@
    "invested_value": 146.21,
    "idle_spy_value": 0.0,
    "cash": 0.0,
-   "open_positions": 9,
+   "open_positions": 10,
    "realized_pnl": -2.86,
    "base_weight": 0.15,
    "experimental": true,
@@ -1640,29 +1640,29 @@
    "corr60": 0.02
   },
   {
-   "ticker": "SPY",
+   "ticker": "ELAN",
    "sleeve": "signals",
-   "lot_id": "sig-SPY-idle",
-   "status": "idle_spy",
-   "is_idle_cash_in_spy": true,
+   "lot_id": "sig-ELAN-2026-11-06",
+   "status": "open",
+   "is_idle_cash_in_spy": false,
    "entry_date": "2026-11-06",
-   "entry_time_et": "2026-11-06 10:31 ET",
-   "shares": 0.018303,
-   "entry_price": 739.4479,
-   "last_price": 738.34,
-   "cost_basis": 13.53,
-   "market_value": 13.51,
+   "entry_time_et": "2026-11-06 14:32 ET",
+   "shares": 0.517649,
+   "entry_price": 26.049,
+   "last_price": 26.01,
+   "cost_basis": 13.48,
+   "market_value": 13.46,
    "unrealized_pnl": null,
    "pnl_pct": null,
-   "stop_price": null,
-   "target_price": null,
-   "exit_by_date": null,
+   "stop_price": 23.9412,
+   "target_price": 31.2276,
+   "exit_by_date": "2026-12-07",
    "report_date": null,
-   "signal_type": "idle cash in SPY",
-   "signal_link": null,
-   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)",
-   "beta60": 1.0,
-   "corr60": 1.0
+   "signal_type": "signal (v0.3-v0.4.1 rules)",
+   "signal_link": "https://www.prnewswire.com/news-releases/elanco-animal-health-reports-third-quarter-2026-results-302931566.html",
+   "reason": "Q3 adj EPS $0.27 vs $0.21, rev $1.26B vs $1.21B, raised FY; 2 confirmations: (1) company PR https://www.prnewswire.com/news-releases/elanco-animal-health-reports-third-quarter-2026-results-302931566.html (2) Investing.com https://www.investing.com/news/earnings/elanco-animal-health-surges-on-q3-beat-and-raised-guidance-93CH-5007469; above 50d (~26.01 vs ma50 ~23.14); no clearly negative news; slot freed after CACI -8% stop",
+   "beta60": 0.99,
+   "corr60": 0.41
   }
  ],
  "closed_trades": [
@@ -1800,6 +1800,38 @@
   }
  ],
  "recent_fills": [
+  {
+   "date": "2026-11-06",
+   "time_et": "2026-11-06 14:32 ET",
+   "sleeve": "signals",
+   "ticker": "ELAN",
+   "side": "buy",
+   "shares": 0.517649,
+   "quote_price": 26.01,
+   "fill_price": 26.023,
+   "notional": 13.47,
+   "fee": 0.0135,
+   "price_source": "Yahoo Finance chart endpoint, regularMarketPrice (may be delayed ~15 min)",
+   "reason": "Q3 adj EPS $0.27 vs $0.21, rev $1.26B vs $1.21B, raised FY; 2 confirmations: (1) company PR https://www.prnewswire.com/news-releases/elanco-animal-health-reports-third-quarter-2026-results-302931566.html (2) Investing.com https://www.investing.com/news/earnings/elanco-animal-health-surges-on-q3-beat-and-raised-guidance-93CH-5007469; above 50d (~26.01 vs ma50 ~23.14); no clearly negative news; slot freed after CACI -8% stop",
+   "beta60": 0.99,
+   "corr60": 0.41
+  },
+  {
+   "date": "2026-11-06",
+   "time_et": "2026-11-06 14:32 ET",
+   "sleeve": "signals",
+   "ticker": "SPY",
+   "side": "sell",
+   "shares": 0.018303,
+   "quote_price": 737.83,
+   "fill_price": 737.4611,
+   "notional": 13.5,
+   "fee": 0.0135,
+   "price_source": "Yahoo Finance chart endpoint, regularMarketPrice (may be delayed ~15 min)",
+   "reason": "fund ELAN from idle SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
+  },
   {
    "date": "2026-11-06",
    "time_et": "2026-11-06 10:31 ET",
@@ -4190,7 +4222,7 @@
   {
    "setup": "X_orb15_inplay",
    "trades": 69,
-   "open_or_pending": 9,
+   "open_or_pending": 13,
    "win_rate_pct": 26.1,
    "net_per_trade_pct": -0.585,
    "total_net_pct_sum": -40.34,
@@ -4204,7 +4236,7 @@
   {
    "setup": "X_orb30_inplay",
    "trades": 69,
-   "open_or_pending": 6,
+   "open_or_pending": 8,
    "win_rate_pct": 24.6,
    "net_per_trade_pct": -0.659,
    "total_net_pct_sum": -45.44,
@@ -4218,7 +4250,7 @@
   {
    "setup": "X_vwap_reclaim",
    "trades": 527,
-   "open_or_pending": 5,
+   "open_or_pending": 31,
    "win_rate_pct": 26.2,
    "net_per_trade_pct": -0.353,
    "total_net_pct_sum": -185.89,
@@ -4231,13 +4263,13 @@
   },
   {
    "setup": "X_first_pullback",
-   "trades": 185,
-   "open_or_pending": 4,
-   "win_rate_pct": 30.3,
-   "net_per_trade_pct": -0.206,
-   "total_net_pct_sum": -38.14,
-   "spy_same_windows_pct_sum": -5.2,
-   "t_stat": -3.0,
+   "trades": 186,
+   "open_or_pending": 12,
+   "win_rate_pct": 30.1,
+   "net_per_trade_pct": -0.209,
+   "total_net_pct_sum": -38.83,
+   "spy_same_windows_pct_sum": -5.41,
+   "t_stat": -3.05,
    "weeks": 2,
    "weeks_positive": 1,
    "pass_bar": "evidence only (no pre-registered bar)",
@@ -6374,6 +6406,18 @@
   }
  ],
  "alerts": [
+  {
+   "date": "2026-11-06",
+   "text": "PAPER TRADE 2026-11-06 | sleeve signals | BUY 0.517649 ELAN @ $26.0230 (quote $26.0100 at 2026-11-06 14:32 ET, Yahoo Finance chart endpoint, regularMarketPrice (may be delayed ~15 min); +/-0.05% slippage) | notional $13.47, fee $0.01 (0.10%) | beta 1.0 | Q3 adj EPS $0.27 vs $0.21, rev $1.26B vs $1.21B, raised FY; 2 confirmations: (1) company PR https://www.prnewswire.com/news-releases/elanco-animal-health-reports-third-quarter-2026-results-302931566.html (2) Investing.com https://www.investing.com/news/earnings/elanco-animal-health-surges-on-q3-beat-and-raised-guidance-93CH-5007469; above 50d (~26.01 vs ma50 ~23.14); no clearly negative news; slot freed after CACI -8% stop"
+  },
+  {
+   "date": "2026-11-06",
+   "text": "PAPER TRADE 2026-11-06 | sleeve signals | SELL 0.018303 SPY @ $737.4611 (quote $737.8300 at 2026-11-06 14:32 ET, Yahoo Finance chart endpoint, regularMarketPrice (may be delayed ~15 min); +/-0.05% slippage) | notional $13.50, fee $0.01 (0.10%) | beta 1.0 | fund ELAN from idle SPY"
+  },
+  {
+   "date": "2026-11-06",
+   "text": "--- buy run 2026-11-06 14:32 ET"
+  },
   {
    "date": "2026-11-06",
    "text": "PAPER TRADE 2026-11-06 | sleeve signals | BUY 0.018303 SPY @ $738.7092 (quote $738.3400 at 2026-11-06 10:31 ET, Yahoo Finance chart endpoint, regularMarketPrice (may be delayed ~15 min); +/-0.05% slippage) | notional $13.52, fee $0.01 (0.10%) | beta 1.0 | idle sleeve cash held in SPY (v0.5)"
