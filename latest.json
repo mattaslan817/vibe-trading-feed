@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0",
- "generated_at": "2026-11-05T16:42:27-05:00",
+ "generated_at": "2026-11-06T10:32:45-05:00",
  "as_of_date": "2026-11-05",
  "disclaimer": "Paper trading only. Not investment advice. Backtests and paper results don't promise future returns.",
  "paper_only": true,
@@ -13,7 +13,7 @@
   "pnl": -70.55,
   "cash": 0.0,
   "open_positions": 45,
-  "realized_pnl": -1.39,
+  "realized_pnl": -2.86,
   "valuation_note": "Valued at the last close or quote already recorded in the ledgers; not live prices."
  },
  "benchmark": {
@@ -471,8 +471,8 @@
    "invested_value": 146.21,
    "idle_spy_value": 0.0,
    "cash": 0.0,
-   "open_positions": 10,
-   "realized_pnl": -1.39,
+   "open_positions": 9,
+   "realized_pnl": -2.86,
    "base_weight": 0.15,
    "experimental": true,
    "note": null
@@ -888,31 +888,6 @@
    "reason": "Morgan Stanley upgrade to Overweight (F-35 framework); close 604.18 > 50d 540.14",
    "beta60": -0.56,
    "corr60": -0.2
-  },
-  {
-   "ticker": "CACI",
-   "sleeve": "signals",
-   "lot_id": "sig-CACI-2026-10-26",
-   "status": "open",
-   "is_idle_cash_in_spy": false,
-   "entry_date": "2026-10-26",
-   "entry_time_et": "2026-10-26 09:30 ET (official open)",
-   "shares": 0.023042,
-   "entry_price": 650.9753,
-   "last_price": 604.51,
-   "cost_basis": 15.0,
-   "market_value": 13.93,
-   "unrealized_pnl": -1.09,
-   "pnl_pct": -7.278,
-   "stop_price": 598.299,
-   "target_price": 780.39,
-   "exit_by_date": "2026-11-23",
-   "report_date": null,
-   "signal_type": "signal (v0.3-v0.4.1 rules)",
-   "signal_link": "https://www.cnbc.com/2026/10/26/monday-biggest-wall-street-analyst-calls-like-tesla.html",
-   "reason": "Jefferies upgrade to Buy; close 633.98 > 50d 623.52",
-   "beta60": 0.49,
-   "corr60": 0.1
   },
   {
    "ticker": "BAH",
@@ -1663,9 +1638,51 @@
    "reason": "Signals v0.5.1, 3 independent confirmations, price above 50d (~163 vs ~121): (1) company Q3: revenue $1.426B (+2.3%), non-GAAP EPS $3.51, FY revenue/EPS guide raised, buyback upsized +$1.5B with $500M ASR https://www.prnewswire.com/news-releases/epam-reports-results-for-third-quarter-2026-302930064.html ; (2) Investing.com coverage of beat/guide https://www.investing.com/ ; (3) MarketBeat / analyst: Guggenheim PT 160 Buy, Morgan Stanley PT 140. Slot freed after morning TSLA -8% stop; buy at now quote (intraday).",
    "beta60": 0.09,
    "corr60": 0.02
+  },
+  {
+   "ticker": "SPY",
+   "sleeve": "signals",
+   "lot_id": "sig-SPY-idle",
+   "status": "idle_spy",
+   "is_idle_cash_in_spy": true,
+   "entry_date": "2026-11-06",
+   "entry_time_et": "2026-11-06 10:31 ET",
+   "shares": 0.018303,
+   "entry_price": 739.4479,
+   "last_price": 738.34,
+   "cost_basis": 13.53,
+   "market_value": 13.51,
+   "unrealized_pnl": null,
+   "pnl_pct": null,
+   "stop_price": null,
+   "target_price": null,
+   "exit_by_date": null,
+   "report_date": null,
+   "signal_type": "idle cash in SPY",
+   "signal_link": null,
+   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)",
+   "beta60": 1.0,
+   "corr60": 1.0
   }
  ],
  "closed_trades": [
+  {
+   "ticker": "CACI",
+   "sleeve": "signals",
+   "lot_id": "sig-CACI-2026-10-26",
+   "entry_date": "2026-10-26",
+   "entry_price": 650.9753,
+   "exit_date": "2026-11-06",
+   "exit_price": 587.9709,
+   "shares": 0.023042,
+   "pnl": -1.47,
+   "return_pct": -9.77,
+   "fees": 0.0285,
+   "days_held": 9.0,
+   "exit_reason": "STOP (-8%)",
+   "signal_type": "signal (v0.3-v0.4.1 rules)",
+   "signal_link": "https://www.cnbc.com/2026/10/26/monday-biggest-wall-street-analyst-calls-like-tesla.html"
+  },
   {
    "ticker": "TSLA",
    "sleeve": "signals",
@@ -1783,6 +1800,38 @@
   }
  ],
  "recent_fills": [
+  {
+   "date": "2026-11-06",
+   "time_et": "2026-11-06 10:31 ET",
+   "sleeve": "signals",
+   "ticker": "SPY",
+   "side": "buy",
+   "shares": 0.018303,
+   "quote_price": 738.34,
+   "fill_price": 738.7092,
+   "notional": 13.52,
+   "fee": 0.0135,
+   "price_source": "Yahoo Finance chart endpoint, regularMarketPrice (may be delayed ~15 min)",
+   "reason": "idle sleeve cash held in SPY (v0.5)",
+   "beta60": 1.0,
+   "corr60": 1.0
+  },
+  {
+   "date": "2026-11-06",
+   "time_et": "2026-11-06 10:29 ET",
+   "sleeve": "signals",
+   "ticker": "CACI",
+   "side": "sell",
+   "shares": 0.023042,
+   "quote_price": 588.265,
+   "fill_price": 587.9709,
+   "notional": 13.55,
+   "fee": 0.0135,
+   "price_source": "Yahoo Finance chart endpoint, regularMarketPrice (may be delayed ~15 min)",
+   "reason": "STOP (-8%)",
+   "beta60": 0.31,
+   "corr60": 0.13
+  },
   {
    "date": "2026-11-05",
    "time_et": "2026-11-05 14:38 ET",
@@ -3016,9 +3065,52 @@
    "corr60": 0.34
   }
  ],
- "last_fill_date": "2026-11-05",
- "pending_orders": [],
+ "last_fill_date": "2026-11-06",
+ "pending_orders": [
+  {
+   "trade_date": "2026-11-06",
+   "fill_at": "close",
+   "sleeve": "earnings",
+   "ticker": "AZO",
+   "side": "buy",
+   "dollars": null,
+   "shares": null,
+   "reason": "J4 run-up: reports 2026-12-08 (not-supplied); last pre-report close 2026-12-07 is 20 trading days after today; buy today's close, sell 2026-12-07 close; 5% of sleeve"
+  }
+ ],
  "skips": [
+  {
+   "date": "2026-11-06",
+   "logged_et": "2026-11-06 08:38 ET",
+   "sleeve": "signals",
+   "ticker": "OSCR",
+   "rule": "10 positions full",
+   "detail": "Q3 EPS $0.49 vs loss est, rev $5.14B beat, raised FY; confirmations: (1) Oscar IR https://ir.oscarhealth.com/news-events/press-releases/detail/228/oscar-health-announces-financial-results-for-third-quarter-2026-and-raises-full-year-2026-outlook (2) Investing.com https://www.investing.com/news/earnings/oscar-health-stock-rises-2-on-strong-earnings-beat-and-raised-outlook-93CH-5003163; above 50d; gap -0.1%"
+  },
+  {
+   "date": "2026-11-06",
+   "logged_et": "2026-11-06 08:38 ET",
+   "sleeve": "signals",
+   "ticker": "HUM",
+   "rule": "10 positions full",
+   "detail": "Q3 adj EPS beat vs ~-$1.00 est, raised FY adj EPS to >=$9.50; confirmations: (1) Humana IR https://humana.gcs-web.com/news-releases/news-release-details/humana-reports-third-quarter-2026-financial-results-raises-full (2) Investing.com https://www.investing.com/news/earnings/humana-beats-estimates-on-earnings-and-revenue-raises-guidance-5007444; above 50d; gap -0.4%"
+  },
+  {
+   "date": "2026-11-06",
+   "logged_et": "2026-11-06 08:38 ET",
+   "sleeve": "signals",
+   "ticker": "ELAN",
+   "rule": "10 positions full",
+   "detail": "Q3 adj EPS $0.27 vs $0.21, rev $1.26B vs $1.21B, raised FY; confirmations: (1) company PR https://www.prnewswire.com/news-releases/elanco-animal-health-reports-third-quarter-2026-results-302931566.html (2) Investing.com https://www.investing.com/news/earnings/elanco-animal-health-surges-on-q3-beat-and-raised-guidance-93CH-5007469; above 50d; gap -1.6%"
+  },
+  {
+   "date": "2026-11-06",
+   "logged_et": "2026-11-06 08:30 ET",
+   "sleeve": "earnings",
+   "ticker": "CASY",
+   "rule": "20 slots full",
+   "detail": "J4 run-up candidate"
+  },
   {
    "date": "2026-11-02",
    "logged_et": "2026-11-02 08:25 ET",
@@ -3054,6 +3146,654 @@
  ],
  "signals": [
   {
+   "date": "2026-11-06",
+   "ticker": "",
+   "signal_type": "josh_x",
+   "source": "YouTube @Thetradingfraternity Shorts (X unavailable)",
+   "sources": [
+    {
+     "url": "https://www.youtube.com/shorts/MItf8ua2Em4"
+    }
+   ],
+   "description": "Josh X still unavailable; newest Short 2026-11-06 selloff macro commentary; 11-04/11-03 midterms/regime Shorts; no named ticker today; methodology fit: regime narrative",
+   "sentiment": "neutral",
+   "prior_close": null,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": null,
+   "corr60": null,
+   "beta_asof": null
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "SNDK",
+   "signal_type": "retail_chatter",
+   "source": "ApeWisdom (Reddit) mentions scan",
+   "sources": [
+    {
+     "url": "https://apewisdom.io/"
+    }
+   ],
+   "description": "Mentions 239; held in momentum; rebound chatter after Thu crash",
+   "sentiment": "positive",
+   "prior_close": 806.43,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 3.55,
+   "corr60": 0.52,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "MU",
+   "signal_type": "retail_chatter",
+   "source": "ApeWisdom (Reddit) mentions scan",
+   "sources": [
+    {
+     "url": "https://apewisdom.io/"
+    }
+   ],
+   "description": "Mentions 641 vs 294 prior 24h; held in momentum; chatter not a tested edge; rebound after Thu crash",
+   "sentiment": "positive",
+   "prior_close": 656.39,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 2.75,
+   "corr60": 0.57,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "ONDS",
+   "signal_type": "short_avoid",
+   "source": "fetch_short_interest.py",
+   "sources": [
+    {
+     "url": "https://www.finra.org/"
+    }
+   ],
+   "description": "Short/shares 44.5% rising +11%; avoid flag",
+   "sentiment": "negative",
+   "prior_close": 4.52,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 2.61,
+   "corr60": 0.52,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "WOLF",
+   "signal_type": "short_avoid",
+   "source": "fetch_short_interest.py",
+   "sources": [
+    {
+     "url": "https://www.finra.org/"
+    }
+   ],
+   "description": "Short/shares 51.7% DTC 4.2; heavy SI avoid flag per 2018-26 study",
+   "sentiment": "negative",
+   "prior_close": 20.36,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 3.79,
+   "corr60": 0.54,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "VIX",
+   "signal_type": "vix",
+   "source": "fetch_sentiment.py",
+   "sources": [
+    {
+     "url": "https://www.cboe.com/"
+    }
+   ],
+   "description": "VIX close 28.18 on 2026-11-05 (1-yr pctl 98%; 20d avg 18.3; spike 30%+ above 20d); behavioral hold/dont panic-sell context; not yet >=30 episode",
+   "sentiment": "negative",
+   "prior_close": 28.18,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": null,
+   "corr60": null,
+   "beta_asof": "n/a (not enough data)"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "HD",
+   "signal_type": "pair",
+   "source": "paper/pairs_watchlist.csv",
+   "sources": [],
+   "description": "HD/LOW z -2.01 (stretched, laggard HD); shadow only",
+   "sentiment": "positive",
+   "prior_close": 349.94,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.41,
+   "corr60": 0.19,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "KO",
+   "signal_type": "pair",
+   "source": "paper/pairs_watchlist.csv",
+   "sources": [],
+   "description": "KO/KDP z -2.15 (stretched, laggard KO); shadow only",
+   "sentiment": "positive",
+   "prior_close": 95.73,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": -0.2,
+   "corr60": -0.16,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "ADI",
+   "signal_type": "pair",
+   "source": "paper/pairs_watchlist.csv",
+   "sources": [],
+   "description": "TXN/ADI log-ratio z +3.66 (stretched, laggard ADI); shadow only; confirmations n/a",
+   "sentiment": "positive",
+   "prior_close": 361.01,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.97,
+   "corr60": 0.68,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "FMAO",
+   "signal_type": "congress_buy",
+   "source": "fetch_congress.py House PTR",
+   "sources": [
+    {
+     "url": "https://disclosure.house.gov/"
+    }
+   ],
+   "description": "Latta FMAO purchase <=$1k (tiny; context only)",
+   "sentiment": "positive",
+   "prior_close": 36.37,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.45,
+   "corr60": 0.31,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "PG",
+   "signal_type": "congress_buy",
+   "source": "fetch_congress.py House PTR",
+   "sources": [
+    {
+     "url": "https://disclosure.house.gov/"
+    }
+   ],
+   "description": "Salazar disclosed 2 PG purchases <=$1k each (tiny; context only)",
+   "sentiment": "positive",
+   "prior_close": 167.1,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": -0.09,
+   "corr60": -0.06,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "NVDA",
+   "signal_type": "congress_buy",
+   "source": "fetch_congress.py House PTR",
+   "sources": [
+    {
+     "url": "https://disclosure.house.gov/"
+    }
+   ],
+   "description": "Salazar disclosed 2 NVDA purchases <=$1k each (tiny; context only); cluster with PG same member",
+   "sentiment": "positive",
+   "prior_close": 181.6,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.87,
+   "corr60": 0.66,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "GLXY",
+   "signal_type": "insider_buy",
+   "source": "fetch_insiders.py (Form 4)",
+   "sources": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1380615/0001380615-26-000013.txt"
+    }
+   ],
+   "description": "CEO Novogratz bought ~$29.6M (context only)",
+   "sentiment": "positive",
+   "prior_close": 12.98,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 2.92,
+   "corr60": 0.4,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "INTC",
+   "signal_type": "insider_buy",
+   "source": "fetch_insiders.py (Form 4)",
+   "sources": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1008463/0000050863-26-000195.txt"
+    }
+   ],
+   "description": "CEO Tan Lip Bu bought ~$19.4M (context only); below 50d",
+   "sentiment": "positive",
+   "prior_close": 52.25,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 3.46,
+   "corr60": 0.55,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "AN",
+   "signal_type": "insider_buy",
+   "source": "fetch_insiders.py (Form 4)",
+   "sources": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1293167/0001293167-26-000006.txt"
+    }
+   ],
+   "description": "Cluster: 3 insiders incl CEO/CFO bought ~$2.9M (context only)",
+   "sentiment": "positive",
+   "prior_close": 183.47,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": -0.7,
+   "corr60": -0.17,
+   "beta_asof": "2026-11-04"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "UPBD",
+   "signal_type": "insider_buy",
+   "source": "fetch_insiders.py (Form 4)",
+   "sources": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1743843/0001193125-26-449973.txt"
+    }
+   ],
+   "description": "Cluster: 7 insiders incl CEO/CFO bought ~$2.7M (context only, edge faded after 2018); confirmations n/a for trade",
+   "sentiment": "positive",
+   "prior_close": 24.14,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.01,
+   "corr60": 0.0,
+   "beta_asof": "2026-11-04"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "AFRM",
+   "signal_type": "earnings",
+   "source": "CNBC",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/11/06/stocks-making-the-biggest-moves-premarket-moderna-airbnb-cloudflare-affirm-more.html"
+    }
+   ],
+   "description": "Beat but credit overhang; -4% pm; negative",
+   "sentiment": "negative",
+   "prior_close": 69.66,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 2.36,
+   "corr60": 0.58,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "LYFT",
+   "signal_type": "earnings",
+   "source": "CNBC",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/11/06/stocks-making-the-biggest-moves-premarket-moderna-airbnb-cloudflare-affirm-more.html"
+    }
+   ],
+   "description": "Rev miss $1.82B vs $1.92B; -5%+ pm; single primary outlet; negative",
+   "sentiment": "negative",
+   "prior_close": 17.84,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.28,
+   "corr60": 0.4,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "AXON",
+   "signal_type": "earnings",
+   "source": "CNBC",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/11/06/stocks-making-the-biggest-moves-premarket-moderna-airbnb-cloudflare-affirm-more.html"
+    }
+   ],
+   "description": "EPS/rev miss, weak Q4 guide, +$1.2B Skydio stake; -9% pm; negative",
+   "sentiment": "negative",
+   "prior_close": 382.56,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.76,
+   "corr60": 0.46,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "FIVN",
+   "signal_type": "earnings",
+   "source": "CNBC + Investing.com",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/11/06/stocks-making-the-biggest-moves-premarket-moderna-airbnb-cloudflare-affirm-more.html"
+    }
+   ],
+   "description": "Lowered FY adj EPS guide + $325M Level AI deal; -17% pm; negative",
+   "sentiment": "negative",
+   "prior_close": 34.14,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 2.1,
+   "corr60": 0.47,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "DKNG",
+   "signal_type": "earnings",
+   "source": "CNBC + X news",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/11/06/stocks-making-the-biggest-moves-premarket-moderna-airbnb-cloudflare-affirm-more.html"
+    }
+   ],
+   "description": "Wider Q3 loss, cut FY guide; -20%+ pm; 2 confirmations; negative",
+   "sentiment": "negative",
+   "prior_close": 23.52,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.45,
+   "corr60": 0.13,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "TEAM",
+   "signal_type": "earnings",
+   "source": "CNBC + Investing.com",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/11/06/stocks-making-the-biggest-moves-premarket-moderna-airbnb-cloudflare-affirm-more.html"
+    }
+   ],
+   "description": "Data-center rev growth expected -14% FQ2 / -16% FY; stock -16 to -18% pm; 2 confirmations; negative",
+   "sentiment": "negative",
+   "prior_close": 183.29,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.43,
+   "corr60": 0.35,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "LRCX",
+   "signal_type": "news",
+   "source": "CNBC premarket",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/11/06/stocks-making-the-biggest-moves-premarket-moderna-airbnb-cloudflare-affirm-more.html"
+    }
+   ],
+   "description": "$25B buyback authorization; 1 confirmation; below 50d; gap +11.6%; log only",
+   "sentiment": "positive",
+   "prior_close": 185.2,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 2.83,
+   "corr60": 0.6,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "IREN",
+   "signal_type": "earnings",
+   "source": "CNBC + TipRanks + Investing.com",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/11/06/stocks-making-the-biggest-moves-premarket-moderna-airbnb-cloudflare-affirm-more.html"
+    }
+   ],
+   "description": "FQ1 rev $228M vs ~$221M, AI Cloud $200M, backlog $20.3B; confirmations mostly same-print syndication (borderline); below 50d; gap +15.5%; log only / F50x",
+   "sentiment": "positive",
+   "prior_close": 18.03,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 3.5,
+   "corr60": 0.53,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "FROG",
+   "signal_type": "earnings",
+   "source": "JFrog IR + CNBC + Investing.com",
+   "sources": [
+    {
+     "url": "https://investors.jfrog.com/news/news-details/2026/JFrog-Announces-Third-Quarter-2026-Results/default.aspx"
+    }
+   ],
+   "description": "Raised FY adj EPS $1.14-1.16 / rev $680-682M vs FactSet ~$0.98/$652M; 2+ confirmations; below 50d; gap +22.2% gap-up skip; F50",
+   "sentiment": "positive",
+   "prior_close": 74.62,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 2.57,
+   "corr60": 0.48,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "TMDX",
+   "signal_type": "earnings",
+   "source": "TransMedics IR + Canaccord/Investing.com",
+   "sources": [
+    {
+     "url": "https://transmedicsinc.gcs-web.com/news-releases/news-release-details/transmedics-reports-third-quarter-2026-financial-results"
+    }
+   ],
+   "description": "Rev $203M (+41%), raised FY $764-774M; Canaccord PT $95->$120; 2+ confirmations; below 50d; gap +11.8% gap-up skip; F50",
+   "sentiment": "positive",
+   "prior_close": 68.98,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.47,
+   "corr60": 0.44,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "VST",
+   "signal_type": "earnings",
+   "source": "Vistra IR + MarketBeat + Investing.com",
+   "sources": [
+    {
+     "url": "https://investor.vistracorp.com/2026-11-06-Vistra-Reports-Third-Quarter-2026-Results"
+    }
+   ],
+   "description": "Ongoing Ops Adj EBITDA $2.378B (+50%+), raised 2026 EBITDA $7.1-7.5B, init 2027, +$1.5B buyback; 2+ confirmations; below 50d; gap +6.1% gap-up skip; F50",
+   "sentiment": "positive",
+   "prior_close": 112.89,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.33,
+   "corr60": 0.32,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "NET",
+   "signal_type": "earnings",
+   "source": "SEC EX-99.1 + CNBC + Investing.com",
+   "sources": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000060/q326exhibit991.htm"
+    }
+   ],
+   "description": "Rev $782.5M (+39%), adj EPS $0.38 vs $0.34, Q4 guide $845-846M/$0.43 above Street; 2+ confirmations; below 50d; gap +20% gap-up skip; F50 candidate",
+   "sentiment": "positive",
+   "prior_close": 244.51,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 3.07,
+   "corr60": 0.47,
+   "beta_asof": "2026-11-02"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "ABNB",
+   "signal_type": "earnings",
+   "source": "Airbnb newsroom + CNBC + Investing.com/SEC",
+   "sources": [
+    {
+     "url": "https://news.airbnb.com/airbnb-q3-2026-financial-results"
+    }
+   ],
+   "description": "EPS $3.16 vs $2.85, rev $4.87B vs $4.75B, raised FY high teens, $12B buyback; 2+ confirmations; above 50d; gap +13.9% gap-up skip v0.5.6",
+   "sentiment": "positive",
+   "prior_close": 170.13,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.9,
+   "corr60": 0.35,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "MRNA",
+   "signal_type": "earnings",
+   "source": "CNBC + company/StockTitan + Investing.com",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/11/06/moderna-mrna-earnings-q3-2026.html"
+    }
+   ],
+   "description": "Q3 rev $1.31B (+29%) beat, EPS $0.38 vs loss est, raised 2026 rev growth 15-25%; 2+ confirmations; above 50d; Yahoo pm gap -1.2% (CNBC cited ~+10% earlier); held in momentum; SKIP buy slots full",
+   "sentiment": "positive",
+   "prior_close": 241.46,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 4.53,
+   "corr60": 0.17,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "OSCR",
+   "signal_type": "earnings",
+   "source": "Oscar IR + Investing.com + Fierce Healthcare",
+   "sources": [
+    {
+     "url": "https://ir.oscarhealth.com/news-events/press-releases/detail/228/oscar-health-announces-financial-results-for-third-quarter-2026-and-raises-full-year-2026-outlook"
+    }
+   ],
+   "description": "Q3 EPS $0.49 vs loss est, rev $5.14B beat, raised FY; 3 confirmations; above 50d; gap -0.1%; SKIP buy slots full (print was 11-05)",
+   "sentiment": "positive",
+   "prior_close": 33.18,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.41,
+   "corr60": 0.4,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "HUM",
+   "signal_type": "earnings",
+   "source": "Humana IR + Investing.com",
+   "sources": [
+    {
+     "url": "https://humana.gcs-web.com/news-releases/news-release-details/humana-reports-third-quarter-2026-financial-results-raises-full"
+    }
+   ],
+   "description": "Q3 adj EPS -$0.70 beat vs ~-$1.00, raised FY adj EPS to >=$9.50; 2 confirmations; above 50d; gap -0.4%; SKIP buy slots full",
+   "sentiment": "positive",
+   "prior_close": 411.79,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.67,
+   "corr60": 0.26,
+   "beta_asof": "2026-11-05"
+  },
+  {
+   "date": "2026-11-06",
+   "ticker": "ELAN",
+   "signal_type": "earnings",
+   "source": "company PR + Investing.com",
+   "sources": [
+    {
+     "url": "https://www.prnewswire.com/news-releases/elanco-animal-health-reports-third-quarter-2026-results-302931566.html"
+    }
+   ],
+   "description": "Q3 adj EPS $0.27 vs $0.21, rev $1.26B vs $1.21B, raised FY; 2 confirmations; above 50d; gap -1.6%; SKIP buy slots full 10/10",
+   "sentiment": "positive",
+   "prior_close": 23.68,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.99,
+   "corr60": 0.41,
+   "beta_asof": "2026-11-05"
+  },
+  {
    "date": "2026-11-05",
    "ticker": "SNDK",
    "signal_type": "retail_chatter",
@@ -3066,7 +3806,7 @@
    "description": "Mentions 102 vs 5 prior 24h (~20x) during memory-stock slide (chatter is not a tested edge); we hold SNDK in momentum sleeve; below 50d",
    "sentiment": "negative",
    "prior_close": 1037.4,
-   "ret_1d": null,
+   "ret_1d": -0.223,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 2.55,
@@ -3086,7 +3826,7 @@
    "description": "Mentions 76 vs 4 prior 24h (~15x) alongside earnings gap (chatter is not a tested edge); below 50d",
    "sentiment": "positive",
    "prior_close": 271.75,
-   "ret_1d": null,
+   "ret_1d": 0.31,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 2.72,
@@ -3102,7 +3842,7 @@
    "description": "TXN/ADI log-ratio z-score +3.97 (stretched, laggard ADI); shadow-tracked only, no paper money; above 50d",
    "sentiment": "positive",
    "prior_close": 406.24,
-   "ret_1d": null,
+   "ret_1d": -0.111,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.54,
@@ -3122,7 +3862,7 @@
    "description": "Cluster: 3 insiders incl CEO/CFO bought ~$2.9M (context only); above 50d",
    "sentiment": "positive",
    "prior_close": 183.47,
-   "ret_1d": null,
+   "ret_1d": 0.025,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": -0.7,
@@ -3142,7 +3882,7 @@
    "description": "Cluster: 6 insiders incl CEO/CFO bought ~$2.5M (context only, edge faded after 2018); above 50d",
    "sentiment": "positive",
    "prior_close": 24.14,
-   "ret_1d": null,
+   "ret_1d": 0.031,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.01,
@@ -3162,7 +3902,7 @@
    "description": "Ad-tech peer of AppLovin (+21%) and Unity (+20%) premarket beats; measuring whether sympathy follows; not stock-specific news; above 50d",
    "sentiment": "positive",
    "prior_close": 13.23,
-   "ret_1d": null,
+   "ret_1d": -0.032,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.48,
@@ -3182,7 +3922,7 @@
    "description": "Memory stocks down roughly 4-5% premarket alongside Qualcomm's weak handset print and AI/data-center backlash headlines; we hold SNDK in momentum sleeve; 1 theme; below 50d",
    "sentiment": "negative",
    "prior_close": 1037.4,
-   "ret_1d": null,
+   "ret_1d": -0.223,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 2.55,
@@ -3202,7 +3942,7 @@
    "description": "Q3 revenue $1.72B vs $1.73B and DAU 495M vs 499M missed, about -10% premarket; 1 source; tracking only; above 50d",
    "sentiment": "negative",
    "prior_close": 5.92,
-   "ret_1d": null,
+   "ret_1d": -0.14,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 2.26,
@@ -3222,7 +3962,7 @@
    "description": "Q3 adj EPS $0.55 vs $0.59 and revenue $724M vs $754M missed; about -15% premarket; 1 source; tracking only; above 50d",
    "sentiment": "negative",
    "prior_close": 33.9,
-   "ret_1d": null,
+   "ret_1d": -0.106,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.41,
@@ -3242,7 +3982,7 @@
    "description": "Slight beat but guide $2.15-2.35 vs $2.26 consensus, premarket about -9%; 2 outlets same story (1 source); negative, tracking only (no shorting); below 50d",
    "sentiment": "negative",
    "prior_close": 173.19,
-   "ret_1d": null,
+   "ret_1d": -0.095,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 2.78,
@@ -3262,7 +4002,7 @@
    "description": "Q3 revenue $521M (+21%), adj EPS $0.33 vs $0.17 est; Baird PT 9.50->14.50 Outperform; shares up double digits premarket; 2 independent confirmations; not bought: signals sleeve full and small-cap spread risk; above 50d",
    "sentiment": "positive",
    "prior_close": 9.84,
-   "ret_1d": null,
+   "ret_1d": 0.256,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.19,
@@ -3282,7 +4022,7 @@
    "description": "Q3 revenue $1.426B (+2.3%), non-GAAP EPS $3.51, FY revenue growth and EPS guide raised, buyback upsized by $1.5B with $500M ASR; Guggenheim PT 160 Buy and Morgan Stanley PT 140 (both pre-earnings); 3 independent confirmations; not bought: signals sleeve full (10/10 after U); above 50d",
    "sentiment": "positive",
    "prior_close": 137.36,
-   "ret_1d": null,
+   "ret_1d": 0.206,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.09,
@@ -3302,7 +4042,7 @@
    "description": "Q3 revenue $2.18B vs $2.07B and adj EBITDA $1.84B vs $1.73B (CNBC/FactSet), buyback; Wedbush PT $600, BTIG PT $450, Goldman PT $445 Neutral; premarket ~+20%, Reddit mentions 15x; 3 independent confirmations but below 50d so no buy (F50 shadow); below 50d",
    "sentiment": "positive",
    "prior_close": 271.75,
-   "ret_1d": null,
+   "ret_1d": 0.31,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 2.72,
@@ -3322,7 +4062,7 @@
    "description": "Q3 EPS $0.25 vs $0.05 est, revenue $622M vs $567M est (CNBC/LSEG), Q4 guide above consensus (Investing.com); premarket ~+20%; 3 independent confirmations (company results, Wedbush/Morgan Stanley/BTIG analyst support, unusual volume); signals-sleeve buy queued; above 50d (thin margin)",
    "sentiment": "positive",
    "prior_close": 42.46,
-   "ret_1d": null,
+   "ret_1d": 0.149,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 2.36,
@@ -3388,665 +4128,13 @@
    "beta60": 1.03,
    "corr60": 0.17,
    "beta_asof": "2026-11-03"
-  },
-  {
-   "date": "2026-11-04",
-   "ticker": "SIRI",
-   "signal_type": "insider_buy",
-   "source": "fetch_insiders.py (Form 4)",
-   "sources": [
-    {
-     "url": "https://www.sec.gov/Archives/edgar/data/1067983/0001193125-26-445930.txt"
-    }
-   ],
-   "description": "Berkshire 10% holder purchase (context only)",
-   "sentiment": "positive",
-   "prior_close": 30.8,
-   "ret_1d": 0.084,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.05,
-   "corr60": 0.02,
-   "beta_asof": "2026-11-03"
-  },
-  {
-   "date": "2026-11-04",
-   "ticker": "BA",
-   "signal_type": "insider_buy",
-   "source": "fetch_insiders.py (Form 4)",
-   "sources": [
-    {
-     "url": "https://www.sec.gov/Archives/edgar/data/12927/0001225208-26-008641.txt"
-    }
-   ],
-   "description": "Two Boeing insiders (Buckley, Mollenkopf) bought ~$3.0M combined (context only); below 50d",
-   "sentiment": "positive",
-   "prior_close": 173.31,
-   "ret_1d": 0.021,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.64,
-   "corr60": 0.19,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-04",
-   "ticker": "ADI",
-   "signal_type": "pair",
-   "source": "pairs_watchlist.py",
-   "sources": [],
-   "description": "TXN/ADI ratio z-score +2.85 (stretched); laggard = ADI. Shadow log only, no paper money",
-   "sentiment": "positive",
-   "prior_close": 419.79,
-   "ret_1d": -0.032,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.98,
-   "corr60": 0.61,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-04",
-   "ticker": "CRWV",
-   "signal_type": "policy_news",
-   "source": "Reuters",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/stock-market-news/ai-data-center-stocks-dip-renewables-surge-after-democrat-sweep-in-us-midterm-elections-4998519"
-    }
-   ],
-   "description": "Data-center names slip premarket on stricter-oversight worries; below 50d",
-   "sentiment": "negative",
-   "prior_close": 53.74,
-   "ret_1d": -0.099,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 4.48,
-   "corr60": 0.49,
-   "beta_asof": "2026-11-03"
-  },
-  {
-   "date": "2026-11-04",
-   "ticker": "TSLA",
-   "signal_type": "policy_news",
-   "source": "Reuters",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/stock-market-news/ai-data-center-stocks-dip-renewables-surge-after-democrat-sweep-in-us-midterm-elections-4998519"
-    }
-   ],
-   "description": "Down ~6% premarket with AI/data-center names after Democratic sweep; we hold a signals-sleeve TSLA lot (watch -8% stop)",
-   "sentiment": "negative",
-   "prior_close": 398.5,
-   "ret_1d": -0.033,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 2.42,
-   "corr60": 0.6,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-04",
-   "ticker": "SWKS",
-   "signal_type": "earnings",
-   "source": "CNBC premarket movers",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/11/04/stocks-making-the-biggest-moves-premarket-djt-tsla-crwv-nvo.html"
-    }
-   ],
-   "description": "Premarket drop after results/outlook",
-   "sentiment": "negative",
-   "prior_close": 85.4,
-   "ret_1d": -0.029,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.72,
-   "corr60": 0.13,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-04",
-   "ticker": "DDOG",
-   "signal_type": "earnings",
-   "source": "CNBC premarket movers",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/11/04/stocks-making-the-biggest-moves-premarket-djt-tsla-crwv-nvo.html"
-    }
-   ],
-   "description": "Sharp premarket drop after earnings; below 50d",
-   "sentiment": "negative",
-   "prior_close": 220.52,
-   "ret_1d": -0.144,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 3.32,
-   "corr60": 0.51,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-04",
-   "ticker": "HCA",
-   "signal_type": "sector_policy",
-   "source": "Reuters / TD Cowen",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/stock-market-news/ai-data-center-stocks-dip-renewables-surge-after-democrat-sweep-in-us-midterm-elections-4998519"
-    }
-   ],
-   "description": "Hospital operators up ~4% premarket on policy read-through (same one theme as CNC); not bought",
-   "sentiment": "positive",
-   "prior_close": 462.86,
-   "ret_1d": 0.103,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.04,
-   "corr60": 0.02,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-04",
-   "ticker": "CNC",
-   "signal_type": "sector_policy",
-   "source": "Reuters / TD Cowen",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/stock-market-news/ai-data-center-stocks-dip-renewables-surge-after-democrat-sweep-in-us-midterm-elections-4998519"
-    }
-   ],
-   "description": "Health insurers/hospitals +4-6% premarket on lower policy risk after Democratic Congress sweep (CNC +4.5%, HCA ~+4%, MOH +6%); one theme, not stock-specific; not bought",
-   "sentiment": "positive",
-   "prior_close": 67.48,
-   "ret_1d": 0.126,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.5,
-   "corr60": 0.16,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-04",
-   "ticker": "NVO",
-   "signal_type": "earnings",
-   "source": "CNBC premarket movers",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/11/04/stocks-making-the-biggest-moves-premarket-djt-tsla-crwv-nvo.html"
-    }
-   ],
-   "description": "Premarket gain on results (single source); below 50d (40.97)",
-   "sentiment": "positive",
-   "prior_close": 40.19,
-   "ret_1d": 0.05,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": -0.08,
-   "corr60": -0.03,
-   "beta_asof": "2026-11-03"
-  },
-  {
-   "date": "2026-11-04",
-   "ticker": "XYZ",
-   "signal_type": "earnings",
-   "source": "CNBC premarket movers",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/11/04/stocks-making-the-biggest-moves-premarket-djt-tsla-crwv-nvo.html"
-    }
-   ],
-   "description": "Premarket gain on earnings (single source); below 50d (77.78)",
-   "sentiment": "positive",
-   "prior_close": 76.0,
-   "ret_1d": 0.153,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.77,
-   "corr60": 0.52,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-04",
-   "ticker": "DUOL",
-   "signal_type": "earnings",
-   "source": "CNBC premarket movers",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/11/04/stocks-making-the-biggest-moves-premarket-djt-tsla-crwv-nvo.html"
-    }
-   ],
-   "description": "Large premarket jump on earnings (single source); below 50d (144.65), single source",
-   "sentiment": "positive",
-   "prior_close": 128.0,
-   "ret_1d": 0.26,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.5,
-   "corr60": 0.09,
-   "beta_asof": "2026-11-03"
-  },
-  {
-   "date": "2026-11-04",
-   "ticker": "AMD",
-   "signal_type": "earnings",
-   "source": "web (Investing.com/Benzinga)",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/stock-market-news/premarket-movers-trump-media-ai-infrastructure-stocks-fall-amd-jumps-4998777"
-    }
-   ],
-   "description": "Q3 beat + guide, ~+6% premarket; PT raises Stifel 725, Piper 650, JPM 575 (BofA/Mizuho/UBS cut); below 50d (548.70); F50 shadow; retail chatter 2.2x",
-   "sentiment": "positive",
-   "prior_close": 483.9,
-   "ret_1d": 0.01,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 3.51,
-   "corr60": 0.61,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-04",
-   "ticker": "ANET",
-   "signal_type": "earnings",
-   "source": "web (CNBC/TipRanks)",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/11/04/stocks-making-the-biggest-moves-premarket-djt-tsla-crwv-nvo.html"
-    }
-   ],
-   "description": "Q3 beat + raised guide, +~10-13% premarket; UBS PT 291, JPM 270, Piper 261, Citi 248; below 50d (194.36) so not bought; F50 shadow",
-   "sentiment": "positive",
-   "prior_close": 169.91,
-   "ret_1d": 0.05,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 2.75,
-   "corr60": 0.56,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-04",
-   "ticker": "AMGN",
-   "signal_type": "earnings",
-   "source": "CNBC/Reuters/Investing.com + analyst notes",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/analyst-ratings/wells-fargo-raises-amgen-stock-price-target-on-strong-momentum-93CH-4998080"
-    }
-   ],
-   "description": "Q3 beat (EPS 6.45 vs ~5.76) and raised FY26 guide; PT raises at JPM 425, Wells 460, Canaccord 440, Citi 465, Goldman 536; above 50d (420.83); signals-sleeve buy queued (4 sources)",
-   "sentiment": "positive",
-   "prior_close": 461.26,
-   "ret_1d": 0.037,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.4,
-   "corr60": 0.12,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-03",
-   "ticker": "SHW",
-   "signal_type": "pair",
-   "source": "pairs_watchlist.py",
-   "sources": [],
-   "description": "SHW/PPG ratio z-score -2.45 (stretched); laggard = SHW. Shadow log only, no paper money",
-   "sentiment": "positive",
-   "prior_close": 352.37,
-   "ret_1d": -0.033,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.34,
-   "corr60": 0.14,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-03",
-   "ticker": "MU",
-   "signal_type": "congress_buy",
-   "source": "fetch_congress.py (House/Senate disclosures)",
-   "sources": [
-    {
-     "url": "https://disclosures-clerk.house.gov/FinancialDisclosure"
-    }
-   ],
-   "description": "Tiny MU purchase disclosed in last 3 days (context only, no confirmation value)",
-   "sentiment": "positive",
-   "prior_close": 833.59,
-   "ret_1d": 0.026,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 2.47,
-   "corr60": 0.46,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-03",
-   "ticker": "PLTR",
-   "signal_type": "earnings",
-   "source": "CNBC premarket movers",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/11/03/stocks-making-the-biggest-moves-premarket-pfe-pltr-aapl-zbra.html"
-    }
-   ],
-   "description": "Down ~6-8% premarket despite strong earnings, on slowing contract-growth concerns",
-   "sentiment": "negative",
-   "prior_close": 178.34,
-   "ret_1d": -0.017,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 2.73,
-   "corr60": 0.56,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-03",
-   "ticker": "DT",
-   "signal_type": "earnings",
-   "source": "TheStockCatalyst / Investing.com",
-   "sources": [
-    {
-     "url": "https://www.thestockcatalyst.com/NasdaqPMEarningsMovers"
-    }
-   ],
-   "description": "Dynatrace down ~15-17% premarket on weak guidance and margin concerns",
-   "sentiment": "negative",
-   "prior_close": 55.13,
-   "ret_1d": -0.147,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.56,
-   "corr60": 0.42,
-   "beta_asof": "2026-11-02"
-  },
-  {
-   "date": "2026-11-03",
-   "ticker": "SHOP",
-   "signal_type": "earnings",
-   "source": "Investing.com / RTTNews",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/stock-market-news/why-is-shopify-stock-tumbling-today-93CH-4994894"
-    }
-   ],
-   "description": "Q3 EPS beat but GMV and subscription revenue missed; down ~15-16% premarket. Sympathy risk for e-commerce names",
-   "sentiment": "negative",
-   "prior_close": 156.22,
-   "ret_1d": -0.087,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 2.96,
-   "corr60": 0.6,
-   "beta_asof": "2026-11-02"
-  },
-  {
-   "date": "2026-11-03",
-   "ticker": "GRAB",
-   "signal_type": "earnings",
-   "source": "Investing.com",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/stock-market-news/why-is-grab-stock-surging-today-93CH-4994332"
-    }
-   ],
-   "description": "Record Q3 results and raised EBITDA outlook; up ~8-10% premarket. 1 source and below 50d (2.86 vs 3.09): no buy",
-   "sentiment": "positive",
-   "prior_close": 2.86,
-   "ret_1d": 0.091,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.87,
-   "corr60": 0.21,
-   "beta_asof": "2026-11-02"
-  },
-  {
-   "date": "2026-11-03",
-   "ticker": "RVTY",
-   "signal_type": "earnings",
-   "source": "CNBC premarket movers",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/11/03/stocks-making-the-biggest-moves-premarket-pfe-pltr-aapl-zbra.html"
-    }
-   ],
-   "description": "Revvity up ~7% premarket after raising FY adj EPS guide to 5.40-5.45. 1 source: no buy",
-   "sentiment": "positive",
-   "prior_close": 151.6,
-   "ret_1d": 0.078,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.02,
-   "corr60": 0.27,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-03",
-   "ticker": "DD",
-   "signal_type": "earnings",
-   "source": "Seeking Alpha / Reuters",
-   "sources": [
-    {
-     "url": "https://seekingalpha.com/news/4663213-dupont-raises-2026-earnings-forecast-after-stronger-q3-performance"
-    }
-   ],
-   "description": "Q3 beat; raised FY26 adj EPS guide to 7.47-7.52. No post-earnings analyst action found, 1 source: no buy",
-   "sentiment": "positive",
-   "prior_close": 141.3,
-   "ret_1d": 0.086,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.5,
-   "corr60": 0.24,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-03",
-   "ticker": "PFE",
-   "signal_type": "earnings",
-   "source": "Pfizer press release / Reuters",
-   "sources": [
-    {
-     "url": "https://www.pfizer.com/news/press-release/press-release-detail/pfizer-reports-strong-third-quarter-2026-results-and-raises"
-    }
-   ],
-   "description": "Q3 beat; raised FY26 revenue guide to 62-64B and adj EPS to 2.95-3.05 (11/3 pre-market). No post-earnings analyst raise found yet, so 1 source: no buy",
-   "sentiment": "positive",
-   "prior_close": 30.67,
-   "ret_1d": -0.022,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": -0.14,
-   "corr60": -0.07,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-03",
-   "ticker": "NET",
-   "signal_type": "analyst_upgrade",
-   "source": "24/7 Wall St",
-   "sources": [
-    {
-     "url": "https://247wallst.com/investing/2026/11/03/buy-sell-or-hold-tuesdays-top-upgrades-and-downgrades-aon-bloom-energy-chevron-cloudflare-marvell-technologies-lumentum-holdings-merck-co-roku-x-energy-and-more/"
-    }
-   ],
-   "description": "JPMorgan upgrade to Overweight PT 350. 1 source, below 50d (265.17 vs 320.17); reports earnings 11/5. No buy; F50x shadow only",
-   "sentiment": "positive",
-   "prior_close": 265.17,
-   "ret_1d": 0.032,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 3.07,
-   "corr60": 0.47,
-   "beta_asof": "2026-11-02"
-  },
-  {
-   "date": "2026-11-03",
-   "ticker": "HWM",
-   "signal_type": "analyst_upgrade",
-   "source": "TradingView / company release",
-   "sources": [
-    {
-     "url": "https://www.tradingview.com/news/tradingview:bc262791163b0:0-keybanc-upgrades-howmet-aerospace-to-overweight-from-sector-weight-sets-price-target-at-237/"
-    }
-   ],
-   "description": "KeyBanc upgrade to Overweight PT 237 (11/3) plus Q3 beat, guidance raise and bigger buyback (10/29). 2 independent sources but BELOW 50d (212.99 vs 227.86): no buy, F50 shadow only",
-   "sentiment": "positive",
-   "prior_close": 212.99,
-   "ret_1d": 0.048,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.11,
-   "corr60": 0.26,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-03",
-   "ticker": "AON",
-   "signal_type": "analyst_upgrade",
-   "source": "Investing.com / MarketBeat / company release",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/analyst-ratings/bmo-upgrades-aon-stock-rating-to-outperform-on-growth-outlook-93CH-4994184"
-    }
-   ],
-   "description": "BMO upgrade to Outperform PT 319->380 (11/3); Cantor PT 400->410 (11/2); Q3 results 10/28 (6% organic growth). 3 independent sources; above 50d. Signals-sleeve paper buy queued at open",
-   "sentiment": "positive",
-   "prior_close": 333.38,
-   "ret_1d": -0.01,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": -0.25,
-   "corr60": -0.08,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-03",
-   "ticker": "LHX",
-   "signal_type": "analyst_upgrade",
-   "source": "Investing.com / company release",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/analyst-ratings/bofa-raises-l3harris-stock-price-target-to-375-on-earnings-beat-93CH-4994255"
-    }
-   ],
-   "description": "Q3 beat + raised FY26 guidance (10/29); BofA PT 325->375 Buy (11/3); JPM resumed Overweight PT 320 (11/2); BNP PT 260->300 (10/30). 4 independent sources; above 50d. Signals-sleeve paper buy queued at open",
-   "sentiment": "positive",
-   "prior_close": 278.96,
-   "ret_1d": -0.005,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": -0.25,
-   "corr60": -0.1,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-02",
-   "ticker": "NVDA",
-   "signal_type": "analyst_pt_cut",
-   "source": "Melius via CNBC",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/11/02/biggest-stocks-by-analyst-calls-on-wall-street.html"
-    }
-   ],
-   "description": "Melius keeps Buy but cuts PT 420->315; also cut AMD, AVGO, MRVL, DELL, QCOM, CRWV targets (AMD/MRVL/DELL are momentum holdings)",
-   "sentiment": "negative",
-   "prior_close": 204.64,
-   "ret_1d": -0.013,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 2.18,
-   "corr60": 0.62,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-02",
-   "ticker": "RDDT",
-   "signal_type": "analyst_downgrade",
-   "source": "Loop Capital via 24/7 Wall St",
-   "sources": [
-    {
-     "url": "https://247wallst.com/investing/2026/11/02/buy-sell-or-hold-todays-top-upgrades-and-downgrades-amazon-com-coinbase-global-crowdstrike-formfactor-gamestop-l3harris-technologies-oracle-reddit-rivian-automotive-and-more/"
-    }
-   ],
-   "description": "Loop downgrade Buy->Hold, PT 250->100 after weak Q4 guide. Tracking only",
-   "sentiment": "negative",
-   "prior_close": 91.73,
-   "ret_1d": -0.008,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 3.75,
-   "corr60": 0.45,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-02",
-   "ticker": "COIN",
-   "signal_type": "analyst_downgrade",
-   "source": "Morgan Stanley via CNBC",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/11/02/biggest-stocks-by-analyst-calls-on-wall-street.html"
-    }
-   ],
-   "description": "MS downgrade EW->Underweight, PT 258->120 (cut 27/28 rev est 28%/18%). Tracking only",
-   "sentiment": "negative",
-   "prior_close": 143.54,
-   "ret_1d": -0.04,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 4.02,
-   "corr60": 0.53,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-02",
-   "ticker": "MRVL",
-   "signal_type": "merger",
-   "source": "CNBC",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/11/02/stocks-making-the-biggest-moves-premarket-crwd-rivn-mu.html"
-    }
-   ],
-   "description": "Acquirer in all-stock LITE deal; +3% premarket. Held in momentum + earnings sleeves. Melius also cut MRVL target (same day)",
-   "sentiment": "positive",
-   "prior_close": 196.4,
-   "ret_1d": -0.127,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 3.71,
-   "corr60": 0.5,
-   "beta_asof": "2026-10-30"
-  },
-  {
-   "date": "2026-11-02",
-   "ticker": "LITE",
-   "signal_type": "merger",
-   "source": "CNBC",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/11/02/stocks-making-the-biggest-moves-premarket-crwd-rivn-mu.html"
-    }
-   ],
-   "description": "Marvell to acquire Lumentum in all-stock deal valuing LITE at $115B (close 1H 2028); LITE +2% then halted. Momentum holding. 1 source at scan time",
-   "sentiment": "positive",
-   "prior_close": 840.7,
-   "ret_1d": -0.186,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 3.12,
-   "corr60": 0.35,
-   "beta_asof": "2026-10-30"
   }
  ],
  "shadow_tests": [
   {
    "setup": "A_gap_and_go",
    "trades": 7,
-   "open_or_pending": 0,
+   "open_or_pending": 1,
    "win_rate_pct": 14.3,
    "net_per_trade_pct": -1.114,
    "total_net_pct_sum": -7.8,
@@ -4059,13 +4147,13 @@
   },
   {
    "setup": "B_rsi2_swing",
-   "trades": 11,
+   "trades": 12,
    "open_or_pending": 4,
-   "win_rate_pct": 63.6,
-   "net_per_trade_pct": -1.059,
-   "total_net_pct_sum": -11.65,
-   "spy_same_windows_pct_sum": 0.2,
-   "t_stat": -0.57,
+   "win_rate_pct": 58.3,
+   "net_per_trade_pct": -1.078,
+   "total_net_pct_sum": -12.94,
+   "spy_same_windows_pct_sum": 0.73,
+   "t_stat": -0.63,
    "weeks": 2,
    "weeks_positive": 0,
    "pass_bar": "net > +0.25%/trade and beats SPY on the same capital and days",
@@ -4074,7 +4162,7 @@
   {
    "setup": "Z_zscore_dip",
    "trades": 8,
-   "open_or_pending": 4,
+   "open_or_pending": 5,
    "win_rate_pct": 25.0,
    "net_per_trade_pct": -3.746,
    "total_net_pct_sum": -29.97,
@@ -4083,7 +4171,7 @@
    "weeks": 1,
    "weeks_positive": 0,
    "pass_bar": "judged after 8 weeks: 30+ trades, net/trade > 0 after costs with t >= 2, beats SPY on the same windows",
-   "status": "1.1 of 8 weeks, 8 trades; not judged yet (not meeting the bar so far)"
+   "status": "1.3 of 8 weeks, 8 trades; not judged yet (not meeting the bar so far)"
   },
   {
    "setup": "squeeze_bb30",
@@ -4102,7 +4190,7 @@
   {
    "setup": "X_orb15_inplay",
    "trades": 69,
-   "open_or_pending": 0,
+   "open_or_pending": 9,
    "win_rate_pct": 26.1,
    "net_per_trade_pct": -0.585,
    "total_net_pct_sum": -40.34,
@@ -4116,7 +4204,7 @@
   {
    "setup": "X_orb30_inplay",
    "trades": 69,
-   "open_or_pending": 0,
+   "open_or_pending": 6,
    "win_rate_pct": 24.6,
    "net_per_trade_pct": -0.659,
    "total_net_pct_sum": -45.44,
@@ -4130,7 +4218,7 @@
   {
    "setup": "X_vwap_reclaim",
    "trades": 527,
-   "open_or_pending": 0,
+   "open_or_pending": 5,
    "win_rate_pct": 26.2,
    "net_per_trade_pct": -0.353,
    "total_net_pct_sum": -185.89,
@@ -4144,7 +4232,7 @@
   {
    "setup": "X_first_pullback",
    "trades": 185,
-   "open_or_pending": 0,
+   "open_or_pending": 4,
    "win_rate_pct": 30.3,
    "net_per_trade_pct": -0.206,
    "total_net_pct_sum": -38.14,
@@ -4216,7 +4304,7 @@
   {
    "setup": "F50_below50d_only",
    "trades": 5,
-   "open_or_pending": 2,
+   "open_or_pending": 6,
    "win_rate_pct": 0.0,
    "net_per_trade_pct": -8.362,
    "total_net_pct_sum": -41.81,
@@ -4225,16 +4313,16 @@
    "weeks": 0,
    "weeks_positive": 0,
    "pass_bar": "set 2026-10-28 before data: after ~30 closed trades, avg net excess vs SPY > 0, still > 0 without the best trade, and >= the real Signals sleeve's avg excess (relaxing the filter must beat what it avoided). Reviewed at the Nov 6 evaluation; a pass only lets the owner consider relaxing the 50-day rule",
-   "status": "under 30 closed trades (5); not judged yet. Open 2: avg excess +0.25% vs SPY, P&L $-0.97 (marked)",
+   "status": "under 30 closed trades (5); not judged yet. Open 6: avg excess +1.27% vs SPY, P&L $+0.54 (marked)",
    "start_date": "2026-10-26",
-   "pnl_usd": -7.33,
-   "spy_pnl_usd": -2.68,
-   "avg_excess_vs_spy_pct": -4.376
+   "pnl_usd": -5.82,
+   "spy_pnl_usd": -2.24,
+   "avg_excess_vs_spy_pct": -2.135
   },
   {
    "setup": "F50x_single_source_below50d",
    "trades": 14,
-   "open_or_pending": 13,
+   "open_or_pending": 16,
    "win_rate_pct": 7.1,
    "net_per_trade_pct": -6.764,
    "total_net_pct_sum": -94.69,
@@ -4243,11 +4331,11 @@
    "weeks": 0,
    "weeks_positive": 0,
    "pass_bar": "evidence only (also fails the 2-confirmation rule; never judged)",
-   "status": "evidence only. Open 13: avg excess +8.11% vs SPY, P&L $+8.37 (marked)",
+   "status": "evidence only. Open 16: avg excess +5.77% vs SPY, P&L $+7.86 (marked)",
    "start_date": "2026-10-26",
-   "pnl_usd": -6.07,
-   "spy_pnl_usd": -11.02,
-   "avg_excess_vs_spy_pct": 1.199
+   "pnl_usd": -6.58,
+   "spy_pnl_usd": -9.54,
+   "avg_excess_vs_spy_pct": 0.639
   },
   {
    "setup": "IL_orb5",
@@ -4402,6 +4490,62 @@
    "weeks_positive": 0,
    "pass_bar": "signal log only (future bought-put research); no share trades",
    "status": "see paper/shadow/intraday_summary.csv"
+  },
+  {
+   "setup": "IL_ma9_raw_cross",
+   "trades": 2586,
+   "open_or_pending": 0,
+   "win_rate_pct": 15.1,
+   "net_per_trade_pct": -0.38,
+   "total_net_pct_sum": -982.85,
+   "spy_same_windows_pct_sum": -97.24,
+   "t_stat": -36.31,
+   "weeks": 0,
+   "weeks_positive": 0,
+   "pass_bar": "evidence only / research: after costs, net/trade > 0 AND beats SPY same windows AND gate still positive without best trade; NOT a live rule. Multiple exit variants tested.",
+   "status": "backtest: not beating costs/SPY so far (evidence only)"
+  },
+  {
+   "setup": "IL_ma9_raw_atr",
+   "trades": 2600,
+   "open_or_pending": 0,
+   "win_rate_pct": 16.3,
+   "net_per_trade_pct": -0.384,
+   "total_net_pct_sum": -999.19,
+   "spy_same_windows_pct_sum": -82.99,
+   "t_stat": -45.41,
+   "weeks": 0,
+   "weeks_positive": 0,
+   "pass_bar": "evidence only / research: after costs, net/trade > 0 AND beats SPY same windows AND gate still positive without best trade; NOT a live rule. Multiple exit variants tested.",
+   "status": "backtest: not beating costs/SPY so far (evidence only)"
+  },
+  {
+   "setup": "IL_ma9_gate_cross",
+   "trades": 1623,
+   "open_or_pending": 0,
+   "win_rate_pct": 15.6,
+   "net_per_trade_pct": -0.374,
+   "total_net_pct_sum": -606.66,
+   "spy_same_windows_pct_sum": -57.76,
+   "t_stat": -27.2,
+   "weeks": 0,
+   "weeks_positive": 0,
+   "pass_bar": "evidence only / research: after costs, net/trade > 0 AND beats SPY same windows AND gate still positive without best trade; NOT a live rule. Multiple exit variants tested.",
+   "status": "backtest: not beating costs/SPY so far (evidence only)"
+  },
+  {
+   "setup": "IL_ma9_gate_atr",
+   "trades": 1632,
+   "open_or_pending": 0,
+   "win_rate_pct": 16.9,
+   "net_per_trade_pct": -0.384,
+   "total_net_pct_sum": -626.69,
+   "spy_same_windows_pct_sum": -51.64,
+   "t_stat": -35.74,
+   "weeks": 0,
+   "weeks_positive": 0,
+   "pass_bar": "evidence only / research: after costs, net/trade > 0 AND beats SPY same windows AND gate still positive without best trade; NOT a live rule. Multiple exit variants tested.",
+   "status": "backtest: not beating costs/SPY so far (evidence only)"
   }
  ],
  "intraday_lab": [
@@ -5374,18 +5518,18 @@
    "status": "open",
    "entry_date": "2026-10-26",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-05 close",
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
    "sources": "Barclays upgrade to Overweight PT 25",
    "entry_open": 17.68,
-   "last_close": 20.54,
+   "last_close": 20.48,
    "exit_price": null,
    "stop": 16.274,
    "target": 21.227,
    "notional_usd": 15.0,
-   "net_pct": 15.576,
-   "spy_pct": -3.837,
-   "excess_pct": 19.414,
-   "pnl_usd": 2.34,
+   "net_pct": 15.237,
+   "spy_pct": -3.185,
+   "excess_pct": 18.422,
+   "pnl_usd": 2.29,
    "pct_below_50d": -26.05
   },
   {
@@ -5395,17 +5539,17 @@
    "status": "open",
    "entry_date": "2026-10-26",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-05 close",
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
    "sources": "UBS upgrade to Buy PT 315 (+6.5% premarket is the reaction to the same upgrade)",
    "entry_open": 235.15,
-   "last_close": 235.23,
+   "last_close": 235.285,
    "exit_price": null,
    "stop": 216.446,
    "target": 282.321,
    "notional_usd": 15.0,
-   "net_pct": -0.366,
-   "spy_pct": -3.837,
-   "excess_pct": 3.471,
+   "net_pct": -0.343,
+   "spy_pct": -3.185,
+   "excess_pct": 2.843,
    "pnl_usd": -0.05,
    "pct_below_50d": -1.05
   },
@@ -5416,18 +5560,18 @@
    "status": "open",
    "entry_date": "2026-10-26",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-05 close",
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
    "sources": "Q3 beat + raised FY26 EPS guide (company report only)",
    "entry_open": 43.49,
-   "last_close": 46.12,
+   "last_close": 46.045,
    "exit_price": null,
    "stop": 40.031,
    "target": 52.214,
    "notional_usd": 15.0,
-   "net_pct": 5.707,
-   "spy_pct": -3.837,
-   "excess_pct": 9.545,
-   "pnl_usd": 0.86,
+   "net_pct": 5.535,
+   "spy_pct": -3.185,
+   "excess_pct": 8.72,
+   "pnl_usd": 0.83,
    "pct_below_50d": -6.07
   },
   {
@@ -5440,7 +5584,7 @@
    "exit_reason": "stop gap (open)",
    "sources": "DA Davidson upgrade to Buy PT 350->400; Anthropic S-1 / WSJ financing disclosure (different outlet and kind)",
    "entry_open": 339.87,
-   "last_close": 291.53,
+   "last_close": 295.38,
    "exit_price": 311.89,
    "stop": 312.837,
    "target": 408.048,
@@ -5461,7 +5605,7 @@
    "exit_reason": "stop -8%",
    "sources": "Q3 beat + raised 2026/2027 outlook; Bernstein Buy $520 reiterated; ApeWisdom retail mentions 7.2x",
    "entry_open": 264.31,
-   "last_close": 205.64,
+   "last_close": 205.48,
    "exit_price": 243.287,
    "stop": 243.287,
    "target": 317.331,
@@ -5482,7 +5626,7 @@
    "exit_reason": "stop -8%",
    "sources": "Q3 beat (company report)",
    "entry_open": 128.11,
-   "last_close": 103.43,
+   "last_close": 104.66,
    "exit_price": 117.92,
    "stop": 117.92,
    "target": 153.809,
@@ -5500,18 +5644,18 @@
    "status": "open",
    "entry_date": "2026-10-27",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-05 close",
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
    "sources": "Wolfe upgrade",
    "entry_open": 54.21,
-   "last_close": 57.25,
+   "last_close": 57.37,
    "exit_price": null,
    "stop": 49.898,
    "target": 65.085,
    "notional_usd": 15.22,
-   "net_pct": 5.008,
-   "spy_pct": -4.475,
-   "excess_pct": 9.483,
-   "pnl_usd": 0.76,
+   "net_pct": 5.229,
+   "spy_pct": -3.828,
+   "excess_pct": 9.057,
+   "pnl_usd": 0.8,
    "pct_below_50d": -6.33
   },
   {
@@ -5524,7 +5668,7 @@
    "exit_reason": "stop -8%",
    "sources": "Citi upgrade",
    "entry_open": 1703.28,
-   "last_close": 1530.28,
+   "last_close": 1508.785,
    "exit_price": 1567.801,
    "stop": 1567.801,
    "target": 2044.958,
@@ -5545,7 +5689,7 @@
    "exit_reason": "stop -8%",
    "sources": "Raymond James upgrade",
    "entry_open": 251.27,
-   "last_close": 190.35,
+   "last_close": 197.31,
    "exit_price": 231.284,
    "stop": 231.284,
    "target": 301.675,
@@ -5563,18 +5707,18 @@
    "status": "open",
    "entry_date": "2026-10-27",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-05 close",
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
    "sources": "Q3 beat, raised 2026 guide, 2027 targets (company report; +7-11% premarket is the reaction)",
    "entry_open": 15.98,
-   "last_close": 16.04,
+   "last_close": 16.12,
    "exit_price": null,
    "stop": 14.709,
    "target": 19.186,
    "notional_usd": 15.22,
-   "net_pct": -0.025,
-   "spy_pct": -4.475,
-   "excess_pct": 4.451,
-   "pnl_usd": 0.0,
+   "net_pct": 0.476,
+   "spy_pct": -3.828,
+   "excess_pct": 4.304,
+   "pnl_usd": 0.07,
    "pct_below_50d": -13.23
   },
   {
@@ -5587,7 +5731,7 @@
    "exit_reason": "stop -8%",
    "sources": "Trench ~$9B acquisition + FY revenue forecast raised to $47B (company news only)",
    "entry_open": 876.378,
-   "last_close": 770.51,
+   "last_close": 778.675,
    "exit_price": 806.671,
    "stop": 806.671,
    "target": 1052.179,
@@ -5608,7 +5752,7 @@
    "exit_reason": "stop -8%",
    "sources": "FQ1 beat + Dec-qtr guide above consensus (company); Baird PT 1080->1350 Outperform (analyst; Evercore Outperform $1000 maintained)",
    "entry_open": 646.84,
-   "last_close": 466.53,
+   "last_close": 453.16,
    "exit_price": 595.39,
    "stop": 595.39,
    "target": 776.596,
@@ -5629,7 +5773,7 @@
    "exit_reason": "stop gap (open)",
    "sources": "Q3 beat (company report; Benzinga mover write-up)",
    "entry_open": 53.94,
-   "last_close": 37.2,
+   "last_close": 39.73,
    "exit_price": 49.5,
    "stop": 49.65,
    "target": 64.76,
@@ -5650,7 +5794,7 @@
    "exit_reason": "stop -8%",
    "sources": "Q3 beat, orders >2x, FY26 guide raised (company report; Investing.com/Reuters are write-ups of the same report; no post-print analyst raise found)",
    "entry_open": 243.0,
-   "last_close": 176.73,
+   "last_close": 181.83,
    "exit_price": 223.672,
    "stop": 223.672,
    "target": 291.746,
@@ -5668,18 +5812,18 @@
    "status": "open",
    "entry_date": "2026-10-29",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-05 close",
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
    "sources": "Q3 same-store sales +2.1% vs 1.5% est (company results via CNBC)",
    "entry_open": 30.46,
-   "last_close": 35.4,
+   "last_close": 35.055,
    "exit_price": null,
    "stop": 28.037,
    "target": 36.57,
    "notional_usd": 15.4,
-   "net_pct": 15.818,
-   "spy_pct": -4.655,
-   "excess_pct": 20.473,
-   "pnl_usd": 2.44,
+   "net_pct": 14.685,
+   "spy_pct": -4.009,
+   "excess_pct": 18.694,
+   "pnl_usd": 2.26,
    "pct_below_50d": -13.48
   },
   {
@@ -5692,7 +5836,7 @@
    "exit_reason": "target +20%",
    "sources": "company Q3 results: revenue and adj EBITDA beat; SEC probe closed (CNBC)",
    "entry_open": 65.28,
-   "last_close": 72.08,
+   "last_close": 74.0,
    "exit_price": 78.375,
    "stop": 60.088,
    "target": 78.375,
@@ -5713,7 +5857,7 @@
    "exit_reason": "stop gap (open)",
    "sources": "Bloomberg: Marvell in talks to acquire Lumentum, deal possibly next week; +5% premarket; 1 source (one report); momentum holding; below 50d",
    "entry_open": 947.88,
-   "last_close": 509.7,
+   "last_close": 526.93,
    "exit_price": 861.28,
    "stop": 872.486,
    "target": 1138.025,
@@ -5734,7 +5878,7 @@
    "exit_reason": "stop gap (open)",
    "sources": "CEO/CFO open-market buys ~$2.69M, Form 4; below 50d; 1 source; no buy",
    "entry_open": 90.68,
-   "last_close": 62.22,
+   "last_close": 64.19,
    "exit_price": 81.31,
    "stop": 83.467,
    "target": 108.87,
@@ -5752,18 +5896,18 @@
    "status": "open",
    "entry_date": "2026-10-30",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-05 close",
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
    "sources": "Q3 loss -0.48 vs -0.62 est, rev 2.16B vs 1.99B, 2026 delivery guide raised to 67-70K; +8% premarket; below 50d; 1 source; no buy",
    "entry_open": 12.095,
-   "last_close": 13.29,
+   "last_close": 13.34,
    "exit_price": null,
    "stop": 11.133,
    "target": 14.521,
    "notional_usd": 15.4,
-   "net_pct": 9.48,
-   "spy_pct": -3.727,
-   "excess_pct": 13.208,
-   "pnl_usd": 1.46,
+   "net_pct": 9.894,
+   "spy_pct": -3.075,
+   "excess_pct": 12.969,
+   "pnl_usd": 1.52,
    "pct_below_50d": -21.6
   },
   {
@@ -5773,18 +5917,18 @@
    "status": "open",
    "entry_date": "2026-11-02",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-05 close",
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
    "sources": "Phillip upgrade Accumulate->Buy, PT 320->330. 1 source; below 50d (240.35 vs 254.28)",
    "entry_open": 243.01,
-   "last_close": 260.21,
+   "last_close": 262.46,
    "exit_price": null,
    "stop": 223.681,
    "target": 291.758,
    "notional_usd": 15.25,
-   "net_pct": 6.738,
-   "spy_pct": -3.483,
-   "excess_pct": 10.221,
-   "pnl_usd": 1.03,
+   "net_pct": 7.664,
+   "spy_pct": -2.828,
+   "excess_pct": 10.492,
+   "pnl_usd": 1.17,
    "pct_below_50d": -5.48
   },
   {
@@ -5797,7 +5941,7 @@
    "exit_reason": "stop -8%",
    "sources": "Stephens upgrade EW->OW. 1 source; below 50d",
    "entry_open": 125.88,
-   "last_close": 115.16,
+   "last_close": 115.725,
    "exit_price": 115.868,
    "stop": 115.868,
    "target": 151.131,
@@ -5818,7 +5962,7 @@
    "exit_reason": "stop gap (open)",
    "sources": "Cyber peer of CRWD (+2% premarket in sympathy with the DB upgrade). Below 50d",
    "entry_open": 368.07,
-   "last_close": 314.67,
+   "last_close": 317.715,
    "exit_price": 337.55,
    "stop": 338.794,
    "target": 441.905,
@@ -5836,18 +5980,18 @@
    "status": "open",
    "entry_date": "2026-11-03",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-05 close",
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
    "sources": "Record Q3 results and raised EBITDA outlook; up ~8-10% premarket. 1 source and below 50d (2.86 vs 3.09): no buy",
    "entry_open": 3.215,
-   "last_close": 3.48,
+   "last_close": 3.535,
    "exit_price": null,
    "stop": 2.959,
    "target": 3.86,
    "notional_usd": 15.22,
-   "net_pct": 7.843,
-   "spy_pct": -2.621,
-   "excess_pct": 10.464,
-   "pnl_usd": 1.19,
+   "net_pct": 9.553,
+   "spy_pct": -1.961,
+   "excess_pct": 11.514,
+   "pnl_usd": 1.45,
    "pct_below_50d": -7.41
   },
   {
@@ -5857,18 +6001,18 @@
    "status": "open",
    "entry_date": "2026-11-03",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-05 close",
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
    "sources": "Howmet Q3 beat + raised FY26 guidance + buyback (company 2026-10-29); KeyBanc upgrade to Overweight PT 237 (2026-11-03)",
    "entry_open": 217.0,
-   "last_close": 200.9,
+   "last_close": 204.19,
    "exit_price": null,
    "stop": 199.74,
    "target": 260.53,
    "notional_usd": 15.22,
-   "net_pct": -7.819,
-   "spy_pct": -2.621,
-   "excess_pct": -5.198,
-   "pnl_usd": -1.19,
+   "net_pct": -6.303,
+   "spy_pct": -1.961,
+   "excess_pct": -4.342,
+   "pnl_usd": -0.96,
    "pct_below_50d": -6.53
   },
   {
@@ -5881,7 +6025,7 @@
    "exit_reason": "stop -8%",
    "sources": "JPMorgan upgrade to Overweight PT 350 (2026-11-03)",
    "entry_open": 268.5,
-   "last_close": 244.51,
+   "last_close": 270.62,
    "exit_price": 247.143,
    "stop": 247.143,
    "target": 322.361,
@@ -5902,7 +6046,7 @@
    "exit_reason": "stop -8%",
    "sources": "Company Q3 beat + guide (2027 growth >80%); JPMorgan PT 550->575; Piper PT 600->650; Stifel PT 700->725 (BofA/Mizuho/UBS cut PTs)",
    "entry_open": 485.25,
-   "last_close": 404.4,
+   "last_close": 439.28,
    "exit_price": 446.653,
    "stop": 446.653,
    "target": 582.591,
@@ -5923,7 +6067,7 @@
    "exit_reason": "stop -8%",
    "sources": "Company Q3 beat + 4th FY26 guide raise + 2027 target; UBS PT 259->291; JPMorgan PT 250->270; Piper PT 240->261",
    "entry_open": 179.0,
-   "last_close": 159.16,
+   "last_close": 169.3,
    "exit_price": 164.762,
    "stop": 164.762,
    "target": 214.907,
@@ -5941,18 +6085,18 @@
    "status": "open",
    "entry_date": "2026-11-04",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-05 close",
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
    "sources": "Two Boeing insiders (Buckley, Mollenkopf) bought ~$3.0M combined (context only); below 50d",
    "entry_open": 177.0,
-   "last_close": 172.5,
+   "last_close": 172.75,
    "exit_price": null,
    "stop": 162.921,
    "target": 212.506,
    "notional_usd": 15.17,
-   "net_pct": -2.882,
-   "spy_pct": -3.931,
-   "excess_pct": 1.048,
-   "pnl_usd": -0.44,
+   "net_pct": -2.741,
+   "spy_pct": -3.279,
+   "excess_pct": 0.538,
+   "pnl_usd": -0.42,
    "pct_below_50d": -10.94
   },
   {
@@ -5962,18 +6106,18 @@
    "status": "open",
    "entry_date": "2026-11-04",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-05 close",
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
    "sources": "Large premarket jump on earnings (single source); below 50d (144.65), single source",
    "entry_open": 159.995,
-   "last_close": 157.02,
+   "last_close": 156.31,
    "exit_price": null,
    "stop": 147.269,
    "target": 192.09,
    "notional_usd": 15.17,
-   "net_pct": -2.259,
-   "spy_pct": -3.931,
-   "excess_pct": 1.671,
-   "pnl_usd": -0.34,
+   "net_pct": -2.703,
+   "spy_pct": -3.279,
+   "excess_pct": 0.576,
+   "pnl_usd": -0.41,
    "pct_below_50d": -11.51
   },
   {
@@ -5986,7 +6130,7 @@
    "exit_reason": "stop -8%",
    "sources": "CEO and CFO bought ~$0.6M combined (context only); below 50d; clean energy also lifted by election read-through",
    "entry_open": 32.31,
-   "last_close": 28.97,
+   "last_close": 29.715,
    "exit_price": 29.74,
    "stop": 29.74,
    "target": 38.791,
@@ -6004,18 +6148,18 @@
    "status": "open",
    "entry_date": "2026-11-04",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-05 close",
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
    "sources": "Premarket gain on results (single source); below 50d (40.97)",
    "entry_open": 42.45,
-   "last_close": 40.3,
+   "last_close": 40.215,
    "exit_price": null,
    "stop": 39.074,
    "target": 50.965,
    "notional_usd": 15.17,
-   "net_pct": -5.465,
-   "spy_pct": -3.931,
-   "excess_pct": -1.534,
-   "pnl_usd": -0.83,
+   "net_pct": -5.665,
+   "spy_pct": -3.279,
+   "excess_pct": -2.386,
+   "pnl_usd": -0.86,
    "pct_below_50d": -1.91
   },
   {
@@ -6028,7 +6172,7 @@
    "exit_reason": "stop gap (open)",
    "sources": "Mention volume ~4.7x its average with a premarket jump (chatter is not a tested edge); below 50d",
    "entry_open": 31.42,
-   "last_close": 27.08,
+   "last_close": 28.55,
    "exit_price": 28.32,
    "stop": 28.921,
    "target": 37.723,
@@ -6046,18 +6190,18 @@
    "status": "open",
    "entry_date": "2026-11-04",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-05 close",
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
    "sources": "Premarket gain on earnings (single source); below 50d (77.78)",
    "entry_open": 84.0,
-   "last_close": 84.04,
+   "last_close": 85.05,
    "exit_price": null,
    "stop": 77.319,
    "target": 100.85,
    "notional_usd": 15.17,
-   "net_pct": -0.352,
-   "spy_pct": -3.931,
-   "excess_pct": 3.578,
-   "pnl_usd": -0.05,
+   "net_pct": 0.85,
+   "spy_pct": -3.279,
+   "excess_pct": 4.129,
+   "pnl_usd": 0.13,
    "pct_below_50d": -2.29
   },
   {
@@ -6067,22 +6211,193 @@
    "status": "open",
    "entry_date": "2026-11-05",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-05 close",
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
    "sources": "CNBC/FactSet Q3 beat (rev 2.18B vs 2.07B, adj EBITDA 1.84B vs 1.73B) + buyback; Wedbush PT 600 / BTIG 450 / Goldman 445 Neutral; ~+20% premarket volume and Reddit mentions 15x",
    "entry_open": 349.83,
-   "last_close": 356.1,
+   "last_close": 376.915,
    "exit_price": null,
    "stop": 322.005,
    "target": 420.006,
    "notional_usd": 15.05,
-   "net_pct": 1.452,
-   "spy_pct": -4.242,
-   "excess_pct": 5.694,
-   "pnl_usd": 0.22,
+   "net_pct": 7.402,
+   "spy_pct": -3.593,
+   "excess_pct": 10.995,
+   "pnl_usd": 1.11,
    "pct_below_50d": -6.56
+  },
+  {
+   "tier": "F50",
+   "ticker": "FROG",
+   "signal_date": "2026-11-06",
+   "status": "open",
+   "entry_date": "2026-11-06",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
+   "sources": "JFrog IR;CNBC;Investing.com",
+   "entry_open": 94.99,
+   "last_close": 98.065,
+   "exit_price": null,
+   "stop": 87.434,
+   "target": 114.045,
+   "notional_usd": 14.62,
+   "net_pct": 2.837,
+   "spy_pct": 0.429,
+   "excess_pct": 2.409,
+   "pnl_usd": 0.41,
+   "pct_below_50d": -20.18
+  },
+  {
+   "tier": "F50x",
+   "ticker": "INTC",
+   "signal_date": "2026-11-06",
+   "status": "open",
+   "entry_date": "2026-11-06",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
+   "sources": "CEO Tan Lip Bu bought ~$19.4M (context only); below 50d",
+   "entry_open": 54.98,
+   "last_close": 54.875,
+   "exit_price": null,
+   "stop": 50.607,
+   "target": 66.009,
+   "notional_usd": 14.62,
+   "net_pct": -0.531,
+   "spy_pct": 0.429,
+   "excess_pct": -0.96,
+   "pnl_usd": -0.08,
+   "pct_below_50d": -47.04
+  },
+  {
+   "tier": "F50x",
+   "ticker": "IREN",
+   "signal_date": "2026-11-06",
+   "status": "open",
+   "entry_date": "2026-11-06",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
+   "sources": "CNBC/TipRanks/Investing same-print family",
+   "entry_open": 21.15,
+   "last_close": 20.975,
+   "exit_price": null,
+   "stop": 19.468,
+   "target": 25.393,
+   "notional_usd": 14.62,
+   "net_pct": -1.167,
+   "spy_pct": 0.429,
+   "excess_pct": -1.596,
+   "pnl_usd": -0.17,
+   "pct_below_50d": -50.26
+  },
+  {
+   "tier": "F50x",
+   "ticker": "LRCX",
+   "signal_date": "2026-11-06",
+   "status": "open",
+   "entry_date": "2026-11-06",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
+   "sources": "$25B buyback authorization; 1 confirmation; below 50d; gap +11.6%; log only",
+   "entry_open": 208.99,
+   "last_close": 200.08,
+   "exit_price": null,
+   "stop": 192.367,
+   "target": 250.913,
+   "notional_usd": 14.62,
+   "net_pct": -4.603,
+   "spy_pct": 0.429,
+   "excess_pct": -5.032,
+   "pnl_usd": -0.67,
+   "pct_below_50d": -35.41
+  },
+  {
+   "tier": "F50",
+   "ticker": "NET",
+   "signal_date": "2026-11-06",
+   "status": "open",
+   "entry_date": "2026-11-06",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
+   "sources": "SEC EX-99.1;CNBC;Investing.com",
+   "entry_open": 286.97,
+   "last_close": 270.62,
+   "exit_price": null,
+   "stop": 264.144,
+   "target": 344.536,
+   "notional_usd": 14.62,
+   "net_pct": -6.037,
+   "spy_pct": 0.429,
+   "excess_pct": -6.466,
+   "pnl_usd": -0.88,
+   "pct_below_50d": -23.35
+  },
+  {
+   "tier": "F50",
+   "ticker": "TMDX",
+   "signal_date": "2026-11-06",
+   "status": "open",
+   "entry_date": "2026-11-06",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
+   "sources": "TransMedics IR;Canaccord via Investing.com",
+   "entry_open": 78.71,
+   "last_close": 83.339,
+   "exit_price": null,
+   "stop": 72.449,
+   "target": 94.499,
+   "notional_usd": 14.62,
+   "net_pct": 5.281,
+   "spy_pct": 0.429,
+   "excess_pct": 4.852,
+   "pnl_usd": 0.77,
+   "pct_below_50d": -13.43
+  },
+  {
+   "tier": "F50",
+   "ticker": "VST",
+   "signal_date": "2026-11-06",
+   "status": "open",
+   "entry_date": "2026-11-06",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-11-06 close (intraday, provisional)",
+   "sources": "Vistra IR;MarketBeat;Investing.com",
+   "entry_open": 119.57,
+   "last_close": 120.8,
+   "exit_price": null,
+   "stop": 110.059,
+   "target": 143.556,
+   "notional_usd": 14.62,
+   "net_pct": 0.629,
+   "spy_pct": 0.429,
+   "excess_pct": 0.2,
+   "pnl_usd": 0.09,
+   "pct_below_50d": -21.71
   }
  ],
  "alerts": [
+  {
+   "date": "2026-11-06",
+   "text": "PAPER TRADE 2026-11-06 | sleeve signals | BUY 0.018303 SPY @ $738.7092 (quote $738.3400 at 2026-11-06 10:31 ET, Yahoo Finance chart endpoint, regularMarketPrice (may be delayed ~15 min); +/-0.05% slippage) | notional $13.52, fee $0.01 (0.10%) | beta 1.0 | idle sleeve cash held in SPY (v0.5)"
+  },
+  {
+   "date": "2026-11-06",
+   "text": "PAPER TRADE 2026-11-06 | sleeve signals | SELL 0.023042 CACI @ $587.9709 (quote $588.2650 at 2026-11-06 10:29 ET, Yahoo Finance chart endpoint, regularMarketPrice (may be delayed ~15 min); +/-0.05% slippage) | notional $13.55, fee $0.01 (0.10%) | beta 0.3 | STOP (-8%)"
+  },
+  {
+   "date": "2026-11-06",
+   "text": "--- intraday run 2026-11-06 10:31 ET"
+  },
+  {
+   "date": "2026-11-06",
+   "text": "PAPER ORDER 2026-11-06 (fills at today's close) | sleeve earnings | BUY AZO 5% of sleeve equity | reason: J4 run-up: reports 2026-12-08 (not-supplied); last pre-report close 2026-12-07 is 20 trading days after today; buy today's close, sell 2026-12-07 close; 5% of sleeve"
+  },
+  {
+   "date": "2026-11-06",
+   "text": "EARNINGS 2026-11-06: 1 qualifying run-up(s) skipped, 20 slots full: CASY"
+  },
+  {
+   "date": "2026-11-06",
+   "text": "--- premarket run 2026-11-06 08:30 ET"
+  },
   {
    "date": "2026-11-05",
    "text": "EQUITY 2026-11-05 close: total $929.45 vs SPY-equivalent $960.18 | core $384.07 (-3.98% vs SPY -3.98%), momentum $113.21 (-24.52% vs SPY -3.98%), dividend $144.03 (-3.98% vs SPY -3.98%), earnings $141.92 (-5.39% vs SPY -3.98%), signals $146.21 (-2.52% vs SPY -3.98%)"
@@ -6330,54 +6645,10 @@
   {
    "date": "2026-11-02",
    "text": "--- premarket run 2026-11-02 08:25 ET"
-  },
-  {
-   "date": "2026-10-30",
-   "text": "CORE month-end 2026-10: G1 IN (SPY); J1 window 2026-11-03..2027-05-06 (core stays invested unless G1 fires)"
-  },
-  {
-   "date": "2026-10-30",
-   "text": "DIVIDEND 2026-10-30: no new pick (2 names >7%, 0 pass and not held; 0/12 slots used)"
-  },
-  {
-   "date": "2026-10-30",
-   "text": "EQUITY 2026-10-30 close: total $986.47 vs SPY-equivalent $989.95 | core $395.98 (-1.00% vs SPY -1.00%), momentum $142.85 (-4.77% vs SPY -1.00%), dividend $148.49 (-1.00% vs SPY -1.00%), earnings $146.62 (-2.25% vs SPY -1.00%), signals $152.52 (+1.68% vs SPY -1.00%)"
-  },
-  {
-   "date": "2026-10-30",
-   "text": "PAPER TRADE 2026-10-30 | sleeve earnings | BUY 0.037277 MRVL @ $196.4982 (quote $196.4000 at 2026-10-30 16:00 ET (daily close), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-30 16:39 ET; +/-0.05% slippage) | notional $7.32, fee $0.01 (0.10%) | beta 3.4 | J4 run-up: reports 2026-12-01 (not-supplied); last pre-report close 2026-11-30 is 20 trading days after today; buy today's close, sell 2026-11-30 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-30",
-   "text": "PAPER TRADE 2026-10-30 | sleeve earnings | SELL 0.009717 SPY @ $755.3421 (quote $755.7200 at 2026-10-30 16:00 ET (daily close), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-30 16:39 ET; +/-0.05% slippage) | notional $7.34, fee $0.01 (0.10%) | beta 1.0 | fund MRVL from idle SPY"
-  },
-  {
-   "date": "2026-10-30",
-   "text": "PAPER TRADE 2026-10-30 | sleeve earnings | BUY 0.029239 CRWD @ $250.5552 (quote $250.4300 at 2026-10-30 16:00 ET (daily close), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-30 16:39 ET; +/-0.05% slippage) | notional $7.33, fee $0.01 (0.10%) | beta 2.3 | J4 run-up: reports 2026-12-01 (not-supplied); last pre-report close 2026-11-30 is 20 trading days after today; buy today's close, sell 2026-11-30 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-30",
-   "text": "PAPER TRADE 2026-10-30 | sleeve earnings | SELL 0.009718 SPY @ $755.3421 (quote $755.7200 at 2026-10-30 16:00 ET (daily close), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-10-30 16:39 ET; +/-0.05% slippage) | notional $7.34, fee $0.01 (0.10%) | beta 1.0 | fund CRWD from idle SPY"
-  },
-  {
-   "date": "2026-10-30",
-   "text": "--- close run 2026-10-30 16:44 ET"
-  },
-  {
-   "date": "2026-10-30",
-   "text": "PAPER ORDER 2026-10-30 (fills at today's close) | sleeve earnings | BUY MRVL 5% of sleeve equity | reason: J4 run-up: reports 2026-12-01 (not-supplied); last pre-report close 2026-11-30 is 20 trading days after today; buy today's close, sell 2026-11-30 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-30",
-   "text": "PAPER ORDER 2026-10-30 (fills at today's close) | sleeve earnings | BUY CRWD 5% of sleeve equity | reason: J4 run-up: reports 2026-12-01 (not-supplied); last pre-report close 2026-11-30 is 20 trading days after today; buy today's close, sell 2026-11-30 close; 5% of sleeve"
-  },
-  {
-   "date": "2026-10-30",
-   "text": "--- premarket run 2026-10-30 08:25 ET"
   }
  ],
  "latest_reflection": {
   "date": "2026-11-05",
-  "markdown": "# Reflection \u2014 2026-11-05\n\n## Headline: account vs SPY\nBoth today and since start, the account is behind SPY, and the gap widened again. Today: portfolio $982.59 \u2192 $929.45, **\u22125.408%**. SPY-equivalent (same fills, same cash flows): $1,004.47 \u2192 $960.18, **\u22124.409%**. The account is 1.00 pt behind SPY today \u2014 it fell more than the benchmark on the worst day of the sample so far. SPY cash itself: 766.81 \u2192 733.00, **\u22124.41%** close-to-close (it gapped down only \u22120.17% at the open; almost the whole move was open-to-close selling, \u22124.24%). Since start vs $1,000: portfolio **\u22127.055%**, SPY-equivalent **\u22123.982%**, a gap of **\u22123.073 pts** \u2014 it was \u22122.188 pts on 11-04, so the deficit widened by nearly a full point in one day. Nine trading days in, the strategy is trailing buy-and-hold SPY by more than three points, and the trail has widened on 3 of the last 4 days.\n\n## Mistakes and misses\n**I bought U at the open into an 18.6% premarket gap that had already faded by mid-morning \u2014 exactly the pattern the already-approved v0.5.6 rule exists to stop.** Prior close 42.46, premarket high +18.642%, official open +13.187%, fill 48.1311. By 10:30 the price was \u22122.973% from the open \u2014 `entry_quality.csv` flags it `gap>3% then fade`, and tags it `REPEATED fade-after-gap>3% (n=2 in log)`, meaning this is now the second logged case of exactly this shape. Under current rules (v0.5.6 not effective until the 11-06 premarket run) the buy was mechanically allowed, so this isn't a rule break \u2014 but it is the live data point that justifies the rule the owner already approved yesterday, and I should have been more explicit yesterday that U's setup (thin margin above the 50-day: prior close 42.46 vs 50d 42.24) combined with an 18% premarket pop was close to a worst case for the new rule to catch. By the close it had actually recovered to 48.80 (+1.54% open-to-close, +1.39% since fill, day +14.93% vs prior close) \u2014 so the headline \"fade\" didn't cost money this time, but that's one trade's luck in the exit timing, not evidence the open-chase was sound; a check at 10:30 instead of 4:38 would have shown a loss.\n\n**TSLA hit its \u22128% stop and filled through it.** Entered 2026-10-26 @ 384.1645; stopped out 10:39 @ 349.3203, pct **\u22129.07%**, roughly a point worse than the \u22128% trigger \u2014 stops are checked at scheduled runs, not continuously, so a gap filled worse than the level (TSLA was down 10.77% on the day). This is the rule working as designed, not a mistake, but it's a reminder that the stop level in the rules is not the fill level in a fast market.\n\n**EPAM was bought mid-afternoon, after a +13.7% gap had already run most of its move, not at the open.** TSLA's stop freed a signals slot at 10:39; EPAM filled at 14:38, after the stock was already up from its +13.716% premarket/open gap. By then open\u21921h had added another +2.017% and the name closed the day +6.402% above its open. I bought a continuation, not the gap itself \u2014 this one worked (entry 163.4950 / fill 163.3316, close 165.70, +1.35% since entry), but buying into a stock that is already up double digits intraday on no new information from me is a second instance of chasing a big-gap name the same day I already chased one (U). The v0.5.6 gap-skip is written for market-on-open fills and wouldn't have blocked this, since it was a `--when now` intraday buy \u2014 a gap worth noting is open now in the rule's coverage.\n\n**Re-check: AMGN's 11-04 gap-buy is now worse, not better.** At 11-04 close it was \u22120.61% since entry after one day; as of today it's **\u22124.25%** since entry (day \u22123.80%). Still one trade, but it moved the wrong way, and per the facts v0.5.6 would have skipped AMGN's original +4.06% gap too had it existed then.\n\n**Re-check: yesterday's \"I was wrong about the MSFT top-of-fade lesson\" call needs qualifying, not reversing.** On 11-04 I wrote that MSFT (entered 10-29 @ 541.02) was +2.58% since entry vs SPY \u22120.26% over the same window, and called the earlier \"top of the fade\" framing wrong. As of today's close, MSFT is at 535.93, **\u22120.94% since entry** \u2014 it gave back the entire bounce in one day. SPY over the same window (10-29 open 768.79 \u2192 today's close 733.00) is now **\u22124.66%**, so MSFT still beats SPY on a relative basis, and I'm not flipping back to \"confirmed fade.\" But the honest read is that my 11-04 conclusion leaned on a short window that happened to look good, the same mistake I flagged in the original 10-30/11-03 re-checks when they leaned on a short window that happened to look bad. Three re-checks in a week have now moved in three different directions on the same single ticker. That's the lesson, not the ticker's direction.\n\n**Momentum's semis concentration produced its worst day of the sample.** Momentum sleeve fell **\u221214.14%** today ($131.85 \u2192 $113.21), its biggest single-day loss yet (prior worst days: \u221210.50% on 10-30, \u22126.81% on 11-02, \u22124.12% on 11-04), on a day SMH fell \u221211.21% close-to-close \u2014 SNDK \u221222.26%, AMD \u221217.26%, MRVL \u221216.43%, DELL \u221214.89%, INTC \u221210.33% among held names. This is the same concentrated semis/AI-hardware book flagged on 10-26, 10-27, 10-28, 10-29, 10-30, 11-02, and 11-04 without ever being escalated into a rule proposal. Momentum is now \u221224.524% since start, **\u221220.542 pts behind SPY**, the single largest drag in the account by a wide margin.\n\n## Overeager\nBuying U at the open after an 18.6% premarket gap and buying EPAM mid-afternoon after a 13.7% gap had already run \u2014 both on the same day, both already-extended gap names \u2014 is the overeager pattern today. Neither broke a written rule, but between them I added two highly-extended, same-day momentum names into signals, a sleeve that otherwise held defensively through a crash day. The EPAM buy in particular had no rule forcing the timing; a freed slot does not require filling it with the next thing that happens to be up double digits that day.\n\n## Too cautious\nNone found as a discretionary call today. No clearly-sourced signal was skipped out of caution; the day's skip count is zero.\n\n## Rule-following\nNo written rule was broken. TSLA's stop fired exactly as specified (filled through the level in a fast market, which the rules already account for as a known limitation, not a bug). **I acted on unvalidated signal types again** \u2014 both U and EPAM are logged as \"unknown expected gain\" in signals, continuing a pattern now seen on 10-26, 10-27, 10-29, 11-04, and 11-05. No discretionary override happened; the v0.5.6 gap-skip rule is approved but not yet effective (starts 11-06 premarket), so today's U buy is not a violation, just the last trading day the old behavior is live.\n\n## Sleeves vs SPY\n- **Core:** \u22124.41% today, \u22123.981% since start, 0.000 pts vs SPY \u2014 by design, it is SPY.\n- **Momentum:** \u221214.14% today ($131.85 \u2192 $113.21), **\u221224.524%** since start, **\u221220.542 pts vs SPY**. Driven entirely by the SMH \u221211.21% semis/AI-hardware selloff (SNDK, MRVL, DELL, INTC, AMD, etc.) \u2014 sector concentration, not stock selection, and the worst day of the sample by a wide margin.\n- **Dividend:** \u22124.41% today (idle in SPY), \u22123.981% since start, 0.000 pts vs SPY.\n- **Earnings:** \u22123.96% today ($147.77 \u2192 $141.92), \u22125.388% since start, **\u22121.407 pts vs SPY** \u2014 beat SPY today by about 0.45 pts, but cross-held MRVL and DELL (also in momentum) hurt this sleeve too.\n- **Signals:** \u22122.86% today ($150.51 \u2192 $146.21), \u22122.525% since start, **+1.456 pts vs SPY** \u2014 the only sleeve ahead of SPY since start. This is not stock-picking: the sleeve's defense cluster (LMT \u22123.17%, CACI \u22124.37%, LHX \u22120.63%, BAH +1.16%, AON \u22120.08%) simply has lower beta to the semis-led crash than the broad market, and the day's two new names are tiny (~$13 each): U has beta60 2.36 / corr60 0.52 so it is not low-beta, just small; EPAM's beta60 0.09 / corr60 0.02 truly is near-zero. Neither moved the sleeve much. Being up 1.456 pts since start is mostly \"didn't hold semis,\" the same structural point already logged for momentum's losses \u2014 it cuts the other way here, not a demonstrated edge.\n\n## Execution issues\nClean run: `sleeves.py close` and `shadow_check.py close` both exited 0 on the first try; no new close-time entries in `shadow_errors.log` (the day's only new entries were an 08:30 premarket throttle/SSL retry that succeeded on rerun, not a close-time failure). No new paper trades at the close \u2014 today's trades were all intraday/open fills in signals. TSLA's stop fill through the trigger level (\u22129.07% vs an \u22128% stop) is worth tracking as a recurring cost of checking stops only at scheduled runs rather than continuously, especially on days like today with large intraday ranges.\n\n## Shadow tests vs pass bars (sample sizes \u2014 nothing here is called passing)\n- **Test A (gap-and-go):** 7 trades, 14.3% win rate, net \u22121.114%/trade, t \u22123.00, SPY same windows \u22123.33%. Bar: 30+ trades, >+0.20%/trade, t>1.5 \u2014 n=7, not judged. Today: APP \u22122.177% (below VWAP at 14:30).\n- **Test B (RSI2 swing):** 11 trades (4 open/pending), 63.6% win rate, net \u22121.059%/trade, t \u22120.57, SPY +0.20%. Bar: net >+0.25%/trade AND beat SPY \u2014 still failing on net despite the high win rate. Today closed MSFT +8.992%, opened SLB, CRM in pending_exit (5th-close max hold); still holding PLTR/SHOP/SLB.\n- **Test Z (z-score dip):** 8 trades (4 open), 25% win rate, net \u22123.746%/trade, t \u22121.00, SPY \u22122.27%. 1.1 of 8 weeks \u2014 not judged, failing firmly. Today closed AMZN +16.503% and MSFT +8.992%, but **PLTR stopped \u22128.246%** the same day \u2014 another shadow-test entry stopped on a sharp move, continuing the pattern logged repeatedly since 11-03.\n- **squeeze_bb30:** 0 trades.\n- **X_orb15_inplay:** 69 trades, net \u22120.585%/trade, t \u22124.05 \u2014 evidence only.\n- **X_orb30_inplay:** 69 trades, net \u22120.659%/trade, t \u22124.82 \u2014 evidence only.\n- **X_vwap_reclaim:** 527 trades, net \u22120.353%/trade, t \u22129.22 \u2014 evidence only (19 closed today, mean \u2248 \u22120.74%).\n- **X_first_pullback:** 185 trades, net \u22120.206%/trade, t \u22123.00 \u2014 evidence only (10 closed today, mean \u22120.82%).\n- **VT_voltarget_core:** 1.3 of 8 weeks, value $380.35, \u22120.01 pts vs real core \u2014 not judged.\n- **Test C (SPY calls, 8020):** 1.3 of 8 weeks, value $924.75 (bid mark), mid $925.78; median |BS\u2212mid| 9.0% of mid (bar \u226410%, still ok); median quoted spread 5.98% of mid (bar \u22642%, still failing).\n- **F50_below50d_only:** 5 closed, 2 open \u2014 under 30, not judged. Open avg excess +0.25% vs SPY, P&L \u2212$0.97. APP opened today, marked +1.452% excess, +5.694% vs SPY \u2014 one day, not evidence.\n- **F50x (single-source, evidence only):** 14 closed / 13 open. Open avg excess +8.11% vs SPY, P&L +$8.37 \u2014 evidence only, never judged.\n- **IL_orb5:** 363 trades, FAILS, \u22120.640%/trade, t \u22123.75.\n- **IL_orb15:** 305 trades, FAILS, \u22120.665%/trade.\n- **IL_orb30:** 259 trades, FAILS, \u22120.688%/trade.\n- **IL_vwap_reclaim:** 452 trades, FAILS, \u22120.600%/trade.\n- **IL_gap_and_go:** 2 of 200 \u2014 not judged. **IL_gap_down_reclaim:** 73 of 200. **IL_first_pullback:** 36 of 200. **IL_rs_leader:** 6 of 200. **IL_ignition:** 91 of 200. **IL_mr_z5:** 31 of 200 \u2014 none of these six judged yet.\n- **BEAR_signals:** 1,834 signal-only mirrors, no pass bar.\n- **PM short-hold shadow (v0.5.6 companion, first day \u2014 n=1, proves nothing):** For U, premarket entry did worse than open entry across every variant tested: `PM_pre_baseline` closed \u22128.600% (stopped), `PM_pre_t2s2_d1`/`t3s3_d3`/`t4s3_d5` closed \u22125.246% (stopped on a gap at the open), `PM_open_t3s3_d3` closed \u22123.400%, `PM_open_baseline` still open +1.491% (tracking close to the real open-entry path). One day of one name shows premarket entry into U's fade was worse than waiting for the open \u2014 consistent with the direction v0.5.6 is designed to protect, but it is a single name on a single day and says nothing about the general case yet.\n\nStill four of ten intraday-lab setups formally failed (IL_orb5, IL_orb15, IL_orb30, IL_vwap_reclaim); zero of any shadow test has passed anything.\n\n## What went well, and skill or luck\nAlmost nothing to credit as skill. Signals' +1.456 pt edge over SPY since start is the headline positive number in the account, but as laid out above it comes from the defense cluster's lower beta to today's semis-led crash and from two new fills (U, EPAM) too small and too low-correlation to have moved the sleeve much \u2014 that's a structural/beta effect, not stock-picking, and it's the mirror image of momentum's loss from the same structural fact (concentration in a falling sector vs. not being in it). EPAM's +1.35% since entry and U's +1.39% since entry are each one trade on one day; neither proves the mid-afternoon-chase or open-gap-chase approach works, and both could as easily have been losses given the fades seen intraday. TSLA's stop did its job, but a stop firing on a stock that fell 10.77% isn't a win, it's damage control. No shadow test passed anything today. There is no win to claim as skill today \u2014 the best that can be said is signals avoided the worst of the crash by not holding the sector that crashed.\n\n## Lessons\n1. **SUGGESTION ONLY (needs the owner's okay):** momentum's semis/AI-hardware concentration has now produced its worst single-day loss of the sample (\u221214.14%, \u221224.524% since start, \u221220.542 pts behind SPY) after being flagged in six prior reflections (10-26 through 11-04) without a rule change. This is the same flagged-but-unescalated pattern already logged once before (10-30, cost \u221210.50% that day); today is a second, larger instance. I'm not proposing a specific cap or rebalance rule here, only flagging that the gap between \"repeatedly flagged\" and \"something changed\" is now two large drawdowns wide.\n2. Not proposing a new rule from today's U/EPAM gap-chasing \u2014 the already-approved v0.5.6 rule (effective tomorrow's premarket run) covers market-on-open gap buys like U. EPAM's mid-afternoon `--when now` buy after an already-extended gap is outside that rule's scope; I'll watch for whether this becomes a repeated pattern (one example today) before treating it as something that needs its own rule.\n\n## Patterns and a re-check\nRe-checked above: the 10-29 MSFT \"top of the gap fade\" lesson, which I called wrong on 11-04 (MSFT +2.58% since entry vs SPY \u22120.26%), is back to showing a loss as of today (\u22120.94% since entry), though still ahead of SPY's \u22124.66% over the same window. The honest conclusion is not that the lesson flips back to \"confirmed\" \u2014 it's that short re-check windows on a single ticker have now produced three different verdicts in a week (10-30/11-03 \"still holding/bad,\" 11-04 \"wrong, it worked,\" 11-05 \"gave it back but still ahead of SPY\"). The lesson worth keeping is about the re-check method, not about MSFT.\n\nCross-referencing `recurring_lessons.md`: \"Momentum and signals gains are mostly sector/market moves, not stock picking\" (count 7 through 11-04) gets its clearest example yet \u2014 momentum's \u221214.14% day was entirely the SMH \u221211.21% semis selloff, and signals' relative outperformance was the same mechanism in reverse (not holding the sector that fell). \"A risk flagged repeatedly in reflections but never escalated to a rule proposal can still cost real money\" (count 1, 10-30) gets a second, larger example today. \"Acted on an unvalidated signal type\" (count 4 through 11-04) adds U and EPAM, both logged \"unknown expected gain,\" for count 5. \"Buying right at the open on a post-earnings/gap-up can mean paying the top of the fade\" (count 2 days, MSFT and AMGN) gets a new, cleaner example in U \u2014 this time explicitly logged by `entry_quality.csv` as a repeated pattern (n=2) \u2014 and AMGN's re-check (\u22124.25%, worse than 11-04's \u22120.61%) reinforces rather than resolves it. \"Shadow tests that enter right before a sharp move get stopped on the gap\" (count 2 through 11-04: PLTR, SHOP, DDOG) adds PLTR again today under Test Z, a second stop-out on the same name in the sample.\n\n_Drafted by Claude Code (Sonnet) from my facts file; I checked every number against the ledgers and fixed: trading-day count (nine, not eight), the signals-sleeve beta wording for U (beta60 2.36, not near-zero), and EPAM's since-entry figure tied to positions entry_price 163.4950._\n\n_Report check and feed push notes appended after those steps._\n"
+  "markdown": "# Reflection \u2014 2026-11-05\n\n## Headline: account vs SPY\nBoth today and since start, the account is behind SPY, and the gap widened again. Today: portfolio $982.59 \u2192 $929.45, **\u22125.408%**. SPY-equivalent (same fills, same cash flows): $1,004.47 \u2192 $960.18, **\u22124.409%**. The account is 1.00 pt behind SPY today \u2014 it fell more than the benchmark on the worst day of the sample so far. SPY cash itself: 766.81 \u2192 733.00, **\u22124.41%** close-to-close (it gapped down only \u22120.17% at the open; almost the whole move was open-to-close selling, \u22124.24%). Since start vs $1,000: portfolio **\u22127.055%**, SPY-equivalent **\u22123.982%**, a gap of **\u22123.073 pts** \u2014 it was \u22122.188 pts on 11-04, so the deficit widened by nearly a full point in one day. Nine trading days in, the strategy is trailing buy-and-hold SPY by more than three points, and the trail has widened on 3 of the last 4 days.\n\n## Mistakes and misses\n**I bought U at the open into an 18.6% premarket gap that had already faded by mid-morning \u2014 exactly the pattern the already-approved v0.5.6 rule exists to stop.** Prior close 42.46, premarket high +18.642%, official open +13.187%, fill 48.1311. By 10:30 the price was \u22122.973% from the open \u2014 `entry_quality.csv` flags it `gap>3% then fade`, and tags it `REPEATED fade-after-gap>3% (n=2 in log)`, meaning this is now the second logged case of exactly this shape. Under current rules (v0.5.6 not effective until the 11-06 premarket run) the buy was mechanically allowed, so this isn't a rule break \u2014 but it is the live data point that justifies the rule the owner already approved yesterday, and I should have been more explicit yesterday that U's setup (thin margin above the 50-day: prior close 42.46 vs 50d 42.24) combined with an 18% premarket pop was close to a worst case for the new rule to catch. By the close it had actually recovered to 48.80 (+1.54% open-to-close, +1.39% since fill, day +14.93% vs prior close) \u2014 so the headline \"fade\" didn't cost money this time, but that's one trade's luck in the exit timing, not evidence the open-chase was sound; a check at 10:30 instead of 4:38 would have shown a loss.\n\n**TSLA hit its \u22128% stop and filled through it.** Entered 2026-10-26 @ 384.1645; stopped out 10:39 @ 349.3203, pct **\u22129.25%** (trades.csv; net P/L \u2212$1.39), roughly a point worse than the \u22128% trigger \u2014 stops are checked at scheduled runs, not continuously, so a gap filled worse than the level (TSLA was down 10.77% on the day). This is the rule working as designed, not a mistake, but it's a reminder that the stop level in the rules is not the fill level in a fast market.\n\n**EPAM was bought mid-afternoon, after a +13.7% gap had already run most of its move, not at the open.** TSLA's stop freed a signals slot at 10:39; EPAM filled at 14:38, after the stock was already up from its +13.716% premarket/open gap. By then open\u21921h had added another +2.017% and the name closed the day +6.402% above its open. I bought a continuation, not the gap itself \u2014 this one worked (entry 163.4950 / fill 163.3316, close 165.70, +1.35% since entry), but buying into a stock that is already up double digits intraday on no new information from me is a second instance of chasing a big-gap name the same day I already chased one (U). The v0.5.6 gap-skip is written for market-on-open fills and wouldn't have blocked this, since it was a `--when now` intraday buy \u2014 a gap worth noting is open now in the rule's coverage.\n\n**Re-check: AMGN's 11-04 gap-buy is now worse, not better.** At 11-04 close it was \u22120.61% since entry after one day; as of today it's **\u22124.25%** since entry (day \u22123.80%). Still one trade, but it moved the wrong way, and per the facts v0.5.6 would have skipped AMGN's original +4.06% gap too had it existed then.\n\n**Re-check: yesterday's \"I was wrong about the MSFT top-of-fade lesson\" call needs qualifying, not reversing.** On 11-04 I wrote that MSFT (entered 10-29 @ 541.02) was +2.58% since entry vs SPY \u22120.26% over the same window, and called the earlier \"top of the fade\" framing wrong. As of today's close, MSFT is at 535.93, **\u22120.94% since entry** \u2014 it gave back the entire bounce in one day. SPY over the same window (10-29 open 768.79 \u2192 today's close 733.00) is now **\u22124.66%**, so MSFT still beats SPY on a relative basis, and I'm not flipping back to \"confirmed fade.\" But the honest read is that my 11-04 conclusion leaned on a short window that happened to look good, the same mistake I flagged in the original 10-30/11-03 re-checks when they leaned on a short window that happened to look bad. Three re-checks in a week have now moved in three different directions on the same single ticker. That's the lesson, not the ticker's direction.\n\n**Momentum's semis concentration produced its worst day of the sample.** Momentum sleeve fell **\u221214.14%** today ($131.85 \u2192 $113.21), its biggest single-day loss yet (prior worst days: \u221210.50% on 10-30, \u22126.81% on 11-02, \u22124.12% on 11-04), on a day SMH fell \u221211.21% close-to-close \u2014 SNDK \u221222.26%, AMD \u221217.26%, MRVL \u221216.43%, DELL \u221214.89%, INTC \u221210.33% among held names. This is the same concentrated semis/AI-hardware book flagged on 10-26, 10-27, 10-28, 10-29, 10-30, 11-02, and 11-04 without ever being escalated into a rule proposal. Momentum is now \u221224.524% since start, **\u221220.542 pts behind SPY**, the single largest drag in the account by a wide margin.\n\n## Overeager\nBuying U at the open after an 18.6% premarket gap and buying EPAM mid-afternoon after a 13.7% gap had already run \u2014 both on the same day, both already-extended gap names \u2014 is the overeager pattern today. Neither broke a written rule, but between them I added two highly-extended, same-day momentum names into signals, a sleeve that otherwise held defensively through a crash day. The EPAM buy in particular had no rule forcing the timing; a freed slot does not require filling it with the next thing that happens to be up double digits that day.\n\n## Too cautious\nNone found as a discretionary call today. No clearly-sourced signal was skipped out of caution; the day's skip count is zero.\n\n## Rule-following\nNo written rule was broken. TSLA's stop fired exactly as specified (filled through the level in a fast market, which the rules already account for as a known limitation, not a bug). **I acted on unvalidated signal types again** \u2014 both U and EPAM are logged as \"unknown expected gain\" in signals, continuing a pattern now seen on 10-26, 10-27, 10-29, 11-04, and 11-05. No discretionary override happened; the v0.5.6 gap-skip rule is approved but not yet effective (starts 11-06 premarket), so today's U buy is not a violation, just the last trading day the old behavior is live.\n\n## Sleeves vs SPY\n- **Core:** \u22124.41% today, \u22123.981% since start, 0.000 pts vs SPY \u2014 by design, it is SPY.\n- **Momentum:** \u221214.14% today ($131.85 \u2192 $113.21), **\u221224.524%** since start, **\u221220.542 pts vs SPY**. Driven entirely by the SMH \u221211.21% semis/AI-hardware selloff (SNDK, MRVL, DELL, INTC, AMD, etc.) \u2014 sector concentration, not stock selection, and the worst day of the sample by a wide margin.\n- **Dividend:** \u22124.41% today (idle in SPY), \u22123.981% since start, 0.000 pts vs SPY.\n- **Earnings:** \u22123.96% today ($147.77 \u2192 $141.92), \u22125.388% since start, **\u22121.407 pts vs SPY** \u2014 beat SPY today by about 0.45 pts, but cross-held MRVL and DELL (also in momentum) hurt this sleeve too.\n- **Signals:** \u22122.86% today ($150.51 \u2192 $146.21), \u22122.525% since start, **+1.456 pts vs SPY** \u2014 the only sleeve ahead of SPY since start. This is not stock-picking: the sleeve's defense cluster (LMT \u22123.17%, CACI \u22124.37%, LHX \u22120.63%, BAH +1.16%, AON \u22120.08%) simply has lower beta to the semis-led crash than the broad market, and the day's two new names are tiny (~$13 each): U has beta60 2.36 / corr60 0.52 so it is not low-beta, just small; EPAM's beta60 0.09 / corr60 0.02 truly is near-zero. Neither moved the sleeve much. Being up 1.456 pts since start is mostly \"didn't hold semis,\" the same structural point already logged for momentum's losses \u2014 it cuts the other way here, not a demonstrated edge.\n\n## Execution issues\nClean run: `sleeves.py close` and `shadow_check.py close` both exited 0 on the first try; no new close-time entries in `shadow_errors.log` (the day's only new entries were an 08:30 premarket throttle/SSL retry that succeeded on rerun, not a close-time failure). No new paper trades at the close \u2014 today's trades were all intraday/open fills in signals. TSLA's stop fill through the trigger level (\u22129.25% vs an \u22128% stop) is worth tracking as a recurring cost of checking stops only at scheduled runs rather than continuously, especially on days like today with large intraday ranges.\n\n## Shadow tests vs pass bars (sample sizes \u2014 nothing here is called passing)\n- **Test A (gap-and-go):** 7 trades, 14.3% win rate, net \u22121.114%/trade, t \u22123.00, SPY same windows \u22123.33%. Bar: 30+ trades, >+0.20%/trade, t>1.5 \u2014 n=7, not judged. Today: APP \u22122.177% (below VWAP at 14:30).\n- **Test B (RSI2 swing):** 11 trades (4 open/pending), 63.6% win rate, net \u22121.059%/trade, t \u22120.57, SPY +0.20%. Bar: net >+0.25%/trade AND beat SPY \u2014 still failing on net despite the high win rate. Today closed MSFT +8.992%, opened SLB, CRM in pending_exit (5th-close max hold); still holding PLTR/SHOP/SLB.\n- **Test Z (z-score dip):** 8 trades (4 open), 25% win rate, net \u22123.746%/trade, t \u22121.00, SPY \u22122.27%. 1.1 of 8 weeks \u2014 not judged, failing firmly. Today closed AMZN +16.503% and MSFT +8.992%, but **PLTR stopped \u22128.246%** the same day \u2014 another shadow-test entry stopped on a sharp move, continuing the pattern logged repeatedly since 11-03.\n- **squeeze_bb30:** 0 trades.\n- **X_orb15_inplay:** 69 trades, net \u22120.585%/trade, t \u22124.05 \u2014 evidence only.\n- **X_orb30_inplay:** 69 trades, net \u22120.659%/trade, t \u22124.82 \u2014 evidence only.\n- **X_vwap_reclaim:** 527 trades, net \u22120.353%/trade, t \u22129.22 \u2014 evidence only (19 closed today, mean \u2248 \u22120.74%).\n- **X_first_pullback:** 185 trades, net \u22120.206%/trade, t \u22123.00 \u2014 evidence only (10 closed today, mean \u22120.82%).\n- **VT_voltarget_core:** 1.3 of 8 weeks, value $380.35, \u22120.01 pts vs real core \u2014 not judged.\n- **Test C (SPY calls, 8020):** 1.3 of 8 weeks, value $924.75 (bid mark), mid $925.78; median |BS\u2212mid| 9.0% of mid (bar \u226410%, still ok); median quoted spread 5.98% of mid (bar \u22642%, still failing).\n- **F50_below50d_only:** 5 closed, 2 open \u2014 under 30, not judged. Open avg excess +0.25% vs SPY, P&L \u2212$0.97. APP opened today, marked +1.452% excess, +5.694% vs SPY \u2014 one day, not evidence.\n- **F50x (single-source, evidence only):** 14 closed / 13 open. Open avg excess +8.11% vs SPY, P&L +$8.37 \u2014 evidence only, never judged.\n- **IL_orb5:** 363 trades, FAILS, \u22120.640%/trade, t \u22123.75.\n- **IL_orb15:** 305 trades, FAILS, \u22120.665%/trade.\n- **IL_orb30:** 259 trades, FAILS, \u22120.688%/trade.\n- **IL_vwap_reclaim:** 452 trades, FAILS, \u22120.600%/trade.\n- **IL_gap_and_go:** 2 of 200 \u2014 not judged. **IL_gap_down_reclaim:** 73 of 200. **IL_first_pullback:** 36 of 200. **IL_rs_leader:** 6 of 200. **IL_ignition:** 91 of 200. **IL_mr_z5:** 31 of 200 \u2014 none of these six judged yet.\n- **BEAR_signals:** 1,834 signal-only mirrors, no pass bar.\n- **PM short-hold shadow (v0.5.6 companion, first day \u2014 n=1, proves nothing):** For U, premarket entry did worse than open entry across every variant tested: `PM_pre_baseline` closed \u22128.600% (stopped), `PM_pre_t2s2_d1`/`t3s3_d3`/`t4s3_d5` closed \u22125.246% (stopped on a gap at the open), `PM_open_t3s3_d3` closed \u22123.400%, `PM_open_baseline` still open +1.491% (tracking close to the real open-entry path). One day of one name shows premarket entry into U's fade was worse than waiting for the open \u2014 consistent with the direction v0.5.6 is designed to protect, but it is a single name on a single day and says nothing about the general case yet.\n\nStill four of ten intraday-lab setups formally failed (IL_orb5, IL_orb15, IL_orb30, IL_vwap_reclaim); zero of any shadow test has passed anything.\n\n## What went well, and skill or luck\nAlmost nothing to credit as skill. Signals' +1.456 pt edge over SPY since start is the headline positive number in the account, but as laid out above it comes from the defense cluster's lower beta to today's semis-led crash and from two new fills (U, EPAM) too small and too low-correlation to have moved the sleeve much \u2014 that's a structural/beta effect, not stock-picking, and it's the mirror image of momentum's loss from the same structural fact (concentration in a falling sector vs. not being in it). EPAM's +1.35% since entry and U's +1.39% since entry are each one trade on one day; neither proves the mid-afternoon-chase or open-gap-chase approach works, and both could as easily have been losses given the fades seen intraday. TSLA's stop did its job, but a stop firing on a stock that fell 10.77% isn't a win, it's damage control. No shadow test passed anything today. There is no win to claim as skill today \u2014 the best that can be said is signals avoided the worst of the crash by not holding the sector that crashed.\n\n## Lessons\n1. **SUGGESTION ONLY (needs the owner's okay):** momentum's semis/AI-hardware concentration has now produced its worst single-day loss of the sample (\u221214.14%, \u221224.524% since start, \u221220.542 pts behind SPY) after being flagged in six prior reflections (10-26 through 11-04) without a rule change. This is the same flagged-but-unescalated pattern already logged once before (10-30, cost \u221210.50% that day); today is a second, larger instance. I'm not proposing a specific cap or rebalance rule here, only flagging that the gap between \"repeatedly flagged\" and \"something changed\" is now two large drawdowns wide.\n2. Not proposing a new rule from today's U/EPAM gap-chasing \u2014 the already-approved v0.5.6 rule (effective tomorrow's premarket run) covers market-on-open gap buys like U. EPAM's mid-afternoon `--when now` buy after an already-extended gap is outside that rule's scope; I'll watch for whether this becomes a repeated pattern (one example today) before treating it as something that needs its own rule.\n\n## Patterns and a re-check\nRe-checked above: the 10-29 MSFT \"top of the gap fade\" lesson, which I called wrong on 11-04 (MSFT +2.58% since entry vs SPY \u22120.26%), is back to showing a loss as of today (\u22120.94% since entry), though still ahead of SPY's \u22124.66% over the same window. The honest conclusion is not that the lesson flips back to \"confirmed\" \u2014 it's that short re-check windows on a single ticker have now produced three different verdicts in a week (10-30/11-03 \"still holding/bad,\" 11-04 \"wrong, it worked,\" 11-05 \"gave it back but still ahead of SPY\"). The lesson worth keeping is about the re-check method, not about MSFT.\n\nCross-referencing `recurring_lessons.md`: \"Momentum and signals gains are mostly sector/market moves, not stock picking\" (count 7 through 11-04) gets its clearest example yet \u2014 momentum's \u221214.14% day was entirely the SMH \u221211.21% semis selloff, and signals' relative outperformance was the same mechanism in reverse (not holding the sector that fell). \"A risk flagged repeatedly in reflections but never escalated to a rule proposal can still cost real money\" (count 1, 10-30) gets a second, larger example today. \"Acted on an unvalidated signal type\" (count 4 through 11-04) adds U and EPAM, both logged \"unknown expected gain,\" for count 5. \"Buying right at the open on a post-earnings/gap-up can mean paying the top of the fade\" (count 2 days, MSFT and AMGN) gets a new, cleaner example in U \u2014 this time explicitly logged by `entry_quality.csv` as a repeated pattern (n=2) \u2014 and AMGN's re-check (\u22124.25%, worse than 11-04's \u22120.61%) reinforces rather than resolves it. \"Shadow tests that enter right before a sharp move get stopped on the gap\" (count 2 through 11-04: PLTR, SHOP, DDOG) adds PLTR again today under Test Z, a second stop-out on the same name in the sample.\n\n_Drafted by Claude Code (Sonnet) from my facts file; I checked every number against the ledgers and fixed: trading-day count (nine, not eight), the signals-sleeve beta wording for U (beta60 2.36, not near-zero), and EPAM's since-entry figure tied to positions entry_price 163.4950._\n\n_Report check (scripts/check_report.py, 2026-11-05): 338 checks, 0 problems. Feed pushed to mattaslan817/vibe-trading-feed, commit 8609a11. Canvas: ReadCanvas/EditCanvas were not available in this executor session; updated [redacted]stores/user/canvases/8471aa7a-96ce-4584-942c-22dcf8c281ca/source.canvas.tsx directly (headline return, sleeve scoreboard, daily reflections, day-trading shadow scoreboard)._\n"
  }
 }
