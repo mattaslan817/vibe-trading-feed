@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0",
- "generated_at": "2026-11-09T11:39:08-05:00",
+ "generated_at": "2026-11-09T14:45:03-05:00",
  "as_of_date": "2026-11-06",
  "disclaimer": "Paper trading only. Not investment advice. Backtests and paper results don't promise future returns.",
  "paper_only": true,
@@ -4321,7 +4321,7 @@
   {
    "setup": "X_orb15_inplay",
    "trades": 82,
-   "open_or_pending": 4,
+   "open_or_pending": 5,
    "win_rate_pct": 24.4,
    "net_per_trade_pct": -0.574,
    "total_net_pct_sum": -47.09,
@@ -4335,7 +4335,7 @@
   {
    "setup": "X_orb30_inplay",
    "trades": 77,
-   "open_or_pending": 4,
+   "open_or_pending": 6,
    "win_rate_pct": 23.4,
    "net_per_trade_pct": -0.614,
    "total_net_pct_sum": -47.28,
@@ -4349,7 +4349,7 @@
   {
    "setup": "X_vwap_reclaim",
    "trades": 558,
-   "open_or_pending": 38,
+   "open_or_pending": 60,
    "win_rate_pct": 26.0,
    "net_per_trade_pct": -0.346,
    "total_net_pct_sum": -192.91,
@@ -4362,14 +4362,14 @@
   },
   {
    "setup": "X_first_pullback",
-   "trades": 198,
-   "open_or_pending": 14,
-   "win_rate_pct": 30.8,
-   "net_per_trade_pct": -0.185,
-   "total_net_pct_sum": -36.72,
-   "spy_same_windows_pct_sum": -6.75,
-   "t_stat": -2.76,
-   "weeks": 2,
+   "trades": 200,
+   "open_or_pending": 37,
+   "win_rate_pct": 30.5,
+   "net_per_trade_pct": -0.191,
+   "total_net_pct_sum": -38.15,
+   "spy_same_windows_pct_sum": -6.68,
+   "t_stat": -2.87,
+   "weeks": 3,
    "weeks_positive": 1,
    "pass_bar": "evidence only (no pre-registered bar)",
    "status": "evidence only"
