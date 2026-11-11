@@ -1,16 +1,27 @@
 {
  "schema_version": "1.0",
- "generated_at": "2026-11-11T16:43:39-05:00",
+ "generated_at": "2026-11-11T17:56:58-05:00",
  "as_of_date": "2026-11-11",
  "disclaimer": "Paper trading only. Not investment advice. Backtests and paper results don't promise future returns.",
  "paper_only": true,
- "rules_version": "v0.5.7",
+ "rules_version": "v0.5.8",
  "account": {
   "start_date": "2026-10-26",
   "start_value": 1000.0,
-  "value": 974.53,
-  "return_pct": -2.547,
-  "pnl": -25.47,
+  "value": 20816.95,
+  "net_contributions": 19852.34,
+  "capital_in": 20852.34,
+  "return_pct": -2.593,
+  "return_method": "time-weighted (unit NAV): external paper contributions buy units at the pre-flow close NAV, so cash in/out is not counted as gain or loss",
+  "pnl": -35.39,
+  "snapshot": "post_flow: after the 2026-11-11 close, including that evening's paper contributions",
+  "pre_deposit_close": {
+   "value": 974.53,
+   "spy_equivalent": 995.3,
+   "return_pct": -2.547,
+   "spy_return_pct": -0.47,
+   "account_minus_spy_pct": -2.077
+  },
   "cash": 0.0,
   "open_positions": 46,
   "realized_pnl": -2.86,
@@ -20,11 +31,41 @@
   "name": "SPY buy-and-hold",
   "start_date": "2026-10-26",
   "start_price": 762.25,
-  "method": "Same starting dollars bought in SPY at the first day's open, same fee/slippage.",
-  "value": 995.3,
-  "return_pct": -0.47,
-  "account_minus_spy_pct": -2.077
+  "method": "Same starting dollars bought in SPY at the first day's open, same fee/slippage; every later paper contribution is also bought in SPY at the same close with the same idle-SPY cost model. Return is time-weighted.",
+  "value": 20837.72,
+  "return_pct": -0.517,
+  "account_minus_spy_pct": -2.076
  },
+ "contributions": [
+  {
+   "id": "contrib-2026-11-11-signals",
+   "date": "2026-11-11",
+   "time_et": "2026-11-11 16:00 ET (after the close mark)",
+   "timing": "after_close",
+   "sleeve": "signals",
+   "amount": 9852.34,
+   "nav_at_flow": 0.9844,
+   "spy_quote": 759.81,
+   "spy_lot_id": "sig-SPY-idle",
+   "cap_waiver": true,
+   "parked": false,
+   "note": "Simulated paper cash. Not a live deposit or broker event."
+  },
+  {
+   "id": "contrib-2026-11-11-daytrade",
+   "date": "2026-11-11",
+   "time_et": "2026-11-11 16:00 ET (after the close mark)",
+   "timing": "after_close",
+   "sleeve": "daytrade",
+   "amount": 10000.0,
+   "nav_at_flow": 1.0,
+   "spy_quote": 759.81,
+   "spy_lot_id": "day-SPY-idle",
+   "cap_waiver": true,
+   "parked": true,
+   "note": "Simulated paper cash. Not a live deposit or broker event."
+  }
+ ],
  "equity_curve": [
   {
    "date": "2026-10-26",
@@ -65,7 +106,9 @@
    "total_return_pct": 0.708,
    "spy_return_pct": 0.259,
    "cash": 0.0,
-   "open_positions": 28
+   "open_positions": 28,
+   "net_contributions": 0.0,
+   "return_method": "time-weighted (unit NAV)"
   },
   {
    "date": "2026-10-27",
@@ -106,7 +149,9 @@
    "total_return_pct": 1.926,
    "spy_return_pct": 0.821,
    "cash": 0.0,
-   "open_positions": 30
+   "open_positions": 30,
+   "net_contributions": 0.0,
+   "return_method": "time-weighted (unit NAV)"
   },
   {
    "date": "2026-10-28",
@@ -147,7 +192,9 @@
    "total_return_pct": 2.543,
    "spy_return_pct": 1.168,
    "cash": 0.0,
-   "open_positions": 30
+   "open_positions": 30,
+   "net_contributions": 0.0,
+   "return_method": "time-weighted (unit NAV)"
   },
   {
    "date": "2026-10-29",
@@ -188,7 +235,9 @@
    "total_return_pct": 1.811,
    "spy_return_pct": 0.781,
    "cash": 0.0,
-   "open_positions": 31
+   "open_positions": 31,
+   "net_contributions": 0.0,
+   "return_method": "time-weighted (unit NAV)"
   },
   {
    "date": "2026-10-30",
@@ -229,7 +278,9 @@
    "total_return_pct": -1.353,
    "spy_return_pct": -1.005,
    "cash": 0.0,
-   "open_positions": 33
+   "open_positions": 33,
+   "net_contributions": 0.0,
+   "return_method": "time-weighted (unit NAV)"
   },
   {
    "date": "2026-11-02",
@@ -270,7 +321,9 @@
    "total_return_pct": -2.855,
    "spy_return_pct": -1.48,
    "cash": 0.0,
-   "open_positions": 35
+   "open_positions": 35,
+   "net_contributions": 0.0,
+   "return_method": "time-weighted (unit NAV)"
   },
   {
    "date": "2026-11-03",
@@ -311,7 +364,9 @@
    "total_return_pct": -2.328,
    "spy_return_pct": -1.185,
    "cash": 0.0,
-   "open_positions": 42
+   "open_positions": 42,
+   "net_contributions": 0.0,
+   "return_method": "time-weighted (unit NAV)"
   },
   {
    "date": "2026-11-04",
@@ -352,7 +407,9 @@
    "total_return_pct": -1.741,
    "spy_return_pct": 0.447,
    "cash": 0.0,
-   "open_positions": 44
+   "open_positions": 44,
+   "net_contributions": 0.0,
+   "return_method": "time-weighted (unit NAV)"
   },
   {
    "date": "2026-11-05",
@@ -393,7 +450,9 @@
    "total_return_pct": -7.055,
    "spy_return_pct": -3.982,
    "cash": 0.0,
-   "open_positions": 45
+   "open_positions": 45,
+   "net_contributions": 0.0,
+   "return_method": "time-weighted (unit NAV)"
   },
   {
    "date": "2026-11-06",
@@ -434,7 +493,9 @@
    "total_return_pct": -6.798,
    "spy_return_pct": -3.682,
    "cash": 0.0,
-   "open_positions": 46
+   "open_positions": 46,
+   "net_contributions": 0.0,
+   "return_method": "time-weighted (unit NAV)"
   },
   {
    "date": "2026-11-09",
@@ -475,7 +536,9 @@
    "total_return_pct": -3.919,
    "spy_return_pct": -1.402,
    "cash": 0.0,
-   "open_positions": 46
+   "open_positions": 46,
+   "net_contributions": 0.0,
+   "return_method": "time-weighted (unit NAV)"
   },
   {
    "date": "2026-11-10",
@@ -516,7 +579,9 @@
    "total_return_pct": -4.322,
    "spy_return_pct": -1.765,
    "cash": 0.0,
-   "open_positions": 46
+   "open_positions": 46,
+   "net_contributions": 0.0,
+   "return_method": "time-weighted (unit NAV)"
   },
   {
    "date": "2026-11-11",
@@ -557,7 +622,9 @@
    "total_return_pct": -2.547,
    "spy_return_pct": -0.47,
    "cash": 0.0,
-   "open_positions": 46
+   "open_positions": 46,
+   "net_contributions": 0.0,
+   "return_method": "time-weighted (unit NAV)"
   }
  ],
  "sleeves": [
@@ -565,12 +632,22 @@
    "sleeve": "core",
    "start_value": 400.0,
    "equity": 398.12,
+   "net_contributions": 0.0,
+   "capital_in": 400.0,
    "return_pct": -0.469,
    "spy_return_pct": -0.47,
    "vs_spy_pct": 0.0,
+   "spy_equivalent": 398.12,
    "invested_value": 398.12,
-   "idle_spy_value": 0.0,
+   "idle_spy_value": 0,
    "cash": 0.0,
+   "cap": "0.4",
+   "parked": false,
+   "pre_deposit_close": {
+    "equity": 398.12,
+    "return_pct": -0.469,
+    "spy_return_pct": -0.47
+   },
    "open_positions": 1,
    "realized_pnl": 0.0,
    "base_weight": 0.4,
@@ -581,12 +658,22 @@
    "sleeve": "momentum",
    "start_value": 150.0,
    "equity": 133.74,
+   "net_contributions": 0.0,
+   "capital_in": 150.0,
    "return_pct": -10.839,
    "spy_return_pct": -0.47,
    "vs_spy_pct": -10.369,
+   "spy_equivalent": 149.3,
    "invested_value": 133.74,
-   "idle_spy_value": 0.0,
+   "idle_spy_value": 0,
    "cash": 0.0,
+   "cap": "0.15",
+   "parked": false,
+   "pre_deposit_close": {
+    "equity": 133.74,
+    "return_pct": -10.839,
+    "spy_return_pct": -0.47
+   },
    "open_positions": 15,
    "realized_pnl": 0.0,
    "base_weight": 0.15,
@@ -597,12 +684,22 @@
    "sleeve": "dividend",
    "start_value": 150.0,
    "equity": 149.3,
+   "net_contributions": 0.0,
+   "capital_in": 150.0,
    "return_pct": -0.469,
    "spy_return_pct": -0.47,
    "vs_spy_pct": 0.0,
-   "invested_value": 0.0,
+   "spy_equivalent": 149.3,
+   "invested_value": 0,
    "idle_spy_value": 149.3,
    "cash": 0.0,
+   "cap": "0.15",
+   "parked": false,
+   "pre_deposit_close": {
+    "equity": 149.3,
+    "return_pct": -0.469,
+    "spy_return_pct": -0.47
+   },
    "open_positions": 0,
    "realized_pnl": 0.0,
    "base_weight": 0.15,
@@ -613,12 +710,22 @@
    "sleeve": "earnings",
    "start_value": 150.0,
    "equity": 145.7,
+   "net_contributions": 0.0,
+   "capital_in": 150.0,
    "return_pct": -2.864,
    "spy_return_pct": -0.47,
    "vs_spy_pct": -2.394,
-   "invested_value": 143.94,
+   "spy_equivalent": 149.3,
+   "invested_value": 143.93,
    "idle_spy_value": 1.76,
    "cash": 0.0,
+   "cap": "0.15",
+   "parked": false,
+   "pre_deposit_close": {
+    "equity": 145.7,
+    "return_pct": -2.864,
+    "spy_return_pct": -0.47
+   },
    "open_positions": 20,
    "realized_pnl": 0.0,
    "base_weight": 0.15,
@@ -628,16 +735,48 @@
   {
    "sleeve": "signals",
    "start_value": 150.0,
-   "equity": 147.66,
-   "return_pct": -1.558,
-   "spy_return_pct": -0.47,
-   "vs_spy_pct": -1.088,
+   "equity": 9995.08,
+   "net_contributions": 9852.34,
+   "capital_in": 10002.34,
+   "return_pct": -1.608,
+   "spy_return_pct": -0.519,
+   "vs_spy_pct": -1.09,
+   "spy_equivalent": 9996.71,
    "invested_value": 147.66,
-   "idle_spy_value": 0.0,
+   "idle_spy_value": 9847.42,
    "cash": 0.0,
+   "cap": "waived (owner-directed assessment size; not a promotion)",
+   "parked": false,
+   "pre_deposit_close": {
+    "equity": 147.66,
+    "return_pct": -1.558,
+    "spy_return_pct": -0.47
+   },
    "open_positions": 10,
    "realized_pnl": -2.86,
    "base_weight": 0.15,
+   "experimental": true,
+   "note": null
+  },
+  {
+   "sleeve": "daytrade",
+   "start_value": 0.0,
+   "equity": 9995.0,
+   "net_contributions": 10000.0,
+   "capital_in": 10000.0,
+   "return_pct": -0.05,
+   "spy_return_pct": -0.05,
+   "vs_spy_pct": 0.0,
+   "spy_equivalent": 9995.0,
+   "invested_value": 0,
+   "idle_spy_value": 9995.0,
+   "cash": 0.0,
+   "cap": "waived (owner-directed assessment size; not a promotion)",
+   "parked": true,
+   "pre_deposit_close": null,
+   "open_positions": 0,
+   "realized_pnl": 0.0,
+   "base_weight": 0.0,
    "experimental": true,
    "note": null
   }
@@ -1852,6 +1991,56 @@
    "reason": "J4 run-up: reports 2026-12-08 (not-supplied); last pre-report close 2026-12-07 is 20 trading days after today; buy today's close, sell 2026-12-07 close; 5% of sleeve",
    "beta60": 0.07,
    "corr60": 0.03
+  },
+  {
+   "ticker": "SPY",
+   "sleeve": "signals",
+   "lot_id": "sig-SPY-idle",
+   "status": "idle_spy",
+   "is_idle_cash_in_spy": true,
+   "entry_date": "2026-11-11",
+   "entry_time_et": "2026-11-11 16:00 ET (official close; post-close contribution sweep)",
+   "shares": 12.960367,
+   "entry_price": 760.1899,
+   "last_price": 759.81,
+   "cost_basis": 9852.34,
+   "market_value": 9847.42,
+   "unrealized_pnl": -9.85,
+   "pnl_pct": -0.1,
+   "stop_price": null,
+   "target_price": null,
+   "exit_by_date": null,
+   "report_date": null,
+   "signal_type": "idle cash in SPY",
+   "signal_link": null,
+   "reason": "start-up; idle sleeve cash held in SPY (all cash left after this sleeve's open buys)",
+   "beta60": 1.0,
+   "corr60": 1.0
+  },
+  {
+   "ticker": "SPY",
+   "sleeve": "daytrade",
+   "lot_id": "day-SPY-idle",
+   "status": "idle_spy",
+   "is_idle_cash_in_spy": true,
+   "entry_date": "2026-11-11",
+   "entry_time_et": "2026-11-11 16:00 ET (official close; post-close contribution sweep)",
+   "shares": 13.154608,
+   "entry_price": 760.1899,
+   "last_price": 759.81,
+   "cost_basis": 10000.0,
+   "market_value": 9995.0,
+   "unrealized_pnl": -9.99,
+   "pnl_pct": -0.1,
+   "stop_price": null,
+   "target_price": null,
+   "exit_by_date": null,
+   "report_date": null,
+   "signal_type": "idle cash in SPY",
+   "signal_link": null,
+   "reason": "v0.5.8 contribution contrib-2026-11-11-daytrade: idle sleeve cash held in SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
   }
  ],
  "closed_trades": [
@@ -1890,8 +2079,137 @@
    "signal_link": "https://www.cnbc.com/2026/10/26/monday-biggest-wall-street-analyst-calls-like-tesla.html"
   }
  ],
- "todays_fills": [],
+ "todays_fills": [
+  {
+   "date": "2026-11-11",
+   "time_et": "2026-11-11 16:00 ET (post-close contribution)",
+   "sleeve": "signals",
+   "ticker": "CASH",
+   "side": "contribution",
+   "shares": null,
+   "quote_price": null,
+   "fill_price": null,
+   "notional": 9852.34,
+   "fee": 0.0,
+   "price_source": "simulated paper contribution (no broker, no real money)",
+   "reason": "v0.5.8 assessment funding, the owner 2026-11-11 ~17:40 ET (t119u): \"Let's increase to $10k for signals and $10k for trading so we can get a more adequate assessment\"",
+   "beta60": null,
+   "corr60": null
+  },
+  {
+   "date": "2026-11-11",
+   "time_et": "2026-11-11 16:00 ET (official close; post-close contribution sweep)",
+   "sleeve": "signals",
+   "ticker": "SPY",
+   "side": "buy",
+   "shares": 12.960367,
+   "quote_price": 759.81,
+   "fill_price": 760.1899,
+   "notional": 9852.34,
+   "fee": 0.0,
+   "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-11-11 17:52 ET",
+   "reason": "v0.5.8 contribution contrib-2026-11-11-signals: idle sleeve cash held in SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
+  },
+  {
+   "date": "2026-11-11",
+   "time_et": "2026-11-11 16:00 ET (post-close contribution)",
+   "sleeve": "daytrade",
+   "ticker": "CASH",
+   "side": "contribution",
+   "shares": null,
+   "quote_price": null,
+   "fill_price": null,
+   "notional": 10000.0,
+   "fee": 0.0,
+   "price_source": "simulated paper contribution (no broker, no real money)",
+   "reason": "v0.5.8 assessment funding, the owner 2026-11-11 ~17:40 ET (widget answer t119s504): \"Yes, fund the day-trade sleeve with $10k in idle SPY and don't trade failing setups yet\"",
+   "beta60": null,
+   "corr60": null
+  },
+  {
+   "date": "2026-11-11",
+   "time_et": "2026-11-11 16:00 ET (official close; post-close contribution sweep)",
+   "sleeve": "daytrade",
+   "ticker": "SPY",
+   "side": "buy",
+   "shares": 13.154608,
+   "quote_price": 759.81,
+   "fill_price": 760.1899,
+   "notional": 10000.0,
+   "fee": 0.0,
+   "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-11-11 17:52 ET",
+   "reason": "v0.5.8 contribution contrib-2026-11-11-daytrade: idle sleeve cash held in SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
+  }
+ ],
  "recent_fills": [
+  {
+   "date": "2026-11-11",
+   "time_et": "2026-11-11 16:00 ET (official close; post-close contribution sweep)",
+   "sleeve": "daytrade",
+   "ticker": "SPY",
+   "side": "buy",
+   "shares": 13.154608,
+   "quote_price": 759.81,
+   "fill_price": 760.1899,
+   "notional": 10000.0,
+   "fee": 0.0,
+   "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-11-11 17:52 ET",
+   "reason": "v0.5.8 contribution contrib-2026-11-11-daytrade: idle sleeve cash held in SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
+  },
+  {
+   "date": "2026-11-11",
+   "time_et": "2026-11-11 16:00 ET (post-close contribution)",
+   "sleeve": "daytrade",
+   "ticker": "CASH",
+   "side": "contribution",
+   "shares": null,
+   "quote_price": null,
+   "fill_price": null,
+   "notional": 10000.0,
+   "fee": 0.0,
+   "price_source": "simulated paper contribution (no broker, no real money)",
+   "reason": "v0.5.8 assessment funding, the owner 2026-11-11 ~17:40 ET (widget answer t119s504): \"Yes, fund the day-trade sleeve with $10k in idle SPY and don't trade failing setups yet\"",
+   "beta60": null,
+   "corr60": null
+  },
+  {
+   "date": "2026-11-11",
+   "time_et": "2026-11-11 16:00 ET (official close; post-close contribution sweep)",
+   "sleeve": "signals",
+   "ticker": "SPY",
+   "side": "buy",
+   "shares": 12.960367,
+   "quote_price": 759.81,
+   "fill_price": 760.1899,
+   "notional": 9852.34,
+   "fee": 0.0,
+   "price_source": "Yahoo Finance chart endpoint, 1d bar close, fetched 2026-11-11 17:52 ET",
+   "reason": "v0.5.8 contribution contrib-2026-11-11-signals: idle sleeve cash held in SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
+  },
+  {
+   "date": "2026-11-11",
+   "time_et": "2026-11-11 16:00 ET (post-close contribution)",
+   "sleeve": "signals",
+   "ticker": "CASH",
+   "side": "contribution",
+   "shares": null,
+   "quote_price": null,
+   "fill_price": null,
+   "notional": 9852.34,
+   "fee": 0.0,
+   "price_source": "simulated paper contribution (no broker, no real money)",
+   "reason": "v0.5.8 assessment funding, the owner 2026-11-11 ~17:40 ET (t119u): \"Let's increase to $10k for signals and $10k for trading so we can get a more adequate assessment\"",
+   "beta60": null,
+   "corr60": null
+  },
   {
    "date": "2026-11-06",
    "time_et": "2026-11-06 16:00 ET (daily close)",
@@ -3221,7 +3539,7 @@
    "corr60": 0.34
   }
  ],
- "last_fill_date": "2026-11-06",
+ "last_fill_date": "2026-11-11",
  "pending_orders": [],
  "skips": [
   {
@@ -6667,6 +6985,42 @@
   }
  ],
  "alerts": [
+  {
+   "date": "2026-11-11",
+   "text": "POST-FLOW 2026-11-11: account $20,816.95 (net contributions $19,852.34; TWR -2.593%) vs SPY-equivalent $20,837.72 (TWR -0.517%; -2.076 pts) | core $398.12, momentum $133.74, dividend $149.30, earnings $145.70, signals $9,995.08, daytrade $9,995.00"
+  },
+  {
+   "date": "2026-11-11",
+   "text": "PAPER TRADE 2026-11-11 | sleeve daytrade | BUY 13.154608 SPY @ $760.1899 (quote $759.8100 at 2026-11-11 16:00 ET (official close; post-close contribution sweep), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-11-11 17:52 ET; +/-0.05% slippage) | notional $10,000.00, fee $0.00 (0.00%) | beta 1.0 | v0.5.8 contribution contrib-2026-11-11-daytrade: idle sleeve cash held in SPY"
+  },
+  {
+   "date": "2026-11-11",
+   "text": "CONTRIBUTION 2026-11-11 after close | sleeve daytrade | +$10,000.00 simulated paper cash (the owner 2026-11-11 ~17:40 ET (widget answer t119s504): \"Yes, fund the day-trade sleeve with $10k in idle SPY and don't trade failing setups yet\") | parked in idle SPY at the official close; benchmark gets the same $10,000.00 at the same close | units at NAV 1.000000"
+  },
+  {
+   "date": "2026-11-11",
+   "text": "--- contribute run 2026-11-11 17:52 ET"
+  },
+  {
+   "date": "2026-11-11",
+   "text": "POST-FLOW 2026-11-11: account $10,821.94 (net contributions $9,852.34; TWR -2.591%) vs SPY-equivalent $10,842.72 (TWR -0.515%; -2.077 pts) | core $398.12, momentum $133.74, dividend $149.30, earnings $145.70, signals $9,995.08"
+  },
+  {
+   "date": "2026-11-11",
+   "text": "PAPER TRADE 2026-11-11 | sleeve signals | BUY 12.960367 SPY @ $760.1899 (quote $759.8100 at 2026-11-11 16:00 ET (official close; post-close contribution sweep), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-11-11 17:52 ET; +/-0.05% slippage) | notional $9,852.34, fee $0.00 (0.00%) | beta 1.0 | v0.5.8 contribution contrib-2026-11-11-signals: idle sleeve cash held in SPY"
+  },
+  {
+   "date": "2026-11-11",
+   "text": "CONTRIBUTION 2026-11-11 after close | sleeve signals | +$9,852.34 simulated paper cash (the owner 2026-11-11 ~17:40 ET (t119u): \"Let's increase to $10k for signals and $10k for trading so we can get a more adequate assessment\") | parked in idle SPY at the official close; benchmark gets the same $9,852.34 at the same close | units at NAV 0.984400"
+  },
+  {
+   "date": "2026-11-11",
+   "text": "--- contribute run 2026-11-11 17:52 ET"
+  },
+  {
+   "date": "2026-11-11",
+   "text": "--- feed push 2026-11-11 close: commit ab31d18d088145240b935dbe9ac9c3fd9636caff (latest.json only)"
+  },
   {
    "date": "2026-11-11",
    "text": "EQUITY 2026-11-11 close: total $974.53 vs SPY-equivalent $995.30 | core $398.12 (-0.47% vs SPY -0.47%), momentum $133.74 (-10.84% vs SPY -0.47%), dividend $149.30 (-0.47% vs SPY -0.47%), earnings $145.70 (-2.86% vs SPY -0.47%), signals $147.66 (-1.56% vs SPY -0.47%)"
