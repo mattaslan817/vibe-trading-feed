@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0",
- "generated_at": "2026-11-18T10:31:12-05:00",
+ "generated_at": "2026-11-18T11:32:24-05:00",
  "as_of_date": "2026-11-17",
  "disclaimer": "Paper trading only. Not investment advice. Backtests and paper results don't promise future returns.",
  "paper_only": true,
@@ -18,7 +18,7 @@
   "pre_deposit_close": null,
   "cash": 0.0,
   "open_positions": 48,
-  "realized_pnl": -2.86,
+  "realized_pnl": -4.1,
   "valuation_note": "Valued at the last close or quote already recorded in the ledgers; not live prices."
  },
  "benchmark": {
@@ -922,8 +922,8 @@
    "cap": "waived (owner-directed assessment size; not a promotion)",
    "parked": false,
    "pre_deposit_close": null,
-   "open_positions": 11,
-   "realized_pnl": -2.86,
+   "open_positions": 10,
+   "realized_pnl": -4.1,
    "base_weight": 0.15,
    "experimental": true,
    "note": "idle cash held in SPY; TWR; contributions $9,852.34 (nav.csv)"
@@ -1838,31 +1838,6 @@
    "corr60": -0.05
   },
   {
-   "ticker": "LHX",
-   "sleeve": "signals",
-   "lot_id": "sig-LHX-2026-11-03",
-   "status": "open",
-   "is_idle_cash_in_spy": false,
-   "entry_date": "2026-11-03",
-   "entry_time_et": "2026-11-03 09:30 ET (official open)",
-   "shares": 0.054818,
-   "entry_price": 277.646,
-   "last_price": 260.74,
-   "cost_basis": 15.22,
-   "market_value": 14.29,
-   "unrealized_pnl": -0.93,
-   "pnl_pct": -6.136,
-   "stop_price": 255.1791,
-   "target_price": 332.8424,
-   "exit_by_date": "2026-12-02",
-   "report_date": null,
-   "signal_type": "signal (v0.3-v0.4.1 rules)",
-   "signal_link": "https://www.investing.com/news/analyst-ratings/bofa-raises-l3harris-stock-price-target-to-375-on-earnings-beat-93CH-4994255",
-   "reason": "Signals v0.5.1, 4 independent confirmations, close 278.96 above 50d 250.05: (1) company Q3 beat + raised FY26 guidance 2026-10-29 https://investors.l3harris.com/news/news-details/2026/L3Harris-Delivers-Record-Backlog-and-Strong-Third-Quarter-Results/default.aspx ; (2) BofA PT 325->375 Buy 2026-11-03 https://www.investing.com/news/analyst-ratings/bofa-raises-l3harris-stock-price-target-to-375-on-earnings-beat-93CH-4994255 ; (3) JPMorgan resumed at Overweight PT 320 2026-11-02 https://seekingalpha.com/news/4662366-l3harris-rated-overweight-in-resumed-coverage-by-j-p-morgan ; (4) BNP Paribas PT 260->300 2026-10-30 https://fiscal.ai/company/NYSE_LHX/news/2026-10-30/bnp-paribas-adjusts-price-target-on-l3harris-technologies-to-300/ . Note: older Aug CEO-change/law-firm probe overhang, not new negative news",
-   "beta60": -0.25,
-   "corr60": -0.1
-  },
-  {
    "ticker": "AON",
    "sleeve": "signals",
    "lot_id": "sig-AON-2026-11-03",
@@ -2170,11 +2145,11 @@
    "is_idle_cash_in_spy": true,
    "entry_date": "2026-11-11",
    "entry_time_et": "2026-11-11 16:00 ET (official close; post-close contribution sweep)",
-   "shares": 12.297219,
-   "entry_price": 760.1899,
+   "shares": 12.316401,
+   "entry_price": 760.1412,
    "last_price": 732.44,
-   "cost_basis": 9348.22,
-   "market_value": 9006.98,
+   "cost_basis": 9362.2,
+   "market_value": 9021.02,
    "unrealized_pnl": -345.75,
    "pnl_pct": -3.699,
    "stop_price": null,
@@ -2290,6 +2265,23 @@
  ],
  "closed_trades": [
   {
+   "ticker": "LHX",
+   "sleeve": "signals",
+   "lot_id": "sig-LHX-2026-11-03",
+   "entry_date": "2026-11-03",
+   "entry_price": 277.646,
+   "exit_date": "2026-11-18",
+   "exit_price": 255.0515,
+   "shares": 0.054818,
+   "pnl": -1.24,
+   "return_pct": -8.138,
+   "fees": 0.0152,
+   "days_held": 11.0,
+   "exit_reason": "STOP (-8%) (5-min bar stop: 5-min bar 10:45 ET low 255.1700 crossed stop 255.1791)",
+   "signal_type": "signal (v0.3-v0.4.1 rules)",
+   "signal_link": "https://www.investing.com/news/analyst-ratings/bofa-raises-l3harris-stock-price-target-to-375-on-earnings-beat-93CH-4994255"
+  },
+  {
    "ticker": "CACI",
    "sleeve": "signals",
    "lot_id": "sig-CACI-2026-10-26",
@@ -2359,6 +2351,38 @@
   }
  ],
  "recent_fills": [
+  {
+   "date": "2026-11-18",
+   "time_et": "2026-11-18 11:28 ET",
+   "sleeve": "signals",
+   "ticker": "SPY",
+   "side": "buy",
+   "shares": 0.019182,
+   "quote_price": 728.55,
+   "fill_price": 728.9143,
+   "notional": 13.98,
+   "fee": 0.0,
+   "price_source": "Yahoo Finance chart endpoint, regularMarketPrice (may be delayed ~15 min)",
+   "reason": "idle sleeve cash held in SPY (v0.5)",
+   "beta60": 1.0,
+   "corr60": 1.0
+  },
+  {
+   "date": "2026-11-18",
+   "time_et": "2026-11-18 10:45 ET (5-min bar)",
+   "sleeve": "signals",
+   "ticker": "LHX",
+   "side": "sell",
+   "shares": 0.054818,
+   "quote_price": 255.1791,
+   "fill_price": 255.0515,
+   "notional": 13.98,
+   "fee": 0.0,
+   "price_source": "Yahoo Finance chart endpoint, 5-min bars (v0.5.12 intraday low/high check; may lag ~15 min, last bar may still be forming)",
+   "reason": "STOP (-8%) (5-min bar stop: 5-min bar 10:45 ET low 255.1700 crossed stop 255.1791)",
+   "beta60": 0.03,
+   "corr60": 0.02
+  },
   {
    "date": "2026-11-18",
    "time_et": "2026-11-18 10:30 ET",
@@ -3943,6 +3967,54 @@
  "signals": [
   {
    "date": "2026-11-18",
+   "ticker": "PANW",
+   "signal_type": "earnings_upcoming",
+   "source": "Company earnings 11-18 AMC (Truist/BigGo preview); MS top pick (11-16 note)",
+   "sources": [
+    {
+     "url": "https://finance.biggo.com/news/d4545ebe-ebb6-445b-96d9-6f9ac4576922"
+    }
+   ],
+   "description": "11:30 11-18: PANW 329.40 (+6.51% vs pc 309.29, +4.99% vs open) ahead of own earnings tonight; pc far below 50d 366.61; earnings within 1 trading day -> no entry. Leader event for tomorrow's cyber sympathy (CRWD/S/OKTA/ZS/FTNT/NET all +4.5-8.4% today).",
+   "sentiment": "neutral",
+   "prior_close": 309.29,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.56,
+   "corr60": 0.37,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-18 11:33:00-05:00"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "CRWD",
+   "signal_type": "analyst_note_sector",
+   "source": "Morgan Stanley (Meta Marshall) cyber sector note via GMT Eight 11-16 06:44 ET (top picks PANW/CRWD, OW maintained) + Truist Buy basket via BigGo 11-17 02:05 ET; sector-wide rally into PANW 11-18 AMC earnings",
+   "sources": [
+    {
+     "url": "https://gmteight.com/content/detail/452639"
+    },
+    {
+     "url": "https://finance.biggo.com/news/d4545ebe-ebb6-445b-96d9-6f9ac4576922"
+    },
+    {
+     "url": "https://www.investing.com/news/stock-market-news/why-is-crowdstrike-stock-rallying-today-93CH-4967412"
+    }
+   ],
+   "description": "11:30 11-18: CRWD 233.10 (+6.2% vs pc 219.58, +4.16% vs open 223.80, VWAP 228.65, 11:25 bar, Yahoo 5m delayed); pc 10.5% below 50d 245.31; DX one_filter (ma50) candidate. Both notes pre-date 11-17 session (cyber still fell 11-17); move sector-wide incl MS-disfavored S +8.4% -> positioning into PANW AMC tonight. Claude 11:30 3 roles all REJECT (stale signal, binary PANW event, chase, adds to held CRWD earnings lot). Log only.",
+   "sentiment": "positive",
+   "prior_close": 219.58,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.95,
+   "corr60": 0.4,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-18 11:33:00-05:00"
+  },
+  {
+   "date": "2026-11-18",
    "ticker": "CRWD",
    "signal_type": "analyst_pt_raise",
    "source": "Held (earnings sleeve) MOVER +5.6%: Cantor PT 250->275 (11-16), Rosenblatt PT 275 (11-15), ~$495M AI-security acquisitions (GMT Eight relay) - mostly older items",
@@ -5015,48 +5087,6 @@
    "ret_20d": null,
    "beta60": 1.5,
    "corr60": 0.38,
-   "beta_asof": "2026-11-12",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-13",
-   "ticker": "MOD",
-   "signal_type": "m_and_a_rumor",
-   "source": "Bloomberg report relayed by CNBC; StockTitan/Investing premarket lists (relays, not independent)",
-   "sources": [
-    {
-     "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-13-2026"
-    }
-   ],
-   "description": "8AM 11-13: Bloomberg reported Samsung Electronics in talks to take over Modine; Samsung said it could not confirm, Modine no comment (per CNBC). PM 140.00 (+31.95%, Yahoo 07:53 ET, delayed, PM volume unreported) vs pc 106.10, 50d 160.43 (below). Single original source (Bloomberg) = 1 org; unconfirmed takeover rumor + >3% gap -> not a Signals entry; log/context only.",
-   "sentiment": "positive",
-   "prior_close": 106.1,
-   "ret_1d": 0.279,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 2.08,
-   "corr60": 0.4,
-   "beta_asof": "2026-11-12",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-13",
-   "ticker": "MP",
-   "signal_type": "insider_buy",
-   "source": "SEC Form 4 (3-insider cluster incl CEO/CFO) + Freedom Broker upgrade via Yahoo wrap",
-   "sources": [
-    {
-     "url": "https://www.sec.gov/Archives/edgar/data/1031609/"
-    }
-   ],
-   "description": "6AM 11-13: 3 insiders incl CEO/CFO bought $6.71M open-market (filed 11-12); Freedom Broker Buy (PT 57->51). pc 37.45 < 50d 44.23; PM 37.99 (+1.44%, 05:25 stale). Two evidence types -> F50 shadow (added via f50_shadow add). Insider buying = context per rules.",
-   "sentiment": "positive",
-   "prior_close": 37.45,
-   "ret_1d": 0.035,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.85,
-   "corr60": 0.48,
    "beta_asof": "2026-11-12",
    "found_at": null
   }
@@ -7767,6 +7797,70 @@
   }
  ],
  "alerts": [
+  {
+   "date": "2026-11-18",
+   "text": "MOVER 2026-11-18 LITE -2.65% vs prior close, -5.68% vs open (last 545.1290 at 2026-11-18 11:28 ET; held (momentum); HELD) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order | headlines: Insider Monkey 11-18 11:11 ET: The Deal Behind Needham\u2019s Call on Lumentum (LITE) <https://finance.yahoo.com/markets/stocks/articles/deal-behind-needham-call-lumentum-161129119.html> || TIKR 11-18 10:52 ET: A $3.8 Billion Fund Dumps These 3 Stocks <https://finance.yahoo.com/markets/stocks/articles/3-8-billion-fund-dumps-155238475.html> || Barrons.com 11-18 10:18 ET: This Wildly Volatile AI Stock Is Down 80% From Its Peak\u2014and Flashing Warning Signals <https://finance.yahoo.com/m/9b5f7994-7659-3b7b-8dc5-5fca85c6de96/this-wildly-volatile-ai-stock.html>"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "MOVER 2026-11-18 MRVL -3.20% vs prior close, -5.28% vs open (last 143.9850 at 2026-11-18 11:28 ET; held (earnings); held (momentum); HELD) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order | headlines: TIKR 11-18 10:52 ET: A $3.8 Billion Fund Dumps These 3 Stocks <https://finance.yahoo.com/markets/stocks/articles/3-8-billion-fund-dumps-155238475.html> || Insider Monkey 11-18 10:26 ET: What Marvell\u2019s (MRVL) Lumentum Deal Adds to Its Anthropic Growth Story <https://finance.yahoo.com/markets/stocks/articles/marvell-mrvl-lumentum-deal-adds-152652550.html> || Trefis 11-18 09:27 ET: Is Nvidia A Hidden Risk In Your Index Fund? <https://finance.yahoo.com/markets/stocks/articles/nvidia-hidden-risk-index-fund-142708200.html>"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "MOVER 2026-11-18 SNDK -4.40% vs prior close, -5.42% vs open (last 762.2000 at 2026-11-18 11:28 ET; held (momentum); HELD) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order | headlines: Insider Monkey 11-18 11:11 ET: Forget Nvidia: 5 Stocks Wall Street is Betting on Right Now <https://finance.yahoo.com/markets/stocks/articles/forget-nvidia-5-stocks-wall-161132558.html> || GuruFocus.com 11-18 11:08 ET: Sandisk's Earnings Surprise Stands Out Before Its Stock Split <https://finance.yahoo.com/markets/stocks/articles/sandisks-earnings-surprise-stands-stock-160857019.html> || 24/7 Wall St. 11-18 10:45 ET: 3 Reasons Keep Me Buying SanDisk at $795 <https://finance.yahoo.com/markets/stocks/articles/3-reasons-keep-buying-sandisk-154520772.html>"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "MOVER 2026-11-18 MP +5.21% vs prior close, +5.48% vs open (last 36.6750 at 2026-11-18 11:28 ET; signal_log 2026-11-13 insider_buy; signal_log 2026-11-18 analyst_initiation) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order | headlines: 24/7 Wall St. 11-18 10:56 ET: USA Rare Earth Climbs 7%, MP Materials Jumps 8% as Traders Eye U.S.-China Rare-Earth Talks; United States Antimony Rallies 7% <https://finance.yahoo.com/markets/stocks/articles/usa-rare-earth-climbs-7-155604804.html> || The Fly 11-18 09:35 ET: Insulet downgraded, Tandem Diabetes upgraded: Wall Street's top analyst calls <https://finance.yahoo.com/markets/stocks/articles/insulet-downgraded-tandem-diabetes-upgraded-143557258.html> || Zacks 11-18 07:31 ET: MP Materials' NdPr Production Up 41% in Q3: Will Magnet Growth Follow? <https://finance.yahoo.com/markets/commodities/articles/mp-materials-ndpr-production-41-123100377.html>"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "MOVER 2026-11-18 TGT +5.36% vs prior close, +4.40% vs open (last 168.0750 at 2026-11-18 11:28 ET; held (daytrade); signal_log 2026-11-18 earnings_beat; HELD) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order | headlines: TheStreet 11-18 11:07 ET: Owala and Coca-Cola team up for new Amazon-exclusive release <https://finance.yahoo.com/media-advertising/articles/owala-coca-cola-team-amazon-160700027.html> || Barrons.com 11-18 10:59 ET: TJX Sees Holiday Sales Accelerating After Strong Third-Quarter Rebound <https://finance.yahoo.com/m/e7770a20-7926-322f-a81f-a0bd6ad6a632/tjx-sees-holiday-sales.html> || Investor's Business Daily 11-18 10:27 ET: Target Breaks Out As Sales Soar In Beat-And-Raise Quarter <https://finance.yahoo.com/m/d074d895-d625-3a18-9323-7165e1e1fd79/target-breaks-out-as-sales.html>"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "MOVER 2026-11-18 VIK +6.04% vs prior close, +6.30% vs open (last 99.9760 at 2026-11-18 11:28 ET; signal_log 2026-11-16 analyst_upgrade; signal_log 2026-11-18 analyst_pt_raise) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "MOVER 2026-11-18 CRWD +6.05% vs prior close, +4.05% vs open (last 232.8600 at 2026-11-18 11:28 ET; held (earnings); signal_log 2026-11-18 analyst_pt_raise; HELD) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order | headlines: 24/7 Wall St. 11-18 10:52 ET: Google Says Fully Autonomous AI Cyberattacks Are Likely Within 6 Months <https://finance.yahoo.com/technology/ai/articles/google-says-fully-autonomous-ai-155248707.html> || TIKR 11-18 10:40 ET: 29 Big Funds Bought CrowdStrike Last Quarter, While 7 Sold. Who\u2019s Right? <https://finance.yahoo.com/markets/stocks/articles/29-big-funds-bought-crowdstrike-154008393.html> || Investing.com 11-18 10:17 ET: These 3 large-cap U.S. stocks are trading well above model fair value <https://finance.yahoo.com/markets/stocks/articles/3-large-cap-u-stocks-151712324.html>"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "MOVER 2026-11-18 CBRS -7.50% vs prior close, -8.05% vs open (last 96.3700 at 2026-11-18 11:28 ET; signal_log 2026-11-13 earnings) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order | headlines: Yahoo Finance 11-18 08:55 ET: Why the Anthropic IPO could be a trap for investors <https://finance.yahoo.com/markets/article/why-the-anthropic-ipo-could-be-a-trap-for-investors-135504884.html> || Barchart 11-17 16:22 ET: What It Will Take for Cerebras Stock to Stage a Real Revival After Q3 Earnings Rally <https://finance.yahoo.com/markets/stocks/articles/cerebras-stock-stage-real-revival-212234393.html> || Simply Wall St. 11-17 13:10 ET: 3 Insider Backed Growth Stocks With At Least 40% Earnings Growth <https://finance.yahoo.com/markets/stocks/articles/3-insider-backed-growth-stocks-181023052.html>"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "MOVER 2026-11-18 TTWO +7.58% vs prior close, +3.17% vs open (last 219.3910 at 2026-11-18 11:28 ET; signal_log 2026-11-16 product_launch_presales; signal_log 2026-11-18 product_reviews) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "MOVER 2026-11-18 TJX +10.53% vs prior close, +4.75% vs open (last 143.5200 at 2026-11-18 11:28 ET; signal_log 2026-11-18 earnings_beat) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "MOVER 2026-11-18 AAOI -13.36% vs prior close, -5.09% vs open (last 39.1800 at 2026-11-18 11:28 ET; signal_log 2026-11-18 stock_offering) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order | headlines: Barrons.com 11-18 10:18 ET: This Wildly Volatile AI Stock Is Down 80% From Its Peak\u2014and Flashing Warning Signals <https://finance.yahoo.com/m/9b5f7994-7659-3b7b-8dc5-5fca85c6de96/this-wildly-volatile-ai-stock.html> || Barrons.com 11-18 09:18 ET: Nvidia, Target, Take-Two, Applied Optoelectronics, Lowe\u2019s, and More Stocks That Explain Today\u2019s Market <https://finance.yahoo.com/m/415e4137-8850-333d-b848-d21e98bc6659/nvidia%2C-target%2C-take-two%2C.html> || 24/7 Wall St. 11-18 09:08 ET: Applied Optoelectronics Sinks 9% on $550 Million Stock Sale Plan; Coherent and Lumentum Rise 4% <https://finance.yahoo.com/markets/stocks/articles/applied-optoelectronics-sinks-9-550-140851864.html>"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "--- movers run 2026-11-18 11:28 ET"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "PAPER TRADE 2026-11-18 | sleeve signals | BUY 0.019182 SPY @ $728.9143 (quote $728.5500 at 2026-11-18 11:28 ET, Yahoo Finance chart endpoint, regularMarketPrice (may be delayed ~15 min); +/-0.05% slippage) | notional $13.98, fee $0.00 (0.00%) | beta 1.0 | idle sleeve cash held in SPY (v0.5)"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "PAPER TRADE 2026-11-18 | sleeve signals | SELL 0.054818 LHX @ $255.0515 (quote $255.1791 at 2026-11-18 10:45 ET (5-min bar), Yahoo Finance chart endpoint, 5-min bars (v0.5.12 intraday low/high check; may lag ~15 min, last bar may still be forming); +/-0.05% slippage) | notional $13.98, fee $0.00 (0.00%) | beta 0.0 | STOP (-8%) (5-min bar stop: 5-min bar 10:45 ET low 255.1700 crossed stop 255.1791)"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "--- intraday run 2026-11-18 11:28 ET"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "--- 10:30 hourly 2026-11-18: DX BUY TGT 2.367783 @168.9344 ($400, one_filter two_source); feed pushed 93d01945"
+  },
   {
    "date": "2026-11-18",
    "text": "PAPER TRADE 2026-11-18 | sleeve daytrade | BUY 2.367783 TGT @ $168.9344 (quote $168.8500 at 2026-11-18 10:30 ET, Yahoo Finance chart endpoint, regularMarketPrice (may be delayed ~15 min); +/-0.05% slippage) | notional $400.00, fee $0.00 (0.00%) | beta 0.6 | DX v0.5.11 one_filter (waived: two_source) | Q3 comp +5.6% vs 3.8% StreetAccount, traffic +5%, FY sales guide ~6% (from ~5%), FY EPS 10.65-11.40 (from 9.90-10.90); pc 159.53 > 50d 156.22; +4.6-4.9% vs open (<5%); one company event (CNBC/Reuters are relays, no post-earnings analyst action yet) -> waived two_source; caveat ~1.1pt tariff-refund benefit. Claude 10:30 synth ENTER-NOW (s1/s2 SUPPORT, s3 REJECT) | sources: Target Corp (company Q3 PR; CNBC https://www.cnbc.com/2026/11/18/target-tgt-q3-2026-earnings.html and Reuters relays of the same event): https://corporate.target.com/press/release/2026/11/target-corporation-reports-third-quarter-earnings"
