@@ -1,10 +1,10 @@
 {
  "schema_version": "1.0",
- "generated_at": "2026-11-17T16:46:43-05:00",
+ "generated_at": "2026-11-18T10:31:12-05:00",
  "as_of_date": "2026-11-17",
  "disclaimer": "Paper trading only. Not investment advice. Backtests and paper results don't promise future returns.",
  "paper_only": true,
- "rules_version": "v0.5.11",
+ "rules_version": "v0.5.12",
  "account": {
   "start_date": "2026-10-26",
   "start_value": 1000.0,
@@ -944,7 +944,7 @@
    "cap": "waived (owner-directed assessment size; not a promotion)",
    "parked": false,
    "pre_deposit_close": null,
-   "open_positions": 1,
+   "open_positions": 2,
    "realized_pnl": 0.0,
    "base_weight": 0.0,
    "experimental": true,
@@ -2195,11 +2195,11 @@
    "is_idle_cash_in_spy": true,
    "entry_date": "2026-11-11",
    "entry_time_et": "2026-11-11 16:00 ET (official close; post-close contribution sweep)",
-   "shares": 12.611418,
+   "shares": 12.064667,
    "entry_price": 760.1899,
    "last_price": 732.44,
-   "cost_basis": 9587.07,
-   "market_value": 9237.11,
+   "cost_basis": 9171.44,
+   "market_value": 8836.64,
    "unrealized_pnl": -354.58,
    "pnl_pct": -3.699,
    "stop_price": null,
@@ -2261,6 +2261,31 @@
    "reason": "DX v0.5.11 one_filter (waived: ma50) | DX one_filter (waived ma50): two-firm upgrades MS EW->OW PT 310 (11-17) + UBS Neutral->Buy PT 307 (11-16); pc 252.67 vs 50d 255.02 (-0.9%); 10:25 ET 258.01 (+2.11%) above VWAP 257.64 vs SPY -0.47%. Claude Sonnet 10:27 ET: r1 SUPPORT, r2 REJECT (rate/cyclical risk, NVDA event), synthesis ENTER-NOW small. Invalidation: loss of 255.07 day low. | sources: Morgan Stanley: https://www.investing.com/news/analyst-ratings/morgan-stanley-upgrades-nucor-stock-rating-on-capital-spending-outlook-93CH-5031757 | UBS: https://au.marketscreener.com/news/analyst-recommendations-marriott-applied-materials-dell-hasbro-nvidiaa--ce785edfd989f02c",
    "beta60": 0.95,
    "corr60": 0.41
+  },
+  {
+   "ticker": "TGT",
+   "sleeve": "daytrade",
+   "lot_id": "day-TGT-2026-11-18",
+   "status": "open",
+   "is_idle_cash_in_spy": false,
+   "entry_date": "2026-11-18",
+   "entry_time_et": "2026-11-18 10:30 ET",
+   "shares": 2.367783,
+   "entry_price": 168.9344,
+   "last_price": 168.85,
+   "cost_basis": 400.0,
+   "market_value": 399.8,
+   "unrealized_pnl": null,
+   "pnl_pct": null,
+   "stop_price": 162.8654,
+   "target_price": 178.038,
+   "exit_by_date": "2026-11-25",
+   "report_date": null,
+   "signal_type": "day-trade experiment v0.5.11",
+   "signal_link": "//www.cnbc.com/2026/11/18/target-tgt-q3-2026-earnings.html and Reuters relays of the same event): https://corporate.target.com/press/release/2026/11/target-corporation-reports-third-quarter-earnings",
+   "reason": "DX v0.5.11 one_filter (waived: two_source) | Q3 comp +5.6% vs 3.8% StreetAccount, traffic +5%, FY sales guide ~6% (from ~5%), FY EPS 10.65-11.40 (from 9.90-10.90); pc 159.53 > 50d 156.22; +4.6-4.9% vs open (<5%); one company event (CNBC/Reuters are relays, no post-earnings analyst action yet) -> waived two_source; caveat ~1.1pt tariff-refund benefit. Claude 10:30 synth ENTER-NOW (s1/s2 SUPPORT, s3 REJECT) | sources: Target Corp (company Q3 PR; CNBC https://www.cnbc.com/2026/11/18/target-tgt-q3-2026-earnings.html and Reuters relays of the same event): https://corporate.target.com/press/release/2026/11/target-corporation-reports-third-quarter-earnings",
+   "beta60": 0.56,
+   "corr60": 0.29
   }
  ],
  "closed_trades": [
@@ -2334,6 +2359,38 @@
   }
  ],
  "recent_fills": [
+  {
+   "date": "2026-11-18",
+   "time_et": "2026-11-18 10:30 ET",
+   "sleeve": "daytrade",
+   "ticker": "TGT",
+   "side": "buy",
+   "shares": 2.367783,
+   "quote_price": 168.85,
+   "fill_price": 168.9344,
+   "notional": 400.0,
+   "fee": 0.0,
+   "price_source": "Yahoo Finance chart endpoint, regularMarketPrice (may be delayed ~15 min)",
+   "reason": "DX v0.5.11 one_filter (waived: two_source) | Q3 comp +5.6% vs 3.8% StreetAccount, traffic +5%, FY sales guide ~6% (from ~5%), FY EPS 10.65-11.40 (from 9.90-10.90); pc 159.53 > 50d 156.22; +4.6-4.9% vs open (<5%); one company event (CNBC/Reuters are relays, no post-earnings analyst action yet) -> waived two_source; caveat ~1.1pt tariff-refund benefit. Claude 10:30 synth ENTER-NOW (s1/s2 SUPPORT, s3 REJECT) | sources: Target Corp (company Q3 PR; CNBC https://www.cnbc.com/2026/11/18/target-tgt-q3-2026-earnings.html and Reuters relays of the same event): https://corporate.target.com/press/release/2026/11/target-corporation-reports-third-quarter-earnings",
+   "beta60": 0.56,
+   "corr60": 0.29
+  },
+  {
+   "date": "2026-11-18",
+   "time_et": "2026-11-18 10:30 ET",
+   "sleeve": "daytrade",
+   "ticker": "SPY",
+   "side": "sell",
+   "shares": 0.546751,
+   "quote_price": 731.96,
+   "fill_price": 731.594,
+   "notional": 400.0,
+   "fee": 0.0,
+   "price_source": "Yahoo Finance chart endpoint, regularMarketPrice (may be delayed ~15 min)",
+   "reason": "fund TGT from idle SPY",
+   "beta60": 1.0,
+   "corr60": 1.0
+  },
   {
    "date": "2026-11-17",
    "time_et": "2026-11-17 10:27 ET",
@@ -3791,9 +3848,25 @@
    "corr60": 0.34
   }
  ],
- "last_fill_date": "2026-11-17",
+ "last_fill_date": "2026-11-18",
  "pending_orders": [],
  "skips": [
+  {
+   "date": "2026-11-18",
+   "logged_et": "2026-11-18 10:30 ET",
+   "sleeve": "daytrade",
+   "ticker": "TGT",
+   "rule": "dx_rejected",
+   "detail": "passes every Signals filter: route it to the Signals sleeve, not DX"
+  },
+  {
+   "date": "2026-11-18",
+   "logged_et": "2026-11-18 06:04 ET",
+   "sleeve": "signals",
+   "ticker": "MWH",
+   "rule": "gap-up >3%",
+   "detail": "premarket 28.2000 vs prior close 27.2600 = 3.45% (any premarket last 05:01 ET); reason=6AM 11-18 (found 05:57 ET): Signals v0.3/v0.4.1+v0.5.1, 2 independent confirmations: (1) UBS Neutral->Buy PT 50->37 (TheFly via TipRanks 04:55 ET 11-18 https://www.tipranks.com/news/the-fly/solv-energy-upgraded-to-buy-from-neutral-at-ubs-thefly-news ; Investing.com relay https://www.investing.com/news/analyst-ratings/ubs-upgrades-solv-energy-stock-rating-on-strong-backlog-growth-93CH-5035211); (2) company Q3 beat + FY26 revenue guide raised to 4.03-4.12B from 3.87-3.97B (company PR https://investors.solvenergy.com/node/7621/pdf ; call 11-12). TD Cowen PT 35->37 Buy 11-16 is a post-Q3 model update (not counted). pc 27.26 > 50d 25.12. Caveats: UBS cut PT; -2.95% 11-17 unexplained; Feb-2026 listing; PM 28.20 (+3.45%, 3 thin bars to 05:01) -> engine gap rule decides (auto re-check 08:30-09:15). Claude synthesis QUEUE-SIGNALS (7 Sonnet calls)."
+  },
   {
    "date": "2026-11-12",
    "logged_et": "2026-11-12 05:53 ET",
@@ -3869,6 +3942,414 @@
  ],
  "signals": [
   {
+   "date": "2026-11-18",
+   "ticker": "CRWD",
+   "signal_type": "analyst_pt_raise",
+   "source": "Held (earnings sleeve) MOVER +5.6%: Cantor PT 250->275 (11-16), Rosenblatt PT 275 (11-15), ~$495M AI-security acquisitions (GMT Eight relay) - mostly older items",
+   "sources": [
+    {
+     "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/crowdstrike-stock-cantor-lifts-target-to-275-us-dollars/70530672"
+    },
+    {
+     "url": "https://gmteight.com/flash/detail/1593472"
+    }
+   ],
+   "description": "10:30 11-18 awareness: held in earnings sleeve (rule-driven, exit 11-30); pc 219.58 < 50d ~246; no action.",
+   "sentiment": "positive",
+   "prior_close": 219.58,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.95,
+   "corr60": 0.4,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-18 10:30:00-05:00"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "ROST",
+   "signal_type": "sympathy_readthrough",
+   "source": "Leader TJX Q3 beat/raise (BusinessWire PR) -> peer ROST +3.90% (<50% of TJX +10.44%); ROST own Q3 11-19 ~16:00 ET (company PR)",
+   "sources": [
+    {
+     "url": "https://www.businesswire.com/news/home/20261117527150/en/"
+    },
+    {
+     "url": "https://www.nasdaq.com/press-release/ross-stores-inc-announces-third-quarter-2026-earnings-release-and-conference-call"
+    }
+   ],
+   "description": "10:30 11-18: pc 220.45 < 50d 231.31; thin volume 0.44M vs 2.14M avg; own earnings 11-19 AMC; ~$229 price makes <=$250 call unlikely. Claude 10:30 synth LOG-ONLY.",
+   "sentiment": "positive",
+   "prior_close": 220.45,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.87,
+   "corr60": 0.49,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-18 10:30:00-05:00"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "MP",
+   "signal_type": "analyst_initiation",
+   "source": "Needham reinstates Buy PT 48 (Benzinga 05:41 ET; MarketBeat) (1 org) + prior insider buys (11-13 row)",
+   "sources": [
+    {
+     "url": "https://www.benzinga.com/news/26/11/63377891/needham-reinstates-buy-mp-materials-announces-48-price-target"
+    },
+    {
+     "url": "https://www.marketbeat.com/instant-alerts/analyst-mp-materials-nyse-mp-now-covered-by-needham-company-llc-2026-11-18/"
+    }
+   ],
+   "description": "10:30 11-18 MOVER +7.75%: pc 34.86 < 50d 43.15 AND +8.0% vs open -> fails 2 filters; log only.",
+   "sentiment": "positive",
+   "prior_close": 34.86,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.83,
+   "corr60": 0.51,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-18 10:30:00-05:00"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "TTWO",
+   "signal_type": "product_reviews",
+   "source": "GTA VI 99/100 Metacritic ahead of 11-19 launch (Reuters via Yahoo 09:48 ET; Investing.com); Oppenheimer/B.Riley reiterations (not new actions)",
+   "sources": [
+    {
+     "url": "https://finance.yahoo.com/news/gta-vi-publisher-two-jumps-143240053.html"
+    },
+    {
+     "url": "https://www.investing.com/news/stock-market-news/taketwo-shares-climb-as-gta-vi-reviews-impress-ahead-of-blockbuster-launch-5035826"
+    }
+   ],
+   "description": "10:30 11-18 MOVER +6.0%: pc 203.93 < 50d 207.64 (fails ma50); open +4.27%; +1.7% vs open, below VWAP 216.74; launch-day sell-the-news risk. Claude 10:30 synth LOG-ONLY.",
+   "sentiment": "positive",
+   "prior_close": 203.93,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.31,
+   "corr60": 0.12,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-18 10:30:00-05:00"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "VIK",
+   "signal_type": "analyst_pt_raise",
+   "source": "Barclays OW PT 102->111 + Morgan Stanley EW PT 92->100 (Benzinga 09:28 ET) + Wells Fargo OW PT 118->120 (Investing.com 06:08 ET); 3 orgs, but after a Q3 EPS/revenue miss",
+   "sources": [
+    {
+     "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/11/63384875/these-analysts-boost-their-forecasts-on-viking-after-q3-earnings"
+    },
+    {
+     "url": "https://www.investing.com/news/analyst-ratings/wells-fargo-raises-viking-holdings-stock-price-target-on-roic-strength-93CH-5035462"
+    }
+   ],
+   "description": "10:30 11-18 MOVER +5.7%: Q3 adj EPS 1.11 vs 1.26-1.27 est and rev miss (low-water river disruption) = negative news; PT raises follow. pc 94.28 > 50d 84.55; open 94.05; last 99.66 = +5.96% vs open (fails intraday_ext_5pct). Claude 10:30 synth LOG-ONLY.",
+   "sentiment": "mixed",
+   "prior_close": 94.28,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.19,
+   "corr60": 0.53,
+   "beta_asof": "2026-11-13",
+   "found_at": "2026-11-18 10:30:00-05:00"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "LOW",
+   "signal_type": "earnings",
+   "source": "Company results via Investing.com 06:13/06:40 ET + CNBC/LSEG + Reuters (Boursorama)",
+   "sources": [
+    {
+     "url": "https://www.investing.com/news/stock-market-news/why-is-lowes-stock-sliding-today-93CH-5035558"
+    }
+   ],
+   "description": "8AM 11-18: adj EPS 3.10 vs 2.88-2.89 (incl 0.34 tariff refunds), rev $22.76B vs $22.4B, comp +1.8%; FY EPS ~12.25 reaffirmed vs 12.27-12.29 est, adj op margin trimmed to ~11.5% from 11.6%, GM 32.95% vs 34.19%; recent Stifel Sell + Zelman Underperform. PM 211.00 (-4.29%, 07:45). Read-through to HD (-1.39% PM). Negative for longs; not held.",
+   "sentiment": "negative",
+   "prior_close": 220.46,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.42,
+   "corr60": 0.2,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-18 07:58:00-05:00"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "TGT",
+   "signal_type": "earnings_beat",
+   "source": "Company PR (PRNewswire 11-18) + CNBC/LSEG consensus + Reuters (StreetAccount/estimates comp 3.5-3.8%)",
+   "sources": [
+    {
+     "url": "https://corporate.target.com/press/release/2026/11/target-corporation-reports-third-quarter-earnings"
+    },
+    {
+     "url": "https://money.usnews.com/investing/news/articles/2026-11-18/after-another-strong-quarter-target-lifts-annual-sales-growth-target-to-6"
+    },
+    {
+     "url": "https://www.cnbc.com/2026/11/18/target-tgt-q3-2026-earnings.html"
+    }
+   ],
+   "description": "8AM 11-18: comp +5.6% vs ~3.5-3.8% est (Reuters https://money.usnews.com/investing/news/articles/2026-11-18/after-another-strong-quarter-target-lifts-annual-sales-growth-target-to-6 ), rev $27.07B vs $26.56B (CNBC https://www.cnbc.com/2026/11/18/target-tgt-q3-2026-earnings.html ), EPS 2.65 incl ~0.50 tariff refunds (vs 2.07, comparability unclear), FY sales guide ~6% (from ~5%), EPS 10.65-11.40 (from 9.90-10.90). Price reaction NEGATIVE: PM 153.64 (-3.69%, 07:45). pc 159.53 > 50d 155.27; gap rule not hit (gap down). Company results only = 1 org; no analyst action yet; tape contradicts -> log only, no queue.",
+   "sentiment": "positive",
+   "prior_close": 159.53,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.56,
+   "corr60": 0.29,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-18 07:58:00-05:00"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "TJX",
+   "signal_type": "earnings_beat",
+   "source": "Company PR (BusinessWire, pre-open 11-18) + Benzinga 07:31 ET guidance headline (FY27 EPS guide raised to 5.33-5.36 vs 5.33 est) (2 evidence types: results + guidance vs consensus)",
+   "sources": [
+    {
+     "url": "https://www.businesswire.com/news/home/20261117527150/en/The-TJX-Companies-Inc.-Reports-Q3-FY27-Results-Comp-Sales-Growth-of-4-Pretax-Profit-Margin-and-Diluted-Earnings-Per-Share-All-Above-Plan"
+    },
+    {
+     "url": "https://www.benzinga.com/news/26/11/63380463/tjx-companies-raises-fy2027-gaap-eps-guidance-5-31-5-36-5-33-5-36-vs-5-33-est"
+    }
+   ],
+   "description": "8AM 11-18: Q3 FY27 comp +4% (above plan), rev $16.0B +6% vs ~$15.85B est, adj EPS 1.34 (= Benzinga consensus 1.34; GAAP 1.39 incl tariff refunds), FY27 EPS guide raised (Benzinga https://www.benzinga.com/news/26/11/63380463/tjx-companies-raises-fy2027-gaap-eps-guidance-5-31-5-36-5-33-5-36-vs-5-33-est ). PM 139.35 (+7.32%, jumped at the 07:30 bar). pc 129.85 < 50d 135.67 AND gap >3% -> fails 2 filters: no Signals, no DX one_filter. Log only.",
+   "sentiment": "positive",
+   "prior_close": 129.85,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.72,
+   "corr60": 0.42,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-18 07:58:00-05:00"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "AAOI",
+   "signal_type": "stock_offering",
+   "source": "Benzinga 04:51 ET 11-18 + Investing.com after-hours movers 11-17 (company filing: up to $550M ATM)",
+   "sources": [
+    {
+     "url": "https://www.benzinga.com/markets/equities/26/11/63377414/stock-market-today-dow-jones-sp-500-futures-rise-ahead-of-fomc-minutes-nvda-aaoi-panw-in-focus"
+    }
+   ],
+   "description": "6AM 11-18: $550M at-the-market common stock program; PM 40.84 (-9.7%); pc 45.22 < 50d 85.19. Dilution/negative for longs; DX bounce WATCH-0945 only (weak; cancel on new lows).",
+   "sentiment": "negative",
+   "prior_close": 45.22,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 4.62,
+   "corr60": 0.67,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-18 05:57:00-05:00"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "STUB",
+   "signal_type": "insider_buy",
+   "source": "SEC EDGAR Form 4 accepted 11-17 18:33 ET (2 insiders; 1 evidence type)",
+   "sources": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1337634/0001628280-26-074600.txt"
+    }
+   ],
+   "description": "6AM 11-18: 2 insiders ~$7.1M (200k sh 11-13 @5.28, 200k 11-16 @4.96). pc 4.53 below 50d 5.75; PM +4.9%. F50x evidence only (sub-$5).",
+   "sentiment": "positive",
+   "prior_close": 4.53,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.19,
+   "corr60": 0.32,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-18 06:01:00-05:00"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "UPST",
+   "signal_type": "insider_buy",
+   "source": "SEC EDGAR Form 4 accepted 11-17 17:00 ET (1 evidence type)",
+   "sources": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1647639/0001832812-26-000014.txt"
+    }
+   ],
+   "description": "6AM 11-18: CEO Paul Gu open-market buy 50,000 sh @19 on 11-16 (script total ~$1.9M). pc 18.13 below 50d 23.34. F50x evidence only.",
+   "sentiment": "positive",
+   "prior_close": 18.13,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.98,
+   "corr60": 0.54,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-18 06:01:00-05:00"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "DKNG",
+   "signal_type": "insider_buy",
+   "source": "SEC EDGAR Form 4 accepted 11-17 16:15 ET (1 evidence type)",
+   "sources": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1810190/0001810190-26-000018.txt"
+    }
+   ],
+   "description": "6AM 11-18: co-founder Kalish open-market buy 55,000 sh @18.22 on 11-17 (script total ~$2.0M). pc 18.00 below 50d 20.76. F50x evidence only.",
+   "sentiment": "positive",
+   "prior_close": 18.0,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.28,
+   "corr60": 0.07,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-18 06:01:00-05:00"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "TEAM",
+   "signal_type": "insider_buy",
+   "source": "SEC EDGAR Form 4 accepted 11-17 17:28 ET (2nd CEO filing; 1 evidence type)",
+   "sources": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1650372/0001666120-26-000036.txt"
+    }
+   ],
+   "description": "6AM 11-18: CEO Cannon-Brookes second open-market buy ~$4.0M (11-16 trades ~$145-150, code P); follow-on to 11-17 row. pc 140.98 below 50d 190.66; TEAM -6.0% 11-17. Evidence only (existing F50x, 30-day guard).",
+   "sentiment": "positive",
+   "prior_close": 140.98,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.1,
+   "corr60": 0.27,
+   "beta_asof": "2026-11-16",
+   "found_at": "2026-11-18 06:01:00-05:00"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "NVDA",
+   "signal_type": "earnings_beat",
+   "source": "Company Q3 FY27 PR (GlobeNewswire 11-17 after close) + LSEG consensus via CNBC; analyst reactions mostly PT cuts (Jefferies/WF 300->250, Piper 300->230, MS 267->260), Summit downgrade to Hold",
+   "sources": [
+    {
+     "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/default.aspx"
+    },
+    {
+     "url": "https://www.cnbc.com/2026/11/17/nvidia-nvda-earnings-report-q3-2027.html"
+    }
+   ],
+   "description": "6AM 11-18: rev 115.8B vs ~109.1B, EPS 2.68 vs 2.48, Q4 guide 130B vs ~125B, FY28 growth 75%, +$150B buyback; board won't reinstate Huang; Megaspeed/Alibaba export overhang. pc 155.46 < 50d 211.76 (-27%); PM 161.12 (+3.64%, 05:54). Leader catalyst for DX sympathy watch (GOOGL/META/CSCO at 09:45+). Fails ma50 AND gap>3% -> no Signals/DX one_filter.",
+   "sentiment": "positive",
+   "prior_close": 155.46,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.6,
+   "corr60": 0.56,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-18 05:53:00-05:00"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "TIGO",
+   "signal_type": "analyst_upgrade",
+   "source": "JPMorgan Neutral->Overweight PT 105 (MarketScreener recs 05:18 ET 11-18) (1 org)",
+   "sources": [
+    {
+     "url": "https://ca.marketscreener.com/news/analyst-recommendations-nvidia-ge-vernova-instacart-mp-materialsa--ce785eddd98dfe23"
+    }
+   ],
+   "description": "6AM 11-18: single firm; pc 82.02 below 50d 85.93; PM +2.67% (3 bars). F50x evidence only.",
+   "sentiment": "positive",
+   "prior_close": 82.02,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.13,
+   "corr60": 0.05,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-18 05:56:00-05:00"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "SCHW",
+   "signal_type": "analyst_upgrade",
+   "source": "Raymond James Outperform->Strong Buy PT 135 (Investing.com 03:56 ET 11-18) (1 org); same article cites Evercore PT 104->98 and Goldman 122->117 (contradiction)",
+   "sources": [
+    {
+     "url": "https://www.investing.com/news/analyst-ratings/raymond-james-upgrades-charles-schwab-stock-rating-on-rate-outlook-93CH-5035168"
+    }
+   ],
+   "description": "6AM 11-18: single firm with recent PT cuts from others; pc 91.84 below 50d 96.19; PM +0.45%. F50x evidence only.",
+   "sentiment": "positive",
+   "prior_close": 91.84,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.38,
+   "corr60": 0.24,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-18 05:56:00-05:00"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "CNX",
+   "signal_type": "analyst_upgrade",
+   "source": "Morgan Stanley Underweight->Equal Weight PT 34->36 (TheFly via TipRanks 11-18) (1 org)",
+   "sources": [
+    {
+     "url": "https://www.tipranks.com/news/the-fly/cnx-resources-upgraded-to-equal-weight-from-underweight-at-morgan-stanley-thefly-news"
+    }
+   ],
+   "description": "6AM 11-18: single firm, upgrade only to neutral on hedge protection; pc 35.61 > 50d 34.92; PM flat. DX one_filter(two_source) REJECTED by Claude synth: neutral rating is not a positive credible signal. Log only.",
+   "sentiment": "positive",
+   "prior_close": 35.61,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.18,
+   "corr60": 0.1,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-18 05:58:00-05:00"
+  },
+  {
+   "date": "2026-11-18",
+   "ticker": "MWH",
+   "signal_type": "analyst_upgrade",
+   "source": "UBS Neutral->Buy (TheFly via TipRanks 04:55 ET 11-18; Investing.com relay) + company Q3 beat/FY guide raise (PR, call 11-12) = 2 evidence types; TD Cowen PT 35->37 11-16 post-Q3 (not counted)",
+   "sources": [
+    {
+     "url": "https://www.tipranks.com/news/the-fly/solv-energy-upgraded-to-buy-from-neutral-at-ubs-thefly-news"
+    },
+    {
+     "url": "https://investors.solvenergy.com/node/7621/pdf"
+    }
+   ],
+   "description": "6AM 11-18: UBS upgrade (PT cut 50->37) + Q3 rev +65% and FY26 guide raised. pc 27.26 > 50d 25.12. PM 28.20 (+3.45%, 3 bars to 05:01, Yahoo delayed, vol n/a). Signals queue attempted 06:04 -> SKIPPED gap>3% on pre-8:30 quote; auto gap re-check 08:30-09:15 pending (2026-11-18-signals-buy-MWH). Claude synth QUEUE-SIGNALS; DX gap_up_3pct fallback only if re-check stays >3%.",
+   "sentiment": "positive",
+   "prior_close": 27.26,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 2.04,
+   "corr60": 0.53,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-18 05:57:00-05:00"
+  },
+  {
    "date": "2026-11-17",
    "ticker": "SITE",
    "signal_type": "news",
@@ -3881,7 +4362,7 @@
    "description": "8AM 11-17: index inclusion, PM +7.3% per Investing; Yahoo 06:40 bar 117.03 +5.53% (thin, delayed). pc 110.90 > 50d 98.38. Single source and PM gap >3% -> log only.",
    "sentiment": "positive",
    "prior_close": 110.9,
-   "ret_1d": null,
+   "ret_1d": 0.007,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.63,
@@ -3902,7 +4383,7 @@
    "description": "8AM 11-17: follow-on to 11-16 TSN earnings_beat row (+8.7% 1d). JPM to Neutral, PT 65 vs pc 63.95. PM 63.21 -1.16% (07:28 bar). Not held. Log only.",
    "sentiment": "negative",
    "prior_close": 63.95,
-   "ret_1d": null,
+   "ret_1d": -0.005,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": -0.42,
@@ -3923,7 +4404,7 @@
    "description": "8AM 11-17: single firm downgrade to Underperform. PM 143.50 -2.00% (07:49 bar). pc 146.43 > 50d 133.81. Not held. Log only (long-only).",
    "sentiment": "negative",
    "prior_close": 146.43,
-   "ret_1d": null,
+   "ret_1d": -0.03,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": -0.24,
@@ -3944,7 +4425,7 @@
    "description": "8AM 11-17: single firm, no second independent source found. pc 101.41 > 50d 95.83; PM 102.50 +1.07% (07:02 bar, thin). Log only.",
    "sentiment": "positive",
    "prior_close": 101.41,
-   "ret_1d": null,
+   "ret_1d": 0.007,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.84,
@@ -3965,7 +4446,7 @@
    "description": "8AM 11-17: single firm, no second independent source found. pc 102.88 > 50d 93.90; PM 103.95 +1.04% (07:33 bar). Log only.",
    "sentiment": "positive",
    "prior_close": 102.88,
-   "ret_1d": null,
+   "ret_1d": -0.005,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.08,
@@ -3989,7 +4470,7 @@
    "description": "8AM 11-17: Q3 adj EPS 3.86 vs 3.84, rev 43.4B vs 42.8B, comps +2.2% vs ~1.8% est; FY guide narrowed to top of range (sales ~+4.5%, comps ~+1.4%, adj EPS ~+2%). CFO McPhail named CEO eff 11-23 (Decker to chair). PM 341.45 -1.74% (Yahoo 07:49 bar, delayed). pc 347.51 > 50d 312.68. 11-16 Zelman downgrade context. One evidence type + negative reaction -> log only.",
    "sentiment": "positive",
    "prior_close": 347.51,
-   "ret_1d": null,
+   "ret_1d": -0.025,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.42,
@@ -4013,7 +4494,7 @@
    "description": "8AM 11-17: FQ4 adj EPS 1.77 vs 1.67 LSEG, rev 25.95B vs 25.18B (+16%, incl. 53rd week ~$0.17 FY EPS), FY27 double-digit adj EPS growth guide, dividend +33%, $3B cost-savings target, CFO expects more layoffs. pc 118.70 > 50d 109.47. PM faded from ~+2% (CNBC ~07:15) to 115.90 -2.36% (Yahoo 07:50 bar, delayed, ext vol 0). No post-print rating change found (Briefing.com 07:51). Claude targeted update WATCH-SHADOW (pre-print PTs do not confirm the print). Not queued.",
    "sentiment": "positive",
    "prior_close": 118.7,
-   "ret_1d": null,
+   "ret_1d": -0.015,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.3,
@@ -4037,7 +4518,7 @@
    "description": "6AM 11-17 (HELD Signals lot, follow-on to 11-16 row): Duffy urged Congress to fund a new FAA telecom network NOT owned by L3Harris (contract-risk element), briefs senators Tue 11-17; FBI assisting router exam; HPE/Juniper says router ran per installer config. LHX closed 261.75 (-3.9% 11-16), 2.5% above stop 255.18; no PM bars. No discretionary sell rule; engine owns stop.",
    "sentiment": "negative",
    "prior_close": 261.75,
-   "ret_1d": null,
+   "ret_1d": -0.004,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.03,
@@ -4058,7 +4539,7 @@
    "description": "6AM 11-17: Forgent Power Solutions 4 insiders incl. CEO bought ~$2.16M on 11-16 (~$20.85-21.59). Cluster but one evidence type. pc 20.57 below 50d 31.48; PM 20.41 (-0.8%, 05:20). F50x (evidence only); recently listed.",
    "sentiment": "positive",
    "prior_close": 20.57,
-   "ret_1d": null,
+   "ret_1d": 0.031,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 4.24,
@@ -4079,7 +4560,7 @@
    "description": "6AM 11-17: CEO/co-founder Cannon-Brookes open-market buys ~$4.02M on 11-13 at ~$151-152 (code P). Single insider, single evidence type. pc 149.94 below 50d 191.37 (-22%); no PM bars. 11-06 guidance-driven drop context. F50x (evidence only).",
    "sentiment": "positive",
    "prior_close": 149.94,
-   "ret_1d": null,
+   "ret_1d": -0.06,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.1,
@@ -4100,7 +4581,7 @@
    "description": "6AM 11-17: Wells Fargo Equal-weight->Overweight PT 343->509 (endpoint confidence after Breakthrough designation). pc 310.27 > 50d 289.07; no PM bars. Single org; biotech endpoint risk -> log only.",
    "sentiment": "positive",
    "prior_close": 310.27,
-   "ret_1d": null,
+   "ret_1d": -0.017,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 2.3,
@@ -4121,7 +4602,7 @@
    "description": "6AM 11-17: Goldman Neutral->Buy PT 49->60 (natural/organic exposure, network optimization). pc 48.39 > 50d 46.10; PM 49.50 (+2.29%, 3 bars to 04:33). Single org -> log only, no buy; 8 AM to look for a 2nd independent firm.",
    "sentiment": "positive",
    "prior_close": 48.39,
-   "ret_1d": null,
+   "ret_1d": 0.074,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.68,
@@ -4145,7 +4626,7 @@
    "description": "6AM 11-17: MS Equal-weight->Overweight PT 300->310 (tighter steel supply). With UBS Neutral->Buy 11-16 = 2 orgs, but pc 252.67 below 50d 255.02 (-0.9%); PM 254.52 (+0.73%, 2 bars to 04:02). Prior-close convention -> not a Signals buy today. Existing F50x shadow from 11-16 kept (no duplicate).",
    "sentiment": "positive",
    "prior_close": 252.67,
-   "ret_1d": null,
+   "ret_1d": -0.002,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.03,
@@ -4169,7 +4650,7 @@
    "description": "6AM 11-17: HSBC Hold->Buy PT 120->133 (AI networking) + DZ Bank Hold->Buy PT 125. 2 independent orgs but pc 94.52 below 50d 107.46 (-12%); PM 95.89 (+1.45%, 05:30, Yahoo delayed, vol 0). F50-grade evidence; existing F50x shadow from 11-13 kept (one open trade per ticker, no duplicate). Not a Signals buy (fails 50d). Claude synth: F50 evidence only.",
    "sentiment": "positive",
    "prior_close": 94.52,
-   "ret_1d": null,
+   "ret_1d": 0.006,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.68,
@@ -4578,412 +5059,13 @@
    "corr60": 0.48,
    "beta_asof": "2026-11-12",
    "found_at": null
-  },
-  {
-   "date": "2026-11-13",
-   "ticker": "NVDA",
-   "signal_type": "josh_x",
-   "source": "Trading Fraternity YouTube Short (title only)",
-   "sources": [
-    {
-     "url": "https://www.youtube.com/shorts/Agxha3AeEA4"
-    }
-   ],
-   "description": "Short 11-12 19:21 ET: 'Jensen Huang RESIGNS while the internet is still getting hacked #nvda #cibr' (title only, no transcript; CIBR = cybersecurity ETF tag; links MSFT outage theme). Context only.",
-   "sentiment": "neutral",
-   "prior_close": null,
-   "ret_1d": null,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.55,
-   "corr60": 0.54,
-   "beta_asof": "2026-11-11",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-13",
-   "ticker": "NVDA",
-   "signal_type": "analyst_downgrade",
-   "source": "Truist + Craig-Hallum via Yahoo/Stocktwits wrap (04:06 ET)",
-   "sources": [
-    {
-     "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-wrap-nvidia-faces-090645549.html"
-    }
-   ],
-   "description": "6AM 11-13: Truist Buy->Hold PT 346->174; Craig-Hallum Buy->Hold PT 275->180 after Huang exit. PM 170.71 (+2.72%); pc 166.19 < 50d 215.96; earnings 11-17. No shorts; options unpriced. Log only.",
-   "sentiment": "negative",
-   "prior_close": 166.19,
-   "ret_1d": -0.02,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.55,
-   "corr60": 0.54,
-   "beta_asof": "2026-11-11",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-13",
-   "ticker": "MSFT",
-   "signal_type": "negative_news",
-   "source": "Dow Jones (MarketScreener 05:31 ET) + Reuters via US News + TradingKey + TASS",
-   "sources": [
-    {
-     "url": "https://in.marketscreener.com/news/microsoft-on-track-to-lose-100-billion-in-value-as-widespread-outage-continues-ce785ed9dc8cff2c"
-    }
-   ],
-   "description": "6AM 11-13: 12h+ Microsoft 365/Outlook/Teams outage, company says not malicious, stabilizing. PM 509.14 (-2.65%), low 506.12; pc 523.00, 50d 518.72. HELD Signals lot (entry 541.02, engine stop 497.74, ~1.7% below PM low). No discretionary action; engine owns exits.",
-   "sentiment": "negative",
-   "prior_close": 523.0,
-   "ret_1d": 0.002,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.19,
-   "corr60": 0.64,
-   "beta_asof": "2026-11-12",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-13",
-   "ticker": "RIOT",
-   "signal_type": "analyst_upgrade",
-   "source": "Jefferies via Yahoo/Stocktwits wrap (single org)",
-   "sources": [
-    {
-     "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-wrap-nvidia-faces-090645549.html"
-    }
-   ],
-   "description": "6AM 11-13: Jefferies upgrade to Buy, PT 13->28 (Corsicana lease economics). pc 17.83 < 50d 18.12; PM 17.44 (-2.19%, stale 05:10). F50x single source.",
-   "sentiment": "positive",
-   "prior_close": 17.83,
-   "ret_1d": -0.017,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 3.08,
-   "corr60": 0.48,
-   "beta_asof": "2026-11-12",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-13",
-   "ticker": "NU",
-   "signal_type": "earnings",
-   "source": "Investing.com",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/stock-market-news/why-is-nu-holdings-stock-rallying-today-93CH-5024608"
-    }
-   ],
-   "description": "6AM 11-13: record Q3 NI 1.1B (+31% FXN) but adj EPS 0.22 vs 0.23 and net rev 5.82B vs 5.91B (misses); 90+d NPL 12.1% vs 11.6%. PM 12.20 (+3.13%, >3% gap); pc 11.83 < 50d 13.81. Log only (mixed).",
-   "sentiment": "mixed",
-   "prior_close": 11.83,
-   "ret_1d": 0.117,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.28,
-   "corr60": 0.31,
-   "beta_asof": "2026-11-12",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-13",
-   "ticker": "AMAT",
-   "signal_type": "earnings",
-   "source": "Company release + Reuters/Straits Times + Benzinga (relays)",
-   "sources": [
-    {
-     "url": "https://www.appliedmaterials.com/us/en/newsroom/press-releases/111226-applied-materials-announces-fourth-qtr-fiscal-year-end-2026-results.html"
-    }
-   ],
-   "description": "6AM 11-13: Q4 rev 10.41B vs 10.30B, EPS 4.16 vs 4.05; Q1 guide 11.1B+/-0.5B vs 10.89B; WFE +30% 2027. PT cuts in roundup (unspecified). PM 383.00 (+0.54%); pc 380.95 < 50d 439.22. F50x.",
-   "sentiment": "positive",
-   "prior_close": 380.95,
-   "ret_1d": -0.027,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 2.81,
-   "corr60": 0.66,
-   "beta_asof": "2026-11-12",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-13",
-   "ticker": "CSCO",
-   "signal_type": "earnings",
-   "source": "Cisco newsroom + Investing.com + AP (relays of one print)",
-   "sources": [
-    {
-     "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m11/cisco-reports-first-quarter-earnings.html"
-    },
-    {
-     "url": "https://www.investing.com/news/stock-market-news/why-is-cisco-stock-sliding-today-93CH-5024605"
-    }
-   ],
-   "description": "6AM 11-13: Q1 FY27 rev 18.52B vs 18.11B, EPS 1.40 vs 1.32, FY27 guide raised above cons, AI hyperscaler target 9B. Contra: non-GAAP GM 65.6% (-250bp), MS downgrade 11-05 (https://www.investing.com/news/stock-market-news/why-is-cisco-stock-sliding-today-93CH-5024605). PM 99.23 (-2.73%); pc 102.01 < 50d 108.02. F50x.",
-   "sentiment": "mixed",
-   "prior_close": 102.01,
-   "ret_1d": -0.062,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.68,
-   "corr60": 0.71,
-   "beta_asof": "2026-11-12",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-13",
-   "ticker": "CBRS",
-   "signal_type": "earnings",
-   "source": "Investing.com + Benzinga (relay of company print; MSFT deal per Benzinga headline)",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/stock-market-news/why-is-cerebras-systems-stock-surging-today-93CH-5024586"
-    },
-    {
-     "url": "https://www.benzinga.com/markets/equities/26/11/63230833/cerebras-stock-surges-premarket-q3-results-microsoft-deal"
-    }
-   ],
-   "description": "6AM 11-13: Q3 core rev 231M (+70%) vs ~215M, first non-GAAP profit, FY26 guide 940-960M, Q4 guide ~18% above cons; hyperscaler deal (Benzinga https://www.benzinga.com/markets/equities/26/11/63230833/cerebras-stock-surges-premarket-q3-results-microsoft-deal); GAAP EPS -0.67 'miss' per Benzinga. PM 114.06 (+16.7%) vs pc 97.75 < 50d 152.65. F50x only (below 50d, gap >3%).",
-   "sentiment": "positive",
-   "prior_close": 97.75,
-   "ret_1d": 0.112,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 2.85,
-   "corr60": 0.5,
-   "beta_asof": "2026-11-12",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-13",
-   "ticker": "AZTA",
-   "signal_type": "earnings",
-   "source": "Investing.com (company print) + Stephens PT via rallies.ai roundup",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/earnings/azenta-earnings-beat-by-016-revenue-topped-estimates-5017005"
-    },
-    {
-     "url": "https://rallies.ai/news/us-research-roundup-azenta-cencora-stratasys-7c6dcef5127689b9"
-    }
-   ],
-   "description": "6AM 11-13: Q4 EPS 0.28 vs 0.12, rev 167M vs 160.3M, FY27 guide 648-660M vs 639.3M (11-10 16:47 ET); Stephens PT 33->50 (11-13, single aggregator https://rallies.ai/news/us-research-roundup-azenta-cencora-stratasys-7c6dcef5127689b9, rating unstated). pc 43.86 > 50d 36.23 (+21%); no PM bars 06:12 ET; 5 neg EPS revisions/90d. Claude synth WATCH-SHADOW: cond (1) not cleanly 2 independent; catalyst 3d old. No buy at 6AM.",
-   "sentiment": "positive",
-   "prior_close": 43.86,
-   "ret_1d": 0.041,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 2.51,
-   "corr60": 0.46,
-   "beta_asof": "2026-11-12",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-12",
-   "ticker": "AMD",
-   "signal_type": "analyst_upgrade",
-   "source": "William Blair note via Investing.com (05:26 ET) / Seeking Alpha / CNBC (rewrites = 1 org)",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/11/12/amd-upgraded-because-it-will-benefit-from-nvidias-leadership-vacuum.html"
-    }
-   ],
-   "description": "11:45 run: William Blair MP->Outperform (no PT), also downgraded NVDA; missed by 6AM/10:45 reviews. Last 584.91 at 11:40 ET (+2.75% vs open 569.28, +5.79% d), VWAP 570.87, relvol 1.43x, 50d 550.43; +36.7% from 11-05 close. Claude 2 roles+synth: s1 SUPPORT(cond) vs s2 REJECT -> SHADOW-WATCH (>=2-type gate borderline: one narrative with NVDA CEO exit; extension; Momentum already holds AMD; spread unmeasured). No buy.",
-   "sentiment": "positive",
-   "prior_close": 552.9,
-   "ret_1d": 0.059,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 4.0,
-   "corr60": 0.76,
-   "beta_asof": "2026-11-11",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-12",
-   "ticker": "NVDA",
-   "signal_type": "ceo_change",
-   "source": "Company announcement via CNBC live (10:24 ET) + NBC News (10:00 ET) + Euronews",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html"
-    }
-   ],
-   "description": "10:45 run: CEO Jensen Huang resigned effective immediately; CFO Colette Kress interim CEO; permanent search. Open 149.29 (gap -14.07%), last 165.39 at 10:40 ET (+10.78% vs open, -4.80% d), VWAP 161.08, relvol 10.7x. Long blocked (>5% above open); no shorts; puts/calls unpriced. Claude 2 roles+synthesis: NVDA SHADOW-WATCH, AMD LOG-ONLY (sympathy only), AVGO/CRWV REJECT. Earnings 11-17.",
-   "sentiment": "negative",
-   "prior_close": 173.73,
-   "ret_1d": -0.043,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.55,
-   "corr60": 0.54,
-   "beta_asof": "2026-11-11",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-12",
-   "ticker": "NBIS",
-   "signal_type": "earnings",
-   "source": "Nebius release (BusinessWire) + CNBC/LSEG + Reuters via CNA",
-   "sources": [
-    {
-     "url": "https://www.businesswire.com/news/home/20261112208769/en/Nebius-reports-third-quarter-2026-financial-results"
-    }
-   ],
-   "description": "8AM: Q3 rev $980.8M vs $907.5M LSEG est; FY26 guide $3.0-3.4B (midpoint below ~$3.37B est); FY27 $12-13B. PM 140.00 (-9.5%) 07:47 ET, range 136.17-164.73 volatile; pc 154.69 < 50d 198.0. Company release + independent press = 2 orgs; reaction negative. No buy (below 50d, falling); no shorting. Log only.",
-   "sentiment": "mixed",
-   "prior_close": 154.69,
-   "ret_1d": -0.168,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 3.89,
-   "corr60": 0.61,
-   "beta_asof": "2026-11-11",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-12",
-   "ticker": "ZM",
-   "signal_type": "josh_x",
-   "source": "YouTube RSS @Thetradingfraternity (title only)",
-   "sources": [
-    {
-     "url": "https://www.youtube.com/shorts/PXfQE9npcFk"
-    }
-   ],
-   "description": "6AM: new Short 2026-11-11 19:21 ET 'Zoom stock might make you more money than Anthropic on IPO day' (title only; no transcript). Relates to known ZM/Anthropic stub (Anthropic IPO range $70-78, debut targeted 11-19, CNBC 11-10). X id still unavailable. Context only.",
-   "sentiment": "neutral",
-   "prior_close": null,
-   "ret_1d": null,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.49,
-   "corr60": 0.51,
-   "beta_asof": "2026-11-11",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-12",
-   "ticker": "CTVA",
-   "signal_type": "guidance_cut",
-   "source": "Newsquawk (single summary source)",
-   "sources": [
-    {
-     "url": "https://www.newsquawk.com/headlines/daily-us-equity-opening-news---nvda-board-considers-ceo-ouster-after-fresh-affair-allegations-hon-hai-q3-net-profit-beat-crwv-slides-on-usd-4bln-financing-report-ctva-down-on-guidance-cut-pfe--bx-agree-usd-15bln-obesity-co-funding"
-    }
-   ],
-   "description": "6AM: guidance cut; PM 11.15 (-8.15%) 05:42; pc 12.14 < 50d 12.46. Bought-put idea UNPRICED; no shorting. Log only.",
-   "sentiment": "negative",
-   "prior_close": 12.14,
-   "ret_1d": -0.243,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.16,
-   "corr60": 0.05,
-   "beta_asof": "2026-11-11",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-12",
-   "ticker": "NVDA",
-   "signal_type": "negative_news",
-   "source": "WSJ/Bloomberg (board weighing CEO ouster) via Newsquawk/Reuters; Axios (export crackdown)",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-fall-as-nvidia-turmoil-rattles-ai-stocks-5020761"
-    },
-    {
-     "url": "https://www.newsquawk.com/headlines/daily-us-equity-opening-news---nvda-board-considers-ceo-ouster-after-fresh-affair-allegations-hon-hai-q3-net-profit-beat-crwv-slides-on-usd-4bln-financing-report-ctva-down-on-guidance-cut-pfe--bx-agree-usd-15bln-obesity-co-funding"
-    }
-   ],
-   "description": "6AM: board reportedly preparing to oust CEO after new affair allegation; Trump authorised chip-diversion crackdown (Axios); unverified Rubin delay report. PM 163.10 (-6.12%) 05:50; pc 173.73 < 50d 217.12; earnings 11-17. Bought-put idea UNPRICED (no quotes). No shorting. Log only. Also https://www.newsquawk.com/headlines/daily-us-equity-opening-news---nvda-board-considers-ceo-ouster-after-fresh-affair-allegations-hon-hai-q3-net-profit-beat-crwv-slides-on-usd-4bln-financing-report-ctva-down-on-guidance-cut-pfe--bx-agree-usd-15bln-obesity-co-funding",
-   "sentiment": "negative",
-   "prior_close": 173.73,
-   "ret_1d": -0.043,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.55,
-   "corr60": 0.54,
-   "beta_asof": "2026-11-11",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-12",
-   "ticker": "TTEK",
-   "signal_type": "earnings_beat",
-   "source": "Investing.com (company FQ4 release relayed); one evidence type",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/stock-market-news/why-is-tetra-tech-stock-surging-today-93CH-5019918"
-    }
-   ],
-   "description": "6AM: FQ4 adj EPS 0.49 vs 0.47, rev $1.34B, FY27 EPS guide 1.65-1.80, backlog +13%. AH +11.3%; PM 40.98 (+8.96%) 3 bars 04:48. pc 37.61 > 50d 35.94. >3% gap rule blocks; single evidence type. Shadow/log only.",
-   "sentiment": "positive",
-   "prior_close": 37.61,
-   "ret_1d": 0.048,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.06,
-   "corr60": 0.03,
-   "beta_asof": "2026-11-11",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-12",
-   "ticker": "PTRN",
-   "signal_type": "analyst_upgrade",
-   "source": "Jefferies upgrade (Investing.com/Reuters 00:34 ET) + company Q3 results/guide raise 11-04",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/analyst-ratings/jefferies-upgrades-pattern-group-stock-rating-on-growth-outlook-93CH-5020403"
-    },
-    {
-     "url": "https://investors.pattern.com/news-releases/news-release-details/pattern-reports-record-third-quarter-2026-financial-results"
-    }
-   ],
-   "description": "6AM: Jefferies Hold->Buy PT 20->27; Q3 (11-04) rev $886M +38%, FY26 guide ~$3.5B https://investors.pattern.com/news-releases/news-release-details/pattern-reports-record-third-quarter-2026-financial-results . pc 20.36 > 50d 18.20; PM 20.74 (+1.87%) 2 bars 04:01 STALE; liquidity/spread unknown. Claude synth WATCH-SHADOW; 8AM refresh needs live quote.",
-   "sentiment": "positive",
-   "prior_close": 20.36,
-   "ret_1d": 0.029,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.41,
-   "corr60": 0.46,
-   "beta_asof": "2026-11-11",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-12",
-   "ticker": "LLY",
-   "signal_type": "regulatory_news",
-   "source": "Reuters (via US News) China NMPA approval + Gedeon Richter licensing deal (Economx/Stockopedia) + Jefferies PT raise 11-10 (MarketBeat)",
-   "sources": [
-    {
-     "url": "https://money.usnews.com/investing/news/articles/2026-11-12/china-approves-eli-lillys-weight-loss-pill-orforglipron"
-    },
-    {
-     "url": "https://ng.investing.com/news/stock-market-news/eli-lilly-stock-rises-after-china-approves-weightloss-pill-2801887"
-    },
-    {
-     "url": "https://www.economx.hu/tozsde/2026/11/12/richter-licensz-nogyogyaszat-eli/"
-    }
-   ],
-   "description": "6AM: China approved oral GLP-1 orforglipron (first oral GLP-1 for weight in China); separate Richter E4/FYLREVY license + ~$15M Richter share buy; Jefferies PT 1610->1700 (11-10). PM 1475.57 (+2.66%) 05:44, then 1481.00 (+3.04%) 05:53 -> sleeves.py buy --when open SKIPPED by >3% gap rule (skips.csv). pc 1437.29 > 50d 1230.06. Contra: PFE/BX $1.5B obesity co-funding. Claude synth QUEUE-AT-OPEN (s5 dissent) but engine gap gate blocked; no buy. https://ng.investing.com/news/stock-market-news/eli-lilly-stock-rises-after-china-approves-weightloss-pill-2801887 ; https://www.economx.hu/tozsde/2026/11/12/richter-licensz-nogyogyaszat-eli/",
-   "sentiment": "positive",
-   "prior_close": 1437.29,
-   "ret_1d": -0.007,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.45,
-   "corr60": 0.21,
-   "beta_asof": "2026-11-11",
-   "found_at": null
   }
  ],
  "shadow_tests": [
   {
    "setup": "A_gap_and_go",
    "trades": 12,
-   "open_or_pending": 0,
+   "open_or_pending": 1,
    "win_rate_pct": 33.3,
    "net_per_trade_pct": 0.126,
    "total_net_pct_sum": 1.52,
@@ -5010,17 +5092,17 @@
   },
   {
    "setup": "Z_zscore_dip",
-   "trades": 8,
-   "open_or_pending": 5,
-   "win_rate_pct": 25.0,
-   "net_per_trade_pct": -3.746,
-   "total_net_pct_sum": -29.97,
-   "spy_same_windows_pct_sum": -2.27,
-   "t_stat": -1.0,
-   "weeks": 1,
+   "trades": 9,
+   "open_or_pending": 4,
+   "win_rate_pct": 22.2,
+   "net_per_trade_pct": -3.458,
+   "total_net_pct_sum": -31.12,
+   "spy_same_windows_pct_sum": -6.15,
+   "t_stat": -1.04,
+   "weeks": 2,
    "weeks_positive": 0,
    "pass_bar": "judged after 8 weeks: 30+ trades, net/trade > 0 after costs with t >= 2, beats SPY on the same windows",
-   "status": "2.9 of 8 weeks, 8 trades; not judged yet (not meeting the bar so far)"
+   "status": "3.0 of 8 weeks, 9 trades; not judged yet (not meeting the bar so far)"
   },
   {
    "setup": "squeeze_bb30",
@@ -5039,7 +5121,7 @@
   {
    "setup": "X_orb15_inplay",
    "trades": 99,
-   "open_or_pending": 0,
+   "open_or_pending": 2,
    "win_rate_pct": 24.2,
    "net_per_trade_pct": -0.526,
    "total_net_pct_sum": -52.08,
@@ -5053,7 +5135,7 @@
   {
    "setup": "X_orb30_inplay",
    "trades": 93,
-   "open_or_pending": 0,
+   "open_or_pending": 1,
    "win_rate_pct": 24.7,
    "net_per_trade_pct": -0.49,
    "total_net_pct_sum": -45.56,
@@ -5067,7 +5149,7 @@
   {
    "setup": "X_vwap_reclaim",
    "trades": 975,
-   "open_or_pending": 0,
+   "open_or_pending": 22,
    "win_rate_pct": 32.0,
    "net_per_trade_pct": -0.237,
    "total_net_pct_sum": -230.98,
@@ -5081,7 +5163,7 @@
   {
    "setup": "X_first_pullback",
    "trades": 283,
-   "open_or_pending": 0,
+   "open_or_pending": 5,
    "win_rate_pct": 31.8,
    "net_per_trade_pct": -0.174,
    "total_net_pct_sum": -49.23,
@@ -5162,29 +5244,29 @@
    "weeks": 0,
    "weeks_positive": 0,
    "pass_bar": "set 2026-10-28 before data: after ~30 closed trades, avg net excess vs SPY > 0, still > 0 without the best trade, and >= the real Signals sleeve's avg excess (relaxing the filter must beat what it avoided). Reviewed at the Nov 6 evaluation; a pass only lets the owner consider relaxing the 50-day rule",
-   "status": "under 30 closed trades (7); not judged yet. Open 5: avg excess +4.44% vs SPY, P&L $-31.39 (marked)",
+   "status": "under 30 closed trades (7); not judged yet. Open 5: avg excess +7.12% vs SPY, P&L $+5.12 (marked)",
    "start_date": "2026-10-26",
-   "pnl_usd": -32.01,
-   "spy_pnl_usd": -20.14,
-   "avg_excess_vs_spy_pct": 2.101
+   "pnl_usd": 4.5,
+   "spy_pnl_usd": -21.0,
+   "avg_excess_vs_spy_pct": 3.219
   },
   {
    "setup": "F50x_single_source_below50d",
-   "trades": 22,
-   "open_or_pending": 22,
-   "win_rate_pct": 18.2,
-   "net_per_trade_pct": -3.517,
-   "total_net_pct_sum": -77.37,
-   "spy_same_windows_pct_sum": -28.03,
+   "trades": 24,
+   "open_or_pending": 27,
+   "win_rate_pct": 16.7,
+   "net_per_trade_pct": -3.905,
+   "total_net_pct_sum": -93.72,
+   "spy_same_windows_pct_sum": -33.16,
    "t_stat": null,
    "weeks": 0,
    "weeks_positive": 0,
    "pass_bar": "evidence only (also fails the 2-confirmation rule; never judged)",
-   "status": "evidence only. Open 22: avg excess +1.12% vs SPY, P&L $-133.08 (marked)",
+   "status": "evidence only. Open 27: avg excess +1.39% vs SPY, P&L $-120.22 (marked)",
    "start_date": "2026-10-26",
-   "pnl_usd": -222.39,
-   "spy_pnl_usd": -114.96,
-   "avg_excess_vs_spy_pct": -0.563
+   "pnl_usd": -250.48,
+   "spy_pnl_usd": -130.49,
+   "avg_excess_vs_spy_pct": -0.454
   },
   {
    "setup": "IL_orb5",
@@ -6367,18 +6449,18 @@
    "status": "open",
    "entry_date": "2026-10-26",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "Barclays upgrade to Overweight PT 25",
    "entry_open": 17.68,
-   "last_close": 18.79,
+   "last_close": 19.01,
    "exit_price": null,
    "stop": 16.274,
    "target": 21.227,
    "notional_usd": 15.0,
-   "net_pct": 5.778,
-   "spy_pct": -3.911,
-   "excess_pct": 9.689,
-   "pnl_usd": 0.87,
+   "net_pct": 7.023,
+   "spy_pct": -4.067,
+   "excess_pct": 11.09,
+   "pnl_usd": 1.05,
    "pct_below_50d": -26.05
   },
   {
@@ -6388,18 +6470,18 @@
    "status": "open",
    "entry_date": "2026-10-26",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "UBS upgrade to Buy PT 315 (+6.5% premarket is the reaction to the same upgrade)",
    "entry_open": 235.15,
-   "last_close": 220.45,
+   "last_close": 229.24,
    "exit_price": null,
    "stop": 216.446,
    "target": 282.321,
    "notional_usd": 15.0,
-   "net_pct": -6.551,
-   "spy_pct": -3.911,
-   "excess_pct": -2.641,
-   "pnl_usd": -0.98,
+   "net_pct": -2.813,
+   "spy_pct": -4.067,
+   "excess_pct": 1.254,
+   "pnl_usd": -0.42,
    "pct_below_50d": -1.05
   },
   {
@@ -6409,18 +6491,18 @@
    "status": "open",
    "entry_date": "2026-10-26",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "Q3 beat + raised FY26 EPS guide (company report only)",
    "entry_open": 43.49,
-   "last_close": 45.93,
+   "last_close": 45.77,
    "exit_price": null,
    "stop": 40.031,
    "target": 52.214,
    "notional_usd": 15.0,
-   "net_pct": 5.37,
-   "spy_pct": -3.911,
-   "excess_pct": 9.281,
-   "pnl_usd": 0.81,
+   "net_pct": 5.003,
+   "spy_pct": -4.067,
+   "excess_pct": 9.069,
+   "pnl_usd": 0.75,
    "pct_below_50d": -6.07
   },
   {
@@ -6433,7 +6515,7 @@
    "exit_reason": "stop gap (open)",
    "sources": "DA Davidson upgrade to Buy PT 350->400; Anthropic S-1 / WSJ financing disclosure (different outlet and kind)",
    "entry_open": 339.87,
-   "last_close": 341.6,
+   "last_close": 353.596,
    "exit_price": 311.89,
    "stop": 312.837,
    "target": 408.048,
@@ -6454,7 +6536,7 @@
    "exit_reason": "stop -8%",
    "sources": "Q3 beat + raised 2026/2027 outlook; Bernstein Buy $520 reiterated; ApeWisdom retail mentions 7.2x",
    "entry_open": 264.31,
-   "last_close": 236.47,
+   "last_close": 245.415,
    "exit_price": 243.287,
    "stop": 243.287,
    "target": 317.331,
@@ -6475,7 +6557,7 @@
    "exit_reason": "stop -8%",
    "sources": "Q3 beat (company report)",
    "entry_open": 128.11,
-   "last_close": 108.49,
+   "last_close": 107.87,
    "exit_price": 117.92,
    "stop": 117.92,
    "target": 153.809,
@@ -6493,18 +6575,18 @@
    "status": "open",
    "entry_date": "2026-10-27",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "Wolfe upgrade",
    "entry_open": 54.21,
-   "last_close": 52.66,
+   "last_close": 53.21,
    "exit_price": null,
    "stop": 49.898,
    "target": 65.085,
    "notional_usd": 15.22,
-   "net_pct": -3.359,
-   "spy_pct": -4.548,
-   "excess_pct": 1.189,
-   "pnl_usd": -0.51,
+   "net_pct": -2.345,
+   "spy_pct": -4.703,
+   "excess_pct": 2.359,
+   "pnl_usd": -0.36,
    "pct_below_50d": -6.33
   },
   {
@@ -6517,7 +6599,7 @@
    "exit_reason": "stop -8%",
    "sources": "Citi upgrade",
    "entry_open": 1703.28,
-   "last_close": 1436.83,
+   "last_close": 1433.485,
    "exit_price": 1567.801,
    "stop": 1567.801,
    "target": 2044.958,
@@ -6538,7 +6620,7 @@
    "exit_reason": "stop -8%",
    "sources": "Raymond James upgrade",
    "entry_open": 251.27,
-   "last_close": 227.36,
+   "last_close": 225.815,
    "exit_price": 231.284,
    "stop": 231.284,
    "target": 301.675,
@@ -6559,7 +6641,7 @@
    "exit_reason": "stop -8%",
    "sources": "Q3 beat, raised 2026 guide, 2027 targets (company report; +7-11% premarket is the reaction)",
    "entry_open": 15.98,
-   "last_close": 14.28,
+   "last_close": 14.284,
    "exit_price": 14.709,
    "stop": 14.709,
    "target": 19.186,
@@ -6580,7 +6662,7 @@
    "exit_reason": "stop -8%",
    "sources": "Trench ~$9B acquisition + FY revenue forecast raised to $47B (company news only)",
    "entry_open": 876.378,
-   "last_close": 779.91,
+   "last_close": 790.0,
    "exit_price": 806.671,
    "stop": 806.671,
    "target": 1052.179,
@@ -6601,7 +6683,7 @@
    "exit_reason": "stop -8%",
    "sources": "FQ1 beat + Dec-qtr guide above consensus (company); Baird PT 1080->1350 Outperform (analyst; Evercore Outperform $1000 maintained)",
    "entry_open": 646.84,
-   "last_close": 504.4,
+   "last_close": 508.01,
    "exit_price": 595.39,
    "stop": 595.39,
    "target": 776.596,
@@ -6622,7 +6704,7 @@
    "exit_reason": "stop gap (open)",
    "sources": "Q3 beat (company report; Benzinga mover write-up)",
    "entry_open": 53.94,
-   "last_close": 43.14,
+   "last_close": 43.998,
    "exit_price": 49.5,
    "stop": 49.65,
    "target": 64.76,
@@ -6643,7 +6725,7 @@
    "exit_reason": "stop -8%",
    "sources": "Q3 beat, orders >2x, FY26 guide raised (company report; Investing.com/Reuters are write-ups of the same report; no post-print analyst raise found)",
    "entry_open": 243.0,
-   "last_close": 190.37,
+   "last_close": 194.15,
    "exit_price": 223.672,
    "stop": 223.672,
    "target": 291.746,
@@ -6664,7 +6746,7 @@
    "exit_reason": "target +20%",
    "sources": "Q3 same-store sales +2.1% vs 1.5% est (company results via CNBC)",
    "entry_open": 30.46,
-   "last_close": 35.83,
+   "last_close": 36.9,
    "exit_price": 36.57,
    "stop": 28.037,
    "target": 36.57,
@@ -6685,7 +6767,7 @@
    "exit_reason": "target +20%",
    "sources": "company Q3 results: revenue and adj EBITDA beat; SEC probe closed (CNBC)",
    "entry_open": 65.28,
-   "last_close": 71.1,
+   "last_close": 73.02,
    "exit_price": 78.375,
    "stop": 60.088,
    "target": 78.375,
@@ -6706,7 +6788,7 @@
    "exit_reason": "stop gap (open)",
    "sources": "Bloomberg: Marvell in talks to acquire Lumentum, deal possibly next week; +5% premarket; 1 source (one report); momentum holding; below 50d",
    "entry_open": 947.88,
-   "last_close": 559.97,
+   "last_close": 549.115,
    "exit_price": 861.28,
    "stop": 872.486,
    "target": 1138.025,
@@ -6727,7 +6809,7 @@
    "exit_reason": "stop gap (open)",
    "sources": "CEO/CFO open-market buys ~$2.69M, Form 4; below 50d; 1 source; no buy",
    "entry_open": 90.68,
-   "last_close": 66.74,
+   "last_close": 68.12,
    "exit_price": 81.31,
    "stop": 83.467,
    "target": 108.87,
@@ -6745,18 +6827,18 @@
    "status": "open",
    "entry_date": "2026-10-30",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "Q3 loss -0.48 vs -0.62 est, rev 2.16B vs 1.99B, 2026 delivery guide raised to 67-70K; +8% premarket; below 50d; 1 source; no buy",
    "entry_open": 12.095,
-   "last_close": 11.88,
+   "last_close": 11.86,
    "exit_price": null,
    "stop": 11.133,
    "target": 14.521,
    "notional_usd": 15.4,
-   "net_pct": -2.078,
-   "spy_pct": -3.801,
-   "excess_pct": 1.723,
-   "pnl_usd": -0.32,
+   "net_pct": -2.243,
+   "spy_pct": -3.957,
+   "excess_pct": 1.714,
+   "pnl_usd": -0.35,
    "pct_below_50d": -21.6
   },
   {
@@ -6766,18 +6848,18 @@
    "status": "open",
    "entry_date": "2026-11-02",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "Phillip upgrade Accumulate->Buy, PT 320->330. 1 source; below 50d (240.35 vs 254.28)",
    "entry_open": 243.01,
-   "last_close": 257.89,
+   "last_close": 264.58,
    "exit_price": null,
    "stop": 223.681,
    "target": 291.758,
    "notional_usd": 15.25,
-   "net_pct": 5.883,
-   "spy_pct": -3.557,
-   "excess_pct": 9.44,
-   "pnl_usd": 0.9,
+   "net_pct": 8.636,
+   "spy_pct": -3.713,
+   "excess_pct": 12.349,
+   "pnl_usd": 1.32,
    "pct_below_50d": -5.48
   },
   {
@@ -6790,7 +6872,7 @@
    "exit_reason": "stop -8%",
    "sources": "Stephens upgrade EW->OW. 1 source; below 50d",
    "entry_open": 125.88,
-   "last_close": 115.0,
+   "last_close": 114.995,
    "exit_price": 115.868,
    "stop": 115.868,
    "target": 151.131,
@@ -6811,7 +6893,7 @@
    "exit_reason": "stop gap (open)",
    "sources": "Cyber peer of CRWD (+2% premarket in sympathy with the DB upgrade). Below 50d",
    "entry_open": 368.07,
-   "last_close": 309.29,
+   "last_close": 328.16,
    "exit_price": 337.55,
    "stop": 338.794,
    "target": 441.905,
@@ -6829,18 +6911,18 @@
    "status": "open",
    "entry_date": "2026-11-03",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "Record Q3 results and raised EBITDA outlook; up ~8-10% premarket. 1 source and below 50d (2.86 vs 3.09): no buy",
    "entry_open": 3.215,
-   "last_close": 3.18,
+   "last_close": 3.195,
    "exit_price": null,
    "stop": 2.959,
    "target": 3.86,
    "notional_usd": 15.22,
-   "net_pct": -1.389,
-   "spy_pct": -2.696,
-   "excess_pct": 1.307,
-   "pnl_usd": -0.21,
+   "net_pct": -0.922,
+   "spy_pct": -2.854,
+   "excess_pct": 1.932,
+   "pnl_usd": -0.14,
    "pct_below_50d": -7.41
   },
   {
@@ -6850,18 +6932,18 @@
    "status": "open",
    "entry_date": "2026-11-03",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "Howmet Q3 beat + raised FY26 guidance + buyback (company 2026-10-29); KeyBanc upgrade to Overweight PT 237 (2026-11-03)",
    "entry_open": 217.0,
-   "last_close": 215.3,
+   "last_close": 218.88,
    "exit_price": null,
    "stop": 199.74,
    "target": 260.53,
    "notional_usd": 15.22,
-   "net_pct": -1.083,
-   "spy_pct": -2.696,
-   "excess_pct": 1.612,
-   "pnl_usd": -0.16,
+   "net_pct": 0.566,
+   "spy_pct": -2.854,
+   "excess_pct": 3.42,
+   "pnl_usd": 0.09,
    "pct_below_50d": -6.53
   },
   {
@@ -6874,7 +6956,7 @@
    "exit_reason": "stop -8%",
    "sources": "JPMorgan upgrade to Overweight PT 350 (2026-11-03)",
    "entry_open": 268.5,
-   "last_close": 284.8,
+   "last_close": 298.61,
    "exit_price": 247.144,
    "stop": 247.144,
    "target": 322.361,
@@ -6895,7 +6977,7 @@
    "exit_reason": "stop -8%",
    "sources": "Company Q3 beat + guide (2027 growth >80%); JPMorgan PT 550->575; Piper PT 600->650; Stifel PT 700->725 (BofA/Mizuho/UBS cut PTs)",
    "entry_open": 485.25,
-   "last_close": 503.41,
+   "last_close": 510.28,
    "exit_price": 446.653,
    "stop": 446.653,
    "target": 582.591,
@@ -6916,7 +6998,7 @@
    "exit_reason": "stop -8%",
    "sources": "Company Q3 beat + 4th FY26 guide raise + 2027 target; UBS PT 259->291; JPMorgan PT 250->270; Piper PT 240->261",
    "entry_open": 179.0,
-   "last_close": 186.42,
+   "last_close": 187.25,
    "exit_price": 164.762,
    "stop": 164.762,
    "target": 214.907,
@@ -6931,21 +7013,21 @@
    "tier": "F50x",
    "ticker": "BA",
    "signal_date": "2026-11-04",
-   "status": "open",
+   "status": "closed",
    "entry_date": "2026-11-04",
-   "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_date": "2026-11-18",
+   "exit_reason": "stop -8%",
    "sources": "Two Boeing insiders (Buckley, Mollenkopf) bought ~$3.0M combined (context only); below 50d",
    "entry_open": 177.0,
-   "last_close": 163.91,
-   "exit_price": null,
+   "last_close": 162.18,
+   "exit_price": 162.921,
    "stop": 162.921,
    "target": 212.506,
    "notional_usd": 15.17,
-   "net_pct": -7.635,
-   "spy_pct": -4.004,
-   "excess_pct": -3.631,
-   "pnl_usd": -1.16,
+   "net_pct": -8.194,
+   "spy_pct": -4.16,
+   "excess_pct": -4.034,
+   "pnl_usd": -1.24,
    "pct_below_50d": -10.94
   },
   {
@@ -6955,18 +7037,18 @@
    "status": "open",
    "entry_date": "2026-11-04",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "Large premarket jump on earnings (single source); below 50d (144.65), single source",
    "entry_open": 159.995,
-   "last_close": 160.08,
+   "last_close": 160.69,
    "exit_price": null,
    "stop": 147.269,
    "target": 192.09,
    "notional_usd": 15.17,
-   "net_pct": -0.247,
-   "spy_pct": -4.004,
-   "excess_pct": 3.757,
-   "pnl_usd": -0.04,
+   "net_pct": 0.134,
+   "spy_pct": -4.16,
+   "excess_pct": 4.294,
+   "pnl_usd": 0.02,
    "pct_below_50d": -11.51
   },
   {
@@ -6979,7 +7061,7 @@
    "exit_reason": "stop -8%",
    "sources": "CEO and CFO bought ~$0.6M combined (context only); below 50d; clean energy also lifted by election read-through",
    "entry_open": 32.31,
-   "last_close": 23.06,
+   "last_close": 23.41,
    "exit_price": 29.74,
    "stop": 29.74,
    "target": 38.791,
@@ -6997,18 +7079,18 @@
    "status": "open",
    "entry_date": "2026-11-04",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "Premarket gain on results (single source); below 50d (40.97)",
    "entry_open": 42.45,
-   "last_close": 40.7,
+   "last_close": 39.953,
    "exit_price": null,
    "stop": 39.074,
    "target": 50.965,
    "notional_usd": 15.17,
-   "net_pct": -4.422,
-   "spy_pct": -4.004,
-   "excess_pct": -0.419,
-   "pnl_usd": -0.67,
+   "net_pct": -6.182,
+   "spy_pct": -4.16,
+   "excess_pct": -2.022,
+   "pnl_usd": -0.94,
    "pct_below_50d": -1.91
   },
   {
@@ -7021,7 +7103,7 @@
    "exit_reason": "stop gap (open)",
    "sources": "Mention volume ~4.7x its average with a premarket jump (chatter is not a tested edge); below 50d",
    "entry_open": 31.42,
-   "last_close": 24.14,
+   "last_close": 24.38,
    "exit_price": 28.32,
    "stop": 28.921,
    "target": 37.723,
@@ -7039,18 +7121,18 @@
    "status": "open",
    "entry_date": "2026-11-04",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "Premarket gain on earnings (single source); below 50d (77.78)",
    "entry_open": 84.0,
-   "last_close": 79.31,
+   "last_close": 78.87,
    "exit_price": null,
    "stop": 77.319,
    "target": 100.85,
    "notional_usd": 15.17,
-   "net_pct": -5.883,
-   "spy_pct": -4.004,
-   "excess_pct": -1.879,
-   "pnl_usd": -0.89,
+   "net_pct": -6.407,
+   "spy_pct": -4.16,
+   "excess_pct": -2.247,
+   "pnl_usd": -0.97,
    "pct_below_50d": -2.29
   },
   {
@@ -7060,18 +7142,18 @@
    "status": "open",
    "entry_date": "2026-11-05",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "CNBC/FactSet Q3 beat (rev 2.18B vs 2.07B, adj EBITDA 1.84B vs 1.73B) + buyback; Wedbush PT 600 / BTIG 450 / Goldman 445 Neutral; ~+20% premarket volume and Reddit mentions 15x",
    "entry_open": 349.83,
-   "last_close": 398.94,
+   "last_close": 395.115,
    "exit_price": null,
    "stop": 322.005,
    "target": 420.006,
    "notional_usd": 15.05,
-   "net_pct": 13.798,
-   "spy_pct": -4.315,
-   "excess_pct": 18.113,
-   "pnl_usd": 2.08,
+   "net_pct": 12.705,
+   "spy_pct": -4.47,
+   "excess_pct": 17.175,
+   "pnl_usd": 1.91,
    "pct_below_50d": -6.56
   },
   {
@@ -7084,7 +7166,7 @@
    "exit_reason": "target +20%",
    "sources": "JFrog IR;CNBC;Investing.com",
    "entry_open": 94.99,
-   "last_close": 105.1,
+   "last_close": 111.89,
    "exit_price": 114.045,
    "stop": 87.434,
    "target": 114.045,
@@ -7102,18 +7184,18 @@
    "status": "open",
    "entry_date": "2026-11-06",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "CEO Tan Lip Bu bought ~$19.4M (context only); below 50d",
    "entry_open": 54.99,
-   "last_close": 55.17,
+   "last_close": 54.234,
    "exit_price": null,
    "stop": 50.616,
    "target": 66.021,
    "notional_usd": 14.62,
-   "net_pct": 0.087,
-   "spy_pct": -0.324,
-   "excess_pct": 0.411,
-   "pnl_usd": 0.01,
+   "net_pct": -1.615,
+   "spy_pct": -0.486,
+   "excess_pct": -1.129,
+   "pnl_usd": -0.24,
    "pct_below_50d": -47.04
   },
   {
@@ -7126,7 +7208,7 @@
    "exit_reason": "stop -8%",
    "sources": "CNBC/TipRanks/Investing same-print family",
    "entry_open": 21.15,
-   "last_close": 15.805,
+   "last_close": 15.179,
    "exit_price": 19.468,
    "stop": 19.468,
    "target": 25.393,
@@ -7144,18 +7226,18 @@
    "status": "open",
    "entry_date": "2026-11-06",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "$25B buyback authorization; 1 confirmation; below 50d; gap +11.6%; log only",
    "entry_open": 208.65,
-   "last_close": 210.69,
+   "last_close": 211.605,
    "exit_price": null,
    "stop": 192.054,
    "target": 250.505,
    "notional_usd": 14.62,
-   "net_pct": 0.738,
-   "spy_pct": -0.324,
-   "excess_pct": 1.062,
-   "pnl_usd": 0.11,
+   "net_pct": 1.176,
+   "spy_pct": -0.486,
+   "excess_pct": 1.662,
+   "pnl_usd": 0.17,
    "pct_below_50d": -35.41
   },
   {
@@ -7165,18 +7247,18 @@
    "status": "open",
    "entry_date": "2026-11-06",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "SEC EX-99.1;CNBC;Investing.com",
    "entry_open": 286.97,
-   "last_close": 284.8,
+   "last_close": 298.61,
    "exit_price": null,
    "stop": 264.144,
    "target": 344.536,
    "notional_usd": 14.62,
-   "net_pct": -0.996,
-   "spy_pct": -0.324,
-   "excess_pct": -0.672,
-   "pnl_usd": -0.15,
+   "net_pct": 3.816,
+   "spy_pct": -0.486,
+   "excess_pct": 4.302,
+   "pnl_usd": 0.56,
    "pct_below_50d": -23.35
   },
   {
@@ -7189,7 +7271,7 @@
    "exit_reason": "target +20%",
    "sources": "TransMedics IR;Canaccord via Investing.com",
    "entry_open": 79.115,
-   "last_close": 93.91,
+   "last_close": 96.335,
    "exit_price": 94.986,
    "stop": 72.822,
    "target": 94.986,
@@ -7207,18 +7289,18 @@
    "status": "open",
    "entry_date": "2026-11-06",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "Vistra IR;MarketBeat;Investing.com",
    "entry_open": 119.57,
-   "last_close": 127.15,
+   "last_close": 127.24,
    "exit_price": null,
    "stop": 110.059,
    "target": 143.556,
    "notional_usd": 14.62,
-   "net_pct": 6.039,
-   "spy_pct": -0.324,
-   "excess_pct": 6.363,
-   "pnl_usd": 0.88,
+   "net_pct": 6.115,
+   "spy_pct": -0.486,
+   "excess_pct": 6.6,
+   "pnl_usd": 0.89,
    "pct_below_50d": -21.71
   },
   {
@@ -7231,7 +7313,7 @@
    "exit_reason": "target gap (open)",
    "sources": "Oppenheimer upgrade Outperform PT 600 (single note; rewrites not counted)",
    "entry_open": 473.39,
-   "last_close": 503.41,
+   "last_close": 510.28,
    "exit_price": 569.28,
    "stop": 435.737,
    "target": 568.352,
@@ -7249,18 +7331,18 @@
    "status": "open",
    "entry_date": "2026-11-09",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "8AM refresh: Q3 adj EPS 5.06 vs ~3.89 est; rev 9.55B; FY26 guide raised midpoint to 12.50-12.80 vs 12.22 est (https://www.investing.com/news/earnings/constellation-shares-up-4-in-premarket-trade-on-q3",
    "entry_open": 260.4,
-   "last_close": 268.07,
+   "last_close": 266.345,
    "exit_price": null,
    "stop": 239.688,
    "target": 312.636,
    "notional_usd": 14.48,
-   "net_pct": 2.645,
-   "spy_pct": -1.282,
-   "excess_pct": 3.927,
-   "pnl_usd": 0.38,
+   "net_pct": 1.983,
+   "spy_pct": -1.442,
+   "excess_pct": 3.425,
+   "pnl_usd": 0.29,
    "pct_below_50d": -7.43
   },
   {
@@ -7270,18 +7352,18 @@
    "status": "open",
    "entry_date": "2026-11-09",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "4-insider CLUSTER incl CEO/CFO $447K filed 2026-11-06; context only; below 50d 56.19; PM 51.00 +1.2% stale 04:15 ET",
    "entry_open": 49.8,
-   "last_close": 50.5,
+   "last_close": 49.4,
    "exit_price": null,
    "stop": 45.839,
    "target": 59.79,
    "notional_usd": 14.48,
-   "net_pct": 0.906,
-   "spy_pct": -1.282,
-   "excess_pct": 2.187,
-   "pnl_usd": 0.13,
+   "net_pct": -1.303,
+   "spy_pct": -1.442,
+   "excess_pct": 0.139,
+   "pnl_usd": -0.19,
    "pct_below_50d": -10.29
   },
   {
@@ -7294,7 +7376,7 @@
    "exit_reason": "target +20%",
    "sources": "6AM: day-2 continuation after Mon +16.6%; Q3 rev +109%, backlog $2.5B, 2027 adj EBITDA target $125-140M; contra: net income warrant-inflated, adj NI $4.8M, OCF -$130.6M (https://www.quiverquant.com/ne",
    "entry_open": 3.795,
-   "last_close": 4.38,
+   "last_close": 4.47,
    "exit_price": 4.556,
    "stop": 3.493,
    "target": 4.556,
@@ -7315,7 +7397,7 @@
    "exit_reason": "stop gap (open)",
    "sources": "6AM: Q3 rev $3.661B (+168%) vs ~$3.55B; EPS -1.27 vs -1.46/-1.55; FY26 rev guide $13.0-13.3B (from $12-13B), adj op inc guide +26% mid; backlog $132.5B. Contra: GAAP loss $709M, Q3 interest $846M, CDS",
    "entry_open": 55.965,
-   "last_close": 49.89,
+   "last_close": 47.144,
    "exit_price": 50.905,
    "stop": 51.514,
    "target": 67.192,
@@ -7336,7 +7418,7 @@
    "exit_reason": "stop -8%",
    "sources": "6AM 11-13: Q4 rev 10.41B vs 10.30B, EPS 4.16 vs 4.05; Q1 guide 11.1B+/-0.5B vs 10.89B; WFE +30% 2027. PT cuts in roundup (unspecified). PM 383.00 (+0.54%); pc 380.95 < 50d 439.22. F50x.",
    "entry_open": 376.01,
-   "last_close": 349.23,
+   "last_close": 351.51,
    "exit_price": 346.102,
    "stop": 346.102,
    "target": 451.438,
@@ -7357,7 +7439,7 @@
    "exit_reason": "stop -8%",
    "sources": "6AM 11-13: Q3 core rev 231M (+70%) vs ~215M, first non-GAAP profit, FY26 guide 940-960M, Q4 guide ~18% above cons; hyperscaler deal (Benzinga https://www.benzinga.com/markets/equities/26/11/63230833/c",
    "entry_open": 108.7,
-   "last_close": 104.18,
+   "last_close": 98.01,
    "exit_price": 100.054,
    "stop": 100.054,
    "target": 130.505,
@@ -7375,18 +7457,18 @@
    "status": "open",
    "entry_date": "2026-11-13",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "Q1 FY27 beat + FY27 guide raise (company release; Investing/AP relays = one event)",
    "entry_open": 100.47,
-   "last_close": 95.11,
+   "last_close": 95.285,
    "exit_price": null,
    "stop": 92.479,
    "target": 120.624,
    "notional_usd": 497.54,
-   "net_pct": -5.475,
-   "spy_pct": -3.635,
-   "excess_pct": -1.84,
-   "pnl_usd": -27.24,
+   "net_pct": -5.301,
+   "spy_pct": -3.792,
+   "excess_pct": -1.509,
+   "pnl_usd": -26.37,
    "pct_below_50d": -5.56
   },
   {
@@ -7396,18 +7478,18 @@
    "status": "open",
    "entry_date": "2026-11-13",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "SEC Form 4 3-insider CLUSTER incl CEO/CFO $6.71M open-market buys filed 2026-11-12; Freedom Broker upgrade to Buy (PT 57->51) per Yahoo/Stocktwits wrap 11-13",
    "entry_open": 37.34,
-   "last_close": 34.86,
+   "last_close": 37.54,
    "exit_price": null,
    "stop": 34.37,
    "target": 44.83,
    "notional_usd": 497.54,
-   "net_pct": -6.842,
-   "spy_pct": -3.635,
-   "excess_pct": -3.206,
-   "pnl_usd": -34.04,
+   "net_pct": 0.336,
+   "spy_pct": -3.792,
+   "excess_pct": 4.127,
+   "pnl_usd": 1.67,
    "pct_below_50d": -15.34
   },
   {
@@ -7417,18 +7499,18 @@
    "status": "open",
    "entry_date": "2026-11-13",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "6AM 11-13: Jefferies upgrade to Buy, PT 13->28 (Corsicana lease economics). pc 17.83 < 50d 18.12; PM 17.44 (-2.19%, stale 05:10). F50x single source.",
    "entry_open": 17.695,
-   "last_close": 17.05,
+   "last_close": 17.835,
    "exit_price": null,
    "stop": 16.288,
    "target": 21.245,
    "notional_usd": 497.54,
-   "net_pct": -3.845,
-   "spy_pct": -3.635,
-   "excess_pct": -0.21,
-   "pnl_usd": -19.13,
+   "net_pct": 0.591,
+   "spy_pct": -3.792,
+   "excess_pct": 4.383,
+   "pnl_usd": 2.94,
    "pct_below_50d": -1.6
   },
   {
@@ -7438,18 +7520,18 @@
    "status": "open",
    "entry_date": "2026-11-16",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "1330 11-16: CEO/director Brian Halligan (per filing/Investing.com) open-market buy 22,985 sh @ wtd avg 217.44 (~$4.998M) on 11-13; single insider, not a cluster. pc 217.25 < 50d 227.27; open 222.08 (g",
    "entry_open": 222.08,
-   "last_close": 216.3,
+   "last_close": 209.47,
    "exit_price": null,
    "stop": 204.416,
    "target": 266.629,
    "notional_usd": 496.15,
-   "net_pct": -2.803,
-   "spy_pct": -2.297,
-   "excess_pct": -0.506,
-   "pnl_usd": -13.91,
+   "net_pct": -5.878,
+   "spy_pct": -2.456,
+   "excess_pct": -3.422,
+   "pnl_usd": -29.16,
    "pct_below_50d": -4.41
   },
   {
@@ -7459,18 +7541,18 @@
    "status": "open",
    "entry_date": "2026-11-16",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "8AM 11-16: UBS Neutral->Buy, PT 256->307. pc 251.73 below 50d 255.19; PM 253.00 (+0.5%, 2 bars 07:00). Single org, below 50d -> log only (F50x).",
    "entry_open": 254.79,
-   "last_close": 252.08,
+   "last_close": 251.95,
    "exit_price": null,
    "stop": 234.524,
    "target": 305.901,
    "notional_usd": 496.15,
-   "net_pct": -1.264,
-   "spy_pct": -2.297,
-   "excess_pct": 1.033,
-   "pnl_usd": -6.27,
+   "net_pct": -1.315,
+   "spy_pct": -2.456,
+   "excess_pct": 1.141,
+   "pnl_usd": -6.52,
    "pct_below_50d": -1.36
   },
   {
@@ -7480,18 +7562,18 @@
    "status": "open",
    "entry_date": "2026-11-16",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "TD Cowen upgrade Hold->Buy, PT cut 225->200 (data-center cooling demand), Investing.com/Reuters 11-16 02:02 ET",
    "entry_open": 154.0,
-   "last_close": 144.36,
+   "last_close": 145.55,
    "exit_price": null,
    "stop": 141.751,
    "target": 184.892,
    "notional_usd": 496.15,
-   "net_pct": -6.46,
-   "spy_pct": -2.297,
-   "excess_pct": -4.163,
-   "pnl_usd": -32.05,
+   "net_pct": -5.687,
+   "spy_pct": -2.456,
+   "excess_pct": -3.231,
+   "pnl_usd": -28.22,
    "pct_below_50d": -8.46
   },
   {
@@ -7501,43 +7583,274 @@
    "status": "open",
    "entry_date": "2026-11-17",
    "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
    "sources": "6AM 11-17: Forgent Power Solutions 4 insiders incl. CEO bought ~$2.16M on 11-16 (~$20.85-21.59). Cluster but one evidence type. pc 20.57 below 50d 31.48; PM 20.41 (-0.8%, 05:20). F50x (evidence only);",
    "entry_open": 21.5,
-   "last_close": 21.2,
+   "last_close": 21.6,
    "exit_price": null,
    "stop": 19.79,
    "target": 25.813,
    "notional_usd": 486.97,
-   "net_pct": -1.595,
-   "spy_pct": -0.806,
-   "excess_pct": -0.79,
-   "pnl_usd": -7.77,
+   "net_pct": 0.265,
+   "spy_pct": -0.967,
+   "excess_pct": 1.232,
+   "pnl_usd": 1.29,
    "pct_below_50d": -34.66
   },
   {
    "tier": "F50x",
    "ticker": "TEAM",
    "signal_date": "2026-11-17",
-   "status": "open",
+   "status": "closed",
    "entry_date": "2026-11-17",
-   "exit_date": null,
-   "exit_reason": "open: marked at 2026-11-17 close",
+   "exit_date": "2026-11-18",
+   "exit_reason": "stop -8%",
    "sources": "6AM 11-17: CEO/co-founder Cannon-Brookes open-market buys ~$4.02M on 11-13 at ~$151-152 (code P). Single insider, single evidence type. pc 149.94 below 50d 191.37 (-22%); no PM bars. 11-06 guidance-dr",
    "entry_open": 148.34,
-   "last_close": 140.98,
-   "exit_price": null,
+   "last_close": 135.91,
+   "exit_price": 136.541,
    "stop": 136.541,
    "target": 178.097,
    "notional_usd": 486.97,
-   "net_pct": -5.162,
-   "spy_pct": -0.806,
-   "excess_pct": -4.356,
-   "pnl_usd": -25.14,
+   "net_pct": -8.154,
+   "spy_pct": -0.967,
+   "excess_pct": -7.187,
+   "pnl_usd": -39.71,
    "pct_below_50d": -21.65
+  },
+  {
+   "tier": "F50x",
+   "ticker": "DKNG",
+   "signal_date": "2026-11-18",
+   "status": "open",
+   "entry_date": "2026-11-18",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
+   "sources": "6AM 11-18: co-founder Kalish open-market buy 55,000 sh @18.22 on 11-17 (script total ~$2.0M). pc 18.00 below 50d 20.76. F50x evidence only.",
+   "entry_open": 18.205,
+   "last_close": 18.13,
+   "exit_price": null,
+   "stop": 16.757,
+   "target": 21.857,
+   "notional_usd": 481.96,
+   "net_pct": -0.612,
+   "spy_pct": -0.289,
+   "excess_pct": -0.323,
+   "pnl_usd": -2.95,
+   "pct_below_50d": -13.31
+  },
+  {
+   "tier": "F50x",
+   "ticker": "NVDA",
+   "signal_date": "2026-11-18",
+   "status": "open",
+   "entry_date": "2026-11-18",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
+   "sources": "6AM 11-18: rev 115.8B vs ~109.1B, EPS 2.68 vs 2.48, Q4 guide 130B vs ~125B, FY28 growth 75%, +$150B buyback; board won't reinstate Huang; Megaspeed/Alibaba export overhang. pc 155.46 < 50d 211.76 (-27",
+   "entry_open": 159.19,
+   "last_close": 153.05,
+   "exit_price": null,
+   "stop": 146.528,
+   "target": 191.124,
+   "notional_usd": 481.96,
+   "net_pct": -3.997,
+   "spy_pct": -0.289,
+   "excess_pct": -3.708,
+   "pnl_usd": -19.26,
+   "pct_below_50d": -26.59
+  },
+  {
+   "tier": "F50x",
+   "ticker": "SCHW",
+   "signal_date": "2026-11-18",
+   "status": "open",
+   "entry_date": "2026-11-18",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
+   "sources": "6AM 11-18: single firm with recent PT cuts from others; pc 91.84 below 50d 96.19; PM +0.45%. F50x evidence only.",
+   "entry_open": 92.4,
+   "last_close": 91.87,
+   "exit_price": null,
+   "stop": 85.05,
+   "target": 110.935,
+   "notional_usd": 481.96,
+   "net_pct": -0.774,
+   "spy_pct": -0.289,
+   "excess_pct": -0.485,
+   "pnl_usd": -3.73,
+   "pct_below_50d": -4.52
+  },
+  {
+   "tier": "F50x",
+   "ticker": "STUB",
+   "signal_date": "2026-11-18",
+   "status": "open",
+   "entry_date": "2026-11-18",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
+   "sources": "6AM 11-18: 2 insiders ~$7.1M (200k sh 11-13 @5.28, 200k 11-16 @4.96). pc 4.53 below 50d 5.75; PM +4.9%. F50x evidence only (sub-$5).",
+   "entry_open": 4.83,
+   "last_close": 4.71,
+   "exit_price": null,
+   "stop": 4.446,
+   "target": 5.799,
+   "notional_usd": 481.96,
+   "net_pct": -2.884,
+   "spy_pct": -0.289,
+   "excess_pct": -2.595,
+   "pnl_usd": -13.9,
+   "pct_below_50d": -21.18
+  },
+  {
+   "tier": "F50x",
+   "ticker": "TIGO",
+   "signal_date": "2026-11-18",
+   "status": "open",
+   "entry_date": "2026-11-18",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
+   "sources": "6AM 11-18: single firm; pc 82.02 below 50d 85.93; PM +2.67% (3 bars). F50x evidence only.",
+   "entry_open": 84.7,
+   "last_close": 82.485,
+   "exit_price": null,
+   "stop": 77.963,
+   "target": 101.691,
+   "notional_usd": 481.96,
+   "net_pct": -2.815,
+   "spy_pct": -0.289,
+   "excess_pct": -2.526,
+   "pnl_usd": -13.57,
+   "pct_below_50d": -4.55
+  },
+  {
+   "tier": "F50x",
+   "ticker": "TJX",
+   "signal_date": "2026-11-18",
+   "status": "open",
+   "entry_date": "2026-11-18",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
+   "sources": "8AM 11-18: Q3 FY27 comp +4% (above plan), rev $16.0B +6% vs ~$15.85B est, adj EPS 1.34 (= Benzinga consensus 1.34; GAAP 1.39 incl tariff refunds), FY27 EPS guide raised (Benzinga https://www.benzinga.",
+   "entry_open": 137.01,
+   "last_close": 143.475,
+   "exit_price": null,
+   "stop": 126.112,
+   "target": 164.494,
+   "notional_usd": 481.96,
+   "net_pct": 4.519,
+   "spy_pct": -0.289,
+   "excess_pct": 4.808,
+   "pnl_usd": 21.78,
+   "pct_below_50d": -4.6
+  },
+  {
+   "tier": "F50x",
+   "ticker": "UPST",
+   "signal_date": "2026-11-18",
+   "status": "open",
+   "entry_date": "2026-11-18",
+   "exit_date": null,
+   "exit_reason": "open: marked at 2026-11-18 close (intraday, provisional)",
+   "sources": "6AM 11-18: CEO Paul Gu open-market buy 50,000 sh @19 on 11-16 (script total ~$1.9M). pc 18.13 below 50d 23.34. F50x evidence only.",
+   "entry_open": 18.3,
+   "last_close": 18.24,
+   "exit_price": null,
+   "stop": 16.844,
+   "target": 21.971,
+   "notional_usd": 481.96,
+   "net_pct": -0.528,
+   "spy_pct": -0.289,
+   "excess_pct": -0.239,
+   "pnl_usd": -2.54,
+   "pct_below_50d": -22.34
   }
  ],
  "alerts": [
+  {
+   "date": "2026-11-18",
+   "text": "PAPER TRADE 2026-11-18 | sleeve daytrade | BUY 2.367783 TGT @ $168.9344 (quote $168.8500 at 2026-11-18 10:30 ET, Yahoo Finance chart endpoint, regularMarketPrice (may be delayed ~15 min); +/-0.05% slippage) | notional $400.00, fee $0.00 (0.00%) | beta 0.6 | DX v0.5.11 one_filter (waived: two_source) | Q3 comp +5.6% vs 3.8% StreetAccount, traffic +5%, FY sales guide ~6% (from ~5%), FY EPS 10.65-11.40 (from 9.90-10.90); pc 159.53 > 50d 156.22; +4.6-4.9% vs open (<5%); one company event (CNBC/Reuters are relays, no post-earnings analyst action yet) -> waived two_source; caveat ~1.1pt tariff-refund benefit. Claude 10:30 synth ENTER-NOW (s1/s2 SUPPORT, s3 REJECT) | sources: Target Corp (company Q3 PR; CNBC https://www.cnbc.com/2026/11/18/target-tgt-q3-2026-earnings.html and Reuters relays of the same event): https://corporate.target.com/press/release/2026/11/target-corporation-reports-third-quarter-earnings"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "PAPER TRADE 2026-11-18 | sleeve daytrade | SELL 0.546751 SPY @ $731.5940 (quote $731.9600 at 2026-11-18 10:30 ET, Yahoo Finance chart endpoint, regularMarketPrice (may be delayed ~15 min); +/-0.05% slippage) | notional $400.00, fee $0.00 (0.00%) | beta 1.0 | fund TGT from idle SPY"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "--- dx stock run 2026-11-18 10:30 ET"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "DX REJECTED TGT (one_filter): passes every Signals filter: route it to the Signals sleeve, not DX"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "--- dx stock run 2026-11-18 10:30 ET"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "MOVER 2026-11-18 LITE -2.06% vs prior close, -5.11% vs open (last 548.4200 at 2026-11-18 10:26 ET; held (momentum); HELD) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order | headlines: 24/7 Wall St. 11-18 09:08 ET: Applied Optoelectronics Sinks 9% on $550 Million Stock Sale Plan; Coherent and Lumentum Rise 4% <https://finance.yahoo.com/markets/stocks/articles/applied-optoelectronics-sinks-9-550-140851864.html> || Barrons.com 11-18 08:58 ET: This Wildly Volatile AI Stock Is Down 80% From Its Peak\u2014and Flashing Warning Signals <https://finance.yahoo.com/m/9b5f7994-7659-3b7b-8dc5-5fca85c6de96/this-wildly-volatile-ai-stock.html> || Trefis 11-18 08:25 ET: Why Should Coherent Stock Holders Watch This One Number? <https://finance.yahoo.com/markets/stocks/articles/why-coherent-stock-holders-watch-132517763.html>"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "MOVER 2026-11-18 CRWD +5.52% vs prior close, +3.53% vs open (last 231.7100 at 2026-11-18 10:26 ET; held (earnings); HELD) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order | headlines: Investing.com 11-18 10:17 ET: These 3 large-cap U.S. stocks are trading well above model fair value <https://finance.yahoo.com/markets/stocks/articles/3-large-cap-u-stocks-151712324.html> || Trefis 11-18 09:50 ET: Should Okta Stock Holders Look At Salesforce Instead? <https://finance.yahoo.com/markets/stocks/articles/okta-stock-holders-look-salesforce-145017141.html> || Trefis 11-18 06:58 ET: Can Datadog Stock Jump 50%? <https://finance.yahoo.com/markets/stocks/articles/datadog-stock-jump-50-115831283.html>"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "MOVER 2026-11-18 VIK +5.64% vs prior close, +5.90% vs open (last 99.6000 at 2026-11-18 10:27 ET; signal_log 2026-11-16 analyst_upgrade) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "MOVER 2026-11-18 CBRS -5.80% vs prior close, -6.36% vs open (last 98.1400 at 2026-11-18 10:26 ET; signal_log 2026-11-13 earnings) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order | headlines: Yahoo Finance 11-18 08:55 ET: Why the Anthropic IPO could be a trap for investors <https://finance.yahoo.com/markets/article/why-the-anthropic-ipo-could-be-a-trap-for-investors-135504884.html> || Barchart 11-17 16:22 ET: What It Will Take for Cerebras Stock to Stage a Real Revival After Q3 Earnings Rally <https://finance.yahoo.com/markets/stocks/articles/cerebras-stock-stage-real-revival-212234393.html> || Simply Wall St. 11-17 13:10 ET: 3 Insider Backed Growth Stocks With At Least 40% Earnings Growth <https://finance.yahoo.com/markets/stocks/articles/3-insider-backed-growth-stocks-181023052.html>"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "MOVER 2026-11-18 TGT +5.95% vs prior close, +4.99% vs open (last 169.0200 at 2026-11-18 10:26 ET; signal_log 2026-11-18 earnings_beat) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order | headlines: MT Newswires 11-18 10:18 ET: Target Lifts Full-Year Sales Outlook as Third-Quarter Comparable Sales Top Views <https://finance.yahoo.com/markets/stocks/articles/target-lifts-full-sales-outlook-151806312.html> || Yahoo Finance 11-18 10:15 ET: Tech stocks rise as investors shift focus to Anthropic IPO: AlphaCheck <https://finance.yahoo.com/markets/article/tech-rises-but-nvidia-stock-gains-fade-focus-on-anthropic-ipo-alphacheck-151537370.html>"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "MOVER 2026-11-18 TTWO +6.57% vs prior close, +2.20% vs open (last 217.3200 at 2026-11-18 10:27 ET; signal_log 2026-11-16 product_launch_presales) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order | headlines: Reuters 11-18 09:48 ET: 'GTA VI' publisher Take-Two jumps as gamers relish blockbuster release <https://finance.yahoo.com/news/gta-vi-publisher-two-jumps-143240053.html> || InvestorsHub 11-18 09:43 ET: Take-Two Shares Jump 6.4% as Grand Theft Auto VI Earns Near-Perfect Reviews Ahead of Launch <https://finance.yahoo.com/markets/stocks/articles/two-shares-jump-6-4-144331452.html>"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "MOVER 2026-11-18 MP +7.52% vs prior close, +7.80% vs open (last 37.4830 at 2026-11-18 10:27 ET; signal_log 2026-11-13 insider_buy) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order | headlines: The Fly 11-18 09:35 ET: Insulet downgraded, Tandem Diabetes upgraded: Wall Street's top analyst calls <https://finance.yahoo.com/markets/stocks/articles/insulet-downgraded-tandem-diabetes-upgraded-143557258.html> || Zacks 11-18 07:31 ET: MP Materials' NdPr Production Up 41% in Q3: Will Magnet Growth Follow? <https://finance.yahoo.com/markets/commodities/articles/mp-materials-ndpr-production-41-123100377.html> || Oilprice.com 11-17 21:00 ET: In 45 Days Defense Giants Must Prove Their Magnets Are China-Free <https://finance.yahoo.com/energy/articles/45-days-defense-giants-must-020000027.html>"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "MOVER 2026-11-18 TJX +10.54% vs prior close, +4.76% vs open (last 143.5300 at 2026-11-18 10:27 ET; signal_log 2026-11-18 earnings_beat) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order | headlines: InvestorsHub 11-18 09:38 ET: TJX Shares Jump 6.08% as Third-Quarter Revenue Beats Estimates and FY2027 Outlook Strengthens <https://finance.yahoo.com/markets/stocks/articles/tjx-shares-jump-6-08-143809543.html> || MT Newswires 11-18 09:12 ET: Sector Update: Consumer Stocks Mixed Premarket Wednesday <https://finance.yahoo.com/markets/stocks/articles/sector-consumer-stocks-mixed-premarket-141206636.html>"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "MOVER 2026-11-18 AAOI -13.58% vs prior close, -5.33% vs open (last 39.0800 at 2026-11-18 10:26 ET; signal_log 2026-11-18 stock_offering) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order | headlines: Barrons.com 11-18 09:18 ET: Nvidia, Target, Take-Two, Applied Optoelectronics, Lowe\u2019s, and More Stocks That Explain Today\u2019s Market <https://finance.yahoo.com/m/415e4137-8850-333d-b848-d21e98bc6659/nvidia%2C-target%2C-take-two%2C.html> || 24/7 Wall St. 11-18 09:08 ET: Applied Optoelectronics Sinks 9% on $550 Million Stock Sale Plan; Coherent and Lumentum Rise 4% <https://finance.yahoo.com/markets/stocks/articles/applied-optoelectronics-sinks-9-550-140851864.html> || Barrons.com 11-18 08:58 ET: This Wildly Volatile AI Stock Is Down 80% From Its Peak\u2014and Flashing Warning Signals <https://finance.yahoo.com/m/9b5f7994-7659-3b7b-8dc5-5fca85c6de96/this-wildly-volatile-ai-stock.html>"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "--- movers run 2026-11-18 10:27 ET"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "INVALIDATION BREACHED DX day-NUE-2026-11-17 NUE: low 249.2400 <= 255.0700 (5-min bars) | 11-17 10:25 entry review (syn): a break of 255.07 (or a VWAP loss, 257.64 at entry) invalidates; already traded below it ~11:30 ET 11-17 (pre-v0.5.12, per EOD reflection) | AWARENESS ONLY: no order, stop unchanged"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "--- intraday run 2026-11-18 10:26 ET"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "GAP RECHECK 2026-11-18 MWH (signals): no 8:30-9:15 ET quote yet (any premarket last 07:55 ET); still skipped (re-run inside the window)"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "--- recheck-gaps run 2026-11-18 08:47 ET"
+  },
+  {
+   "date": "2026-11-17",
+   "text": "2026-11-17 16:48 ET EOD: check_report 427 checks, 2 problems (checker treats unparked daytrade as parked; ledgers consistent; not edited)"
+  },
+  {
+   "date": "2026-11-17",
+   "text": "--- close run 2026-11-17 16:4x ET: feed push (latest.json, close) done, commit bc9d9e8"
+  },
   {
    "date": "2026-11-17",
    "text": "EQUITY 2026-11-17 close: total $20,052.70 vs SPY-equivalent $20,087.10 | core $383.78 (-4.05% vs SPY -4.05%), momentum $117.51 (-21.66% vs SPY -4.05%), dividend $143.92 (-4.05% vs SPY -4.05%), earnings $140.38 (-6.41% vs SPY -4.05%), signals $9,639.18 (-5.11% vs SPY -4.10%), daytrade $9,627.94 (-3.72% vs SPY -3.65%) | contribution-aware: account TWR -6.17% vs SPY -4.10% (-2.07 pts), net contributions $19,852.34"
@@ -7629,54 +7942,10 @@
   {
    "date": "2026-11-12",
    "text": "--- buy run 2026-11-12 07:48 ET"
-  },
-  {
-   "date": "2026-11-11",
-   "text": "POST-FLOW 2026-11-11: account $20,816.95 (net contributions $19,852.34; TWR -2.593%) vs SPY-equivalent $20,837.72 (TWR -0.517%; -2.076 pts) | core $398.12, momentum $133.74, dividend $149.30, earnings $145.70, signals $9,995.08, daytrade $9,995.00"
-  },
-  {
-   "date": "2026-11-11",
-   "text": "PAPER TRADE 2026-11-11 | sleeve daytrade | BUY 13.154608 SPY @ $760.1899 (quote $759.8100 at 2026-11-11 16:00 ET (official close; post-close contribution sweep), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-11-11 17:52 ET; +/-0.05% slippage) | notional $10,000.00, fee $0.00 (0.00%) | beta 1.0 | v0.5.8 contribution contrib-2026-11-11-daytrade: idle sleeve cash held in SPY"
-  },
-  {
-   "date": "2026-11-11",
-   "text": "CONTRIBUTION 2026-11-11 after close | sleeve daytrade | +$10,000.00 simulated paper cash (the owner 2026-11-11 ~17:40 ET (widget answer t119s504): \"Yes, fund the day-trade sleeve with $10k in idle SPY and don't trade failing setups yet\") | parked in idle SPY at the official close; benchmark gets the same $10,000.00 at the same close | units at NAV 1.000000"
-  },
-  {
-   "date": "2026-11-11",
-   "text": "--- contribute run 2026-11-11 17:52 ET"
-  },
-  {
-   "date": "2026-11-11",
-   "text": "POST-FLOW 2026-11-11: account $10,821.94 (net contributions $9,852.34; TWR -2.591%) vs SPY-equivalent $10,842.72 (TWR -0.515%; -2.077 pts) | core $398.12, momentum $133.74, dividend $149.30, earnings $145.70, signals $9,995.08"
-  },
-  {
-   "date": "2026-11-11",
-   "text": "PAPER TRADE 2026-11-11 | sleeve signals | BUY 12.960367 SPY @ $760.1899 (quote $759.8100 at 2026-11-11 16:00 ET (official close; post-close contribution sweep), Yahoo Finance chart endpoint, 1d bar close, fetched 2026-11-11 17:52 ET; +/-0.05% slippage) | notional $9,852.34, fee $0.00 (0.00%) | beta 1.0 | v0.5.8 contribution contrib-2026-11-11-signals: idle sleeve cash held in SPY"
-  },
-  {
-   "date": "2026-11-11",
-   "text": "CONTRIBUTION 2026-11-11 after close | sleeve signals | +$9,852.34 simulated paper cash (the owner 2026-11-11 ~17:40 ET (t119u): \"Let's increase to $10k for signals and $10k for trading so we can get a more adequate assessment\") | parked in idle SPY at the official close; benchmark gets the same $9,852.34 at the same close | units at NAV 0.984400"
-  },
-  {
-   "date": "2026-11-11",
-   "text": "--- contribute run 2026-11-11 17:52 ET"
-  },
-  {
-   "date": "2026-11-11",
-   "text": "--- feed push 2026-11-11 close: commit ab31d18d088145240b935dbe9ac9c3fd9636caff (latest.json only)"
-  },
-  {
-   "date": "2026-11-11",
-   "text": "EQUITY 2026-11-11 close: total $974.53 vs SPY-equivalent $995.30 | core $398.12 (-0.47% vs SPY -0.47%), momentum $133.74 (-10.84% vs SPY -0.47%), dividend $149.30 (-0.47% vs SPY -0.47%), earnings $145.70 (-2.86% vs SPY -0.47%), signals $147.66 (-1.56% vs SPY -0.47%)"
-  },
-  {
-   "date": "2026-11-11",
-   "text": "--- close run 2026-11-11 16:52 ET"
   }
  ],
  "latest_reflection": {
   "date": "2026-11-17",
-  "markdown": "# Reflection \u2014 2026-11-17 (paper only, no real money; v0.5.11, first close with the day-trade experiment)\n\n## Headline: account vs SPY\nThe account still trails SPY. Since the start (time-weighted, nav.csv; capital in $20,852.34) it is **\u22126.169% vs SPY-equivalent \u22124.101% (\u22122.069 pts)**, after \u22122.049 pts on 11-16. Equity is $20,052.70 vs $20,087.10. Today the account fell **\u22121.058% vs \u22121.015%** for the SPY-equivalent (SPY \u22121.01%, 739.95 \u2192 732.44). There was **one paper trade**, in the day-trade sleeve (DX): a NUE buy funded from idle SPY. `sleeves.py close` (16:41 ET, exit 0) reported \"no pending 'close' orders\". No stop, target, time or DX exit fired. There were no option trades, no `skips.csv` rows for 11-17, and `daytrade_exp.py status` shows 0 closed DX trades.\n\nMarket: a broad down day with a software rout. CRM \u22129.45%, HUBS \u22126.76%, and NOW/INTU/WDAY sharply lower (IGV about \u22123.2% at 15:34). Morningstar and Benzinga tied it to AI-disruption fears ahead of Anthropic's IPO pricing on 11-18, with no company-specific catalyst. QQQ \u22120.73%, IWM \u22121.43%, SMH \u22120.39% (it opened about +1% and lost \u22121.36% from the open), XLB \u22121.22%, XLF \u22121.91%, VIX 25.46 (+11.13%). NVDA closed \u22120.44% at 155.46 ahead of its after-close report. Yahoo post-market showed 158.09 (+1.69%) at 16:42 ET; I have not verified the results.\n\n## Paper trades today (fills.csv)\n| Time ET | Sleeve | Side | Ticker | Qty | Price | Amount | Tag |\n|---|---|---|---|---|---|---|---|\n| 10:27 | daytrade | SELL | SPY (day-SPY-idle) | 0.543190 | $736.3916 | $400.00 | funding |\n| 10:27 | daytrade | BUY | NUE | 1.550424 | $257.9939 | $400.00 | DX one_filter, waived ma50 |\n\nNUE trade details:\n- Sources: two firms (Morgan Stanley EW\u2192OW, PT 310, 11-17; UBS Neutral\u2192Buy, PT 307, 11-16). Found at 05:56 ET. Prior close 252.67 vs 50-day 255.02.\n- Code exits: stop 247.61 (\u22124.03%), target 273.58 (+6.04%), time stop at the 2026-11-24 close.\n- Close 252.08. That is \u22122.29% vs entry; positions.csv shows \u2212$9.36 unrealized, including modeled exit slippage. Still open, with no sell P&L yet.\n- Logged beta60 0.95 / corr60 0.41.\n\n## Mistakes and misses\n- **NUE entry ignored the reviewer's timing advice, and its stated invalidation had no exit mechanism.** Reviewer r1 supported the trade but said a dip to VWAP (about 257.5) was a better entry than chasing. I filled at 257.99, +2.11% on the day, after a +1.57% open (256.64). The 10:27 synthesis named \"loss of the 255.07 day low\" as invalidation. NUE broke that by 11:30 (low 254.65) and closed at 252.08 (\u22121.78% open\u2192close). The only exit is the code stop at 247.61, so the stated invalidation was narrative with nothing behind it. This is not a rule break, since DX uses fixed stops. It is a gap between what the trade record says and what the engine does.\n- **A Signals stop was breached intraday and not executed.** MSFT's Yahoo day low of 496.51 was below its 497.24 stop (\u22128% from 541.02). The hourly runs sample one quote per hour, and none showed a price at or below the stop, so no exit fired. MSFT closed at 506.24. Under the rules as written (\"\u22128% stop \u2026 always applies\", checked at hourly runs and the close), this is an implementation limit that let a breached stop stand. Not exiting helped today's mark. That was luck, not a decision.\n- **Mid-session detection miss: BILL +12.58%** (57.63 \u2192 64.88). Around 11:40 ET the FT reported that TPG is nearing a take-private; Investing.com, Seeking Alpha and Benzinga all relayed that one report, and TPG declined comment. None of the 12:30\u201315:30 hourly scans flagged it, although BILL was in signal_log on 11-16. It was not tradeable under the rules: it was a single-source M&A rumor, and it was already more than 5% above the open by 12:30, so as a DX one_filter it would also fail `intraday_ext_5pct` (two filters \u2192 rejected). This was a search miss, and I make no profit claim.\n- **15:30 hourly started at 15:34**, after the 15:30 DX entry window had closed. Whether a setup existed then is unknown.\n\n## Overeager\nNUE was within the approved DX rules: two independent firms, only the 50-day filter waived, and $400. It is not a thin-evidence trade. The overeager part is the **entry**. I bought strength (+2.1%, above VWAP) in a falling tape (SPY \u22120.47% at the time) on a below-50-day name the day of a binary NVDA event, against one reviewer's REJECT and the other's pullback preference. One trade can't say whether the 50-day waiver helps; that is what the experiment is for.\n\n## Too cautious\nI can't show any case. UNFI (one firm, +9.26% at 10:27, about 52.87) closed at 51.99, \u22121.66% from the 10:27 price, so the rejection avoided a small loss. CSCO was flat from its 10:27 price (about 95.03 \u2192 95.11). MSFT's \u22123.74% intraday drop had no company catalyst. A CRM bounce was blocked by rule because CRM is held in earnings and is more than 10% down. The software sympathy puts had no qualifying contracts (`daytrade_exp.py chain` at 14:3x returned none for CRM up / ADBE down).\n\n## Rule-following\n- These were all applied as written: the \u22652-independent-source gate (UNFI, VIK, PRAX and the BILL relays all single-source), the DX one_filter count, the found_at rule (NUE found 05:56, priced 10:27), the cross-sleeve/held-name block on CRM, and the option liquidity filters.\n- Broken in effect: the Signals \u22128% stop on MSFT, because of hourly sampling (above).\n- The 8:45 ET sweep and the 9 AM report-day check both ran. `gap_rechecks.csv` was empty, with nothing to re-check.\n\n## Sleeves vs SPY (nav.csv TWR since start; day)\n| Sleeve | Since start | SPY-eq | vs SPY | Day | SPY day |\n|---|---|---|---|---|---|\n| **Account** | \u22126.169% | \u22124.101% | \u22122.069 pts | \u22121.058% | \u22121.015% |\n| Core | \u22124.055% | \u22124.055% | 0.000 | \u22121.015% | \u22121.015% |\n| Momentum | \u221221.662% | \u22124.055% | \u221217.607 pts | \u22120.321% | \u22121.015% |\n| Dividend (idle SPY) | \u22124.055% | \u22124.055% | 0.000 | \u22121.015% | \u22121.015% |\n| Earnings | \u22126.413% | \u22124.055% | \u22122.358 pts | \u22121.766% | \u22121.015% |\n| Signals | \u22125.112% | \u22124.102% | \u22121.010 pts | \u22121.030% | \u22121.015% |\n| Day-trade (DX) | \u22123.721% | \u22123.650% | \u22120.070 pts | \u22121.087% | \u22121.015% |\n\n- **Momentum** beat SPY on the day only because SMH fell just \u22120.39%. That is sector beta, not skill. It is still \u221217.6 pts since the start.\n- **Earnings** lagged because of the software rout. CRM is \u221214.2% vs entry and WDAY \u221212.5% (both engine-managed time exits).\n- **Signals** matched SPY within noise, since about 93% of it is idle SPY.\n- **Day-trade:** the whole \u22120.070 pts vs SPY is the one NUE lot. $9,237.11 of $9,627.94 is still idle SPY, and that idle SPY is not a day-trade result.\n\n## Day-trade experiment (DX), judged on tagged trades only\n| Setup / tag | Closed | Open | Result |\n|---|---|---|---|\n| one_filter / ma50 | 0 | 1 (NUE) | \u22122.29% marked |\n| one_filter / two_source, gap_up_3pct, intraday_ext_5pct | 0 | 0 | \u2014 |\n| sympathy (stock / call / put) | 0 | 0 | no leader catalyst \u22653% with a read-through |\n| bounce | 0 | 0 | \u2014 |\n\nNo tag is near 20 closed trades. The review date is 2026-12-18. There is no comparison with Signals or SPY yet: one open trade is not a result. NVDA's reaction after its report is the first real sympathy/bounce test. Options can only enter 09:45\u201315:30 ET on delayed quotes, so a pre-open move can't be booked.\n\n## Execution and data issues\n- The 10:3x ET feed push approval card expired unanswered, so latest.json was not pushed then. Later hours did not retry.\n- The beta.py stale-cache caveat continues, so treat logged beta60/corr60 on new rows with caution.\n- At 6 AM the new-source scripts were first launched with system python3 and no arguments. They were rerun with .venv and worked.\n- The 16:41 close spread snapshot was 0/94 usable (POST state, as known). The in-session snapshots were usable: 10:28 57/94, median half-spread 0.029%; 14:33 54/94, 0.0195%; model 0.02%.\n- The shadow close run needed no retry, and no script errors were logged.\n\n## Shadow tests vs pass bars (none passing; no early claims)\n- **A gap-and-go:** 12 trades, +0.126%/trade, t 0.19. Bar: 30+ trades, >+0.20%/trade, more than half of weeks positive, t>1.5. Not judged. No trade today.\n- **B RSI2:** 18 closed, \u22120.765%/trade, win 55.6%, t \u22120.62. 4 open (ABT, PSA, D, ZS). Bar: >+0.25%/trade and beat SPY. Not meeting it so far.\n- **Z z-score (backtest REJECT):** 8 closed, \u22123.746%/trade, win 25%. 5 open. SHOP reached its 10th close and sells at the next open. 2.9 of 8 weeks.\n- **squeeze_bb30:** 0 trades.\n- **F50:** 7 closed, \u22120.370%/trade; 5 open, avg excess +4.44%. Bar is ~30 closed.\n- **F50x** (evidence only): 22 closed, \u22123.517%/trade; 22 open. FPS and TEAM were added today at the open, both found pre-open (\u22121.60% / \u22125.16% net).\n- **Intraday X_/IL (evidence only):**\n  - Today: X_vwap_reclaim 38 closed, avg \u22120.536%; X_first_pullback 6, \u22120.807%; X_orb15 3, \u22121.880%.\n  - Cumulative X_vwap_reclaim: 975 trades, \u22120.237%/trade, t \u22129.23.\n  - The lab's forward run today: 213 trades, avg \u22120.979%.\n  - IL orb5/15/30, vwap_reclaim and gap_down_reclaim fail their bars. IL_first_pullback (48/200) and IL_gap_and_go (3/200) are not judged.\n- **PM shadow:** no adds or closes.\n- **C SPY calls:** 16 marks. The model check is OK so far (median |BS\u2212mid| 8.2% vs the 10% bar). The spread check is failing so far (6.0% vs the 2% bar). Judged at 8 weeks. **VT core:** \u22124.986%, \u22120.008 pts vs the real core. Execution check only.\n\n## What went well \u2014 skill or luck\n- Nothing today is evidence of skill. Matching SPY comes from idle SPY.\n- Momentum's day comes from SMH's small move.\n- MSFT staying open past a breached stop is luck.\n- The one process call that held up was the 10:27 UNFI rejection (single source, extended, stop at the day low). It avoided a \u22121.66% fade from the decision price. That is one data point.\n\n## Lessons\n1. **An entry plan should be executable, or it shouldn't be in the record.** A reviewer's \"wait for a pullback\" and a synthesis \"invalidation\" level were both ignored by the mechanics. *Suggestion needing the owner's approval:* for DX stock entries, either (a) use a limit at the reviewer's pullback level, valid until the next hourly run and otherwise cancelled, and/or (b) turn a stated invalidation level into a review alert at the next hourly run (not an automatic exit). Otherwise stop writing invalidation levels that nothing acts on.\n2. **Hourly sampling can miss stop breaches.** *Suggestion needing the owner's approval:* at each hourly run and the close, check the session low from 5-minute bars against every stop, and fill a breached stop at the stop price (or at the bar's open if it gapped through), instead of looking only at the latest quote. This tightens enforcement of an existing rule. It does not change the rule, but it changes outcomes, so it needs the owner.\n3. (Process, smaller) **Mid-session news on recently logged names is unswept.** The hourly runs could check the day's top % movers among the last 5 days of signal_log and held names (BILL would have surfaced by 12:30). This is awareness only. *Needs the owner's approval* as a routine change.\n\n## Re-check of earlier lessons\n- **11-16 \"detection timing\" lesson:** the approved 8:45 ET sweep ran today (08:44\u201308:50). Today's largest miss (BILL, about 11:40 ET) was mid-session, which that sweep cannot reach, so the lesson holds and extends to intraday.\n- **TTWO \"loss avoided\" (11-16):** TTWO fell another \u22124.47% today (213.47 \u2192 203.93). It is still one single-source case, not proof the gate adds value.\n- **HUBS F50x \"+4.26% is an unattainable upper bound\" (11-16):** HUBS fell \u22126.76% today, and F50x HUBS is now \u22122.80%. The caution was right to flag. The figure no longer flatters the shadow.\n- **\"Signals can buy extended names\" (LLY):** \u22122.24% since entry. Still no verdict.\n\n_Drafting note: Claude Code (Sonnet, claude-sonnet-5-5, 1 call, reported $0.066, is_error=false, `--tools \"\"`) drafted from the facts packet tmp/facts_2026-11-17.md. I rewrote it to this structure and re-checked every figure against nav.csv, fills.csv, positions.csv, shadow_summary.csv, shadow_trades.csv and Yahoo daily bars. Corrections to the draft: it said UNFI \"ended +1.19% open\u2192close from the 10:27 price\". +1.19% was open\u2192close; from the 10:27 price (about 52.87) it was \u22121.66%. It called the NUE buy \"thin evidence\" (two independent firms are not thin; the issue was the entry). It listed the ma50 waiver as a rule \"departure\" (it is the approved DX tag). It left the dividend day blank (\u22121.015%, nav.csv)._\n"
+  "markdown": "# Reflection \u2014 2026-11-17 (paper only, no real money; v0.5.11, first close with the day-trade experiment)\n\n## Headline: account vs SPY\nThe account still trails SPY. Since the start (time-weighted, nav.csv; capital in $20,852.34) it is **\u22126.169% vs SPY-equivalent \u22124.101% (\u22122.069 pts)**, after \u22122.049 pts on 11-16. Equity is $20,052.70 vs $20,087.10. Today the account fell **\u22121.058% vs \u22121.015%** for the SPY-equivalent (SPY \u22121.01%, 739.95 \u2192 732.44). There was **one paper trade**, in the day-trade sleeve (DX): a NUE buy funded from idle SPY. `sleeves.py close` (16:41 ET, exit 0) reported \"no pending 'close' orders\". No stop, target, time or DX exit fired. There were no option trades, no `skips.csv` rows for 11-17, and `daytrade_exp.py status` shows 0 closed DX trades.\n\nMarket: a broad down day with a software rout. CRM \u22129.45%, HUBS \u22126.76%, and NOW/INTU/WDAY sharply lower (IGV about \u22123.2% at 15:34). Morningstar and Benzinga tied it to AI-disruption fears ahead of Anthropic's IPO pricing on 11-18, with no company-specific catalyst. QQQ \u22120.73%, IWM \u22121.43%, SMH \u22120.39% (it opened about +1% and lost \u22121.36% from the open), XLB \u22121.22%, XLF \u22121.91%, VIX 25.46 (+11.13%). NVDA closed \u22120.44% at 155.46 ahead of its after-close report. Yahoo post-market showed 158.09 (+1.69%) at 16:42 ET; I have not verified the results.\n\n## Paper trades today (fills.csv)\n| Time ET | Sleeve | Side | Ticker | Qty | Price | Amount | Tag |\n|---|---|---|---|---|---|---|---|\n| 10:27 | daytrade | SELL | SPY (day-SPY-idle) | 0.543190 | $736.3916 | $400.00 | funding |\n| 10:27 | daytrade | BUY | NUE | 1.550424 | $257.9939 | $400.00 | DX one_filter, waived ma50 |\n\nNUE trade details:\n- Sources: two firms (Morgan Stanley EW\u2192OW, PT 310, 11-17; UBS Neutral\u2192Buy, PT 307, 11-16). Found at 05:56 ET. Prior close 252.67 vs 50-day 255.02.\n- Code exits: stop 247.61 (\u22124.03%), target 273.58 (+6.04%), time stop at the 2026-11-24 close.\n- Close 252.08. That is \u22122.29% vs entry; positions.csv shows \u2212$9.36 unrealized, including modeled exit slippage. Still open, with no sell P&L yet.\n- Logged beta60 0.95 / corr60 0.41.\n\n## Mistakes and misses\n- **NUE entry ignored the reviewer's timing advice, and its stated invalidation had no exit mechanism.** Reviewer r1 supported the trade but said a dip to VWAP (about 257.5) was a better entry than chasing. I filled at 257.99, +2.11% on the day, after a +1.57% open (256.64). The 10:27 synthesis named \"loss of the 255.07 day low\" as invalidation. NUE broke that by 11:30 (low 254.65) and closed at 252.08 (\u22121.78% open\u2192close). The only exit is the code stop at 247.61, so the stated invalidation was narrative with nothing behind it. This is not a rule break, since DX uses fixed stops. It is a gap between what the trade record says and what the engine does.\n- **A Signals stop was breached intraday and not executed.** MSFT's Yahoo day low of 496.51 was below its 497.24 stop (\u22128% from 541.02). The hourly runs sample one quote per hour, and none showed a price at or below the stop, so no exit fired. MSFT closed at 506.24. Under the rules as written (\"\u22128% stop \u2026 always applies\", checked at hourly runs and the close), this is an implementation limit that let a breached stop stand. Not exiting helped today's mark. That was luck, not a decision.\n- **Mid-session detection miss: BILL +12.58%** (57.63 \u2192 64.88). Around 11:40 ET the FT reported that TPG is nearing a take-private; Investing.com, Seeking Alpha and Benzinga all relayed that one report, and TPG declined comment. None of the 12:30\u201315:30 hourly scans flagged it, although BILL was in signal_log on 11-16. It was not tradeable under the rules: it was a single-source M&A rumor, and it was already more than 5% above the open by 12:30, so as a DX one_filter it would also fail `intraday_ext_5pct` (two filters \u2192 rejected). This was a search miss, and I make no profit claim.\n- **15:30 hourly started at 15:34**, after the 15:30 DX entry window had closed. Whether a setup existed then is unknown.\n\n## Overeager\nNUE was within the approved DX rules: two independent firms, only the 50-day filter waived, and $400. It is not a thin-evidence trade. The overeager part is the **entry**. I bought strength (+2.1%, above VWAP) in a falling tape (SPY \u22120.47% at the time) on a below-50-day name the day of a binary NVDA event, against one reviewer's REJECT and the other's pullback preference. One trade can't say whether the 50-day waiver helps; that is what the experiment is for.\n\n## Too cautious\nI can't show any case. UNFI (one firm, +9.26% at 10:27, about 52.87) closed at 51.99, \u22121.66% from the 10:27 price, so the rejection avoided a small loss. CSCO was flat from its 10:27 price (about 95.03 \u2192 95.11). MSFT's \u22123.74% intraday drop had no company catalyst. A CRM bounce was blocked by rule because CRM is held in earnings and is more than 10% down. The software sympathy puts had no qualifying contracts (`daytrade_exp.py chain` at 14:3x returned none for CRM up / ADBE down).\n\n## Rule-following\n- These were all applied as written: the \u22652-independent-source gate (UNFI, VIK, PRAX and the BILL relays all single-source), the DX one_filter count, the found_at rule (NUE found 05:56, priced 10:27), the cross-sleeve/held-name block on CRM, and the option liquidity filters.\n- Broken in effect: the Signals \u22128% stop on MSFT, because of hourly sampling (above).\n- The 8:45 ET sweep and the 9 AM report-day check both ran. `gap_rechecks.csv` was empty, with nothing to re-check.\n\n## Sleeves vs SPY (nav.csv TWR since start; day)\n| Sleeve | Since start | SPY-eq | vs SPY | Day | SPY day |\n|---|---|---|---|---|---|\n| **Account** | \u22126.169% | \u22124.101% | \u22122.069 pts | \u22121.058% | \u22121.015% |\n| Core | \u22124.055% | \u22124.055% | 0.000 | \u22121.015% | \u22121.015% |\n| Momentum | \u221221.662% | \u22124.055% | \u221217.607 pts | \u22120.321% | \u22121.015% |\n| Dividend (idle SPY) | \u22124.055% | \u22124.055% | 0.000 | \u22121.015% | \u22121.015% |\n| Earnings | \u22126.413% | \u22124.055% | \u22122.358 pts | \u22121.766% | \u22121.015% |\n| Signals | \u22125.112% | \u22124.102% | \u22121.010 pts | \u22121.030% | \u22121.015% |\n| Day-trade (DX) | \u22123.721% | \u22123.650% | \u22120.070 pts | \u22121.087% | \u22121.015% |\n\n- **Momentum** beat SPY on the day only because SMH fell just \u22120.39%. That is sector beta, not skill. It is still \u221217.6 pts since the start.\n- **Earnings** lagged because of the software rout. CRM is \u221214.2% vs entry and WDAY \u221212.5% (both engine-managed time exits).\n- **Signals** matched SPY within noise, since about 93% of it is idle SPY.\n- **Day-trade:** the whole \u22120.070 pts vs SPY is the one NUE lot. $9,237.11 of $9,627.94 is still idle SPY, and that idle SPY is not a day-trade result.\n\n## Day-trade experiment (DX), judged on tagged trades only\n| Setup / tag | Closed | Open | Result |\n|---|---|---|---|\n| one_filter / ma50 | 0 | 1 (NUE) | \u22122.29% marked |\n| one_filter / two_source, gap_up_3pct, intraday_ext_5pct | 0 | 0 | \u2014 |\n| sympathy (stock / call / put) | 0 | 0 | no leader catalyst \u22653% with a read-through |\n| bounce | 0 | 0 | \u2014 |\n\nNo tag is near 20 closed trades. The review date is 2026-12-18. There is no comparison with Signals or SPY yet: one open trade is not a result. NVDA's reaction after its report is the first real sympathy/bounce test. Options can only enter 09:45\u201315:30 ET on delayed quotes, so a pre-open move can't be booked.\n\n## Execution and data issues\n- The 10:3x ET feed push approval card expired unanswered, so latest.json was not pushed then. Later hours did not retry.\n- The beta.py stale-cache caveat continues, so treat logged beta60/corr60 on new rows with caution.\n- At 6 AM the new-source scripts were first launched with system python3 and no arguments. They were rerun with .venv and worked.\n- The 16:41 close spread snapshot was 0/94 usable (POST state, as known). The in-session snapshots were usable: 10:28 57/94, median half-spread 0.029%; 14:33 54/94, 0.0195%; model 0.02%.\n- The shadow close run needed no retry, and no script errors were logged.\n\n## Shadow tests vs pass bars (none passing; no early claims)\n- **A gap-and-go:** 12 trades, +0.126%/trade, t 0.19. Bar: 30+ trades, >+0.20%/trade, more than half of weeks positive, t>1.5. Not judged. No trade today.\n- **B RSI2:** 18 closed, \u22120.765%/trade, win 55.6%, t \u22120.62. 4 open (ABT, PSA, D, ZS). Bar: >+0.25%/trade and beat SPY. Not meeting it so far.\n- **Z z-score (backtest REJECT):** 8 closed, \u22123.746%/trade, win 25%. 5 open. SHOP reached its 10th close and sells at the next open. 2.9 of 8 weeks.\n- **squeeze_bb30:** 0 trades.\n- **F50:** 7 closed, \u22120.370%/trade; 5 open, avg excess +4.44%. Bar is ~30 closed.\n- **F50x** (evidence only): 22 closed, \u22123.517%/trade; 22 open. FPS and TEAM were added today at the open, both found pre-open (\u22121.60% / \u22125.16% net).\n- **Intraday X_/IL (evidence only):**\n  - Today: X_vwap_reclaim 38 closed, avg \u22120.536%; X_first_pullback 6, \u22120.807%; X_orb15 3, \u22121.880%.\n  - Cumulative X_vwap_reclaim: 975 trades, \u22120.237%/trade, t \u22129.23.\n  - The lab's forward run today: 213 trades, avg \u22120.979%.\n  - IL orb5/15/30, vwap_reclaim and gap_down_reclaim fail their bars. IL_first_pullback (48/200) and IL_gap_and_go (3/200) are not judged.\n- **PM shadow:** no adds or closes.\n- **C SPY calls:** 16 marks. The model check is OK so far (median |BS\u2212mid| 8.2% vs the 10% bar). The spread check is failing so far (6.0% vs the 2% bar). Judged at 8 weeks. **VT core:** \u22124.986%, \u22120.008 pts vs the real core. Execution check only.\n\n## What went well \u2014 skill or luck\n- Nothing today is evidence of skill. Matching SPY comes from idle SPY.\n- Momentum's day comes from SMH's small move.\n- MSFT staying open past a breached stop is luck.\n- The one process call that held up was the 10:27 UNFI rejection (single source, extended, stop at the day low). It avoided a \u22121.66% fade from the decision price. That is one data point.\n\n## Lessons\n1. **An entry plan should be executable, or it shouldn't be in the record.** A reviewer's \"wait for a pullback\" and a synthesis \"invalidation\" level were both ignored by the mechanics. *Suggestion needing the owner's approval:* for DX stock entries, either (a) use a limit at the reviewer's pullback level, valid until the next hourly run and otherwise cancelled, and/or (b) turn a stated invalidation level into a review alert at the next hourly run (not an automatic exit). Otherwise stop writing invalidation levels that nothing acts on.\n2. **Hourly sampling can miss stop breaches.** *Suggestion needing the owner's approval:* at each hourly run and the close, check the session low from 5-minute bars against every stop, and fill a breached stop at the stop price (or at the bar's open if it gapped through), instead of looking only at the latest quote. This tightens enforcement of an existing rule. It does not change the rule, but it changes outcomes, so it needs the owner.\n3. (Process, smaller) **Mid-session news on recently logged names is unswept.** The hourly runs could check the day's top % movers among the last 5 days of signal_log and held names (BILL would have surfaced by 12:30). This is awareness only. *Needs the owner's approval* as a routine change.\n\n## Re-check of earlier lessons\n- **11-16 \"detection timing\" lesson:** the approved 8:45 ET sweep ran today (08:44\u201308:50). Today's largest miss (BILL, about 11:40 ET) was mid-session, which that sweep cannot reach, so the lesson holds and extends to intraday.\n- **TTWO \"loss avoided\" (11-16):** TTWO fell another \u22124.47% today (213.47 \u2192 203.93). It is still one single-source case, not proof the gate adds value.\n- **HUBS F50x \"+4.26% is an unattainable upper bound\" (11-16):** HUBS fell \u22126.76% today, and F50x HUBS is now \u22122.80%. The caution was right to flag. The figure no longer flatters the shadow.\n- **\"Signals can buy extended names\" (LLY):** \u22122.24% since entry. Still no verdict.\n\n_Drafting note: Claude Code (Sonnet, claude-sonnet-5-5, 1 call, reported $0.066, is_error=false, `--tools \"\"`) drafted from the facts packet tmp/facts_2026-11-17.md. I rewrote it to this structure and re-checked every figure against nav.csv, fills.csv, positions.csv, shadow_summary.csv, shadow_trades.csv and Yahoo daily bars. Corrections to the draft: it said UNFI \"ended +1.19% open\u2192close from the 10:27 price\". +1.19% was open\u2192close; from the 10:27 price (about 52.87) it was \u22121.66%. It called the NUE buy \"thin evidence\" (two independent firms are not thin; the issue was the entry). It listed the ma50 waiver as a rule \"departure\" (it is the approved DX tag). It left the dividend day blank (\u22121.015%, nav.csv)._\n\n## Post-reflection checks (16:46\u201316:48 ET)\n- Feed: `scripts/export_feed.py` wrote feed/latest.json (generated 16:46:43 ET; schema unchanged, so SCHEMA.md was not pushed). It was pushed to mattaslan817/vibe-trading-feed main as commit bc9d9e8, and raw content was verified.\n- `scripts/check_report.py --date 2026-11-17 --quiet`: **427 checks, 2 problems, exit 1.** Both are the same checker defect: \"parked sleeve daytrade holds non-SPY lots [day-NUE-2026-11-17]\" and \"\u2026 has non-SPY fills [\u2026 buy-90]\". `sleeves_state.json` has `parked.daytrade.parked = false` (unparked 2026-11-17 09:00 ET for DX). But check_report (lines 183\u2013188) treats every sleeve listed under `parked` as parked, without reading the flag. The v0.5.11 tests did not catch this because no DX fill existed on 11-16. All fill, cash, equity, NAV, contribution and feed checks passed, and the recomputed account matched (\u22126.169% vs \u22124.101%). **The ledgers were not edited, and the checker was not changed today.** Proposed fix: skip a sleeve when `PK[sl].get(\"parked\") is False`, plus a regression test. This is an implementation fix for the parent/the owner to approve.\n"
  }
 }
