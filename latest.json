@@ -1,10 +1,10 @@
 {
  "schema_version": "1.0",
- "generated_at": "2026-11-18T16:52:45-05:00",
+ "generated_at": "2026-11-19T05:59:09-05:00",
  "as_of_date": "2026-11-18",
  "disclaimer": "Paper trading only. Not investment advice. Backtests and paper results don't promise future returns.",
  "paper_only": true,
- "rules_version": "v0.5.12",
+ "rules_version": "v0.5.13",
  "account": {
   "start_date": "2026-10-26",
   "start_value": 1000.0,
@@ -4010,7 +4010,28 @@
   }
  ],
  "last_fill_date": "2026-11-18",
- "pending_orders": [],
+ "pending_orders": [
+  {
+   "trade_date": "2026-11-19",
+   "fill_at": "open",
+   "sleeve": "daytrade",
+   "ticker": "RGA",
+   "side": "buy",
+   "dollars": 400.0,
+   "shares": null,
+   "reason": "DX v0.5.11 one_filter (waived: two_source) | 6AM 11-19: UBS Neutral->Buy PT 236->325 (mortality improvement ~5pts 2027 EPS + Equitable deal ~2pts). Company Q3 11-05 (adj op EPS 8.49 vs 4.66 y/y) treated as context, not a fresh independent 2nd source (10 sessions old, UBS thesis rests on same claims experience) -> one_filter waived two_source. pc 265.55 > 50d 258.69; PM 269.00 +1.30% (04:58, 3 thin bars, no volume/spread). Claude 6 roles + synthesis: synth QUEUE-DX (s2/s3/s6 preferred Signals; s4/s5 DX). Engine gap check at open (cap 273.52). | sources: UBS (Investing.com 00:52 ET 11-19; MarketScreener 04:56 ET relay): https://www.investing.com/news/analyst-ratings/ubs-upgrades-reinsurance-group-of-america-stock-rating-on-mortality-trends-93CH-5037801"
+  },
+  {
+   "trade_date": "2026-11-19",
+   "fill_at": "open",
+   "sleeve": "daytrade",
+   "ticker": "LIN",
+   "side": "buy",
+   "dollars": 250.0,
+   "shares": null,
+   "reason": "DX v0.5.11 one_filter (waived: two_source) | 6AM 11-19 LOW CONVICTION (min ticket): Kepler Cheuvreux Hold->Buy PT 490->601; no second source found. pc 512.16 > 50d 492.96; PM 512.07 -0.02% (05:34, 8 bars, no volume/spread) = no visible reaction yet. Claude synthesis QUEUE-DX $250 (s1/s3/s6 weak support; s2 reject, s4 unknown, s5 log). Engine gap check at open (cap 527.52). | sources: Kepler Cheuvreux (MarketScreener roundup 04:56 ET 11-19): https://ca.marketscreener.com/news/analyst-recommendations-ford-motor-mcdonald-s-paypal-humana-intela--ce785ed2d98bff24"
+  }
+ ],
  "skips": [
   {
    "date": "2026-11-18",
@@ -4103,6 +4124,156 @@
  ],
  "signals": [
   {
+   "date": "2026-11-19",
+   "ticker": "UNH",
+   "signal_type": "regulatory",
+   "source": "CMS CRUSH proposed rule (HHS 11-16) + StockAnalysis/Investing.com reaction 11-18",
+   "sources": [
+    {
+     "url": "https://stockanalysis.com/news/unitedhealth-humana-fall-cms-medicare-advantage-audit-rule/"
+    }
+   ],
+   "description": "6AM 11-19 (event 11-16, sell-off 11-17/11-18): MA audit extrapolation to 2018 (~$9B/yr); UNH -10.2%, HUM -13.0%, ELV -7.6%, CVS -5.2% on 11-18. Oppenheimer expects court challenge. PM flat today -> no bounce setup (needs >=5% below pc today). Context/negative.",
+   "sentiment": "negative",
+   "prior_close": 349.91,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.44,
+   "corr60": 0.2,
+   "beta_asof": "2026-11-18",
+   "found_at": "2026-11-19 05:55:00-05:00"
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "P",
+   "signal_type": "earnings_beat",
+   "source": "Everpure (ex-Pure Storage) company Q3 beat + FY guide raise (TheFly via TipRanks; Investing.com; SiliconANGLE) (1 event)",
+   "sources": [
+    {
+     "url": "https://www.tipranks.com/news/the-fly/everpure-up-4-at-105-19-after-q3-earnings-beat-and-guidance-raise-thefly-news"
+    }
+   ],
+   "description": "6AM 11-19: rev 1.46B +51% vs 1.33B; FY guide 5.20-5.21B. pc 100.74 < 50d 121.33; PM 106.00 +5.2% -> fails ma50+gap. Log only.",
+   "sentiment": "positive",
+   "prior_close": 100.74,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 3.37,
+   "corr60": 0.64,
+   "beta_asof": "2026-11-18",
+   "found_at": "2026-11-19 05:58:00-05:00"
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "PANW",
+   "signal_type": "earnings_beat",
+   "source": "Company PR (Q1 FY27, 11-18 AMC) + 5 PT raises 11-19 (Jefferies, JPM, Piper, Scotiabank, Barclays; Reuters roundup/TheFly)",
+   "sources": [
+    {
+     "url": "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-reports-fiscal-first-quarter-2027-financial-results"
+    },
+    {
+     "url": "https://longbridge.com/en/news/306081132.md"
+    }
+   ],
+   "description": "6AM 11-19: rev 3.44B vs 3.31B, EPS 1.05 vs 0.97, FY27 rev guide 14.52-14.57B (from 14.1-14.2B); $4.5B all-stock Applied Compute deal. pc 339.92 < 50d 366.70; PM 374.60 +10.2% -> fails ma50+gap. Leader for cyber sympathy watch (OKTA/S/FTNT) at 09:45+.",
+   "sentiment": "positive",
+   "prior_close": 339.92,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.56,
+   "corr60": 0.37,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-19 05:52:00-05:00"
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "F",
+   "signal_type": "analyst_upgrade",
+   "source": "DZ Bank Hold->Buy, PT cut 16->15 (MarketScreener 04:56 ET 11-19) (1 org)",
+   "sources": [
+    {
+     "url": "https://ca.marketscreener.com/news/analyst-recommendations-ford-motor-mcdonald-s-paypal-humana-intela--ce785ed2d98bff24"
+    }
+   ],
+   "description": "6AM 11-19: pc 11.28 < 50d 12.40; PM +1.15%. F50x.",
+   "sentiment": "positive",
+   "prior_close": 11.28,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.54,
+   "corr60": 0.29,
+   "beta_asof": "2026-11-18",
+   "found_at": "2026-11-19 05:53:00-05:00"
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "UNM",
+   "signal_type": "analyst_upgrade",
+   "source": "UBS Neutral->Buy PT 94->111 (Investing.com 00:46 ET 11-19); JPM ->OW 11-09 (stale); same UBS mortality theme as RGA (correlated)",
+   "sources": [
+    {
+     "url": "https://www.investing.com/news/analyst-ratings/ubs-upgrades-unum-group-stock-rating-on-mortality-improvement-outlook-93CH-5037794"
+    }
+   ],
+   "description": "6AM 11-19: pc 76.39 < 50d 89.00 (-14%) after negative Q3 selloff; PM +2.04%. F50x evidence; DX rejected (ma50 + stale/correlated 2nd source).",
+   "sentiment": "positive",
+   "prior_close": 76.39,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.07,
+   "corr60": 0.02,
+   "beta_asof": "2026-11-18",
+   "found_at": "2026-11-19 05:53:00-05:00"
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "LIN",
+   "signal_type": "analyst_upgrade",
+   "source": "Kepler Cheuvreux Hold->Buy PT 490->601 (MarketScreener roundup 04:56 ET 11-19) (1 org)",
+   "sources": [
+    {
+     "url": "https://ca.marketscreener.com/news/analyst-recommendations-ford-motor-mcdonald-s-paypal-humana-intela--ce785ed2d98bff24"
+    }
+   ],
+   "description": "6AM 11-19: single broker; pc 512.16 > 50d 492.96; PM 512.07 -0.02% (no reaction). DX one_filter (waived two_source) QUEUED at open $250, low conviction.",
+   "sentiment": "positive",
+   "prior_close": 512.16,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.15,
+   "corr60": 0.15,
+   "beta_asof": "2026-11-18",
+   "found_at": "2026-11-19 05:53:00-05:00"
+  },
+  {
+   "date": "2026-11-19",
+   "ticker": "RGA",
+   "signal_type": "analyst_upgrade",
+   "source": "UBS Neutral->Buy PT 236->325 (Investing.com 00:52 ET 11-19; MarketScreener 04:56 ET relay) (1 fresh org; company Q3 11-05 = context, 10 sessions old)",
+   "sources": [
+    {
+     "url": "https://www.investing.com/news/analyst-ratings/ubs-upgrades-reinsurance-group-of-america-stock-rating-on-mortality-trends-93CH-5037801"
+    }
+   ],
+   "description": "6AM 11-19: mortality improvement + Equitable deal accretion. pc 265.55 > 50d 258.69; PM 269.00 +1.30% (04:58, 3 bars, vol n/a). DX one_filter (waived two_source) QUEUED at open $400 per Claude synthesis (s2/s3/s6 wanted Signals).",
+   "sentiment": "positive",
+   "prior_close": 265.55,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.28,
+   "corr60": 0.24,
+   "beta_asof": "2026-11-18",
+   "found_at": "2026-11-19 05:53:00-05:00"
+  },
+  {
    "date": "2026-11-18",
    "ticker": "PANW",
    "signal_type": "earnings_upcoming",
@@ -4115,7 +4286,7 @@
    "description": "11:30 11-18: PANW 329.40 (+6.51% vs pc 309.29, +4.99% vs open) ahead of own earnings tonight; pc far below 50d 366.61; earnings within 1 trading day -> no entry. Leader event for tomorrow's cyber sympathy (CRWD/S/OKTA/ZS/FTNT/NET all +4.5-8.4% today).",
    "sentiment": "neutral",
    "prior_close": 309.29,
-   "ret_1d": null,
+   "ret_1d": 0.099,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.56,
@@ -4142,7 +4313,7 @@
    "description": "11:30 11-18: CRWD 233.10 (+6.2% vs pc 219.58, +4.16% vs open 223.80, VWAP 228.65, 11:25 bar, Yahoo 5m delayed); pc 10.5% below 50d 245.31; DX one_filter (ma50) candidate. Both notes pre-date 11-17 session (cyber still fell 11-17); move sector-wide incl MS-disfavored S +8.4% -> positioning into PANW AMC tonight. Claude 11:30 3 roles all REJECT (stale signal, binary PANW event, chase, adds to held CRWD earnings lot). Log only.",
    "sentiment": "positive",
    "prior_close": 219.58,
-   "ret_1d": null,
+   "ret_1d": 0.08,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.95,
@@ -4166,7 +4337,7 @@
    "description": "10:30 11-18 awareness: held in earnings sleeve (rule-driven, exit 11-30); pc 219.58 < 50d ~246; no action.",
    "sentiment": "positive",
    "prior_close": 219.58,
-   "ret_1d": null,
+   "ret_1d": 0.08,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.95,
@@ -4190,7 +4361,7 @@
    "description": "10:30 11-18: pc 220.45 < 50d 231.31; thin volume 0.44M vs 2.14M avg; own earnings 11-19 AMC; ~$229 price makes <=$250 call unlikely. Claude 10:30 synth LOG-ONLY.",
    "sentiment": "positive",
    "prior_close": 220.45,
-   "ret_1d": null,
+   "ret_1d": 0.033,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.87,
@@ -4214,7 +4385,7 @@
    "description": "10:30 11-18 MOVER +7.75%: pc 34.86 < 50d 43.15 AND +8.0% vs open -> fails 2 filters; log only.",
    "sentiment": "positive",
    "prior_close": 34.86,
-   "ret_1d": null,
+   "ret_1d": 0.031,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.83,
@@ -4238,7 +4409,7 @@
    "description": "10:30 11-18 MOVER +6.0%: pc 203.93 < 50d 207.64 (fails ma50); open +4.27%; +1.7% vs open, below VWAP 216.74; launch-day sell-the-news risk. Claude 10:30 synth LOG-ONLY.",
    "sentiment": "positive",
    "prior_close": 203.93,
-   "ret_1d": null,
+   "ret_1d": 0.062,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.31,
@@ -4262,7 +4433,7 @@
    "description": "10:30 11-18 MOVER +5.7%: Q3 adj EPS 1.11 vs 1.26-1.27 est and rev miss (low-water river disruption) = negative news; PT raises follow. pc 94.28 > 50d 84.55; open 94.05; last 99.66 = +5.96% vs open (fails intraday_ext_5pct). Claude 10:30 synth LOG-ONLY.",
    "sentiment": "mixed",
    "prior_close": 94.28,
-   "ret_1d": null,
+   "ret_1d": 0.065,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.19,
@@ -4283,7 +4454,7 @@
    "description": "8AM 11-18: adj EPS 3.10 vs 2.88-2.89 (incl 0.34 tariff refunds), rev $22.76B vs $22.4B, comp +1.8%; FY EPS ~12.25 reaffirmed vs 12.27-12.29 est, adj op margin trimmed to ~11.5% from 11.6%, GM 32.95% vs 34.19%; recent Stifel Sell + Zelman Underperform. PM 211.00 (-4.29%, 07:45). Read-through to HD (-1.39% PM). Negative for longs; not held.",
    "sentiment": "negative",
    "prior_close": 220.46,
-   "ret_1d": null,
+   "ret_1d": 0.011,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.42,
@@ -4310,7 +4481,7 @@
    "description": "8AM 11-18: comp +5.6% vs ~3.5-3.8% est (Reuters https://money.usnews.com/investing/news/articles/2026-11-18/after-another-strong-quarter-target-lifts-annual-sales-growth-target-to-6 ), rev $27.07B vs $26.56B (CNBC https://www.cnbc.com/2026/11/18/target-tgt-q3-2026-earnings.html ), EPS 2.65 incl ~0.50 tariff refunds (vs 2.07, comparability unclear), FY sales guide ~6% (from ~5%), EPS 10.65-11.40 (from 9.90-10.90). Price reaction NEGATIVE: PM 153.64 (-3.69%, 07:45). pc 159.53 > 50d 155.27; gap rule not hit (gap down). Company results only = 1 org; no analyst action yet; tape contradicts -> log only, no queue.",
    "sentiment": "positive",
    "prior_close": 159.53,
-   "ret_1d": null,
+   "ret_1d": 0.04,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.56,
@@ -4334,7 +4505,7 @@
    "description": "8AM 11-18: Q3 FY27 comp +4% (above plan), rev $16.0B +6% vs ~$15.85B est, adj EPS 1.34 (= Benzinga consensus 1.34; GAAP 1.39 incl tariff refunds), FY27 EPS guide raised (Benzinga https://www.benzinga.com/news/26/11/63380463/tjx-companies-raises-fy2027-gaap-eps-guidance-5-31-5-36-5-33-5-36-vs-5-33-est ). PM 139.35 (+7.32%, jumped at the 07:30 bar). pc 129.85 < 50d 135.67 AND gap >3% -> fails 2 filters: no Signals, no DX one_filter. Log only.",
    "sentiment": "positive",
    "prior_close": 129.85,
-   "ret_1d": null,
+   "ret_1d": 0.081,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.72,
@@ -4355,7 +4526,7 @@
    "description": "6AM 11-18: $550M at-the-market common stock program; PM 40.84 (-9.7%); pc 45.22 < 50d 85.19. Dilution/negative for longs; DX bounce WATCH-0945 only (weak; cancel on new lows).",
    "sentiment": "negative",
    "prior_close": 45.22,
-   "ret_1d": null,
+   "ret_1d": -0.098,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 4.62,
@@ -4376,7 +4547,7 @@
    "description": "6AM 11-18: 2 insiders ~$7.1M (200k sh 11-13 @5.28, 200k 11-16 @4.96). pc 4.53 below 50d 5.75; PM +4.9%. F50x evidence only (sub-$5).",
    "sentiment": "positive",
    "prior_close": 4.53,
-   "ret_1d": null,
+   "ret_1d": 0.066,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.19,
@@ -4397,7 +4568,7 @@
    "description": "6AM 11-18: CEO Paul Gu open-market buy 50,000 sh @19 on 11-16 (script total ~$1.9M). pc 18.13 below 50d 23.34. F50x evidence only.",
    "sentiment": "positive",
    "prior_close": 18.13,
-   "ret_1d": null,
+   "ret_1d": -0.005,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.98,
@@ -4418,7 +4589,7 @@
    "description": "6AM 11-18: co-founder Kalish open-market buy 55,000 sh @18.22 on 11-17 (script total ~$2.0M). pc 18.00 below 50d 20.76. F50x evidence only.",
    "sentiment": "positive",
    "prior_close": 18.0,
-   "ret_1d": null,
+   "ret_1d": -0.004,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.28,
@@ -4439,7 +4610,7 @@
    "description": "6AM 11-18: CEO Cannon-Brookes second open-market buy ~$4.0M (11-16 trades ~$145-150, code P); follow-on to 11-17 row. pc 140.98 below 50d 190.66; TEAM -6.0% 11-17. Evidence only (existing F50x, 30-day guard).",
    "sentiment": "positive",
    "prior_close": 140.98,
-   "ret_1d": null,
+   "ret_1d": -0.042,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.1,
@@ -4463,7 +4634,7 @@
    "description": "6AM 11-18: rev 115.8B vs ~109.1B, EPS 2.68 vs 2.48, Q4 guide 130B vs ~125B, FY28 growth 75%, +$150B buyback; board won't reinstate Huang; Megaspeed/Alibaba export overhang. pc 155.46 < 50d 211.76 (-27%); PM 161.12 (+3.64%, 05:54). Leader catalyst for DX sympathy watch (GOOGL/META/CSCO at 09:45+). Fails ma50 AND gap>3% -> no Signals/DX one_filter.",
    "sentiment": "positive",
    "prior_close": 155.46,
-   "ret_1d": null,
+   "ret_1d": -0.029,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.6,
@@ -4484,7 +4655,7 @@
    "description": "6AM 11-18: single firm; pc 82.02 below 50d 85.93; PM +2.67% (3 bars). F50x evidence only.",
    "sentiment": "positive",
    "prior_close": 82.02,
-   "ret_1d": null,
+   "ret_1d": 0.007,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.13,
@@ -4505,7 +4676,7 @@
    "description": "6AM 11-18: single firm with recent PT cuts from others; pc 91.84 below 50d 96.19; PM +0.45%. F50x evidence only.",
    "sentiment": "positive",
    "prior_close": 91.84,
-   "ret_1d": null,
+   "ret_1d": 0.008,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.38,
@@ -4526,7 +4697,7 @@
    "description": "6AM 11-18: single firm, upgrade only to neutral on hedge protection; pc 35.61 > 50d 34.92; PM flat. DX one_filter(two_source) REJECTED by Claude synth: neutral rating is not a positive credible signal. Log only.",
    "sentiment": "positive",
    "prior_close": 35.61,
-   "ret_1d": null,
+   "ret_1d": 0.029,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.18,
@@ -4550,7 +4721,7 @@
    "description": "6AM 11-18: UBS upgrade (PT cut 50->37) + Q3 rev +65% and FY26 guide raised. pc 27.26 > 50d 25.12. PM 28.20 (+3.45%, 3 bars to 05:01, Yahoo delayed, vol n/a). Signals queue attempted 06:04 -> SKIPPED gap>3% on pre-8:30 quote; auto gap re-check 08:30-09:15 pending (2026-11-18-signals-buy-MWH). Claude synth QUEUE-SIGNALS; DX gap_up_3pct fallback only if re-check stays >3%.",
    "sentiment": "positive",
    "prior_close": 27.26,
-   "ret_1d": null,
+   "ret_1d": -0.002,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 2.04,
@@ -5070,162 +5241,6 @@
    "corr60": 0.21,
    "beta_asof": "2026-11-13",
    "found_at": null
-  },
-  {
-   "date": "2026-11-16",
-   "ticker": "RIOT",
-   "signal_type": "analyst_pt_raise",
-   "source": "Piper Sandler via Reuters US research roundup (2nd org after Jefferies 11-13)",
-   "sources": [
-    {
-     "url": "https://longbridge.com/en/news/305628297.md"
-    }
-   ],
-   "description": "6AM 11-16: Piper Sandler PT 19->25 (same roundup cut MARA/HUT/GLXY PTs). With Jefferies Buy PT 13->28 (11-13) = 2 orgs, but pc 17.52 < 50d 18.05; PM 16.45 (-6.11%, 05:38) with BTC weak / MSTR -7.4% on MSCI removal. Existing F50x shadow from 11-13 open kept (no duplicate entry).",
-   "sentiment": "positive",
-   "prior_close": 17.52,
-   "ret_1d": -0.026,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 3.08,
-   "corr60": 0.48,
-   "beta_asof": "2026-11-12",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-16",
-   "ticker": "SPXC",
-   "signal_type": "analyst_upgrade",
-   "source": "TD Cowen via Investing.com (Reuters) (1 org)",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/analyst-ratings/td-cowen-upgrades-spx-technologies-stock-rating-on-data-center-demand-93CH-5028485"
-    }
-   ],
-   "description": "6AM 11-16: TD Cowen Hold->Buy, PT cut 225->200 (data-center cooling). pc 154.83 < 50d 169.13; PM 154.00 (-0.54%, 2 stale bars 04:03). Single org -> F50x shadow (added).",
-   "sentiment": "positive",
-   "prior_close": 154.83,
-   "ret_1d": -0.057,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.7,
-   "corr60": 0.63,
-   "beta_asof": "2026-11-13",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-16",
-   "ticker": "TTWO",
-   "signal_type": "product_launch_presales",
-   "source": "CEO statement (company, last week) + Sensor Tower third-party estimate (relayed by Polygon/gamerheadlines/totalgta) + JPM top pick (note undated) via Benzinga/Gelonghui",
-   "sources": [
-    {
-     "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63280875/why-take-two-interactive-software-shares-are-trading-higher-here-are-20-stocks-moving-premarket"
-    },
-    {
-     "url": "https://www.gelonghui.com/live/2763306"
-    },
-    {
-     "url": "https://gamerheadlines.com/gta-6-preorders-12-million-sensor-tower-estimate/"
-    }
-   ],
-   "description": "6AM 11-16: GTA VI launches Thu 11-19; Sensor Tower est 12.13M digital preorders (~$1.18B) through 11-13; CEO 'far in excess' (no number, guidance held to post-launch). PM 235.18 (+3.23%, 05:50, Yahoo delayed, no bid/ask, PM vol unreported; hi 238.83). pc 227.82 > 50d 207.85; +9.8% since 11-09. Claude synth WATCH-SHADOW: CEO claim + estimate of same presales = one surprise; scheduled launch is a known event; JPM undated. Not queued. Short-hold idea only if 8AM finds a fresh dated 2nd org AND 8:30-9:15 gap <=3% (<=234.65). Sell-the-news risk into 11-19.",
-   "sentiment": "positive",
-   "prior_close": 227.82,
-   "ret_1d": -0.063,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": -0.02,
-   "corr60": -0.01,
-   "beta_asof": "2026-11-09",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-13",
-   "ticker": "STE",
-   "signal_type": "analyst_upgrade",
-   "source": "Jefferies (D. Windley) via Investing.com/TheFly/StreetInsider/Quantisnow/CNBC relays (1 org)",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/analyst-ratings/jefferies-upgrades-steris-stock-rating-on-valuation-easing-headwinds-93CH-5024412"
-    },
-    {
-     "url": "https://www.cnbc.com/2026/11/13/stocks-moving-the-most-today-live-updates.html"
-    }
-   ],
-   "description": "12:30 hourly 11-13: Jefferies Hold->Buy, PT 232->305 (valuation/headwinds-peaking thesis, not a new company catalyst); all coverage relays one note (TheFly text misattributes to Piper). 12:45 ET Yahoo: open 260.00 gap +2.59%, last 263.21 (+1.23% vs open, above VWAP 262.69), above 50d 222.51. Fails >=2 independent orgs/evidence types -> no trade, no debate. Also CNBC 12:20 ET https://www.cnbc.com/2026/11/13/stocks-moving-the-most-today-live-updates.html",
-   "sentiment": "positive",
-   "prior_close": 253.44,
-   "ret_1d": -0.011,
-   "ret_5d": -0.003,
-   "ret_20d": 0.13,
-   "beta60": 0.07,
-   "corr60": 0.04,
-   "beta_asof": "2026-11-12",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-13",
-   "ticker": "HAWK",
-   "signal_type": "earnings_beat",
-   "source": "Company Q3 release relayed by StockTitan (1 org)",
-   "sources": [
-    {
-     "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-13-2026"
-    }
-   ],
-   "description": "10:30 hourly 11-13: Q3 rev $59.3M +84%, FY guide raised to $225-227M. open 16.65 (gap +13.5%), 10:40 last 17.65 (+6.01% vs open -> blocked by >5% rule), VWAP 16.984, relvol 6.56. pc 14.67 vs 50d 14.62. Log only.",
-   "sentiment": "positive",
-   "prior_close": 14.67,
-   "ret_1d": 0.238,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.99,
-   "corr60": 0.23,
-   "beta_asof": "2026-11-12",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-13",
-   "ticker": "LFTO",
-   "signal_type": "earnings_beat",
-   "source": "Company Q3 release relayed by StockTitan (1 org)",
-   "sources": [
-    {
-     "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-13-2026"
-    }
-   ],
-   "description": "10:30 hourly 11-13: Q3 rev $238M +32%, NI $87M, above top of guidance. open 23.74 (gap +26.88%), 10:40 last 22.85 (-3.75% vs open, below VWAP 23.445), relvol 18.45. pc 18.71 vs 50d 16.71. Claude synth REJECT (single source, fading). Log only.",
-   "sentiment": "positive",
-   "prior_close": 18.71,
-   "ret_1d": 0.306,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.57,
-   "corr60": 0.15,
-   "beta_asof": "2026-11-12",
-   "found_at": null
-  },
-  {
-   "date": "2026-11-13",
-   "ticker": "TNDM",
-   "signal_type": "fda_clearance",
-   "source": "Company release relayed by StockTitan (1 org)",
-   "sources": [
-    {
-     "url": "https://www.stocktitan.net/articles/stock-market-today-live-november-13-2026"
-    }
-   ],
-   "description": "10:30 hourly 11-13: FDA cleared tubeless option for Tandem Mobi; US launch 1H27 (company release 08:30 ET). No FDA primary source fetched. open 19.00 (gap +8.52%), 10:40 last 19.575 (+3.02% vs open), VWAP 19.443, relvol 2.48 (Yahoo 5m, delayed). pc 17.51 vs 50d 17.41. Claude synth SHADOW-WATCH (1 source); invalid < VWAP 19.443. No money.",
-   "sentiment": "positive",
-   "prior_close": 17.51,
-   "ret_1d": 0.146,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.5,
-   "corr60": 0.38,
-   "beta_asof": "2026-11-12",
-   "found_at": null
   }
  ],
  "shadow_tests": [
@@ -5246,7 +5261,7 @@
   {
    "setup": "B_rsi2_swing",
    "trades": 18,
-   "open_or_pending": 4,
+   "open_or_pending": 5,
    "win_rate_pct": 55.6,
    "net_per_trade_pct": -0.765,
    "total_net_pct_sum": -13.77,
@@ -5260,7 +5275,7 @@
   {
    "setup": "Z_zscore_dip",
    "trades": 9,
-   "open_or_pending": 4,
+   "open_or_pending": 8,
    "win_rate_pct": 22.2,
    "net_per_trade_pct": -3.458,
    "total_net_pct_sum": -31.12,
@@ -5269,7 +5284,7 @@
    "weeks": 2,
    "weeks_positive": 0,
    "pass_bar": "judged after 8 weeks: 30+ trades, net/trade > 0 after costs with t >= 2, beats SPY on the same windows",
-   "status": "3.0 of 8 weeks, 9 trades; not judged yet (not meeting the bar so far)"
+   "status": "3.1 of 8 weeks, 9 trades; not judged yet (not meeting the bar so far)"
   },
   {
    "setup": "squeeze_bb30",
@@ -7977,6 +7992,26 @@
  ],
  "alerts": [
   {
+   "date": "2026-11-19",
+   "text": "PAPER ORDER 2026-11-19 (fills at today's open) | sleeve daytrade | BUY LIN $250.00 | reason: DX v0.5.11 one_filter (waived: two_source) | 6AM 11-19 LOW CONVICTION (min ticket): Kepler Cheuvreux Hold->Buy PT 490->601; no second source found. pc 512.16 > 50d 492.96; PM 512.07 -0.02% (05:34, 8 bars, no volume/spread) = no visible reaction yet. Claude synthesis QUEUE-DX $250 (s1/s3/s6 weak support; s2 reject, s4 unknown, s5 log). Engine gap check at open (cap 527.52). | sources: Kepler Cheuvreux (MarketScreener roundup 04:56 ET 11-19): https://ca.marketscreener.com/news/analyst-recommendations-ford-motor-mcdonald-s-paypal-humana-intela--ce785ed2d98bff24"
+  },
+  {
+   "date": "2026-11-19",
+   "text": "--- dx stock run 2026-11-19 05:58 ET"
+  },
+  {
+   "date": "2026-11-19",
+   "text": "PAPER ORDER 2026-11-19 (fills at today's open) | sleeve daytrade | BUY RGA $400.00 | reason: DX v0.5.11 one_filter (waived: two_source) | 6AM 11-19: UBS Neutral->Buy PT 236->325 (mortality improvement ~5pts 2027 EPS + Equitable deal ~2pts). Company Q3 11-05 (adj op EPS 8.49 vs 4.66 y/y) treated as context, not a fresh independent 2nd source (10 sessions old, UBS thesis rests on same claims experience) -> one_filter waived two_source. pc 265.55 > 50d 258.69; PM 269.00 +1.30% (04:58, 3 thin bars, no volume/spread). Claude 6 roles + synthesis: synth QUEUE-DX (s2/s3/s6 preferred Signals; s4/s5 DX). Engine gap check at open (cap 273.52). | sources: UBS (Investing.com 00:52 ET 11-19; MarketScreener 04:56 ET relay): https://www.investing.com/news/analyst-ratings/ubs-upgrades-reinsurance-group-of-america-stock-rating-on-mortality-trends-93CH-5037801"
+  },
+  {
+   "date": "2026-11-19",
+   "text": "--- dx stock run 2026-11-19 05:57 ET"
+  },
+  {
+   "date": "2026-11-18",
+   "text": "--- EOD reflection 2026-11-18 16:5x ET: close no fills/exits (TGT invalidation alert stamped); shadow close OK; reflection written (Sonnet 1 call); feed pushed bb82cce; check_report 460 checks 0 problems; page draft tmp/page_update_2026-11-18.md (canvas tool unavailable to subagent)"
+  },
+  {
    "date": "2026-11-18",
    "text": "EQUITY 2026-11-18 close: total $19,973.61 vs SPY-equivalent $20,025.67 | core $382.61 (-4.35% vs SPY -4.35%), momentum $117.23 (-21.85% vs SPY -4.35%), dividend $143.48 (-4.35% vs SPY -4.35%), earnings $140.70 (-6.20% vs SPY -4.35%), signals $9,598.83 (-5.51% vs SPY -4.39%), daytrade $9,590.76 (-4.09% vs SPY -3.94%) | contribution-aware: account TWR -6.54% vs SPY -4.39% (-2.15 pts), net contributions $19,852.34"
   },
@@ -8479,42 +8514,6 @@
   {
    "date": "2026-11-13",
    "text": "--- close run 2026-11-13 16:42 ET"
-  },
-  {
-   "date": "2026-11-12",
-   "text": "--- feed push 2026-11-12 close: commit 9825f05fc85f8fa7c4d6cce661e0ad015681e5d1 (latest.json only)"
-  },
-  {
-   "date": "2026-11-12",
-   "text": "EQUITY 2026-11-12 close: total $20,731.91 vs SPY-equivalent $20,763.95 | core $396.71 (-0.82% vs SPY -0.82%), momentum $131.24 (-12.51% vs SPY -0.82%), dividend $148.77 (-0.82% vs SPY -0.82%), earnings $144.78 (-3.48% vs SPY -0.82%), signals $9,950.80 (-2.04% vs SPY -0.87%), daytrade $9,959.62 (-0.40% vs SPY -0.40%) | contribution-aware: account TWR -2.99% vs SPY -0.87% (-2.12 pts), net contributions $19,852.34"
-  },
-  {
-   "date": "2026-11-12",
-   "text": "--- close run 2026-11-12 16:46 ET"
-  },
-  {
-   "date": "2026-11-12",
-   "text": "--- feed push 2026-11-12 am: commit f0aa179c15800641204c281fcdd81097e6a3924b (latest.json only)"
-  },
-  {
-   "date": "2026-11-12",
-   "text": "PAPER TRADE 2026-11-12 | sleeve signals | BUY 0.345305 LLY @ $1,447.2733 (quote $1,446.5500 at 2026-11-12 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $499.75, fee $0.00 (0.00%) | beta 0.4 | 8 AM re-queue per 6 AM synthesis condition: PM 1472.78 (07:46 ET) = +2.47% < 3% line; no new LLY-negative news (Yahoo/Investing 06:24 ET). Signals v0.3/v0.4.1+v0.5.1: China NMPA orforglipron approval 11-12 (Reuters) + Richter E4 deal (Economx) + Jefferies PT 1700 11-10; pc 1437.29 > 50d 1230.06. Engine re-checks >3% gap at fill; s5 dissent (extension)."
-  },
-  {
-   "date": "2026-11-12",
-   "text": "PAPER TRADE 2026-11-12 | sleeve signals | SELL 0.663148 SPY @ $753.6030 (quote $753.9800 at 2026-11-12 09:30 ET (official open), Yahoo Finance chart endpoint, 1d bar open; +/-0.05% slippage) | notional $499.75, fee $0.00 (0.00%) | beta 1.0 | fund LLY from idle SPY"
-  },
-  {
-   "date": "2026-11-12",
-   "text": "--- am run 2026-11-12 10:41 ET"
-  },
-  {
-   "date": "2026-11-12",
-   "text": "PAPER ORDER 2026-11-12 (fills at today's open) | sleeve signals | BUY LLY $499.75 | reason: 8 AM re-queue per 6 AM synthesis condition: PM 1472.78 (07:46 ET) = +2.47% < 3% line; no new LLY-negative news (Yahoo/Investing 06:24 ET). Signals v0.3/v0.4.1+v0.5.1: China NMPA orforglipron approval 11-12 (Reuters) + Richter E4 deal (Economx) + Jefferies PT 1700 11-10; pc 1437.29 > 50d 1230.06. Engine re-checks >3% gap at fill; s5 dissent (extension)."
-  },
-  {
-   "date": "2026-11-12",
-   "text": "--- buy run 2026-11-12 07:48 ET"
   }
  ],
  "latest_reflection": {
