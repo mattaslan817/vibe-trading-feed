@@ -1,10 +1,10 @@
 {
  "schema_version": "1.0",
- "generated_at": "2026-11-19T16:51:46-05:00",
+ "generated_at": "2026-11-20T06:02:37-05:00",
  "as_of_date": "2026-11-19",
  "disclaimer": "Paper trading only. Not investment advice. Backtests and paper results don't promise future returns.",
  "paper_only": true,
- "rules_version": "v0.5.13",
+ "rules_version": "v0.5.14",
  "account": {
   "start_date": "2026-10-26",
   "start_value": 1000.0,
@@ -4230,7 +4230,28 @@
   }
  ],
  "last_fill_date": "2026-11-19",
- "pending_orders": [],
+ "pending_orders": [
+  {
+   "trade_date": "2026-11-20",
+   "fill_at": "open",
+   "sleeve": "daytrade",
+   "ticker": "PDD",
+   "side": "buy",
+   "dollars": 250.0,
+   "shares": null,
+   "reason": "DX v0.5.11 one_filter (waived: two_source) | Macquarie Neutral->Outperform PT 98->106 (11-20); Q3 11-19 mixed (EPS beat, rev miss, +11% day) treated as same event, not 2nd source; synth 6AM 11-20; low-end ticket | sources: Macquarie: https://www.investing.com/news/analyst-ratings/macquarie-upgrades-pinduoduo-stock-rating-on-valuation-cost-discipline-93CH-5040887"
+  },
+  {
+   "trade_date": "2026-11-20",
+   "fill_at": "open",
+   "sleeve": "daytrade",
+   "ticker": "EXPD",
+   "side": "buy",
+   "dollars": 250.0,
+   "shares": null,
+   "reason": "DX v0.5.11 one_filter (waived: two_source) | Citizens MP->Outperform PT 240 (11-19); TD Cowen Sell->Hold PT 196 (11-20) NOT counted as positive (PT below PM); pc 193.14 on 50d 193.12 line; synth 6AM 11-20; low-end ticket | sources: Citizens: https://www.investing.com/news/analyst-ratings/citizens-upgrades-expeditors-stock-rating-on-growth-outlook-93CH-5038031"
+  }
+ ],
  "skips": [
   {
    "date": "2026-11-19",
@@ -4331,6 +4352,216 @@
  ],
  "signals": [
   {
+   "date": "2026-11-20",
+   "ticker": "NVDA",
+   "signal_type": "regulatory",
+   "source": "CNBC 11-19 (California AG subpoena)",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/11/19/nvidia-california-bonta-subpoena-china-chips.html"
+    }
+   ],
+   "description": "6AM 11-20: California AG investigative subpoena on possible diversion of restricted chips to China; NVDA -3.30% 11-19 to 145.98 (lowest in >1yr), PM -2.16%; House docs on 879k chip approvals to China. Asia chips -5-7% overnight. Context; NVDA->AMD put sympathy low-priority watch only.",
+   "sentiment": "negative",
+   "prior_close": 145.98,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.6,
+   "corr60": 0.56,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-20 05:57:00-05:00"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "C",
+   "signal_type": "negative_news",
+   "source": "Reuters exclusive (via Investing.com)",
+   "sources": [
+    {
+     "url": "https://www.investing.com/news/stock-market-news/exclusivecitiincorrectly-booked-trades-underestimatedrisky-assets-by-35-billion-sources-say-5040342"
+    }
+   ],
+   "description": "6AM 11-20: European unit under-recorded RWAs by ~$35B (sources); C -1.76% 11-19; WF reiterates OW PT 165. PM -0.33%. Context only (not held).",
+   "sentiment": "negative",
+   "prior_close": 115.28,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.06,
+   "corr60": 0.63,
+   "beta_asof": "2026-11-18",
+   "found_at": "2026-11-20 05:57:00-05:00"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "TSLA",
+   "signal_type": "analyst_upgrade",
+   "source": "HSBC (Investing.com ~03:00 ET)",
+   "sources": [
+    {
+     "url": "https://www.investing.com/news/analyst-ratings"
+    }
+   ],
+   "description": "6AM 11-20: HSBC Reduce->Hold PT 157->359 (acquisition potential). Hold rating; pc 374.41 just below 50d 376.03; PM -1.4%. Log only.",
+   "sentiment": "positive",
+   "prior_close": 374.41,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 2.0,
+   "corr60": 0.67,
+   "beta_asof": "2026-11-18",
+   "found_at": "2026-11-20 05:56:00-05:00"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "GAP",
+   "signal_type": "earnings",
+   "source": "Gap Inc PR 11-19 AMC + CNBC",
+   "sources": [
+    {
+     "url": "https://www.cnbc.com/2026/11/19/gap-gap-q3-2026-earnings.html"
+    }
+   ],
+   "description": "6AM 11-20: Q3 EPS/comps beat at Old Navy/Gap; Athleta/Banana weak; FY26 adj EPS outlook LOWERED; Q4 Old Navy comps -1 to -2%. pc 18.79 below 50d 22.05; PM +3.78% (>3% gap). Mixed; log only.",
+   "sentiment": "positive",
+   "prior_close": 18.79,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 1.42,
+   "corr60": 0.42,
+   "beta_asof": "2026-11-18",
+   "found_at": "2026-11-20 05:55:00-05:00"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "ROST",
+   "signal_type": "earnings",
+   "source": "Ross Stores PR 11-19 AMC (PRNewswire) + Reuters/Investing.com, IBD",
+   "sources": [
+    {
+     "url": "https://www.investing.com/news/stock-market-news/ross-stores-sees-holiday-sales-growth-slowing-after-strong-q3-5040226"
+    }
+   ],
+   "description": "6AM 11-20: Q3 beat but tepid holiday outlook; WF PT 242->215. PM 212.50 -3.36% (4 bars). Leader for 09:45+ put-only sympathy watch (BURL/TJX).",
+   "sentiment": "negative",
+   "prior_close": 219.88,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.87,
+   "corr60": 0.49,
+   "beta_asof": "2026-11-17",
+   "found_at": "2026-11-20 05:55:00-05:00"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "INTU",
+   "signal_type": "guidance_cut",
+   "source": "Intuit 8-K/PR 11-19 AMC + Benzinga, Dow Jones/MarketWatch, Investing.com 04:23",
+   "sources": [
+    {
+     "url": "https://investors.intuit.com/sec-filings/all-sec-filings/content/0000896878-26-000043/fy27q1earningspressrelease.htm"
+    }
+   ],
+   "description": "6AM 11-20: Q1 beat (rev 4.35B, adj EPS 2.91) but FY27 rev guide cut to 23.08-23.37B, Credit Karma growth 3-7% (from 11-13%), Q2 rev guide 4.93-4.95B vs 5.11B; Mailchimp sold to Bending Spoons ~$3.7B. Evercore PT 400->335, WF 330->320. PM 281.50 -9.20%. Bounce REJECTED (thesis-breaking guide cut).",
+   "sentiment": "negative",
+   "prior_close": 310.02,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.12,
+   "corr60": 0.04,
+   "beta_asof": "2026-11-18",
+   "found_at": "2026-11-20 05:55:00-05:00"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "HUM",
+   "signal_type": "analyst_upgrade",
+   "source": "TD Cowen (Investing.com ~02:00 ET)",
+   "sources": [
+    {
+     "url": "https://www.investing.com/news/analyst-ratings/td-cowen-upgrades-humana-stock-rating-on-earnings-outlook-93CH-5040751"
+    }
+   ],
+   "description": "6AM 11-20: TD Cowen Hold->Buy PT 430->485 (same note as UNH). pc 380.00 below 50d 409.98; PM +1.92%. CMS rule overhang. Log only.",
+   "sentiment": "positive",
+   "prior_close": 380.0,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.56,
+   "corr60": 0.18,
+   "beta_asof": "2026-11-18",
+   "found_at": "2026-11-20 05:56:00-05:00"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "UNH",
+   "signal_type": "analyst_upgrade",
+   "source": "TD Cowen (Investing.com ~02:00 ET)",
+   "sources": [
+    {
+     "url": "https://www.investing.com/news/analyst-ratings/td-cowen-upgrades-unitedhealth-stock-rating-on-earnings-outlook-93CH-5040773"
+    }
+   ],
+   "description": "6AM 11-20: TD Cowen Hold->Buy PT 402->455 (same note as HUM = one source). pc 330.48 below 50d 389.48 (-15.2%), -18.4% 5d on CMS audit rule (negative overhang, unresolved). PM +1.80%. Log only (below 50d, 1 source, negative regulatory overhang).",
+   "sentiment": "positive",
+   "prior_close": 330.48,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.44,
+   "corr60": 0.2,
+   "beta_asof": "2026-11-18",
+   "found_at": "2026-11-20 05:56:00-05:00"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "EXPD",
+   "signal_type": "analyst_upgrade",
+   "source": "Citizens 11-19 (Investing.com; TheFly) + TD Cowen 11-20 Sell->Hold (Investing.com; StreetInsider)",
+   "sources": [
+    {
+     "url": "https://www.investing.com/news/analyst-ratings/citizens-upgrades-expeditors-stock-rating-on-growth-outlook-93CH-5038031"
+    }
+   ],
+   "description": "6AM 11-20: Citizens MP->Outperform PT 240 (11-19); TD Cowen Sell->Hold PT 189->196 (11-20; PT below PM 197.07 -> not counted as positive). pc 193.14 vs 50d 193.12 (+0.01%). PM 197.07 +2.03% single 04:00 bar. DX QUEUED one_filter waived two_source $250.",
+   "sentiment": "positive",
+   "prior_close": 193.14,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": 0.62,
+   "corr60": 0.42,
+   "beta_asof": "2026-11-18",
+   "found_at": "2026-11-20 05:58:00-05:00"
+  },
+  {
+   "date": "2026-11-20",
+   "ticker": "PDD",
+   "signal_type": "analyst_upgrade",
+   "source": "Macquarie (Investing.com ~04:00 ET; StreetInsider) + company Q3 11-19 (PR; Investing.com)",
+   "sources": [
+    {
+     "url": "https://www.investing.com/news/analyst-ratings/macquarie-upgrades-pinduoduo-stock-rating-on-valuation-cost-discipline-93CH-5040887"
+    }
+   ],
+   "description": "6AM 11-20: Macquarie Neutral->Outperform PT 98->106 (valuation, cost discipline). Q3 11-19 mixed (adj EPS beat, rev flat vs ~115B est miss, transaction services -12%), stock +11.04% 11-19 on 4.1x vol. Macquarie reacts to same results -> counted as ONE fresh source (synth). pc 86.00 > 50d 79.41; PM 85.63 -0.43%. DX QUEUED one_filter waived two_source $250.",
+   "sentiment": "positive",
+   "prior_close": 86.0,
+   "ret_1d": null,
+   "ret_5d": null,
+   "ret_20d": null,
+   "beta60": -0.18,
+   "corr60": -0.1,
+   "beta_asof": "2026-11-18",
+   "found_at": "2026-11-20 05:57:00-05:00"
+  },
+  {
    "date": "2026-11-19",
    "ticker": "AMD",
    "signal_type": "short_report",
@@ -4343,7 +4574,7 @@
    "description": "11:30 hourly: Hunterbrook short + report alleging firmware to Entity-Listed IEIT Systems and licensing income from blacklisted Chinese JVs; AMD no response yet. pc 530.14 open 542.00 low 470.56 (10:50) last ~497.5 (11:25) below VWAP 504.2; peers up (NVDA +1.4 MU +3.4). HELD tiny Momentum lot. DX bounce reviewed: REJECT (2/2 Sonnet), calls exceed $250 cap.",
    "sentiment": "negative",
    "prior_close": 530.14,
-   "ret_1d": null,
+   "ret_1d": -0.077,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": null,
@@ -4364,7 +4595,7 @@
    "description": "8AM 11-19: rev 188.84B vs 187.27B, adj EPS 0.65 vs 0.64, FY guide raised (sales +4.9-5.2%, adj EPS 2.84-2.89; midpoint below 2.88 est); US comp ex-fuel +2.9% in line. PM volatile: Reuters +1% to 128.85, Yahoo 125.82 -1.21% (07:56). Mixed; not actionable.",
    "sentiment": "positive",
    "prior_close": 127.36,
-   "ret_1d": null,
+   "ret_1d": -0.01,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.02,
@@ -4385,7 +4616,7 @@
    "description": "8AM 11-19: WF OW->EW PT 364 (sector reshuffle; AJG also cut). HELD Signals lot; pc 332.47 = 8.3% above stop 307.10; no PM bars. Awareness only, stop decides.",
    "sentiment": "negative",
    "prior_close": 332.47,
-   "ret_1d": null,
+   "ret_1d": -0.004,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": -0.04,
@@ -4406,7 +4637,7 @@
    "description": "8AM 11-19: Leerink MP->Outperform PT 124. pc 104.48 vs 50d 103.86 (+0.6%); PM flat; 5d -4.4%. Claude r1 reject/r2 log. Not queued.",
    "sentiment": "positive",
    "prior_close": 104.48,
-   "ret_1d": null,
+   "ret_1d": -0.006,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.21,
@@ -4427,7 +4658,7 @@
    "description": "8AM 11-19: WF EW->OW PT 82. pc 72.90 > 50d 67.12; PM +1.1% (06:02, thin). Log only (insurance correlation with RGA/AON).",
    "sentiment": "positive",
    "prior_close": 72.9,
-   "ret_1d": null,
+   "ret_1d": -0.007,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": -0.47,
@@ -4448,7 +4679,7 @@
    "description": "8AM 11-19: WF EW->OW PT 197->235, part of WF sector reshuffle (also up BRO, down AON/AJG). pc 205.43 > 50d 187.04; PM 206.60 +0.57%. Claude r1/r2 LOG-ONLY. Not queued.",
    "sentiment": "positive",
    "prior_close": 205.43,
-   "ret_1d": null,
+   "ret_1d": -0.004,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": -0.13,
@@ -4469,7 +4700,7 @@
    "description": "8AM 11-19: UBS Neutral->Buy PT 37->55 (AI growth beyond enterprise-upgrade cycle). Citi/BofA PTs undated, not counted. pc 43.17 > 50d 38.53; PM 44.30 +2.62% (07:47). QUEUED DX $250 one_filter waived two_source (cap 44.47). Earnings 12-01 AMC.",
    "sentiment": "positive",
    "prior_close": 43.17,
-   "ret_1d": null,
+   "ret_1d": -0.002,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.26,
@@ -4490,7 +4721,7 @@
    "description": "6AM 11-19 (event 11-16, sell-off 11-17/11-18): MA audit extrapolation to 2018 (~$9B/yr); UNH -10.2%, HUM -13.0%, ELV -7.6%, CVS -5.2% on 11-18. Oppenheimer expects court challenge. PM flat today -> no bounce setup (needs >=5% below pc today). Context/negative.",
    "sentiment": "negative",
    "prior_close": 349.91,
-   "ret_1d": null,
+   "ret_1d": -0.056,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.44,
@@ -4511,7 +4742,7 @@
    "description": "6AM 11-19: rev 1.46B +51% vs 1.33B; FY guide 5.20-5.21B. pc 100.74 < 50d 121.33; PM 106.00 +5.2% -> fails ma50+gap. Log only.",
    "sentiment": "positive",
    "prior_close": 100.74,
-   "ret_1d": null,
+   "ret_1d": 0.047,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 3.37,
@@ -4535,7 +4766,7 @@
    "description": "6AM 11-19: rev 3.44B vs 3.31B, EPS 1.05 vs 0.97, FY27 rev guide 14.52-14.57B (from 14.1-14.2B); $4.5B all-stock Applied Compute deal. pc 339.92 < 50d 366.70; PM 374.60 +10.2% -> fails ma50+gap. Leader for cyber sympathy watch (OKTA/S/FTNT) at 09:45+.",
    "sentiment": "positive",
    "prior_close": 339.92,
-   "ret_1d": null,
+   "ret_1d": 0.064,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 1.56,
@@ -4556,7 +4787,7 @@
    "description": "6AM 11-19: pc 11.28 < 50d 12.40; PM +1.15%. F50x.",
    "sentiment": "positive",
    "prior_close": 11.28,
-   "ret_1d": null,
+   "ret_1d": -0.004,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.54,
@@ -4577,7 +4808,7 @@
    "description": "6AM 11-19: pc 76.39 < 50d 89.00 (-14%) after negative Q3 selloff; PM +2.04%. F50x evidence; DX rejected (ma50 + stale/correlated 2nd source).",
    "sentiment": "positive",
    "prior_close": 76.39,
-   "ret_1d": null,
+   "ret_1d": 0.009,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.07,
@@ -4598,7 +4829,7 @@
    "description": "6AM 11-19: single broker; pc 512.16 > 50d 492.96; PM 512.07 -0.02% (no reaction). DX one_filter (waived two_source) QUEUED at open $250, low conviction.",
    "sentiment": "positive",
    "prior_close": 512.16,
-   "ret_1d": null,
+   "ret_1d": -0.004,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.15,
@@ -4619,7 +4850,7 @@
    "description": "6AM 11-19: mortality improvement + Equitable deal accretion. pc 265.55 > 50d 258.69; PM 269.00 +1.30% (04:58, 3 bars, vol n/a). DX one_filter (waived two_source) QUEUED at open $400 per Claude synthesis (s2/s3/s6 wanted Signals).",
    "sentiment": "positive",
    "prior_close": 265.55,
-   "ret_1d": null,
+   "ret_1d": 0.009,
    "ret_5d": null,
    "ret_20d": null,
    "beta60": 0.28,
@@ -5211,231 +5442,6 @@
    "corr60": 0.22,
    "beta_asof": "2026-11-16",
    "found_at": "2026-11-17 07:52:00-05:00"
-  },
-  {
-   "date": "2026-11-17",
-   "ticker": "DIS",
-   "signal_type": "earnings_beat",
-   "source": "Company FQ4 release 11-17 pre-open via CNBC + Yahoo Finance 06:38 ET + AP (1 org: company results/guide); pre-print PT raises Jefferies 125->140 (11-16 07:34) / Citi 135->140 / MS 125->133 predate the print",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/11/17/disney-dis-earnings-q-2026.html"
-    },
-    {
-     "url": "https://finance.yahoo.com/markets/stocks/article/disney-q4-earnings-beat-estimates-as-parks-and-streaming-keep-growing-113817189.html"
-    }
-   ],
-   "description": "8AM 11-17: FQ4 adj EPS 1.77 vs 1.67 LSEG, rev 25.95B vs 25.18B (+16%, incl. 53rd week ~$0.17 FY EPS), FY27 double-digit adj EPS growth guide, dividend +33%, $3B cost-savings target, CFO expects more layoffs. pc 118.70 > 50d 109.47. PM faded from ~+2% (CNBC ~07:15) to 115.90 -2.36% (Yahoo 07:50 bar, delayed, ext vol 0). No post-print rating change found (Briefing.com 07:51). Claude targeted update WATCH-SHADOW (pre-print PTs do not confirm the print). Not queued.",
-   "sentiment": "positive",
-   "prior_close": 118.7,
-   "ret_1d": -0.015,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.3,
-   "corr60": 0.21,
-   "beta_asof": "2026-11-16",
-   "found_at": "2026-11-17 07:52:00-05:00"
-  },
-  {
-   "date": "2026-11-17",
-   "ticker": "LHX",
-   "signal_type": "negative_news",
-   "source": "Reuters via Investing.com 11-16 (Duffy remarks) + CBS/ABC (Duffy seeks ~$50B new network) + FAA Q&A; X relays of CNN/Times (FBI) context only",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/stock-market-news/us-probes-why-a-router-installation-sparked-mass-flight-grounding-5030697"
-    },
-    {
-     "url": "https://www.cbsnews.com/news/ground-stop-faa-telecom-network-sean-duffy-face-the-nation/"
-    }
-   ],
-   "description": "6AM 11-17 (HELD Signals lot, follow-on to 11-16 row): Duffy urged Congress to fund a new FAA telecom network NOT owned by L3Harris (contract-risk element), briefs senators Tue 11-17; FBI assisting router exam; HPE/Juniper says router ran per installer config. LHX closed 261.75 (-3.9% 11-16), 2.5% above stop 255.18; no PM bars. No discretionary sell rule; engine owns stop.",
-   "sentiment": "negative",
-   "prior_close": 261.75,
-   "ret_1d": -0.004,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.03,
-   "corr60": 0.02,
-   "beta_asof": "2026-11-16",
-   "found_at": "2026-11-17 05:56:00-05:00"
-  },
-  {
-   "date": "2026-11-17",
-   "ticker": "FPS",
-   "signal_type": "insider_buy",
-   "source": "SEC EDGAR Form 4s (CEO accepted 11-16 17:25 ET) via fetch_insiders.py: 4-insider CLUSTER (1 evidence type)",
-   "sources": [
-    {
-     "url": "https://www.sec.gov/Archives/edgar/data/1802646/0000950142-26-003068.txt"
-    }
-   ],
-   "description": "6AM 11-17: Forgent Power Solutions 4 insiders incl. CEO bought ~$2.16M on 11-16 (~$20.85-21.59). Cluster but one evidence type. pc 20.57 below 50d 31.48; PM 20.41 (-0.8%, 05:20). F50x (evidence only); recently listed.",
-   "sentiment": "positive",
-   "prior_close": 20.57,
-   "ret_1d": 0.031,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 4.24,
-   "corr60": 0.56,
-   "beta_asof": "2026-11-16",
-   "found_at": "2026-11-17 05:58:00-05:00"
-  },
-  {
-   "date": "2026-11-17",
-   "ticker": "TEAM",
-   "signal_type": "insider_buy",
-   "source": "SEC EDGAR Form 4 (accepted 11-16 16:08 ET) via knowledge/insiders/fetch_insiders.py (1 evidence source)",
-   "sources": [
-    {
-     "url": "https://www.sec.gov/Archives/edgar/data/1650372/0001666120-26-000035.txt"
-    }
-   ],
-   "description": "6AM 11-17: CEO/co-founder Cannon-Brookes open-market buys ~$4.02M on 11-13 at ~$151-152 (code P). Single insider, single evidence type. pc 149.94 below 50d 191.37 (-22%); no PM bars. 11-06 guidance-driven drop context. F50x (evidence only).",
-   "sentiment": "positive",
-   "prior_close": 149.94,
-   "ret_1d": -0.06,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.1,
-   "corr60": 0.27,
-   "beta_asof": "2026-11-16",
-   "found_at": "2026-11-17 05:58:00-05:00"
-  },
-  {
-   "date": "2026-11-17",
-   "ticker": "PRAX",
-   "signal_type": "analyst_upgrade",
-   "source": "Wells Fargo via Investing.com 11-17 (1 org)",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/analyst-ratings/wells-fargo-upgrades-praxis-precision-medicines-stock-rating-on-endpoint-confidence-93CH-5031700"
-    }
-   ],
-   "description": "6AM 11-17: Wells Fargo Equal-weight->Overweight PT 343->509 (endpoint confidence after Breakthrough designation). pc 310.27 > 50d 289.07; no PM bars. Single org; biotech endpoint risk -> log only.",
-   "sentiment": "positive",
-   "prior_close": 310.27,
-   "ret_1d": -0.017,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 2.3,
-   "corr60": 0.53,
-   "beta_asof": "2026-11-16",
-   "found_at": "2026-11-17 05:56:00-05:00"
-  },
-  {
-   "date": "2026-11-17",
-   "ticker": "UNFI",
-   "signal_type": "analyst_upgrade",
-   "source": "Goldman Sachs via TheFly/TipRanks 04:35 ET 11-17 (Investing.com relay) (1 org)",
-   "sources": [
-    {
-     "url": "https://www.tipranks.com/news/the-fly/united-natural-foods-upgraded-to-buy-from-neutral-at-goldman-sachs-thefly-news"
-    }
-   ],
-   "description": "6AM 11-17: Goldman Neutral->Buy PT 49->60 (natural/organic exposure, network optimization). pc 48.39 > 50d 46.10; PM 49.50 (+2.29%, 3 bars to 04:33). Single org -> log only, no buy; 8 AM to look for a 2nd independent firm.",
-   "sentiment": "positive",
-   "prior_close": 48.39,
-   "ret_1d": 0.074,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.68,
-   "corr60": 0.28,
-   "beta_asof": "2026-11-16",
-   "found_at": "2026-11-17 05:56:00-05:00"
-  },
-  {
-   "date": "2026-11-17",
-   "ticker": "NUE",
-   "signal_type": "analyst_upgrade",
-   "source": "Morgan Stanley via TheFly/Investing/StreetInsider/MarketScreener (relays of one call) = 2nd org after UBS 11-16",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/analyst-ratings/morgan-stanley-upgrades-nucor-stock-rating-on-capital-spending-outlook-93CH-5031757"
-    },
-    {
-     "url": "https://www.streetinsider.com/Analyst+Comments/Morgan+Stanley+Upgrades+Nucor+%28NUE%29+to+Overweight/27358175.html"
-    }
-   ],
-   "description": "6AM 11-17: MS Equal-weight->Overweight PT 300->310 (tighter steel supply). With UBS Neutral->Buy 11-16 = 2 orgs, but pc 252.67 below 50d 255.02 (-0.9%); PM 254.52 (+0.73%, 2 bars to 04:02). Prior-close convention -> not a Signals buy today. Existing F50x shadow from 11-16 kept (no duplicate).",
-   "sentiment": "positive",
-   "prior_close": 252.67,
-   "ret_1d": -0.002,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.03,
-   "corr60": 0.44,
-   "beta_asof": "2026-11-13",
-   "found_at": "2026-11-17 05:56:00-05:00"
-  },
-  {
-   "date": "2026-11-17",
-   "ticker": "CSCO",
-   "signal_type": "analyst_upgrade",
-   "source": "HSBC (Investing.com 11-17) + DZ Bank (StreetInsider 05:28 ET 11-17) = 2 different orgs",
-   "sources": [
-    {
-     "url": "https://www.investing.com/news/analyst-ratings/hsbc-upgrades-cisco-stock-rating-on-ai-networking-growth-outlook-93CH-5031789"
-    },
-    {
-     "url": "https://www.streetinsider.com/Upgrades/DZ+Bank+Upgrades+Cisco+%28CSCO%29+to+Buy/27358576.html"
-    }
-   ],
-   "description": "6AM 11-17: HSBC Hold->Buy PT 120->133 (AI networking) + DZ Bank Hold->Buy PT 125. 2 independent orgs but pc 94.52 below 50d 107.46 (-12%); PM 95.89 (+1.45%, 05:30, Yahoo delayed, vol 0). F50-grade evidence; existing F50x shadow from 11-13 kept (one open trade per ticker, no duplicate). Not a Signals buy (fails 50d). Claude synth: F50 evidence only.",
-   "sentiment": "positive",
-   "prior_close": 94.52,
-   "ret_1d": 0.006,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 1.68,
-   "corr60": 0.71,
-   "beta_asof": "2026-11-12",
-   "found_at": "2026-11-17 05:56:00-05:00"
-  },
-  {
-   "date": "2026-11-16",
-   "ticker": "HUBS",
-   "signal_type": "insider_buy",
-   "source": "SEC EDGAR Form 4 (accepted 11-16 08:00 ET) + Investing.com/MarketBeat relays of same filing (1 evidence source)",
-   "sources": [
-    {
-     "url": "https://www.sec.gov/Archives/edgar/data/1603527/000119312526462154/0001193125-26-462154-index.htm"
-    },
-    {
-     "url": "https://www.investing.com/news/insider-trading-news/hubspot-ceo-brian-halligan-acquires-499m-in-company-stock-93CH-5029856"
-    }
-   ],
-   "description": "1330 11-16: CEO/director Brian Halligan (per filing/Investing.com) open-market buy 22,985 sh @ wtd avg 217.44 (~$4.998M) on 11-13; single insider, not a cluster. pc 217.25 < 50d 227.27; open 222.08 (gap +2.22%), last 229.99 at 13:25 bar (+3.56% vs open, above VWAP 225.58, just above 50d), relvol 1.17 (not unusual). No second independent confirmation (news = relays of the Form 4; volume not unusual); UBS downgrade 10-27 context. Logged only; not queued; 0 Claude calls (rule-ineligible).",
-   "sentiment": "positive",
-   "prior_close": 217.25,
-   "ret_1d": 0.068,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": 0.52,
-   "corr60": 0.13,
-   "beta_asof": "2026-11-13",
-   "found_at": "2026-11-16 13:30:00-05:00"
-  },
-  {
-   "date": "2026-11-16",
-   "ticker": "TSN",
-   "signal_type": "earnings_beat",
-   "source": "CNBC movers 10:08 ET (FQ4 EPS 0.61 vs 0.53 FactSet; rev 14.59B vs 14.1B; FY27 op-income guide 1.7-2.15B in line) (1 org + price reaction)",
-   "sources": [
-    {
-     "url": "https://www.cnbc.com/2026/11/16/stocks-moving-the-most-today-live-updates.html"
-    }
-   ],
-   "description": "1230 11-16: earnings beat; FY27 guide in line, beef op loss expected. pc 58.82, open 60.90 (gap +3.54% > 3% opening-gap rule -> not eligible), last 63.11 (+3.63% vs open, just below VWAP 63.28), hi 65.34, relvol 6.13 (Yahoo 5m delayed, no bid/ask). Research only; not queued; 0 Claude calls (rule-ineligible).",
-   "sentiment": "positive",
-   "prior_close": 58.82,
-   "ret_1d": 0.087,
-   "ret_5d": null,
-   "ret_20d": null,
-   "beta60": -0.13,
-   "corr60": -0.08,
-   "beta_asof": "2026-11-13",
-   "found_at": null
   }
  ],
  "shadow_tests": [
@@ -5456,7 +5462,7 @@
   {
    "setup": "B_rsi2_swing",
    "trades": 19,
-   "open_or_pending": 4,
+   "open_or_pending": 7,
    "win_rate_pct": 57.9,
    "net_per_trade_pct": -0.398,
    "total_net_pct_sum": -7.56,
@@ -5470,7 +5476,7 @@
   {
    "setup": "Z_zscore_dip",
    "trades": 12,
-   "open_or_pending": 5,
+   "open_or_pending": 6,
    "win_rate_pct": 16.7,
    "net_per_trade_pct": -3.958,
    "total_net_pct_sum": -47.5,
@@ -5479,7 +5485,7 @@
    "weeks": 2,
    "weeks_positive": 0,
    "pass_bar": "judged after 8 weeks: 30+ trades, net/trade > 0 after costs with t >= 2, beats SPY on the same windows",
-   "status": "3.1 of 8 weeks, 12 trades; not judged yet (not meeting the bar so far)"
+   "status": "3.3 of 8 weeks, 12 trades; not judged yet (not meeting the bar so far)"
   },
   {
    "setup": "squeeze_bb30",
@@ -8250,6 +8256,22 @@
  ],
  "alerts": [
   {
+   "date": "2026-11-20",
+   "text": "PAPER ORDER 2026-11-20 (fills at today's open) | sleeve daytrade | BUY EXPD $250.00 | reason: DX v0.5.11 one_filter (waived: two_source) | Citizens MP->Outperform PT 240 (11-19); TD Cowen Sell->Hold PT 196 (11-20) NOT counted as positive (PT below PM); pc 193.14 on 50d 193.12 line; synth 6AM 11-20; low-end ticket | sources: Citizens: https://www.investing.com/news/analyst-ratings/citizens-upgrades-expeditors-stock-rating-on-growth-outlook-93CH-5038031"
+  },
+  {
+   "date": "2026-11-20",
+   "text": "--- dx stock run 2026-11-20 06:01 ET"
+  },
+  {
+   "date": "2026-11-20",
+   "text": "PAPER ORDER 2026-11-20 (fills at today's open) | sleeve daytrade | BUY PDD $250.00 | reason: DX v0.5.11 one_filter (waived: two_source) | Macquarie Neutral->Outperform PT 98->106 (11-20); Q3 11-19 mixed (EPS beat, rev miss, +11% day) treated as same event, not 2nd source; synth 6AM 11-20; low-end ticket | sources: Macquarie: https://www.investing.com/news/analyst-ratings/macquarie-upgrades-pinduoduo-stock-rating-on-valuation-cost-discipline-93CH-5040887"
+  },
+  {
+   "date": "2026-11-20",
+   "text": "--- dx stock run 2026-11-20 06:01 ET"
+  },
+  {
    "date": "2026-11-19",
    "text": "EQUITY 2026-11-19 close: total $19,604.88 vs SPY-equivalent $19,632.67 | core $375.10 (-6.22% vs SPY -6.22%), momentum $114.73 (-23.51% vs SPY -6.22%), dividend $140.66 (-6.22% vs SPY -6.22%), earnings $138.36 (-7.76% vs SPY -6.22%), signals $9,409.12 (-7.38% vs SPY -6.27%), daytrade $9,426.91 (-5.73% vs SPY -5.83%) | contribution-aware: account TWR -8.26% vs SPY -6.27% (-1.99 pts), net contributions $19,852.34"
   },
@@ -8832,26 +8854,10 @@
   {
    "date": "2026-11-18",
    "text": "MOVER 2026-11-18 MOD +4.60% vs prior close, +5.19% vs open (last 135.7000 at 2026-11-18 13:25 ET; signal_log 2026-11-13 m_and_a_rumor) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order | headlines: MT Newswires 11-18 08:06 ET: Modexus Solutions Board Approves up to $500 Million Share Buyback Program <https://finance.yahoo.com/markets/stocks/articles/modexus-solutions-board-approves-500-130642374.html> || PR Newswire 11-18 07:30 ET: Modexus Solutions Announces $500 Million Share Repurchase Program <https://finance.yahoo.com/markets/stocks/articles/modexus-solutions-announces-500-million-123000547.html> || GuruFocus.com 11-17 06:56 ET: Billionaire David Tepper Dumps AMD Stock, Makes $172 Million Bet on Oracle <https://finance.yahoo.com/markets/stocks/articles/billionaire-david-tepper-dumps-amd-115625542.html>"
-  },
-  {
-   "date": "2026-11-18",
-   "text": "MOVER 2026-11-18 AZTA +5.89% vs prior close, +4.91% vs open (last 48.5100 at 2026-11-18 13:25 ET; signal_log 2026-11-13 earnings) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order | headlines: PR Newswire 11-17 16:10 ET: Azenta to Participate in the 9th Annual Evercore Healthcare Conference <https://finance.yahoo.com/healthcare/articles/azenta-participate-9th-annual-evercore-211000664.html> || MT Newswires 11-12 05:18 ET: Needham Adjusts Price Target on Azenta to $57 From $37, Keeps Buy Rating <https://finance.yahoo.com/markets/stocks/articles/needham-adjusts-price-target-azenta-101828115.html> || Motley Fool 11-11 20:43 ET: Why Azenta Stock Crushed it on Wednesday <https://finance.yahoo.com/markets/stocks/articles/why-azenta-stock-crushed-wednesday-014319385.html>"
-  },
-  {
-   "date": "2026-11-18",
-   "text": "MOVER 2026-11-18 STUB +6.18% vs prior close, -0.41% vs open (last 4.8100 at 2026-11-18 13:25 ET; signal_log 2026-11-18 insider_buy) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order"
-  },
-  {
-   "date": "2026-11-18",
-   "text": "MOVER 2026-11-18 PANW +6.82% vs prior close, +5.30% vs open (last 330.3700 at 2026-11-18 13:25 ET; signal_log 2026-11-18 earnings_upcoming) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order | headlines: Investor's Business Daily 11-18 13:02 ET: Stock Market Today: Dow Sinks As Fed Minutes Loom; Lowe's Outlook Misses (Live Coverage) <https://finance.yahoo.com/m/3b6d51d3-7bfb-3b08-a92e-3b70e9f0655b/stock-market-today%3A-dow-sinks.html> || Barrons.com 11-18 12:05 ET: Cybersecurity Stocks Shine as Outage Theories Swirl <https://finance.yahoo.com/m/6f2054e4-5dec-37d3-a17c-30249b5cd59d/cybersecurity-stocks-shine-as.html> || Insider Monkey 11-18 11:12 ET: Buy Alert: 5 Stocks Analysts Upgraded on Friday <https://finance.yahoo.com/markets/stocks/articles/buy-alert-5-stocks-analysts-161233275.html>"
-  },
-  {
-   "date": "2026-11-18",
-   "text": "MOVER 2026-11-18 TGT +6.88% vs prior close, +5.91% vs open (last 170.5100 at 2026-11-18 13:25 ET; held (daytrade); signal_log 2026-11-18 earnings_beat; HELD) | AWARENESS ONLY: read the news, apply existing Signals/DX rules; no order"
   }
  ],
  "latest_reflection": {
   "date": "2026-11-19",
-  "markdown": "# Reflection \u2014 2026-11-19 (paper only, no real money; v0.5.13, first session with DX entry-distance logging)\n\n## Headline: account vs SPY\nThe account still trails SPY. Since the start (time-weighted, nav.csv; capital in $20,852.34) it is **\u22128.265% vs SPY-equivalent \u22126.270% (\u22121.995 pts)**, from \u22122.146 pts on 11-18. Equity is $19,604.88 vs $19,632.67. Today the account fell **\u22121.846% vs \u22121.962%** for the SPY-equivalent (SPY 730.20 \u2192 715.87, \u22121.96%).\n\nThe 0.12-pt day edge isn't skill. It came from two things:\n- **The three new DX lots have low beta (0.15\u20130.28).** They lost \u2212$11.85 marked, where the same $900 left in SPY (sold at 737.0913) would have lost \u2212$25.91.\n- **Momentum lost less than SMH** (\u22122.133% vs \u22122.62%).\n\nMomentum is still most of the since-start gap (\u221217.289 pts on its $150 start).\n\n`sleeves.py close` (16:44 ET, exit 0) reported \"no pending 'close' orders\". It made no fills and no exits. It re-stamped two invalidation alerts (TGT, BOX), awareness only. There were no option trades.\n\nMarket: the market gapped up, then reversed hard.\n- **SPY** opened 737.46 (+0.99% gap) and fell \u22122.93% from open to close. QQQ \u22122.19% (\u22123.88% from the open), IWM \u22122.18%, DIA \u22122.18%, SMH \u22122.62% (\u22125.39% from the open), IGV \u22120.87%, XLY \u22122.79%, XLV \u22122.05%. VIX 28.44 (+15.80%).\n- **Context:** movers_log headlines tied the opening bid to the Anthropic IPO (Yahoo ticker ANT: open 111.50, close 97.17).\n- **Big single-name moves:** AMD \u22127.72% after a Hunterbrook short report (10:51 ET); UNH \u22125.55% (CMS proposed rule); PANW +6.42% (beat/raise); Everpure (P) opened +5.5%, ran to 116.51 and closed 105.50, below its open.\n\n## Paper trades today (fills.csv / trades.csv; 10 fills, none at the close)\n| Time ET | Sleeve | Side | Ticker | Qty | Price | Amount | Tag / P&L |\n|---|---|---|---|---|---|---|---|\n| 09:30 open | daytrade | SELL | SPY (day-SPY-idle) | 0.542674 | $737.0913 | $400.00 | funding |\n| 09:30 open | daytrade | BUY | RGA | 1.475059 | $271.1755 | $400.00 | DX one_filter, waived two_source (UBS upgrade) |\n| 09:30 open | daytrade | SELL | SPY (day-SPY-idle) | 0.339171 | $737.0913 | $250.00 | funding |\n| 09:30 open | daytrade | BUY | LIN | 0.487428 | $512.8963 | $250.00 | DX one_filter, waived two_source (Kepler upgrade; low conviction) |\n| 09:30 open | daytrade | SELL | SPY (day-SPY-idle) | 0.339171 | $737.0913 | $250.00 | funding |\n| 09:30 open | daytrade | BUY | BOX | 5.676398 | $44.0420 | $250.00 | DX one_filter, waived two_source (UBS upgrade) |\n| 12:05 (5-min bar) | daytrade | SELL | NUE | 1.550424 | $247.4821 | $383.70 | DX STOP; \u2212$16.30 (\u22124.074%), held 2 days |\n| 12:25 | daytrade | BUY | SPY (idle) | 0.529660 | $724.4320 | $383.70 | idle cash |\n| 14:50 (5-min bar) | signals | SELL | EPAM | 0.081873 | $150.1900 | $12.30 | STOP \u22128%; \u2212$1.09 (\u22128.138%) |\n| 15:28 | signals | BUY | SPY (idle) | 0.017128 | $717.9288 | $12.30 | idle cash |\n\n**Closing marks (positions.csv):**\n- RGA 268.03: \u2212$4.84 (\u22121.209%). Day high 271.44, so it barely traded above the fill.\n- LIN 510.21: \u2212$1.43 (\u22120.573%).\n- BOX 43.08: \u2212$5.58 (\u22122.233%). It reached 44.88 (+1.9%), broke its 43.17 invalidation at 14:25, and its 5-minute low of 42.835 missed the 42.8321 stop by $0.003.\n\n**Stops (both from bars):**\n- **NUE:** bar low 247.01 vs stop 247.6059 (pierced 0.24%). It closed 247.43, at the fill.\n- **EPAM:** bar low 150.165 vs stop 150.2651 (pierced 0.07%). It closed 150.44.\n\nSignals has now closed 5 trades for \u2212$6.42, all of them stops. DX has closed 1 (NUE, \u2212$16.30).\n\n## Mistakes and misses\n- **BOX: the source count was wrong on the first submission.** At 07:58 I counted two links to the same UBS note as two sources. The engine rejected it as a DX trade (\"passes every Signals filter\"), and it was resubmitted as one organization with two_source waived.\n  - One is the correct count under the written rule, so the trade as booked is within the rules.\n  - But this is the second day in a row (TGT on 11-18) that the count was settled only after a gate rejection. This time the first count was simply an error.\n- **Three single-upgrade buys at a gap-up open, on a day that reversed \u22122.9% from the open.**\n  - RGA and BOX paid about +2% gaps vs the prior close (RGA's premarket had been only +1.30%).\n  - All three closed red: RGA \u22121.16% and BOX \u22122.18% vs their fills, LIN \u22120.52%.\n  - I'm not blaming the market here, and I'm not claiming a non-gap entry would have done better (not priced). The cost is plain: a single-analyst upgrade gave no cushion once the tape turned.\n- **NUE:** it lost \u22124.07% while SPY fell \u22121.62% over the same window (11-17 10:27 \u2192 11-19 12:25). Its invalidation alert (255.07, breached 11-18 10:26) came 1.5 sessions before the stop. Alerts are awareness-only by the owner's design, so this is an observation, not a broken rule.\n- **Record and feed slips:**\n  - Shell expansion dropped \"$2\" from the BOX reason text (\"-> 50\" should read \"-> $250\"); the dollars field is correct.\n  - A shell-stdout read truncated feed/latest.json to about 100KB at 10:30. Corrupt JSON would have been published if that push card hadn't expired.\n  - The 10:30 log line saying at-open DX fills had no entry distance was wrong. The queued rows were stamped at 09:30.\n- **Movers:** 24 names were flagged, and none was traded off a flag.\n  - Held momentum names gapped up and faded: STX +6.01% gap then \u22124.67% open to close, WDC +6.70% / \u22123.49%, BE +5.86% / \u22127.12%, AMD \u22127.72%.\n  - Movers is awareness-only and momentum has no intraday exit rule, so nothing was missed under the rules.\n  - I found no flagged name with a qualifying DX setup inside the window that wasn't reviewed.\n\n## Overeager\n- **LIN** is the clearest case. It was entered as \"LOW CONVICTION\" on one Kepler upgrade, with no visible premarket reaction (\u22120.02%) and reviewer s2 voting reject. Only the minimum ticket limited the damage.\n- **BOX** was bought extended: +68% in six months, near its 44.88 52-week high, after a +1.97% gap.\n- These are within approved DX rules, so not rule breaks. But 4 of 5 DX entries now rest on the two_source waiver, which means thin single-source evidence is becoming the experiment's main input.\n\n## Too cautious\nNone shown.\n- **PANW sympathy:** cancelled around 10:30 because followers had already moved at least as much as the leader. The closes are mixed and unpriced (OKTA +1.77% and ZS +1.84% open to close; S +0.04%; FTNT \u22123.16%; NET \u22123.11%). I make no profit claim.\n- **P (Everpure):** flagged 10:29 at 113.81 and closed 105.50 (\u22127.3%). Not chasing it avoided a fall, but that is unpriced.\n- **UNM:** same UBS mortality theme as RGA, logged only as correlated.\n\n## Rule-following\n- All three opens came in under their gap caps (RGA 271.04 < 273.52; LIN 512.64 < 527.52; BOX 44.02 < 44.47).\n- found_at was before the open, so at_open pricing was allowed.\n- RGA's 11-05 Q3 was treated as context, not a second source.\n- Both stops executed from 5-minute bars as v0.5.12 specifies.\n- The hourly runs were on time: dx-manage and movers ran at 10:29, 11:27, 12:25, 13:26, 14:25 and 15:28 ET. The 15:34 slip of 11-17 and 11-18 didn't recur.\n- I found no broken rule. The BOX miscount is a process error caught before any order.\n\n## Sleeves vs SPY (nav.csv TWR since start; day)\n| Sleeve | Since start | SPY-eq | vs SPY | Day | SPY day |\n|---|---|---|---|---|---|\n| **Account** | \u22128.265% | \u22126.270% | \u22121.995 pts | \u22121.846% | \u22121.962% |\n| Core | \u22126.225% | \u22126.225% | 0.000 | \u22121.962% | \u22121.962% |\n| Momentum | \u221223.514% | \u22126.225% | \u221217.289 pts | \u22122.133% | \u22121.962% |\n| Dividend (idle SPY) | \u22126.225% | \u22126.225% | 0.000 | \u22121.962% | \u22121.962% |\n| Earnings | \u22127.762% | \u22126.225% | \u22121.537 pts | \u22121.667% | \u22121.962% |\n| Signals | \u22127.377% | \u22126.272% | \u22121.105 pts | \u22121.976% | \u22121.962% |\n| Day-trade (DX) | \u22125.731% | \u22125.830% | +0.099 pts | \u22121.708% | \u22121.962% |\n\n- **Day-trade** moved ahead of its SPY-equivalent only because $900 of idle SPY was swapped into low-beta names on a \u22122% day. $8,141.81 of $9,426.91 is still idle SPY, which is not a day-trade result.\n- **Signals** matched SPY within noise. LLY is \u22126.69% marked and 1.5% above its stop.\n- **Momentum** lost less than SMH. That is beta, not skill.\n\n## Day-trade experiment (DX), judged on tagged trades only\n| Setup / tag | Closed | Open | Result |\n|---|---|---|---|\n| one_filter / ma50 | 1 (NUE \u22124.074%) | 0 | \u2212$16.30 realized |\n| one_filter / two_source | 0 | 4 (TGT \u22120.922%, RGA \u22121.209%, LIN \u22120.573%, BOX \u22122.233%) | \u2212$15.54 marked |\n| one_filter / gap_up_3pct, intraday_ext_5pct | 0 | 0 | \u2014 |\n| sympathy (stock / call / put), bounce | 0 | 0 | none entered (PANW cancelled) |\n\n- **Totals:** tagged DX is \u2212$31.84 (\u2212$16.30 realized, \u2212$15.54 marked). The closed win rate is 0 of 1, which is not a verdict. No tag is near 20 closed trades, and the review is 2026-12-18.\n- **Vs Signals:** Signals has closed 5 trades for \u2212$6.42, but with ~$15 lots. The two sleeves aren't comparable per dollar yet.\n- **Invalidation alerts vs stops:** the NUE alert preceded its stop (1 of 1 stops so far). TGT broke its alert on 11-18 but closed back above it (167.46 vs 166.27). BOX broke its alert at 14:25 and is $0.25 above its stop.\n- **Entry distance** (v0.5.13, measurement only; stamped at 09:30 from the first 5-minute bar, n_bars=1, possibly still forming):\n  - RGA: +0.050% vs open, +0.386% vs VWAP.\n  - LIN: +0.050% vs open, +0.039% vs VWAP.\n  - BOX: +0.050% vs open, \u22121.155% vs VWAP.\n  - One closed DX trade has a distance (NUE +0.526% / +0.142%). `entry-distance` reports **n<10, not evaluated**.\n  - Every at-open fill reads about +0.05% vs the open by construction, so this measure can't show the ~+2% gaps RGA and BOX paid vs the prior close. No conclusions.\n\n## Execution and data\n- **bar_checks.csv:** 154 rows today (dx-manage 61, dx-manage-close 4, signals-intraday 81, signals-close 8), 2 stops, **0 fallbacks**, and no `BARS UNAVAILABLE`.\n  - dx-manage rows are written 2\u20133 times per run. That is a logging duplicate; fills.csv has no duplicate orders.\n- **Fill modeling:** stop fills use ~15-minute-delayed Yahoo 5-minute bars, at the stop price less 0.05%. BOX's stop miss of $0.003 is inside Yahoo's rounding (its daily low prints 42.83), so a real stop order might have filled.\n- **Feed:** the push approval cards expired at 10:30, 12:28 and 15:30, all logged.\n- **Data gaps:** at 8 AM Yahoo had no bars for ANT (new listing), and the Briefing.com Schwab URL returned a stub.\n- **shadow_check close:** exit 0, no retry needed.\n\n## Shadow tests vs pass bars (none passing; no early claims)\n- **A gap-and-go:** 13 trades, \u22120.008%/trade, t \u22120.01, no new trade. Bar: 30+ trades, >+0.20%/trade, more than half of weeks positive, t>1.5. Not judged.\n- **B RSI2:** 19 closed, \u22120.398%/trade, win 57.9%, t \u22120.33. ZS exited at today's open for +6.210%. ABT, PSA and D sell next open; AMGN entered at 443.42. Bar: >+0.25%/trade and beat SPY. Not meeting it.\n- **Z z-score (backtest REJECT):** 12 closed, \u22123.958%/trade, win 16.7%, t \u22121.61.\n  - Today OXY (\u22126.075%), MPC (\u22124.222%) and PSX (\u22126.079%) made their max-hold exits; SPY over the same window was \u22123.659%.\n  - PLTR sells next open. BMY, ACN, MRK and JPM are new. 3.1 of 8 weeks.\n- **squeeze_bb30:** 0 trades.\n- **F50:** 7 closed, \u22120.370%/trade; 5 open, avg excess +7.56% vs SPY. Bar is ~30 closed.\n- **F50x** (evidence): 30 closed, \u22124.763%/trade. Five closed today (GRAB, NVO, XYZ, NVDA, TIGO). 26 open, avg excess +1.85%.\n- **Intraday (evidence; failed variants preserved):**\n  - X_vwap_reclaim: 1,079 trades, \u22120.227%/trade, t \u22129.36 (today's 39 closed averaged \u22120.434%).\n  - X_first_pullback: 293, \u22120.171%. X_orb15: 104, \u22120.516%. X_orb30: 99, \u22120.454%.\n  - Lab forward today: 149 trades, avg \u22121.125%, on a reversal day.\n  - IL orb5/15/30, vwap_reclaim and gap_down_reclaim FAIL. IL_first_pullback (51/200), IL_gap_and_go (3/200), IL_ignition (126/200), IL_mr_z5 (111/200) and IL_rs_leader (15/200) are not judged.\n- **C SPY calls:** 18 marks, 3.3 of 8 weeks. The model check is within its bar so far (median |BS\u2212mid| 9.0% vs 10%). The spread check is not (4.5% vs 2%). **VT core:** \u22120.01 pts vs the real core.\n\n## What went well \u2014 skill or luck\n- **Beating SPY on the day** is beta and luck: low-beta DX names and SMH-relative momentum.\n- **Implementation held up:**\n  - Both stops executed from bars with zero fallbacks.\n  - The hourlies were on time.\n  - The gap caps held.\n  - The correlated UNM upgrade wasn't doubled up.\n- **Best call:** not chasing P (Everpure) after its +13% morning, and cancelling the PANW sympathy once followers had already moved. Both were rule-driven, and both outcomes are unpriced. That is one day of observation, not demonstrated skill.\n\n## Lessons\n1. **Count distinct organizations, not links, before submitting.** This is the second day running the count changed after an engine rejection. It is a checking habit, not a new rule. the owner declined a resubmit-reason requirement on 11-18, and I'm not re-proposing it.\n2. **The entry-distance measure is blind to gaps paid at the open.** At-open fills always read ~+0.05% vs the open, and today's damage was the ~+2% gap vs the prior close.\n   - *Suggestion needing the owner's approval (measurement only, no trade-count effect):* add `entry_vs_prior_close_pct` to dx_log next to the vs-open and vs-VWAP fields, and include it in the same split at 10 closed DX trades.\n   - What actually changed today: nothing. The rules are unchanged.\n\n## Re-check of earlier lessons\n- **11-18 \"DX entries are made after most of the move\":** today's entries were at the open, not mid-morning, and all three still closed red. That supports lesson 2 rather than proving anything about entry timing. It is still a hypothesis (n=5 entries, 1 closed).\n- **11-18 TGT (bought +4.9% vs the open):** now \u22120.92%, back above its breached alert. The \"chase\" framing hasn't resolved either way.\n- **11-17 MSFT stop sampling:** MSFT closed 498.30, 0.21% above its 497.24 stop (day low 498.16). It is still alive, and close.\n- **TTWO 11-16 \"loss avoided\":** 208.65, \u221210.76% vs the 11-16 open (233.82). Yesterday's reflection called it \"smaller\". It widened again. One case.\n- **LLY \"Signals can buy extended names\":** \u22126.69% marked, 1.5% above its stop. Still one trade.\n\n_Drafting note: Claude Code (Sonnet, claude-sonnet-5-5, 1 call, reported $0.074, is_error=false, `--tools \"\"`) drafted from the facts packet knowledge/reflections/tmp/facts_2026-11-19.md. I rewrote it and re-checked every figure against nav.csv, fills.csv, trades.csv, positions.csv, bar_checks.csv, dx_log.csv, movers_log.csv, shadow_summary.csv, shadow_trades.csv and Yahoo daily bars. Corrections to the draft:_\n- _It said \"six paper trades today\". fills.csv has 10 fills (3 funding SELLs, 3 DX BUYs, 2 stops, 2 idle-SPY BUYs)._\n- _It listed NUE's 1.5 sessions below its alert as a mistake. Alerts are awareness-only by the owner's design; that is an observation._\n- _It listed the momentum fade under mistakes. That is beta under no intraday exit rule, not a decision error._\n- _It said \"the engine caught the BOX miscount\". The engine rejected the routing (2 sources pass Signals), and the recount fixed the miscount._\n"
+  "markdown": "# Reflection \u2014 2026-11-19 (paper only, no real money; v0.5.13, first session with DX entry-distance logging)\n\n## Headline: account vs SPY\nThe account still trails SPY. Since the start (time-weighted, nav.csv; capital in $20,852.34) it is **\u22128.265% vs SPY-equivalent \u22126.270% (\u22121.995 pts)**, from \u22122.146 pts on 11-18. Equity is $19,604.88 vs $19,632.67. Today the account fell **\u22121.846% vs \u22121.962%** for the SPY-equivalent (SPY 730.20 \u2192 715.87, \u22121.96%).\n\nThe 0.12-pt day edge isn't skill. It came from two things:\n- **The three new DX lots have low beta (0.15\u20130.28).** They lost \u2212$11.85 marked, where the same $900 left in SPY (sold at 737.0913) would have lost \u2212$25.91.\n- **Momentum lost less than SMH** (\u22122.133% vs \u22122.62%).\n\nMomentum is still most of the since-start gap (\u221217.289 pts on its $150 start).\n\n`sleeves.py close` (16:44 ET, exit 0) reported \"no pending 'close' orders\". It made no fills and no exits. It re-stamped two invalidation alerts (TGT, BOX), awareness only. There were no option trades.\n\nMarket: the market gapped up, then reversed hard.\n- **SPY** opened 737.46 (+0.99% gap) and fell \u22122.93% from open to close. QQQ \u22122.19% (\u22123.88% from the open), IWM \u22122.18%, DIA \u22122.18%, SMH \u22122.62% (\u22125.39% from the open), IGV \u22120.87%, XLY \u22122.79%, XLV \u22122.05%. VIX 28.44 (+15.80%).\n- **Context:** movers_log headlines tied the opening bid to the Anthropic IPO (Yahoo ticker ANT: open 111.50, close 97.17).\n- **Big single-name moves:** AMD \u22127.72% after a Hunterbrook short report (10:51 ET); UNH \u22125.55% (CMS proposed rule); PANW +6.42% (beat/raise); Everpure (P) opened +5.5%, ran to 116.51 and closed 105.50, below its open.\n\n## Paper trades today (fills.csv / trades.csv; 10 fills, none at the close)\n| Time ET | Sleeve | Side | Ticker | Qty | Price | Amount | Tag / P&L |\n|---|---|---|---|---|---|---|---|\n| 09:30 open | daytrade | SELL | SPY (day-SPY-idle) | 0.542674 | $737.0913 | $400.00 | funding |\n| 09:30 open | daytrade | BUY | RGA | 1.475059 | $271.1755 | $400.00 | DX one_filter, waived two_source (UBS upgrade) |\n| 09:30 open | daytrade | SELL | SPY (day-SPY-idle) | 0.339171 | $737.0913 | $250.00 | funding |\n| 09:30 open | daytrade | BUY | LIN | 0.487428 | $512.8963 | $250.00 | DX one_filter, waived two_source (Kepler upgrade; low conviction) |\n| 09:30 open | daytrade | SELL | SPY (day-SPY-idle) | 0.339171 | $737.0913 | $250.00 | funding |\n| 09:30 open | daytrade | BUY | BOX | 5.676398 | $44.0420 | $250.00 | DX one_filter, waived two_source (UBS upgrade) |\n| 12:05 (5-min bar) | daytrade | SELL | NUE | 1.550424 | $247.4821 | $383.70 | DX STOP; \u2212$16.30 (\u22124.074%), held 2 days |\n| 12:25 | daytrade | BUY | SPY (idle) | 0.529660 | $724.4320 | $383.70 | idle cash |\n| 14:50 (5-min bar) | signals | SELL | EPAM | 0.081873 | $150.1900 | $12.30 | STOP \u22128%; \u2212$1.09 (\u22128.138%) |\n| 15:28 | signals | BUY | SPY (idle) | 0.017128 | $717.9288 | $12.30 | idle cash |\n\n**Closing marks (positions.csv):**\n- RGA 268.03: \u2212$4.84 (\u22121.209%). Day high 271.44, so it barely traded above the fill.\n- LIN 510.21: \u2212$1.43 (\u22120.573%).\n- BOX 43.08: \u2212$5.58 (\u22122.233%). It reached 44.88 (+1.9%), broke its 43.17 invalidation at 14:25, and its 5-minute low of 42.835 missed the 42.8321 stop by $0.003.\n\n**Stops (both from bars):**\n- **NUE:** bar low 247.01 vs stop 247.6059 (pierced 0.24%). It closed 247.43, at the fill.\n- **EPAM:** bar low 150.165 vs stop 150.2651 (pierced 0.07%). It closed 150.44.\n\nSignals has now closed 5 trades for \u2212$6.42, all of them stops. DX has closed 1 (NUE, \u2212$16.30).\n\n## Mistakes and misses\n- **BOX: the source count was wrong on the first submission.** At 07:58 I counted two links to the same UBS note as two sources. The engine rejected it as a DX trade (\"passes every Signals filter\"), and it was resubmitted as one organization with two_source waived.\n  - One is the correct count under the written rule, so the trade as booked is within the rules.\n  - But this is the second day in a row (TGT on 11-18) that the count was settled only after a gate rejection. This time the first count was simply an error.\n- **Three single-upgrade buys at a gap-up open, on a day that reversed \u22122.9% from the open.**\n  - RGA and BOX paid about +2% gaps vs the prior close (RGA's premarket had been only +1.30%).\n  - All three closed red: RGA \u22121.16% and BOX \u22122.18% vs their fills, LIN \u22120.52%.\n  - I'm not blaming the market here, and I'm not claiming a non-gap entry would have done better (not priced). The cost is plain: a single-analyst upgrade gave no cushion once the tape turned.\n- **NUE:** it lost \u22124.07% while SPY fell \u22121.62% over the same window (11-17 10:27 \u2192 11-19 12:25). Its invalidation alert (255.07, breached 11-18 10:26) came 1.5 sessions before the stop. Alerts are awareness-only by the owner's design, so this is an observation, not a broken rule.\n- **Record and feed slips:**\n  - Shell expansion dropped \"$2\" from the BOX reason text (\"-> 50\" should read \"-> $250\"); the dollars field is correct.\n  - A shell-stdout read truncated feed/latest.json to about 100KB at 10:30. Corrupt JSON would have been published if that push card hadn't expired.\n  - The 10:30 log line saying at-open DX fills had no entry distance was wrong. The queued rows were stamped at 09:30.\n- **Movers:** 24 names were flagged, and none was traded off a flag.\n  - Held momentum names gapped up and faded: STX +6.01% gap then \u22124.67% open to close, WDC +6.70% / \u22123.49%, BE +5.86% / \u22127.12%, AMD \u22127.72%.\n  - Movers is awareness-only and momentum has no intraday exit rule, so nothing was missed under the rules.\n  - I found no flagged name with a qualifying DX setup inside the window that wasn't reviewed.\n\n## Overeager\n- **LIN** is the clearest case. It was entered as \"LOW CONVICTION\" on one Kepler upgrade, with no visible premarket reaction (\u22120.02%) and reviewer s2 voting reject. Only the minimum ticket limited the damage.\n- **BOX** was bought extended: +68% in six months, near its 44.88 52-week high, after a +1.97% gap.\n- These are within approved DX rules, so not rule breaks. But 4 of 5 DX entries now rest on the two_source waiver, which means thin single-source evidence is becoming the experiment's main input.\n\n## Too cautious\nNone shown.\n- **PANW sympathy:** cancelled around 10:30 because followers had already moved at least as much as the leader. The closes are mixed and unpriced (OKTA +1.77% and ZS +1.84% open to close; S +0.04%; FTNT \u22123.16%; NET \u22123.11%). I make no profit claim.\n- **P (Everpure):** flagged 10:29 at 113.81 and closed 105.50 (\u22127.3%). Not chasing it avoided a fall, but that is unpriced.\n- **UNM:** same UBS mortality theme as RGA, logged only as correlated.\n\n## Rule-following\n- All three opens came in under their gap caps (RGA 271.04 < 273.52; LIN 512.64 < 527.52; BOX 44.02 < 44.47).\n- found_at was before the open, so at_open pricing was allowed.\n- RGA's 11-05 Q3 was treated as context, not a second source.\n- Both stops executed from 5-minute bars as v0.5.12 specifies.\n- The hourly runs were on time: dx-manage and movers ran at 10:29, 11:27, 12:25, 13:26, 14:25 and 15:28 ET. The 15:34 slip of 11-17 and 11-18 didn't recur.\n- I found no broken rule. The BOX miscount is a process error caught before any order.\n\n## Sleeves vs SPY (nav.csv TWR since start; day)\n| Sleeve | Since start | SPY-eq | vs SPY | Day | SPY day |\n|---|---|---|---|---|---|\n| **Account** | \u22128.265% | \u22126.270% | \u22121.995 pts | \u22121.846% | \u22121.962% |\n| Core | \u22126.225% | \u22126.225% | 0.000 | \u22121.962% | \u22121.962% |\n| Momentum | \u221223.514% | \u22126.225% | \u221217.289 pts | \u22122.133% | \u22121.962% |\n| Dividend (idle SPY) | \u22126.225% | \u22126.225% | 0.000 | \u22121.962% | \u22121.962% |\n| Earnings | \u22127.762% | \u22126.225% | \u22121.537 pts | \u22121.667% | \u22121.962% |\n| Signals | \u22127.377% | \u22126.272% | \u22121.105 pts | \u22121.976% | \u22121.962% |\n| Day-trade (DX) | \u22125.731% | \u22125.830% | +0.099 pts | \u22121.708% | \u22121.962% |\n\n- **Day-trade** moved ahead of its SPY-equivalent only because $900 of idle SPY was swapped into low-beta names on a \u22122% day. $8,141.81 of $9,426.91 is still idle SPY, which is not a day-trade result.\n- **Signals** matched SPY within noise. LLY is \u22126.69% marked and 1.5% above its stop.\n- **Momentum** lost less than SMH. That is beta, not skill.\n\n## Day-trade experiment (DX), judged on tagged trades only\n| Setup / tag | Closed | Open | Result |\n|---|---|---|---|\n| one_filter / ma50 | 1 (NUE \u22124.074%) | 0 | \u2212$16.30 realized |\n| one_filter / two_source | 0 | 4 (TGT \u22120.922%, RGA \u22121.209%, LIN \u22120.573%, BOX \u22122.233%) | \u2212$15.54 marked |\n| one_filter / gap_up_3pct, intraday_ext_5pct | 0 | 0 | \u2014 |\n| sympathy (stock / call / put), bounce | 0 | 0 | none entered (PANW cancelled) |\n\n- **Totals:** tagged DX is \u2212$31.84 (\u2212$16.30 realized, \u2212$15.54 marked). The closed win rate is 0 of 1, which is not a verdict. No tag is near 20 closed trades, and the review is 2026-12-18.\n- **Vs Signals:** Signals has closed 5 trades for \u2212$6.42, but with ~$15 lots. The two sleeves aren't comparable per dollar yet.\n- **Invalidation alerts vs stops:** the NUE alert preceded its stop (1 of 1 stops so far). TGT broke its alert on 11-18 but closed back above it (167.46 vs 166.27). BOX broke its alert at 14:25 and is $0.25 above its stop.\n- **Entry distance** (v0.5.13, measurement only; stamped at 09:30 from the first 5-minute bar, n_bars=1, possibly still forming):\n  - RGA: +0.050% vs open, +0.386% vs VWAP.\n  - LIN: +0.050% vs open, +0.039% vs VWAP.\n  - BOX: +0.050% vs open, \u22121.155% vs VWAP.\n  - One closed DX trade has a distance (NUE +0.526% / +0.142%). `entry-distance` reports **n<10, not evaluated**.\n  - Every at-open fill reads about +0.05% vs the open by construction, so this measure can't show the ~+2% gaps RGA and BOX paid vs the prior close. No conclusions.\n\n## Execution and data\n- **bar_checks.csv:** 154 rows today (dx-manage 61, dx-manage-close 4, signals-intraday 81, signals-close 8), 2 stops, **0 fallbacks**, and no `BARS UNAVAILABLE`.\n  - dx-manage rows are written 2\u20133 times per run. That is a logging duplicate; fills.csv has no duplicate orders.\n- **Fill modeling:** stop fills use ~15-minute-delayed Yahoo 5-minute bars, at the stop price less 0.05%. BOX's stop miss of $0.003 is inside Yahoo's rounding (its daily low prints 42.83), so a real stop order might have filled.\n- **Feed:** the push approval cards expired at 10:30, 12:28 and 15:30, all logged.\n- **Data gaps:** at 8 AM Yahoo had no bars for ANT (new listing), and the Briefing.com Schwab URL returned a stub.\n- **shadow_check close:** exit 0, no retry needed.\n- **Close feed push:** succeeded at ~16:52 ET (commit d5f3616f, latest.json only; schema unchanged). `check_report --date 2026-11-19`: 507 checks, 0 problems, exit 0. The 507 checks are above the usual ~410\u2013470 range because there are more lots and fills, not because of an error.\n\n## Shadow tests vs pass bars (none passing; no early claims)\n- **A gap-and-go:** 13 trades, \u22120.008%/trade, t \u22120.01, no new trade. Bar: 30+ trades, >+0.20%/trade, more than half of weeks positive, t>1.5. Not judged.\n- **B RSI2:** 19 closed, \u22120.398%/trade, win 57.9%, t \u22120.33. ZS exited at today's open for +6.210%. ABT, PSA and D sell next open; AMGN entered at 443.42. Bar: >+0.25%/trade and beat SPY. Not meeting it.\n- **Z z-score (backtest REJECT):** 12 closed, \u22123.958%/trade, win 16.7%, t \u22121.61.\n  - Today OXY (\u22126.075%), MPC (\u22124.222%) and PSX (\u22126.079%) made their max-hold exits; SPY over the same window was \u22123.659%.\n  - PLTR sells next open. BMY, ACN, MRK and JPM are new. 3.1 of 8 weeks.\n- **squeeze_bb30:** 0 trades.\n- **F50:** 7 closed, \u22120.370%/trade; 5 open, avg excess +7.56% vs SPY. Bar is ~30 closed.\n- **F50x** (evidence): 30 closed, \u22124.763%/trade. Five closed today (GRAB, NVO, XYZ, NVDA, TIGO). 26 open, avg excess +1.85%.\n- **Intraday (evidence; failed variants preserved):**\n  - X_vwap_reclaim: 1,079 trades, \u22120.227%/trade, t \u22129.36 (today's 39 closed averaged \u22120.434%).\n  - X_first_pullback: 293, \u22120.171%. X_orb15: 104, \u22120.516%. X_orb30: 99, \u22120.454%.\n  - Lab forward today: 149 trades, avg \u22121.125%, on a reversal day.\n  - IL orb5/15/30, vwap_reclaim and gap_down_reclaim FAIL. IL_first_pullback (51/200), IL_gap_and_go (3/200), IL_ignition (126/200), IL_mr_z5 (111/200) and IL_rs_leader (15/200) are not judged.\n- **C SPY calls:** 18 marks, 3.3 of 8 weeks. The model check is within its bar so far (median |BS\u2212mid| 9.0% vs 10%). The spread check is not (4.5% vs 2%). **VT core:** \u22120.01 pts vs the real core.\n\n## What went well \u2014 skill or luck\n- **Beating SPY on the day** is beta and luck: low-beta DX names and SMH-relative momentum.\n- **Implementation held up:**\n  - Both stops executed from bars with zero fallbacks.\n  - The hourlies were on time.\n  - The gap caps held.\n  - The correlated UNM upgrade wasn't doubled up.\n- **Best call:** not chasing P (Everpure) after its +13% morning, and cancelling the PANW sympathy once followers had already moved. Both were rule-driven, and both outcomes are unpriced. That is one day of observation, not demonstrated skill.\n\n## Lessons\n1. **Count distinct organizations, not links, before submitting.** This is the second day running the count changed after an engine rejection. It is a checking habit, not a new rule. the owner declined a resubmit-reason requirement on 11-18, and I'm not re-proposing it.\n2. **The entry-distance measure is blind to gaps paid at the open.** At-open fills always read ~+0.05% vs the open, and today's damage was the ~+2% gap vs the prior close.\n   - *Suggestion needing the owner's approval (measurement only, no trade-count effect):* add `entry_vs_prior_close_pct` to dx_log next to the vs-open and vs-VWAP fields, and include it in the same split at 10 closed DX trades.\n   - What actually changed today: nothing. The rules are unchanged.\n\n## Re-check of earlier lessons\n- **11-18 \"DX entries are made after most of the move\":** today's entries were at the open, not mid-morning, and all three still closed red. That supports lesson 2 rather than proving anything about entry timing. It is still a hypothesis (n=5 entries, 1 closed).\n- **11-18 TGT (bought +4.9% vs the open):** now \u22120.92%, back above its breached alert. The \"chase\" framing hasn't resolved either way.\n- **11-17 MSFT stop sampling:** MSFT closed 498.30, 0.21% above its 497.24 stop (day low 498.16). It is still alive, and close.\n- **TTWO 11-16 \"loss avoided\":** 208.65, \u221210.76% vs the 11-16 open (233.82). Yesterday's reflection called it \"smaller\". It widened again. One case.\n- **LLY \"Signals can buy extended names\":** \u22126.69% marked, 1.5% above its stop. Still one trade.\n\n_Drafting note: Claude Code (Sonnet, claude-sonnet-5-5, 1 call, reported $0.074, is_error=false, `--tools \"\"`) drafted from the facts packet knowledge/reflections/tmp/facts_2026-11-19.md. I rewrote it and re-checked every figure against nav.csv, fills.csv, trades.csv, positions.csv, bar_checks.csv, dx_log.csv, movers_log.csv, shadow_summary.csv, shadow_trades.csv and Yahoo daily bars. Corrections to the draft:_\n- _It said \"six paper trades today\". fills.csv has 10 fills (3 funding SELLs, 3 DX BUYs, 2 stops, 2 idle-SPY BUYs)._\n- _It listed NUE's 1.5 sessions below its alert as a mistake. Alerts are awareness-only by the owner's design; that is an observation._\n- _It listed the momentum fade under mistakes. That is beta under no intraday exit rule, not a decision error._\n- _It said \"the engine caught the BOX miscount\". The engine rejected the routing (2 sources pass Signals), and the recount fixed the miscount._\n- _Page update (added after drafting, ~17:05 ET): canvas 8471aa7a updated (headline, sleeve scoreboard incl. DX, shadow scoreboard, newest reflection) from nav.csv and shadow_summary.csv._\n"
  }
 }
